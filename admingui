@@ -576,8 +576,8 @@ NotificationLabel.BackgroundColor3 = Color3.fromRGB(36, 77, 41)
 NotificationLabel.BackgroundTransparency = 1.000
 NotificationLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 NotificationLabel.BorderSizePixel = 0
-NotificationLabel.Position = UDim2.new(0.811902821, 0, 0.255768955, 0)
-NotificationLabel.Size = UDim2.new(0, 289, 0, 44)
+NotificationLabel.Position = UDim2.new(0.817556083, 0, 0.255768955, 0)
+NotificationLabel.Size = UDim2.new(0, 264, 0, 44)
 NotificationLabel.Visible = false
 NotificationLabel.Font = Enum.Font.Code
 NotificationLabel.Text = "    Enabled function: NoClip"
@@ -644,7 +644,7 @@ ActiveBackground.Size = UDim2.new(0, 3745, 0, 1623)
 
 -- Scripts:
 
-local function HAZRYMJ_fake_script() -- HealthBar.HealthBar 
+local function SBGXST_fake_script() -- HealthBar.HealthBar 
 	local script = Instance.new('LocalScript', HealthBar)
 
 	local button = script.Parent
@@ -759,8 +759,8 @@ local function HAZRYMJ_fake_script() -- HealthBar.HealthBar
 	end)
 	
 end
-coroutine.wrap(HAZRYMJ_fake_script)()
-local function HZRPADB_fake_script() -- TracerToggle.LocalScript 
+coroutine.wrap(SBGXST_fake_script)()
+local function IKRC_fake_script() -- TracerToggle.LocalScript 
 	local script = Instance.new('LocalScript', TracerToggle)
 
 	-- LocalScript внутри TracerToggle
@@ -839,8 +839,8 @@ local function HZRPADB_fake_script() -- TracerToggle.LocalScript
 	updateButton()
 	
 end
-coroutine.wrap(HZRPADB_fake_script)()
-local function NACD_fake_script() -- SkeletonButton.LocalScript 
+coroutine.wrap(IKRC_fake_script)()
+local function UXIKSDF_fake_script() -- SkeletonButton.LocalScript 
 	local script = Instance.new('LocalScript', SkeletonButton)
 
 	-- LocalScript внутри BoneESPButton
@@ -1005,8 +1005,8 @@ local function NACD_fake_script() -- SkeletonButton.LocalScript
 	Button.Text = "Bone ESP OFF"
 	
 end
-coroutine.wrap(NACD_fake_script)()
-local function MFRW_fake_script() -- AdminESPButton.LocalScript 
+coroutine.wrap(UXIKSDF_fake_script)()
+local function RXHA_fake_script() -- AdminESPButton.LocalScript 
 	local script = Instance.new('LocalScript', AdminESPButton)
 
 	local Players = game:GetService("Players")
@@ -1161,8 +1161,8 @@ local function MFRW_fake_script() -- AdminESPButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(MFRW_fake_script)()
-local function EHOQ_fake_script() -- ESPButton.Box 
+coroutine.wrap(RXHA_fake_script)()
+local function WYPS_fake_script() -- ESPButton.Box 
 	local script = Instance.new('LocalScript', ESPButton)
 
 	local Players    = game:GetService("Players")
@@ -1272,8 +1272,8 @@ local function EHOQ_fake_script() -- ESPButton.Box
 	textLabel.Text = "2D Box OFF"
 	
 end
-coroutine.wrap(EHOQ_fake_script)()
-local function ZRZOV_fake_script() -- GlowButton.LocalScript 
+coroutine.wrap(WYPS_fake_script)()
+local function RLSSJNU_fake_script() -- GlowButton.LocalScript 
 	local script = Instance.new('LocalScript', GlowButton)
 
 	-- LocalScript, поместите внутрь вашей GUI‑кнопки GlowButton
@@ -1375,8 +1375,8 @@ local function ZRZOV_fake_script() -- GlowButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZRZOV_fake_script)()
-local function KZSZWO_fake_script() -- Colorwheel.ColourWheelHandler 
+coroutine.wrap(RLSSJNU_fake_script)()
+local function TDPEFP_fake_script() -- Colorwheel.ColourWheelHandler 
 	local script = Instance.new('LocalScript', Colorwheel)
 
 	local colourWheel = script.Parent:WaitForChild("ColourWheel")
@@ -1469,8 +1469,8 @@ local function KZSZWO_fake_script() -- Colorwheel.ColourWheelHandler
 		updateColour(centreOfWheel)
 	end)
 end
-coroutine.wrap(KZSZWO_fake_script)()
-local function GRHUQ_fake_script() -- AimbotButton.LocalScript 
+coroutine.wrap(TDPEFP_fake_script)()
+local function VSDGCI_fake_script() -- AimbotButton.LocalScript 
 	local script = Instance.new('LocalScript', AimbotButton)
 
 	-- Simple GUI Aimbot + Highlight + Q‑bind
@@ -1604,8 +1604,8 @@ local function GRHUQ_fake_script() -- AimbotButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(GRHUQ_fake_script)()
-local function RESN_fake_script() -- SilentAimbotButton.LocalScript 
+coroutine.wrap(VSDGCI_fake_script)()
+local function OUOJJQ_fake_script() -- SilentAimbotButton.LocalScript 
 	local script = Instance.new('LocalScript', SilentAimbotButton)
 
 	local Players           = game:GetService("Players")
@@ -1759,8 +1759,8 @@ local function RESN_fake_script() -- SilentAimbotButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(RESN_fake_script)()
-local function DCXNU_fake_script() -- FullbrightOFF.LocalScript 
+coroutine.wrap(OUOJJQ_fake_script)()
+local function QGAHZ_fake_script() -- FullbrightOFF.LocalScript 
 	local script = Instance.new('LocalScript', FullbrightOFF)
 
 	local button = script.Parent
@@ -1810,8 +1810,8 @@ local function DCXNU_fake_script() -- FullbrightOFF.LocalScript
 	end)
 	
 end
-coroutine.wrap(DCXNU_fake_script)()
-local function PVANUW_fake_script() -- NoTextures.LocalScript 
+coroutine.wrap(QGAHZ_fake_script)()
+local function NKDIN_fake_script() -- NoTextures.LocalScript 
 	local script = Instance.new('LocalScript', NoTextures)
 
 	local function removeAllTextures(parent)
@@ -1831,8 +1831,8 @@ local function PVANUW_fake_script() -- NoTextures.LocalScript
 	-- Можно расширить на другие сервисы, если нужно
 	
 end
-coroutine.wrap(PVANUW_fake_script)()
-local function BZTIZNL_fake_script() -- AntiAFKButton.LocalScript 
+coroutine.wrap(NKDIN_fake_script)()
+local function EPIMK_fake_script() -- AntiAFKButton.LocalScript 
 	local script = Instance.new('LocalScript', AntiAFKButton)
 
 	local Players = game:GetService("Players")
@@ -1997,8 +1997,8 @@ local function BZTIZNL_fake_script() -- AntiAFKButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(BZTIZNL_fake_script)()
-local function SQUB_fake_script() -- FreeCamButton.FreeCam 
+coroutine.wrap(EPIMK_fake_script)()
+local function KDNHGCG_fake_script() -- FreeCamButton.FreeCam 
 	local script = Instance.new('LocalScript', FreeCamButton)
 
 	local Players = game:GetService("Players")
@@ -2172,8 +2172,8 @@ local function SQUB_fake_script() -- FreeCamButton.FreeCam
 	end)
 	
 end
-coroutine.wrap(SQUB_fake_script)()
-local function WPEV_fake_script() -- Hi.script 
+coroutine.wrap(KDNHGCG_fake_script)()
+local function UFCMFB_fake_script() -- Hi.script 
 	local script = Instance.new('LocalScript', Hi)
 
 	local Players          = game:GetService("Players")
@@ -2401,8 +2401,8 @@ local function WPEV_fake_script() -- Hi.script
 	end)
 	
 end
-coroutine.wrap(WPEV_fake_script)()
-local function TJDW_fake_script() -- ClickwarpButton.script 
+coroutine.wrap(UFCMFB_fake_script)()
+local function DTIR_fake_script() -- ClickwarpButton.script 
 	local script = Instance.new('LocalScript', ClickwarpButton)
 
 	local Players          = game:GetService("Players")
@@ -2507,8 +2507,8 @@ local function TJDW_fake_script() -- ClickwarpButton.script
 	updateButtonText()
 	
 end
-coroutine.wrap(TJDW_fake_script)()
-local function IAJDHJ_fake_script() -- NoFallDmg.NoFallDamage 
+coroutine.wrap(DTIR_fake_script)()
+local function NIOS_fake_script() -- NoFallDmg.NoFallDamage 
 	local script = Instance.new('LocalScript', NoFallDmg)
 
 	local Players = game:GetService("Players")
@@ -2622,8 +2622,8 @@ local function IAJDHJ_fake_script() -- NoFallDmg.NoFallDamage
 	end)
 	
 end
-coroutine.wrap(IAJDHJ_fake_script)()
-local function NZRWVZ_fake_script() -- SpectateButton.LocalScript 
+coroutine.wrap(NIOS_fake_script)()
+local function DRGZT_fake_script() -- SpectateButton.LocalScript 
 	local script = Instance.new('LocalScript', SpectateButton)
 
 	local Players           = game:GetService("Players")
@@ -2841,8 +2841,8 @@ local function NZRWVZ_fake_script() -- SpectateButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(NZRWVZ_fake_script)()
-local function LLTV_fake_script() -- ScreenGui.Tabs 
+coroutine.wrap(DRGZT_fake_script)()
+local function CZRQLU_fake_script() -- ScreenGui.Tabs 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
@@ -3110,8 +3110,8 @@ local function LLTV_fake_script() -- ScreenGui.Tabs
 	showPage("Tab1Page", currentButton)
 	
 end
-coroutine.wrap(LLTV_fake_script)()
-local function TZRJFGR_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(CZRQLU_fake_script)()
+local function FEZYERT_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local screenGui = script.Parent
@@ -3150,4 +3150,62 @@ local function TZRJFGR_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 end
-coroutine.wrap(TZRJFGR_fake_script)()
+coroutine.wrap(FEZYERT_fake_script)()
+local function WIPNBRK_fake_script() -- ScreenGui.Inject 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local screenGui = script.Parent
+	local notificationLabel = screenGui:WaitForChild("NotificationLabel")
+	local checkMark = notificationLabel:WaitForChild("CheckMark")
+	
+	notificationLabel.Size = UDim2.new(0, 264, 0, 44)
+	
+	local function fadeIn()
+		notificationLabel.Visible = true
+		notificationLabel.BackgroundTransparency = 1
+		notificationLabel.TextTransparency = 1
+		checkMark.ImageTransparency = 1
+	
+		local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+		local bgTween = TweenService:Create(notificationLabel, tweenInfo, {BackgroundTransparency = 0})
+		local textTween = TweenService:Create(notificationLabel, tweenInfo, {TextTransparency = 0})
+		local checkMarkTween = TweenService:Create(checkMark, tweenInfo, {ImageTransparency = 0})
+	
+		bgTween:Play()
+		textTween:Play()
+		checkMarkTween:Play()
+	
+		bgTween.Completed:Wait()
+	end
+	
+	local function fadeOut()
+		local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+		local bgTween = TweenService:Create(notificationLabel, tweenInfo, {BackgroundTransparency = 1})
+		local textTween = TweenService:Create(notificationLabel, tweenInfo, {TextTransparency = 1})
+		local checkMarkTween = TweenService:Create(checkMark, tweenInfo, {ImageTransparency = 1})
+	
+		bgTween:Play()
+		textTween:Play()
+		checkMarkTween:Play()
+	
+		bgTween.Completed:Wait()
+		notificationLabel.Visible = false
+	end
+	
+	-- Функция показа уведомления с нужным текстом
+	local function showSuccessNotification()
+		notificationLabel.Text = "   Successful Inject, Happy Cheating!"
+		fadeIn()
+		wait(3)
+		fadeOut()
+	end
+	
+	-- Вызов функции после успешной инъекции скрипта:
+	showSuccessNotification()
+	
+end
+coroutine.wrap(WIPNBRK_fake_script)()
