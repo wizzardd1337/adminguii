@@ -644,7 +644,7 @@ ActiveBackground.Size = UDim2.new(0, 3745, 0, 1623)
 
 -- Scripts:
 
-local function SBGXST_fake_script() -- HealthBar.HealthBar 
+local function VGIIPN_fake_script() -- HealthBar.HealthBar 
 	local script = Instance.new('LocalScript', HealthBar)
 
 	local button = script.Parent
@@ -759,8 +759,8 @@ local function SBGXST_fake_script() -- HealthBar.HealthBar
 	end)
 	
 end
-coroutine.wrap(SBGXST_fake_script)()
-local function IKRC_fake_script() -- TracerToggle.LocalScript 
+coroutine.wrap(VGIIPN_fake_script)()
+local function OOAF_fake_script() -- TracerToggle.LocalScript 
 	local script = Instance.new('LocalScript', TracerToggle)
 
 	-- LocalScript внутри TracerToggle
@@ -839,8 +839,8 @@ local function IKRC_fake_script() -- TracerToggle.LocalScript
 	updateButton()
 	
 end
-coroutine.wrap(IKRC_fake_script)()
-local function UXIKSDF_fake_script() -- SkeletonButton.LocalScript 
+coroutine.wrap(OOAF_fake_script)()
+local function BKEYVS_fake_script() -- SkeletonButton.LocalScript 
 	local script = Instance.new('LocalScript', SkeletonButton)
 
 	-- LocalScript внутри BoneESPButton
@@ -1005,8 +1005,8 @@ local function UXIKSDF_fake_script() -- SkeletonButton.LocalScript
 	Button.Text = "Bone ESP OFF"
 	
 end
-coroutine.wrap(UXIKSDF_fake_script)()
-local function RXHA_fake_script() -- AdminESPButton.LocalScript 
+coroutine.wrap(BKEYVS_fake_script)()
+local function ZFCSOY_fake_script() -- AdminESPButton.LocalScript 
 	local script = Instance.new('LocalScript', AdminESPButton)
 
 	local Players = game:GetService("Players")
@@ -1161,8 +1161,8 @@ local function RXHA_fake_script() -- AdminESPButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(RXHA_fake_script)()
-local function WYPS_fake_script() -- ESPButton.Box 
+coroutine.wrap(ZFCSOY_fake_script)()
+local function RQAMXC_fake_script() -- ESPButton.Box 
 	local script = Instance.new('LocalScript', ESPButton)
 
 	local Players    = game:GetService("Players")
@@ -1272,8 +1272,8 @@ local function WYPS_fake_script() -- ESPButton.Box
 	textLabel.Text = "2D Box OFF"
 	
 end
-coroutine.wrap(WYPS_fake_script)()
-local function RLSSJNU_fake_script() -- GlowButton.LocalScript 
+coroutine.wrap(RQAMXC_fake_script)()
+local function DEYO_fake_script() -- GlowButton.LocalScript 
 	local script = Instance.new('LocalScript', GlowButton)
 
 	-- LocalScript, поместите внутрь вашей GUI‑кнопки GlowButton
@@ -1375,8 +1375,8 @@ local function RLSSJNU_fake_script() -- GlowButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(RLSSJNU_fake_script)()
-local function TDPEFP_fake_script() -- Colorwheel.ColourWheelHandler 
+coroutine.wrap(DEYO_fake_script)()
+local function XMWCOZ_fake_script() -- Colorwheel.ColourWheelHandler 
 	local script = Instance.new('LocalScript', Colorwheel)
 
 	local colourWheel = script.Parent:WaitForChild("ColourWheel")
@@ -1469,8 +1469,8 @@ local function TDPEFP_fake_script() -- Colorwheel.ColourWheelHandler
 		updateColour(centreOfWheel)
 	end)
 end
-coroutine.wrap(TDPEFP_fake_script)()
-local function VSDGCI_fake_script() -- AimbotButton.LocalScript 
+coroutine.wrap(XMWCOZ_fake_script)()
+local function PRAHXP_fake_script() -- AimbotButton.LocalScript 
 	local script = Instance.new('LocalScript', AimbotButton)
 
 	-- Simple GUI Aimbot + Highlight + Q‑bind
@@ -1604,8 +1604,8 @@ local function VSDGCI_fake_script() -- AimbotButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(VSDGCI_fake_script)()
-local function OUOJJQ_fake_script() -- SilentAimbotButton.LocalScript 
+coroutine.wrap(PRAHXP_fake_script)()
+local function ZITRJ_fake_script() -- SilentAimbotButton.LocalScript 
 	local script = Instance.new('LocalScript', SilentAimbotButton)
 
 	local Players           = game:GetService("Players")
@@ -1759,8 +1759,8 @@ local function OUOJJQ_fake_script() -- SilentAimbotButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(OUOJJQ_fake_script)()
-local function QGAHZ_fake_script() -- FullbrightOFF.LocalScript 
+coroutine.wrap(ZITRJ_fake_script)()
+local function SQQX_fake_script() -- FullbrightOFF.LocalScript 
 	local script = Instance.new('LocalScript', FullbrightOFF)
 
 	local button = script.Parent
@@ -1810,8 +1810,8 @@ local function QGAHZ_fake_script() -- FullbrightOFF.LocalScript
 	end)
 	
 end
-coroutine.wrap(QGAHZ_fake_script)()
-local function NKDIN_fake_script() -- NoTextures.LocalScript 
+coroutine.wrap(SQQX_fake_script)()
+local function POYZVS_fake_script() -- NoTextures.LocalScript 
 	local script = Instance.new('LocalScript', NoTextures)
 
 	local function removeAllTextures(parent)
@@ -1831,8 +1831,8 @@ local function NKDIN_fake_script() -- NoTextures.LocalScript
 	-- Можно расширить на другие сервисы, если нужно
 	
 end
-coroutine.wrap(NKDIN_fake_script)()
-local function EPIMK_fake_script() -- AntiAFKButton.LocalScript 
+coroutine.wrap(POYZVS_fake_script)()
+local function VPCIAAA_fake_script() -- AntiAFKButton.LocalScript 
 	local script = Instance.new('LocalScript', AntiAFKButton)
 
 	local Players = game:GetService("Players")
@@ -1997,8 +1997,8 @@ local function EPIMK_fake_script() -- AntiAFKButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(EPIMK_fake_script)()
-local function KDNHGCG_fake_script() -- FreeCamButton.FreeCam 
+coroutine.wrap(VPCIAAA_fake_script)()
+local function GUDT_fake_script() -- FreeCamButton.FreeCam 
 	local script = Instance.new('LocalScript', FreeCamButton)
 
 	local Players = game:GetService("Players")
@@ -2010,7 +2010,9 @@ local function KDNHGCG_fake_script() -- FreeCamButton.FreeCam
 	local camera = workspace.CurrentCamera
 	local gui = player:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
 	local menu = gui:WaitForChild("menu")
-	local button = menu.PagesFrame.Tab3Page:WaitForChild("FreeCamButton")
+	
+	-- Надёжное ожидание и проверка кнопки
+	local button = menu:WaitForChild("PagesFrame"):WaitForChild("Tab3Page"):WaitForChild("FreeCamButton")
 	local notification = gui:WaitForChild("NotificationLabel")
 	local checkmark = notification:WaitForChild("CheckMark")
 	
@@ -2030,6 +2032,7 @@ local function KDNHGCG_fake_script() -- FreeCamButton.FreeCam
 	-- Notify function
 	local function notify(text)
 		notification.Text = text
+		notification.Size = UDim2.new(0, 229, 0, 44)
 		notification.Visible = true
 		notification.TextTransparency = 1
 		notification.BackgroundTransparency = 1
@@ -2059,7 +2062,9 @@ local function KDNHGCG_fake_script() -- FreeCamButton.FreeCam
 		local char = player.Character
 		if not char then return end
 		for _, p in ipairs(char:GetDescendants()) do
-			if p:IsA("BasePart") then p.Anchored = true end
+			if p:IsA("BasePart") then
+				p.Achored = true
+			end
 		end
 	end
 	
@@ -2067,7 +2072,9 @@ local function KDNHGCG_fake_script() -- FreeCamButton.FreeCam
 		local char = player.Character
 		if not char then return end
 		for _, p in ipairs(char:GetDescendants()) do
-			if p:IsA("BasePart") then p.Anchored = false end
+			if p:IsA("BasePart") then
+				p.Anchored = false
+			end
 		end
 	end
 	
@@ -2094,13 +2101,12 @@ local function KDNHGCG_fake_script() -- FreeCamButton.FreeCam
 			if keys.Space then moveDir += Vector3.new(0, 1, 0) end
 			if keys.Shift then moveDir += Vector3.new(0, -1, 0) end
 	
+			local rotCF = CFrame.Angles(math.rad(rotX), math.rad(rotY), 0)
 			if moveDir.Magnitude > 0 then
 				moveDir = moveDir.Unit
-				local rotCF = CFrame.Angles(math.rad(rotX), math.rad(rotY), 0)
 				local moveVec = rotCF:VectorToWorldSpace(moveDir)
 				camera.CFrame = CFrame.new(camera.CFrame.Position + moveVec * SPEED * dt) * rotCF
 			else
-				local rotCF = CFrame.Angles(math.rad(rotX), math.rad(rotY), 0)
 				camera.CFrame = CFrame.new(camera.CFrame.Position) * rotCF
 			end
 		end)
@@ -2161,19 +2167,31 @@ local function KDNHGCG_fake_script() -- FreeCamButton.FreeCam
 		if input.KeyCode == Enum.KeyCode.LeftShift then keys.Shift = false end
 	end)
 	
-	-- GUI Button click
-	button.MouseButton1Click:Connect(function()
-		if freeCamEnabled then
-			stopFreeCam()
-		else
-			button.Text = "press any key..."
-			isBinding = true
-		end
-	end)
+	-- GUI Button click (с надёжной проверкой)
+	if button and button:IsA("TextButton") then
+		button.MouseButton1Click:Connect(function()
+			if isBinding then
+				-- Отмена бинда при повторном нажатии
+				isBinding = false
+				button.Text = "FreeCam OFF"
+				notify("    Bind canceled.")
+				return
+			end
+	
+			if freeCamEnabled then
+				stopFreeCam()
+			else
+				button.Text = "press any key..."
+				isBinding = true
+			end
+		end)
+	else
+		warn("FreeCamButton не является кнопкой или Texbox")
+	end
 	
 end
-coroutine.wrap(KDNHGCG_fake_script)()
-local function UFCMFB_fake_script() -- Hi.script 
+coroutine.wrap(GUDT_fake_script)()
+local function JPTYSUC_fake_script() -- Hi.script 
 	local script = Instance.new('LocalScript', Hi)
 
 	local Players          = game:GetService("Players")
@@ -2401,13 +2419,14 @@ local function UFCMFB_fake_script() -- Hi.script
 	end)
 	
 end
-coroutine.wrap(UFCMFB_fake_script)()
-local function DTIR_fake_script() -- ClickwarpButton.script 
+coroutine.wrap(JPTYSUC_fake_script)()
+local function KPBPSK_fake_script() -- ClickwarpButton.script 
 	local script = Instance.new('LocalScript', ClickwarpButton)
 
 	local Players          = game:GetService("Players")
 	local UserInputService = game:GetService("UserInputService")
 	local TweenService     = game:GetService("TweenService")
+	local RunService       = game:GetService("RunService")
 	
 	local player       = Players.LocalPlayer
 	local mouse        = player:GetMouse()
@@ -2506,9 +2525,104 @@ local function DTIR_fake_script() -- ClickwarpButton.script
 	
 	updateButtonText()
 	
+	-- 📦 Полноценный каркасный 3D-куб (12 рёбер)
+	-- 📦 Узкий 3D-каркасный куб (над поверхностью, полностью виден)
+	local old = workspace:FindFirstChild("ClickwarpMarker")
+	if old then old:Destroy() end
+	
+	local marker = Instance.new("Model")
+	marker.Name = "ClickwarpMarker"
+	marker.Parent = workspace
+	
+	local function createEdge(pos1, pos2)
+		local part = Instance.new("Part")
+		part.Anchored = true
+		part.CanCollide = false
+		part.Material = Enum.Material.Neon
+		part.BrickColor = BrickColor.White()
+		part.Transparency = 0.3
+	
+		local dir = pos2 - pos1
+		local length = dir.Magnitude
+		part.Size = Vector3.new(0.05, 0.05, length)
+		part.CFrame = CFrame.new(pos1 + dir/2, pos2)
+		part.Parent = marker
+		return part
+	end
+	
+	-- Новый узкий размер куба
+	local boxSize = Vector3.new(1, 2, 1)
+	local half = boxSize / 2
+	
+	local corners = {
+		Vector3.new(-half.X, -half.Y, -half.Z),
+		Vector3.new(-half.X, -half.Y,  half.Z),
+		Vector3.new( half.X, -half.Y, -half.Z),
+		Vector3.new( half.X, -half.Y,  half.Z),
+		Vector3.new(-half.X,  half.Y, -half.Z),
+		Vector3.new(-half.X,  half.Y,  half.Z),
+		Vector3.new( half.X,  half.Y, -half.Z),
+		Vector3.new( half.X,  half.Y,  half.Z),
+	}
+	
+	local edges = {
+		{1,2}, {1,3}, {2,4}, {3,4}, -- нижние
+		{5,6}, {5,7}, {6,8}, {7,8}, -- верхние
+		{1,5}, {2,6}, {3,7}, {4,8}, -- вертикальные
+	}
+	
+	local parts = {}
+	for _, pair in ipairs(edges) do
+		local p1 = corners[pair[1]]
+		local p2 = corners[pair[2]]
+		local part = createEdge(p1, p2)
+		table.insert(parts, {rel1 = p1, rel2 = p2, part = part})
+	end
+	
+	local rotationAngles = Vector3.new(0, 0, 0)
+	local angularVelocity = Vector3.new(
+		math.rad(math.random(-90, 90)),
+		math.rad(math.random(-90, 90)),
+		math.rad(math.random(-90, 90))
+	)
+	
+	RunService.RenderStepped:Connect(function(dt)
+		if not clickwarpEnabled then
+			for _, item in ipairs(parts) do
+				item.part.Transparency = 1
+			end
+			return
+		end
+	
+		local target = mouse.Hit
+		if target then
+			-- Обновляем текущие углы
+			rotationAngles += angularVelocity * dt
+	
+			-- Применяем кручение по всем осям
+			local rotation = CFrame.Angles(rotationAngles.X, rotationAngles.Y, rotationAngles.Z)
+			local base = target.Position + Vector3.new(0, 1, 0)
+	
+			for _, item in ipairs(parts) do
+				local worldP1 = base + rotation:VectorToWorldSpace(item.rel1)
+				local worldP2 = base + rotation:VectorToWorldSpace(item.rel2)
+	
+				local dir = worldP2 - worldP1
+				local len = dir.Magnitude
+				item.part.Size = Vector3.new(0.05, 0.05, len)
+				item.part.CFrame = CFrame.new(worldP1 + dir/2, worldP2)
+				item.part.Transparency = 0.3
+			end
+		end
+	end)
+	
+	
+	
+	
+	
 end
-coroutine.wrap(DTIR_fake_script)()
-local function NIOS_fake_script() -- NoFallDmg.NoFallDamage 
+coroutine.wrap(KPBPSK_fake_script)()
+local function FEXX_fake_script() -- NoFallDmg.NoFallDamage 
 	local script = Instance.new('LocalScript', NoFallDmg)
 
 	local Players = game:GetService("Players")
@@ -2622,8 +2736,8 @@ local function NIOS_fake_script() -- NoFallDmg.NoFallDamage
 	end)
 	
 end
-coroutine.wrap(NIOS_fake_script)()
-local function DRGZT_fake_script() -- SpectateButton.LocalScript 
+coroutine.wrap(FEXX_fake_script)()
+local function KTRE_fake_script() -- SpectateButton.LocalScript 
 	local script = Instance.new('LocalScript', SpectateButton)
 
 	local Players           = game:GetService("Players")
@@ -2841,8 +2955,8 @@ local function DRGZT_fake_script() -- SpectateButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(DRGZT_fake_script)()
-local function CZRQLU_fake_script() -- ScreenGui.Tabs 
+coroutine.wrap(KTRE_fake_script)()
+local function HYKVV_fake_script() -- ScreenGui.Tabs 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
@@ -3110,8 +3224,8 @@ local function CZRQLU_fake_script() -- ScreenGui.Tabs
 	showPage("Tab1Page", currentButton)
 	
 end
-coroutine.wrap(CZRQLU_fake_script)()
-local function FEZYERT_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(HYKVV_fake_script)()
+local function UODSCD_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local screenGui = script.Parent
@@ -3150,8 +3264,8 @@ local function FEZYERT_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 end
-coroutine.wrap(FEZYERT_fake_script)()
-local function WIPNBRK_fake_script() -- ScreenGui.Inject 
+coroutine.wrap(UODSCD_fake_script)()
+local function CEZBAAH_fake_script() -- ScreenGui.Inject 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
@@ -3208,4 +3322,4 @@ local function WIPNBRK_fake_script() -- ScreenGui.Inject
 	showSuccessNotification()
 	
 end
-coroutine.wrap(WIPNBRK_fake_script)()
+coroutine.wrap(CEZBAAH_fake_script)()
