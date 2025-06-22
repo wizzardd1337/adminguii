@@ -34,7 +34,6 @@ local NoTextures = Instance.new("TextButton")
 local TextLabel_3 = Instance.new("TextLabel")
 local Hi = Instance.new("TextButton")
 local detectwar = Instance.new("ImageLabel")
-local SpectateButton = Instance.new("TextButton")
 local ClickwarpButton = Instance.new("TextButton")
 local Tab4Page = Instance.new("Frame")
 local AntiAFKButton = Instance.new("TextButton")
@@ -352,17 +351,6 @@ detectwar.Position = UDim2.new(0.921686769, 0, -0.333333343, 0)
 detectwar.Size = UDim2.new(0, 30, 0, 30)
 detectwar.Image = "rbxassetid://78878829329993"
 
-SpectateButton.Name = "SpectateButton"
-SpectateButton.Parent = Tab3Page
-SpectateButton.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
-SpectateButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
-SpectateButton.Position = UDim2.new(0.475038469, -50, 0.580014348, -25)
-SpectateButton.Size = UDim2.new(0, 166, 0, 51)
-SpectateButton.Font = Enum.Font.RobotoMono
-SpectateButton.Text = "spec"
-SpectateButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-SpectateButton.TextSize = 19.000
-
 ClickwarpButton.Name = "ClickwarpButton"
 ClickwarpButton.Parent = Tab3Page
 ClickwarpButton.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
@@ -647,7 +635,7 @@ ActiveBackground.Size = UDim2.new(0, 3745, 0, 1623)
 
 -- Scripts:
 
-local function PLJZIS_fake_script() -- HealthBar.HealthBar 
+local function KDMR_fake_script() -- HealthBar.HealthBar 
 	local script = Instance.new('LocalScript', HealthBar)
 
 	local button = script.Parent
@@ -762,8 +750,8 @@ local function PLJZIS_fake_script() -- HealthBar.HealthBar
 	end)
 	
 end
-coroutine.wrap(PLJZIS_fake_script)()
-local function YXROXE_fake_script() -- TracerToggle.LocalScript 
+coroutine.wrap(KDMR_fake_script)()
+local function ERHACWD_fake_script() -- TracerToggle.LocalScript 
 	local script = Instance.new('LocalScript', TracerToggle)
 
 	-- LocalScript внутри TracerToggle
@@ -842,8 +830,8 @@ local function YXROXE_fake_script() -- TracerToggle.LocalScript
 	updateButton()
 	
 end
-coroutine.wrap(YXROXE_fake_script)()
-local function QZJUWET_fake_script() -- SkeletonButton.LocalScript 
+coroutine.wrap(ERHACWD_fake_script)()
+local function MHSCC_fake_script() -- SkeletonButton.LocalScript 
 	local script = Instance.new('LocalScript', SkeletonButton)
 
 	-- LocalScript внутри BoneESPButton
@@ -1008,8 +996,8 @@ local function QZJUWET_fake_script() -- SkeletonButton.LocalScript
 	Button.Text = "Bone ESP OFF"
 	
 end
-coroutine.wrap(QZJUWET_fake_script)()
-local function BBNOI_fake_script() -- AdminESPButton.LocalScript 
+coroutine.wrap(MHSCC_fake_script)()
+local function QHUB_fake_script() -- AdminESPButton.LocalScript 
 	local script = Instance.new('LocalScript', AdminESPButton)
 
 	local Players = game:GetService("Players")
@@ -1164,8 +1152,8 @@ local function BBNOI_fake_script() -- AdminESPButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(BBNOI_fake_script)()
-local function XXORZCG_fake_script() -- ESPButton.Box 
+coroutine.wrap(QHUB_fake_script)()
+local function LZIS_fake_script() -- ESPButton.Box 
 	local script = Instance.new('LocalScript', ESPButton)
 
 	local Players    = game:GetService("Players")
@@ -1275,8 +1263,8 @@ local function XXORZCG_fake_script() -- ESPButton.Box
 	textLabel.Text = "2D Box OFF"
 	
 end
-coroutine.wrap(XXORZCG_fake_script)()
-local function XFMWLS_fake_script() -- GlowButton.LocalScript 
+coroutine.wrap(LZIS_fake_script)()
+local function FTVTXUD_fake_script() -- GlowButton.LocalScript 
 	local script = Instance.new('LocalScript', GlowButton)
 
 	-- LocalScript, поместите внутрь вашей GUI‑кнопки GlowButton
@@ -1421,8 +1409,8 @@ local function XFMWLS_fake_script() -- GlowButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(XFMWLS_fake_script)()
-local function CANSHW_fake_script() -- ToggleAimbot.LocalScript 
+coroutine.wrap(FTVTXUD_fake_script)()
+local function IIXDBI_fake_script() -- ToggleAimbot.LocalScript 
 	local script = Instance.new('LocalScript', ToggleAimbot)
 
 	local Players = game:GetService("Players")
@@ -1499,8 +1487,8 @@ local function CANSHW_fake_script() -- ToggleAimbot.LocalScript
 	end)
 	
 end
-coroutine.wrap(CANSHW_fake_script)()
-local function XHOXFQJ_fake_script() -- FullbrightOFF.LocalScript 
+coroutine.wrap(IIXDBI_fake_script)()
+local function YMCUSR_fake_script() -- FullbrightOFF.LocalScript 
 	local script = Instance.new('LocalScript', FullbrightOFF)
 
 	local button = script.Parent
@@ -1550,8 +1538,8 @@ local function XHOXFQJ_fake_script() -- FullbrightOFF.LocalScript
 	end)
 	
 end
-coroutine.wrap(XHOXFQJ_fake_script)()
-local function NLUHPS_fake_script() -- RemoveShadowButton.LocalScript 
+coroutine.wrap(YMCUSR_fake_script)()
+local function KRZUSD_fake_script() -- RemoveShadowButton.LocalScript 
 	local script = Instance.new('LocalScript', RemoveShadowButton)
 
 	local Lighting = game:GetService("Lighting")
@@ -1579,8 +1567,8 @@ local function NLUHPS_fake_script() -- RemoveShadowButton.LocalScript
 	updateButton()
 	
 end
-coroutine.wrap(NLUHPS_fake_script)()
-local function CMMTO_fake_script() -- NoTextures.LocalScript 
+coroutine.wrap(KRZUSD_fake_script)()
+local function VWNI_fake_script() -- NoTextures.LocalScript 
 	local script = Instance.new('LocalScript', NoTextures)
 
 	local Players = game:GetService("Players")
@@ -1656,8 +1644,8 @@ local function CMMTO_fake_script() -- NoTextures.LocalScript
 	-- Начальный текст
 	button.Text = "Textures: OFF"
 end
-coroutine.wrap(CMMTO_fake_script)()
-local function BVBPH_fake_script() -- Hi.script 
+coroutine.wrap(VWNI_fake_script)()
+local function WBJGNJL_fake_script() -- Hi.script 
 	local script = Instance.new('LocalScript', Hi)
 
 	local Players          = game:GetService("Players")
@@ -1953,8 +1941,8 @@ local function BVBPH_fake_script() -- Hi.script
 	
 	
 end
-coroutine.wrap(BVBPH_fake_script)()
-local function SZXL_fake_script() -- ClickwarpButton.script 
+coroutine.wrap(WBJGNJL_fake_script)()
+local function QDDT_fake_script() -- ClickwarpButton.script 
 	local script = Instance.new('LocalScript', ClickwarpButton)
 
 	local Players          = game:GetService("Players")
@@ -2151,8 +2139,8 @@ local function SZXL_fake_script() -- ClickwarpButton.script
 		end
 	end)
 end
-coroutine.wrap(SZXL_fake_script)()
-local function DRUO_fake_script() -- AntiAFKButton.LocalScript 
+coroutine.wrap(QDDT_fake_script)()
+local function DMTWR_fake_script() -- AntiAFKButton.LocalScript 
 	local script = Instance.new('LocalScript', AntiAFKButton)
 
 	local Players = game:GetService("Players")
@@ -2317,8 +2305,8 @@ local function DRUO_fake_script() -- AntiAFKButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(DRUO_fake_script)()
-local function HDVZCDH_fake_script() -- NoFallDmg.NoFallDamage 
+coroutine.wrap(DMTWR_fake_script)()
+local function AKMQ_fake_script() -- NoFallDmg.NoFallDamage 
 	local script = Instance.new('LocalScript', NoFallDmg)
 
 	local Players = game:GetService("Players")
@@ -2436,8 +2424,8 @@ local function HDVZCDH_fake_script() -- NoFallDmg.NoFallDamage
 	end)
 	
 end
-coroutine.wrap(HDVZCDH_fake_script)()
-local function GERP_fake_script() -- AntiAim.script 
+coroutine.wrap(AKMQ_fake_script)()
+local function VRGUI_fake_script() -- AntiAim.script 
 	local script = Instance.new('LocalScript', AntiAim)
 
 	local Players = game:GetService("Players")
@@ -2537,8 +2525,8 @@ local function GERP_fake_script() -- AntiAim.script
 	end)
 	
 end
-coroutine.wrap(GERP_fake_script)()
-local function MJLLF_fake_script() -- PlayerLauncher.playerlauncher 
+coroutine.wrap(VRGUI_fake_script)()
+local function OKKEA_fake_script() -- PlayerLauncher.playerlauncher 
 	local script = Instance.new('LocalScript', PlayerLauncher)
 
 	local Players          = game:GetService("Players")
@@ -2713,8 +2701,8 @@ local function MJLLF_fake_script() -- PlayerLauncher.playerlauncher
 	end)
 	
 end
-coroutine.wrap(MJLLF_fake_script)()
-local function ZORSAY_fake_script() -- ResetButton.reset 
+coroutine.wrap(OKKEA_fake_script)()
+local function XBQYL_fake_script() -- ResetButton.reset 
 	local script = Instance.new('LocalScript', ResetButton)
 
 	local Players = game:GetService("Players")
@@ -2762,8 +2750,8 @@ local function ZORSAY_fake_script() -- ResetButton.reset
 	button.Text = "Suicide"
 	
 end
-coroutine.wrap(ZORSAY_fake_script)()
-local function RALTNH_fake_script() -- InfinityAmmo.InfinityAmmo 
+coroutine.wrap(XBQYL_fake_script)()
+local function XUWB_fake_script() -- InfinityAmmo.InfinityAmmo 
 	local script = Instance.new('LocalScript', InfinityAmmo)
 
 	local Players       = game:GetService("Players")
@@ -2854,8 +2842,8 @@ local function RALTNH_fake_script() -- InfinityAmmo.InfinityAmmo
 	end)
 	
 end
-coroutine.wrap(RALTNH_fake_script)()
-local function SIHAGG_fake_script() -- NoReload.NoReload 
+coroutine.wrap(XUWB_fake_script)()
+local function LKNBYK_fake_script() -- NoReload.NoReload 
 	local script = Instance.new('LocalScript', NoReload)
 
 	local Players       = game:GetService("Players")
@@ -2949,8 +2937,8 @@ local function SIHAGG_fake_script() -- NoReload.NoReload
 	end)
 	
 end
-coroutine.wrap(SIHAGG_fake_script)()
-local function SAML_fake_script() -- NoSpread.NoSpread 
+coroutine.wrap(LKNBYK_fake_script)()
+local function ZMHHE_fake_script() -- NoSpread.NoSpread 
 	local script = Instance.new('LocalScript', NoSpread)
 
 	local Players       = game:GetService("Players")
@@ -3046,8 +3034,8 @@ local function SAML_fake_script() -- NoSpread.NoSpread
 	end)
 	
 end
-coroutine.wrap(SAML_fake_script)()
-local function AYBO_fake_script() -- ReloadShoot.ReloadShoot 
+coroutine.wrap(ZMHHE_fake_script)()
+local function AIIRIFX_fake_script() -- ReloadShoot.ReloadShoot 
 	local script = Instance.new('LocalScript', ReloadShoot)
 
 	local Players = game:GetService("Players")
@@ -3111,8 +3099,8 @@ local function AYBO_fake_script() -- ReloadShoot.ReloadShoot
 	updateButtonText()
 	
 end
-coroutine.wrap(AYBO_fake_script)()
-local function BDUX_fake_script() -- ScreenGui.Tabs 
+coroutine.wrap(AIIRIFX_fake_script)()
+local function TQNJT_fake_script() -- ScreenGui.Tabs 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
@@ -3380,8 +3368,8 @@ local function BDUX_fake_script() -- ScreenGui.Tabs
 	showPage("Tab1Page", currentButton)
 	
 end
-coroutine.wrap(BDUX_fake_script)()
-local function TZEHECT_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(TQNJT_fake_script)()
+local function FCYN_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local screenGui = script.Parent
@@ -3420,8 +3408,8 @@ local function TZEHECT_fake_script() -- ScreenGui.LocalScript
 	end)
 	
 end
-coroutine.wrap(TZEHECT_fake_script)()
-local function YVXCB_fake_script() -- ScreenGui.Inject 
+coroutine.wrap(FCYN_fake_script)()
+local function WCPSKD_fake_script() -- ScreenGui.Inject 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
@@ -3478,4 +3466,4 @@ local function YVXCB_fake_script() -- ScreenGui.Inject
 	showSuccessNotification()
 	
 end
-coroutine.wrap(YVXCB_fake_script)()
+coroutine.wrap(WCPSKD_fake_script)()
