@@ -20,13 +20,39 @@ local Tab1Page = Instance.new("Frame")
 local HealthBar = Instance.new("TextButton")
 local TracerToggle = Instance.new("TextButton")
 local SkeletonButton = Instance.new("TextButton")
-local AdminESPButton = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
-local ESPButton = Instance.new("TextButton")
-local GlowButton = Instance.new("TextButton")
+local gui2lua41 = Instance.new("TextButton")
+local NamesEsp = Instance.new("TextButton")
+local AdminESPButton = Instance.new("TextButton")
+local _2DBoxButton = Instance.new("TextButton")
+local HeadDotButton = Instance.new("TextButton")
+local DistanceButton = Instance.new("TextButton")
+local WeaponESPButton = Instance.new("TextButton")
+local RadarButton = Instance.new("TextButton")
+local _3DBoxButton = Instance.new("TextButton")
+local HitboxButton = Instance.new("TextButton")
+local AFKDetector = Instance.new("TextButton")
+local ArmorBar = Instance.new("TextButton")
+local Backtrail = Instance.new("TextButton")
+local RadarArrowsButton = Instance.new("TextButton")
 local Tab2Page = Instance.new("Frame")
-local ToggleAimbot = Instance.new("TextButton")
 local TextLabel_2 = Instance.new("TextLabel")
+local AimbotFrame = Instance.new("Frame")
+local AimbotButton = Instance.new("TextButton")
+local ShowFov = Instance.new("ImageButton")
+local ShowFOVLabel = Instance.new("TextLabel")
+local LockOnLast = Instance.new("ImageButton")
+local LockOnlastLabel = Instance.new("TextLabel")
+local WallCheck = Instance.new("ImageButton")
+local WallcheckLabel = Instance.new("TextLabel")
+local SmoothingBox = Instance.new("TextBox")
+local ApplySmoothingButton = Instance.new("TextButton")
+local BindKeyButton = Instance.new("TextButton")
+local SmoothingLabel = Instance.new("TextLabel")
+local HoldToggleButton = Instance.new("TextButton")
+local ColorBox = Instance.new("TextBox")
+local ApplyColorButton = Instance.new("TextButton")
+local ColorFovLabel = Instance.new("TextLabel")
 local Tab3Page = Instance.new("Frame")
 local FullbrightOFF = Instance.new("TextButton")
 local RemoveShadowButton = Instance.new("TextButton")
@@ -36,30 +62,37 @@ local Hi = Instance.new("TextButton")
 local detectwar = Instance.new("ImageLabel")
 local ClickwarpButton = Instance.new("TextButton")
 local Tab4Page = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
 local AntiAFKButton = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
-local TextLabel_4 = Instance.new("TextLabel")
 local Tab5Page = Instance.new("Frame")
 local TextLabel_5 = Instance.new("TextLabel")
 local NoFallDmg = Instance.new("TextButton")
 local AntiAim = Instance.new("TextButton")
-local PlayerLauncher = Instance.new("TextButton")
 local ResetButton = Instance.new("TextButton")
+local BunnyHop = Instance.new("TextButton")
+local PlayerLauncher = Instance.new("TextButton")
+local FreezeButton = Instance.new("TextButton")
 local Tab6Page = Instance.new("Frame")
 local TextLabel_6 = Instance.new("TextLabel")
+local CarFly = Instance.new("TextButton")
+local NoSpeedLimit = Instance.new("TextButton")
+local InstantSpeed = Instance.new("TextButton")
 local Tab7Page = Instance.new("Frame")
 local TextLabel_7 = Instance.new("TextLabel")
-local InfinityAmmo = Instance.new("TextButton")
-local NoReload = Instance.new("TextButton")
-local NoSpread = Instance.new("TextButton")
 local ReloadShoot = Instance.new("TextButton")
+local NoSpread = Instance.new("TextButton")
+local NoReload = Instance.new("TextButton")
+local InfinityAmmo = Instance.new("TextButton")
 local logo = Instance.new("ImageLabel")
-local NotificationLabel = Instance.new("TextLabel")
-local CheckMark = Instance.new("ImageLabel")
 local Frame = Instance.new("Frame")
 local TargetLabel = Instance.new("TextLabel")
 local AdminLabel = Instance.new("TextLabel")
 local ActiveBackground = Instance.new("Frame")
+local FadeFrame = Instance.new("Frame")
+local label1 = Instance.new("ImageLabel")
+local NotificationLabel = Instance.new("TextLabel")
+local CheckMark = Instance.new("ImageLabel")
 
 --Properties:
 
@@ -72,10 +105,9 @@ menu.Parent = ScreenGui
 menu.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 menu.BorderColor3 = Color3.fromRGB(0, 0, 0)
 menu.BorderSizePixel = 0
-menu.Position = UDim2.new(0.221598297, 0, 0.0897975713, 0)
+menu.Position = UDim2.new(0.207855344, 0, 0.0897975713, 0)
 menu.Size = UDim2.new(0, 746, 0, 585)
 menu.ZIndex = 2
-menu.Draggable = true
 
 UICorner.Parent = menu
 
@@ -95,54 +127,54 @@ Tab1Button.Parent = TabsFrame
 Tab1Button.BackgroundColor3 = Color3.fromRGB(0, 89, 255)
 Tab1Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tab1Button.BorderSizePixel = 0
-Tab1Button.Position = UDim2.new(0.252032518, 0, 0.27251184, 0)
+Tab1Button.Position = UDim2.new(0.252032518, 0, 0.07109005, 0)
 Tab1Button.Size = UDim2.new(0, 60, 0, 60)
-Tab1Button.Image = "rbxassetid://113423029495967"
+Tab1Button.Image = "rbxassetid://121234038341734"
 
 Tab5Button.Name = "Tab5Button"
 Tab5Button.Parent = TabsFrame
 Tab5Button.BackgroundColor3 = Color3.fromRGB(0, 89, 255)
 Tab5Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tab5Button.BorderSizePixel = 0
-Tab5Button.Position = UDim2.new(0.252032518, 0, 0.447867304, 0)
+Tab5Button.Position = UDim2.new(0.252032518, 0, 0.770142198, 0)
 Tab5Button.Size = UDim2.new(0, 60, 0, 60)
-Tab5Button.Image = "rbxassetid://82597938767282"
+Tab5Button.Image = "rbxassetid://128101223038569"
 
 Tab3Button.Name = "Tab3Button"
 Tab3Button.Parent = TabsFrame
 Tab3Button.BackgroundColor3 = Color3.fromRGB(0, 89, 255)
 Tab3Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tab3Button.BorderSizePixel = 0
-Tab3Button.Position = UDim2.new(0.252032518, 0, 0.618483365, 0)
+Tab3Button.Position = UDim2.new(0.252032518, 0, 0.594786644, 0)
 Tab3Button.Size = UDim2.new(0, 60, 0, 60)
-Tab3Button.Image = "rbxassetid://119376516707905"
+Tab3Button.Image = "rbxassetid://90030673702247"
 
 Tab2Button.Name = "Tab2Button"
 Tab2Button.Parent = TabsFrame
 Tab2Button.BackgroundColor3 = Color3.fromRGB(0, 89, 255)
 Tab2Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tab2Button.BorderSizePixel = 0
-Tab2Button.Position = UDim2.new(0.252032518, 0, 0.097156398, 0)
+Tab2Button.Position = UDim2.new(0.252032518, 0, 0.248815164, 0)
 Tab2Button.Size = UDim2.new(0, 60, 0, 60)
-Tab2Button.Image = "rbxassetid://124753543890133"
+Tab2Button.Image = "rbxassetid://122574553542109"
 
 Tab7Button.Name = "Tab7Button"
 Tab7Button.Parent = TabsFrame
 Tab7Button.BackgroundColor3 = Color3.fromRGB(0, 89, 255)
 Tab7Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tab7Button.BorderSizePixel = 0
-Tab7Button.Position = UDim2.new(0.252032518, 0, 0.791469276, 0)
+Tab7Button.Position = UDim2.new(0.252032518, 0, 0.940758348, 0)
 Tab7Button.Size = UDim2.new(0, 60, 0, 60)
-Tab7Button.Image = "rbxassetid://132923645454234"
+Tab7Button.Image = "rbxassetid://85020596341898"
 
 Tab6Button.Name = "Tab6Button"
 Tab6Button.Parent = TabsFrame
 Tab6Button.BackgroundColor3 = Color3.fromRGB(0, 89, 255)
 Tab6Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tab6Button.BorderSizePixel = 0
-Tab6Button.Position = UDim2.new(0.252032518, 0, 0.962085366, 0)
+Tab6Button.Position = UDim2.new(0.252032518, 0, 0.417061687, 0)
 Tab6Button.Size = UDim2.new(0, 60, 0, 60)
-Tab6Button.Image = "rbxassetid://135778698330337"
+Tab6Button.Image = "rbxassetid://79580257595150"
 
 PagesFrame.Name = "PagesFrame"
 PagesFrame.Parent = menu
@@ -190,23 +222,12 @@ SkeletonButton.Name = "SkeletonButton"
 SkeletonButton.Parent = Tab1Page
 SkeletonButton.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
 SkeletonButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
-SkeletonButton.Position = UDim2.new(0.0491137393, -50, 0.750429273, -25)
+SkeletonButton.Position = UDim2.new(0.0470853411, -50, 0.726732612, -25)
 SkeletonButton.Size = UDim2.new(0, 166, 0, 51)
 SkeletonButton.Font = Enum.Font.RobotoMono
 SkeletonButton.Text = "BoneESP OFF"
 SkeletonButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 SkeletonButton.TextSize = 19.000
-
-AdminESPButton.Name = "AdminESPButton"
-AdminESPButton.Parent = Tab1Page
-AdminESPButton.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
-AdminESPButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
-AdminESPButton.Position = UDim2.new(0.709000707, 0, 0.0695502833, 0)
-AdminESPButton.Size = UDim2.new(0, 140, 0, 45)
-AdminESPButton.Font = Enum.Font.RobotoMono
-AdminESPButton.Text = "Admin Check"
-AdminESPButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-AdminESPButton.TextSize = 19.000
 
 TextLabel.Parent = Tab1Page
 TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -220,27 +241,159 @@ TextLabel.Text = "Visuals"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 24.000
 
-ESPButton.Name = "ESPButton"
-ESPButton.Parent = Tab1Page
-ESPButton.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
-ESPButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
-ESPButton.Position = UDim2.new(0.0511420146, -50, 0.259123743, -25)
-ESPButton.Size = UDim2.new(0, 166, 0, 51)
-ESPButton.Font = Enum.Font.RobotoMono
-ESPButton.Text = "box"
-ESPButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-ESPButton.TextSize = 19.000
+gui2lua41.Name = "gui2lua #41"
+gui2lua41.Parent = Tab1Page
+gui2lua41.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+gui2lua41.BorderColor3 = Color3.fromRGB(53, 53, 53)
+gui2lua41.Position = UDim2.new(0.0491136163, -50, 0.0979863033, -25)
+gui2lua41.Size = UDim2.new(0, 166, 0, 51)
+gui2lua41.Font = Enum.Font.RobotoMono
+gui2lua41.Text = "Glow OFF"
+gui2lua41.TextColor3 = Color3.fromRGB(255, 255, 255)
+gui2lua41.TextSize = 19.000
 
-GlowButton.Name = "GlowButton"
-GlowButton.Parent = Tab1Page
-GlowButton.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
-GlowButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
-GlowButton.Position = UDim2.new(0.0491136163, -50, 0.0979863033, -25)
-GlowButton.Size = UDim2.new(0, 166, 0, 51)
-GlowButton.Font = Enum.Font.RobotoMono
-GlowButton.Text = "glow"
-GlowButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-GlowButton.TextSize = 19.000
+NamesEsp.Name = "NamesEsp"
+NamesEsp.Parent = Tab1Page
+NamesEsp.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+NamesEsp.BorderColor3 = Color3.fromRGB(53, 53, 53)
+NamesEsp.Position = UDim2.new(0.0470853411, -50, 0.878391385, -25)
+NamesEsp.Size = UDim2.new(0, 166, 0, 51)
+NamesEsp.Font = Enum.Font.RobotoMono
+NamesEsp.Text = "NameESP OFF"
+NamesEsp.TextColor3 = Color3.fromRGB(255, 255, 255)
+NamesEsp.TextSize = 19.000
+
+AdminESPButton.Name = "AdminESPButton"
+AdminESPButton.Parent = Tab1Page
+AdminESPButton.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+AdminESPButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
+AdminESPButton.Position = UDim2.new(-0.0523062609, 0, 0.197512373, 0)
+AdminESPButton.Size = UDim2.new(0, 166, 0, 51)
+AdminESPButton.Font = Enum.Font.RobotoMono
+AdminESPButton.Text = "Admin Check"
+AdminESPButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+AdminESPButton.TextSize = 19.000
+
+_2DBoxButton.Name = "2DBoxButton"
+_2DBoxButton.Parent = Tab1Page
+_2DBoxButton.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+_2DBoxButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
+_2DBoxButton.Position = UDim2.new(0.426674008, -50, 0.0979942605, -25)
+_2DBoxButton.Size = UDim2.new(0, 166, 0, 51)
+_2DBoxButton.Font = Enum.Font.RobotoMono
+_2DBoxButton.Text = "2D Box OFF"
+_2DBoxButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+_2DBoxButton.TextSize = 19.000
+
+HeadDotButton.Name = "HeadDotButton"
+HeadDotButton.Parent = Tab1Page
+HeadDotButton.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+HeadDotButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
+HeadDotButton.Position = UDim2.new(0.426674008, -50, 0.406051129, -25)
+HeadDotButton.Size = UDim2.new(0, 166, 0, 51)
+HeadDotButton.Font = Enum.Font.RobotoMono
+HeadDotButton.Text = "Head Dot OFF"
+HeadDotButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+HeadDotButton.TextSize = 19.000
+
+DistanceButton.Name = "DistanceButton"
+DistanceButton.Parent = Tab1Page
+DistanceButton.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+DistanceButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
+DistanceButton.Position = UDim2.new(0.426674008, -50, 0.569558263, -25)
+DistanceButton.Size = UDim2.new(0, 166, 0, 51)
+DistanceButton.Font = Enum.Font.RobotoMono
+DistanceButton.Text = "Distance OFF"
+DistanceButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+DistanceButton.TextSize = 19.000
+
+WeaponESPButton.Name = "WeaponESPButton"
+WeaponESPButton.Parent = Tab1Page
+WeaponESPButton.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+WeaponESPButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
+WeaponESPButton.Position = UDim2.new(0.426674008, -50, 0.728326023, -25)
+WeaponESPButton.Size = UDim2.new(0, 166, 0, 51)
+WeaponESPButton.Font = Enum.Font.RobotoMono
+WeaponESPButton.Text = "WeaponsESP OFF"
+WeaponESPButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+WeaponESPButton.TextSize = 19.000
+
+RadarButton.Name = "RadarButton"
+RadarButton.Parent = Tab1Page
+RadarButton.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+RadarButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
+RadarButton.Position = UDim2.new(0.426395684, -50, 0.878391385, -25)
+RadarButton.Size = UDim2.new(0, 166, 0, 51)
+RadarButton.Font = Enum.Font.RobotoMono
+RadarButton.Text = "Radar OFF"
+RadarButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+RadarButton.TextSize = 19.000
+
+_3DBoxButton.Name = "3DBoxButton"
+_3DBoxButton.Parent = Tab1Page
+_3DBoxButton.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+_3DBoxButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
+_3DBoxButton.Position = UDim2.new(0.426674008, -50, 0.254392356, -25)
+_3DBoxButton.Size = UDim2.new(0, 166, 0, 51)
+_3DBoxButton.Font = Enum.Font.RobotoMono
+_3DBoxButton.Text = "3D Box OFF"
+_3DBoxButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+_3DBoxButton.TextSize = 19.000
+
+HitboxButton.Name = "HitboxButton"
+HitboxButton.Parent = Tab1Page
+HitboxButton.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+HitboxButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
+HitboxButton.Position = UDim2.new(0.805706024, -50, 0.0987705067, -25)
+HitboxButton.Size = UDim2.new(0, 166, 0, 51)
+HitboxButton.Font = Enum.Font.RobotoMono
+HitboxButton.Text = "HitboxESP OFF"
+HitboxButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+HitboxButton.TextSize = 19.000
+
+AFKDetector.Name = "AFKDetector"
+AFKDetector.Parent = Tab1Page
+AFKDetector.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+AFKDetector.BorderColor3 = Color3.fromRGB(53, 53, 53)
+AFKDetector.Position = UDim2.new(0.805706024, -50, 0.252798945, -25)
+AFKDetector.Size = UDim2.new(0, 166, 0, 51)
+AFKDetector.Font = Enum.Font.RobotoMono
+AFKDetector.Text = "HitboxESP OFF"
+AFKDetector.TextColor3 = Color3.fromRGB(255, 255, 255)
+AFKDetector.TextSize = 19.000
+
+ArmorBar.Name = "ArmorBar"
+ArmorBar.Parent = Tab1Page
+ArmorBar.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+ArmorBar.BorderColor3 = Color3.fromRGB(53, 53, 53)
+ArmorBar.Position = UDim2.new(0.805705905, -50, 0.406043172, -25)
+ArmorBar.Size = UDim2.new(0, 166, 0, 51)
+ArmorBar.Font = Enum.Font.RobotoMono
+ArmorBar.Text = "Armor Bar OFF"
+ArmorBar.TextColor3 = Color3.fromRGB(255, 255, 255)
+ArmorBar.TextSize = 19.000
+
+Backtrail.Name = "Backtrail"
+Backtrail.Parent = Tab1Page
+Backtrail.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+Backtrail.BorderColor3 = Color3.fromRGB(53, 53, 53)
+Backtrail.Position = UDim2.new(0.805705905, -50, 0.567964792, -25)
+Backtrail.Size = UDim2.new(0, 166, 0, 51)
+Backtrail.Font = Enum.Font.RobotoMono
+Backtrail.Text = "Backtrail OFF"
+Backtrail.TextColor3 = Color3.fromRGB(255, 255, 255)
+Backtrail.TextSize = 19.000
+
+RadarArrowsButton.Name = "RadarArrowsButton"
+RadarArrowsButton.Parent = Tab1Page
+RadarArrowsButton.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+RadarArrowsButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
+RadarArrowsButton.Position = UDim2.new(0.803955972, -50, 0.725956321, -25)
+RadarArrowsButton.Size = UDim2.new(0, 166, 0, 51)
+RadarArrowsButton.Font = Enum.Font.RobotoMono
+RadarArrowsButton.Text = "Radar Arrows OFF"
+RadarArrowsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+RadarArrowsButton.TextSize = 19.000
 
 Tab2Page.Name = "Tab2Page"
 Tab2Page.Parent = PagesFrame
@@ -251,17 +404,6 @@ Tab2Page.BorderSizePixel = 0
 Tab2Page.Position = UDim2.new(0.0384408757, 0, 0, 0)
 Tab2Page.Size = UDim2.new(0, 489, 0, 422)
 Tab2Page.Visible = false
-
-ToggleAimbot.Name = "Toggle Aimbot"
-ToggleAimbot.Parent = Tab2Page
-ToggleAimbot.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
-ToggleAimbot.BorderColor3 = Color3.fromRGB(53, 53, 53)
-ToggleAimbot.Position = UDim2.new(0.0465709493, -50, 0.126804233, -25)
-ToggleAimbot.Size = UDim2.new(0, 140, 0, 52)
-ToggleAimbot.Font = Enum.Font.RobotoMono
-ToggleAimbot.Text = "Aimbot"
-ToggleAimbot.TextColor3 = Color3.fromRGB(255, 255, 255)
-ToggleAimbot.TextSize = 19.000
 
 TextLabel_2.Parent = Tab2Page
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -274,6 +416,185 @@ TextLabel_2.Font = Enum.Font.Michroma
 TextLabel_2.Text = "Combat"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextSize = 24.000
+
+AimbotFrame.Name = "AimbotFrame"
+AimbotFrame.Parent = Tab2Page
+AimbotFrame.Active = true
+AimbotFrame.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+AimbotFrame.BorderColor3 = Color3.fromRGB(53, 53, 53)
+AimbotFrame.Position = UDim2.new(-0.036809817, 0, 0.0379146934, 0)
+AimbotFrame.Size = UDim2.new(0, 199, 0, 435)
+
+AimbotButton.Name = "AimbotButton"
+AimbotButton.Parent = AimbotFrame
+AimbotButton.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+AimbotButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
+AimbotButton.Position = UDim2.new(0.284004569, -50, 0.0739306957, -25)
+AimbotButton.Size = UDim2.new(0, 184, 0, 52)
+AimbotButton.Font = Enum.Font.RobotoMono
+AimbotButton.Text = "Aimbot"
+AimbotButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimbotButton.TextSize = 19.000
+
+ShowFov.Name = "ShowFov"
+ShowFov.Parent = AimbotFrame
+ShowFov.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ShowFov.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ShowFov.BorderSizePixel = 0
+ShowFov.Position = UDim2.new(0.804020107, 0, 0.193103448, 0)
+ShowFov.Size = UDim2.new(0, 30, 0, 30)
+ShowFov.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+ShowFOVLabel.Name = "ShowFOVLabel"
+ShowFOVLabel.Parent = AimbotFrame
+ShowFOVLabel.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+ShowFOVLabel.BackgroundTransparency = 1.000
+ShowFOVLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ShowFOVLabel.BorderSizePixel = 0
+ShowFOVLabel.Position = UDim2.new(0.0904522613, 0, 0.170114949, 0)
+ShowFOVLabel.Size = UDim2.new(0, 78, 0, 50)
+ShowFOVLabel.Font = Enum.Font.RobotoMono
+ShowFOVLabel.Text = "Show FOV"
+ShowFOVLabel.TextColor3 = Color3.fromRGB(248, 248, 248)
+ShowFOVLabel.TextSize = 14.000
+
+LockOnLast.Name = "LockOnLast"
+LockOnLast.Parent = AimbotFrame
+LockOnLast.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LockOnLast.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LockOnLast.BorderSizePixel = 0
+LockOnLast.Position = UDim2.new(0.804020107, 0, 0.294252872, 0)
+LockOnLast.Size = UDim2.new(0, 30, 0, 30)
+LockOnLast.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+LockOnlastLabel.Name = "LockOnlastLabel"
+LockOnlastLabel.Parent = AimbotFrame
+LockOnlastLabel.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+LockOnlastLabel.BackgroundTransparency = 1.000
+LockOnlastLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LockOnlastLabel.BorderSizePixel = 0
+LockOnlastLabel.Position = UDim2.new(0.0904522613, 0, 0.271264374, 0)
+LockOnlastLabel.Size = UDim2.new(0, 78, 0, 50)
+LockOnlastLabel.Font = Enum.Font.RobotoMono
+LockOnlastLabel.Text = "Lock on Last"
+LockOnlastLabel.TextColor3 = Color3.fromRGB(248, 248, 248)
+LockOnlastLabel.TextSize = 14.000
+
+WallCheck.Name = "WallCheck"
+WallCheck.Parent = AimbotFrame
+WallCheck.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WallCheck.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WallCheck.BorderSizePixel = 0
+WallCheck.Position = UDim2.new(0.804020107, 0, 0.395402312, 0)
+WallCheck.Size = UDim2.new(0, 30, 0, 30)
+WallCheck.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+WallcheckLabel.Name = "WallcheckLabel"
+WallcheckLabel.Parent = AimbotFrame
+WallcheckLabel.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+WallcheckLabel.BackgroundTransparency = 1.000
+WallcheckLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WallcheckLabel.BorderSizePixel = 0
+WallcheckLabel.Position = UDim2.new(0.0753768831, 0, 0.372413784, 0)
+WallcheckLabel.Size = UDim2.new(0, 78, 0, 50)
+WallcheckLabel.Font = Enum.Font.RobotoMono
+WallcheckLabel.Text = "Wallcheck"
+WallcheckLabel.TextColor3 = Color3.fromRGB(248, 248, 248)
+WallcheckLabel.TextSize = 14.000
+
+SmoothingBox.Name = "SmoothingBox"
+SmoothingBox.Parent = AimbotFrame
+SmoothingBox.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+SmoothingBox.BorderColor3 = Color3.fromRGB(94, 94, 94)
+SmoothingBox.Position = UDim2.new(0.643216074, 0, 0.487356335, 0)
+SmoothingBox.Size = UDim2.new(0, 62, 0, 50)
+SmoothingBox.Font = Enum.Font.SourceSans
+SmoothingBox.Text = ""
+SmoothingBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+SmoothingBox.TextSize = 14.000
+
+ApplySmoothingButton.Name = "ApplySmoothingButton"
+ApplySmoothingButton.Parent = AimbotFrame
+ApplySmoothingButton.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+ApplySmoothingButton.BackgroundTransparency = 1.000
+ApplySmoothingButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
+ApplySmoothingButton.Position = UDim2.new(0.48241207, 0, 0.618390799, 0)
+ApplySmoothingButton.Size = UDim2.new(0, 94, 0, 28)
+ApplySmoothingButton.Font = Enum.Font.SourceSans
+ApplySmoothingButton.Text = "Apply Smoothing"
+ApplySmoothingButton.TextColor3 = Color3.fromRGB(252, 252, 252)
+ApplySmoothingButton.TextSize = 13.000
+
+BindKeyButton.Name = "BindKeyButton"
+BindKeyButton.Parent = AimbotFrame
+BindKeyButton.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+BindKeyButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
+BindKeyButton.Position = UDim2.new(0.268929183, -50, 0.952091634, -25)
+BindKeyButton.Size = UDim2.new(0, 89, 0, 42)
+BindKeyButton.Font = Enum.Font.RobotoMono
+BindKeyButton.Text = "Bind Aimbot"
+BindKeyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+BindKeyButton.TextSize = 13.000
+
+SmoothingLabel.Name = "SmoothingLabel"
+SmoothingLabel.Parent = AimbotFrame
+SmoothingLabel.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+SmoothingLabel.BackgroundTransparency = 1.000
+SmoothingLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SmoothingLabel.BorderSizePixel = 0
+SmoothingLabel.Position = UDim2.new(0.0753768831, 0, 0.487356335, 0)
+SmoothingLabel.Size = UDim2.new(0, 78, 0, 50)
+SmoothingLabel.Font = Enum.Font.RobotoMono
+SmoothingLabel.Text = "Smoothing"
+SmoothingLabel.TextColor3 = Color3.fromRGB(248, 248, 248)
+SmoothingLabel.TextSize = 14.000
+
+HoldToggleButton.Name = "HoldToggleButton"
+HoldToggleButton.Parent = AimbotFrame
+HoldToggleButton.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+HoldToggleButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
+HoldToggleButton.Position = UDim2.new(0.284004569, -50, 0.673930705, -25)
+HoldToggleButton.Size = UDim2.new(0, 89, 0, 42)
+HoldToggleButton.Font = Enum.Font.RobotoMono
+HoldToggleButton.Text = "Hold/Toggle"
+HoldToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+HoldToggleButton.TextSize = 13.000
+
+ColorBox.Name = "ColorBox"
+ColorBox.Parent = AimbotFrame
+ColorBox.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+ColorBox.BorderColor3 = Color3.fromRGB(94, 94, 94)
+ColorBox.Position = UDim2.new(0.643216074, 0, 0.731034458, 0)
+ColorBox.Size = UDim2.new(0, 62, 0, 50)
+ColorBox.Font = Enum.Font.SourceSans
+ColorBox.Text = ""
+ColorBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+ColorBox.TextSize = 14.000
+
+ApplyColorButton.Name = "ApplyColorButton"
+ApplyColorButton.Parent = AimbotFrame
+ApplyColorButton.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+ApplyColorButton.BackgroundTransparency = 1.000
+ApplyColorButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
+ApplyColorButton.Position = UDim2.new(0.48241207, 0, 0.868965507, 0)
+ApplyColorButton.Size = UDim2.new(0, 94, 0, 28)
+ApplyColorButton.Font = Enum.Font.SourceSans
+ApplyColorButton.Text = "Apply FOV Color"
+ApplyColorButton.TextColor3 = Color3.fromRGB(252, 252, 252)
+ApplyColorButton.TextSize = 13.000
+
+ColorFovLabel.Name = "ColorFovLabel"
+ColorFovLabel.Parent = AimbotFrame
+ColorFovLabel.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+ColorFovLabel.BackgroundTransparency = 1.000
+ColorFovLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ColorFovLabel.BorderSizePixel = 0
+ColorFovLabel.Position = UDim2.new(0.0603015088, 0, 0.731034458, 0)
+ColorFovLabel.Size = UDim2.new(0, 78, 0, 50)
+ColorFovLabel.Font = Enum.Font.RobotoMono
+ColorFovLabel.Text = "FOV Color"
+ColorFovLabel.TextColor3 = Color3.fromRGB(248, 248, 248)
+ColorFovLabel.TextSize = 14.000
 
 Tab3Page.Name = "Tab3Page"
 Tab3Page.Parent = PagesFrame
@@ -292,7 +613,7 @@ FullbrightOFF.BorderColor3 = Color3.fromRGB(53, 53, 53)
 FullbrightOFF.Position = UDim2.new(0.0551989339, -50, 0.0983682051, -25)
 FullbrightOFF.Size = UDim2.new(0, 166, 0, 51)
 FullbrightOFF.Font = Enum.Font.RobotoMono
-FullbrightOFF.Text = "Fullbright"
+FullbrightOFF.Text = "Fullbright OFF"
 FullbrightOFF.TextColor3 = Color3.fromRGB(255, 255, 255)
 FullbrightOFF.TextSize = 19.000
 
@@ -303,7 +624,7 @@ RemoveShadowButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
 RemoveShadowButton.Position = UDim2.new(0.0531705357, -50, 0.257587373, -25)
 RemoveShadowButton.Size = UDim2.new(0, 166, 0, 51)
 RemoveShadowButton.Font = Enum.Font.RobotoMono
-RemoveShadowButton.Text = "NoShadow"
+RemoveShadowButton.Text = "NoShadow OFF"
 RemoveShadowButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 RemoveShadowButton.TextSize = 19.000
 
@@ -314,7 +635,7 @@ NoTextures.BorderColor3 = Color3.fromRGB(53, 53, 53)
 NoTextures.Position = UDim2.new(0.0531705357, -50, 0.414137572, -25)
 NoTextures.Size = UDim2.new(0, 166, 0, 51)
 NoTextures.Font = Enum.Font.RobotoMono
-NoTextures.Text = "Remove Textures"
+NoTextures.Text = "Remove Textures OFF"
 NoTextures.TextColor3 = Color3.fromRGB(255, 255, 255)
 NoTextures.TextSize = 19.000
 
@@ -347,9 +668,9 @@ detectwar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 detectwar.BackgroundTransparency = 1.000
 detectwar.BorderColor3 = Color3.fromRGB(0, 0, 0)
 detectwar.BorderSizePixel = 0
-detectwar.Position = UDim2.new(0.921686769, 0, -0.333333343, 0)
+detectwar.Position = UDim2.new(1.03614461, 0, 0.196078435, 0)
 detectwar.Size = UDim2.new(0, 30, 0, 30)
-detectwar.Image = "rbxassetid://78878829329993"
+detectwar.Image = "rbxassetid://85578899322325"
 
 ClickwarpButton.Name = "ClickwarpButton"
 ClickwarpButton.Parent = Tab3Page
@@ -358,7 +679,7 @@ ClickwarpButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
 ClickwarpButton.Position = UDim2.new(0.475038469, -50, 0.255369782, -25)
 ClickwarpButton.Size = UDim2.new(0, 166, 0, 51)
 ClickwarpButton.Font = Enum.Font.RobotoMono
-ClickwarpButton.Text = "Clickwarp ToFIX"
+ClickwarpButton.Text = "Clickwarp OFF"
 ClickwarpButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 ClickwarpButton.TextSize = 19.000
 
@@ -370,6 +691,18 @@ Tab4Page.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tab4Page.BorderSizePixel = 0
 Tab4Page.Size = UDim2.new(0, 509, 0, 422)
 Tab4Page.Visible = false
+
+TextLabel_4.Parent = Tab4Page
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.279217482, 0, -0.116113745, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_4.Font = Enum.Font.Michroma
+TextLabel_4.Text = "Mics"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 24.000
 
 AntiAFKButton.Name = "AntiAFKButton"
 AntiAFKButton.Parent = Tab4Page
@@ -385,18 +718,6 @@ AntiAFKButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 AntiAFKButton.TextSize = 15.000
 
 UICorner_4.Parent = AntiAFKButton
-
-TextLabel_4.Parent = Tab4Page
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_4.BorderSizePixel = 0
-TextLabel_4.Position = UDim2.new(0.279217482, 0, -0.116113745, 0)
-TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
-TextLabel_4.Font = Enum.Font.Michroma
-TextLabel_4.Text = "Mics"
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.TextSize = 24.000
 
 Tab5Page.Name = "Tab5Page"
 Tab5Page.Parent = PagesFrame
@@ -423,7 +744,7 @@ NoFallDmg.Name = "NoFallDmg"
 NoFallDmg.Parent = Tab5Page
 NoFallDmg.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
 NoFallDmg.BorderColor3 = Color3.fromRGB(53, 53, 53)
-NoFallDmg.Position = UDim2.new(0.0835578516, -50, 0.492336631, -25)
+NoFallDmg.Position = UDim2.new(0.0835578516, -50, 0.473379284, -25)
 NoFallDmg.Size = UDim2.new(0, 162, 0, 51)
 NoFallDmg.Font = Enum.Font.RobotoMono
 NoFallDmg.Text = "Falldmg"
@@ -432,7 +753,7 @@ NoFallDmg.TextSize = 19.000
 
 AntiAim.Name = "AntiAim"
 AntiAim.Parent = Tab5Page
-AntiAim.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+AntiAim.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 AntiAim.BorderColor3 = Color3.fromRGB(53, 53, 53)
 AntiAim.Position = UDim2.new(0.0835578516, -50, 0.165322393, -25)
 AntiAim.Size = UDim2.new(0, 162, 0, 51)
@@ -440,6 +761,28 @@ AntiAim.Font = Enum.Font.RobotoMono
 AntiAim.Text = "AntiAim"
 AntiAim.TextColor3 = Color3.fromRGB(255, 255, 255)
 AntiAim.TextSize = 19.000
+
+ResetButton.Name = "ResetButton"
+ResetButton.Parent = Tab5Page
+ResetButton.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+ResetButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
+ResetButton.Position = UDim2.new(0.90084666, -50, 0.899919569, -25)
+ResetButton.Size = UDim2.new(0, 162, 0, 51)
+ResetButton.Font = Enum.Font.RobotoMono
+ResetButton.Text = "Suicide"
+ResetButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ResetButton.TextSize = 19.000
+
+BunnyHop.Name = "BunnyHop"
+BunnyHop.Parent = Tab5Page
+BunnyHop.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+BunnyHop.BorderColor3 = Color3.fromRGB(53, 53, 53)
+BunnyHop.Position = UDim2.new(0.0835578516, -50, 0.629777372, -25)
+BunnyHop.Size = UDim2.new(0, 162, 0, 51)
+BunnyHop.Font = Enum.Font.RobotoMono
+BunnyHop.Text = "BunnyHop OFF"
+BunnyHop.TextColor3 = Color3.fromRGB(255, 255, 255)
+BunnyHop.TextSize = 19.000
 
 PlayerLauncher.Name = "PlayerLauncher"
 PlayerLauncher.Parent = Tab5Page
@@ -452,16 +795,16 @@ PlayerLauncher.Text = "подкидывание"
 PlayerLauncher.TextColor3 = Color3.fromRGB(255, 255, 255)
 PlayerLauncher.TextSize = 19.000
 
-ResetButton.Name = "ResetButton"
-ResetButton.Parent = Tab5Page
-ResetButton.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
-ResetButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
-ResetButton.Position = UDim2.new(0.0835578516, -50, 0.648734748, -25)
-ResetButton.Size = UDim2.new(0, 162, 0, 51)
-ResetButton.Font = Enum.Font.RobotoMono
-ResetButton.Text = "Suicide"
-ResetButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-ResetButton.TextSize = 19.000
+FreezeButton.Name = "FreezeButton"
+FreezeButton.Parent = Tab5Page
+FreezeButton.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+FreezeButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
+FreezeButton.Position = UDim2.new(0.0835578516, -50, 0.933094919, -25)
+FreezeButton.Size = UDim2.new(0, 162, 0, 51)
+FreezeButton.Font = Enum.Font.RobotoMono
+FreezeButton.Text = "FreezePos OFF"
+FreezeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+FreezeButton.TextSize = 19.000
 
 Tab6Page.Name = "Tab6Page"
 Tab6Page.Parent = PagesFrame
@@ -480,9 +823,42 @@ TextLabel_6.BorderSizePixel = 0
 TextLabel_6.Position = UDim2.new(0.279217482, 0, -0.116113745, 0)
 TextLabel_6.Size = UDim2.new(0, 200, 0, 50)
 TextLabel_6.Font = Enum.Font.Michroma
-TextLabel_6.Text = "Misc"
+TextLabel_6.Text = "Vehicle"
 TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.TextSize = 24.000
+
+CarFly.Name = "CarFly"
+CarFly.Parent = Tab6Page
+CarFly.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+CarFly.BorderColor3 = Color3.fromRGB(53, 53, 53)
+CarFly.Position = UDim2.new(0.100385562, -50, 0.164718911, -25)
+CarFly.Size = UDim2.new(0, 174, 0, 51)
+CarFly.Font = Enum.Font.RobotoMono
+CarFly.Text = "Vehicle Fly OFF"
+CarFly.TextColor3 = Color3.fromRGB(255, 255, 255)
+CarFly.TextSize = 19.000
+
+NoSpeedLimit.Name = "No SpeedLimit"
+NoSpeedLimit.Parent = Tab6Page
+NoSpeedLimit.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+NoSpeedLimit.BorderColor3 = Color3.fromRGB(53, 53, 53)
+NoSpeedLimit.Position = UDim2.new(0.100385562, -50, 0.330595702, -25)
+NoSpeedLimit.Size = UDim2.new(0, 174, 0, 51)
+NoSpeedLimit.Font = Enum.Font.RobotoMono
+NoSpeedLimit.Text = "No SpeedLimit OFF"
+NoSpeedLimit.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoSpeedLimit.TextSize = 19.000
+
+InstantSpeed.Name = "InstantSpeed"
+InstantSpeed.Parent = Tab6Page
+InstantSpeed.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+InstantSpeed.BorderColor3 = Color3.fromRGB(53, 53, 53)
+InstantSpeed.Position = UDim2.new(0.100385562, -50, 0.48699379, -25)
+InstantSpeed.Size = UDim2.new(0, 174, 0, 51)
+InstantSpeed.Font = Enum.Font.RobotoMono
+InstantSpeed.Text = "InstantSpeed OFF"
+InstantSpeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+InstantSpeed.TextSize = 19.000
 
 Tab7Page.Name = "Tab7Page"
 Tab7Page.Parent = PagesFrame
@@ -505,27 +881,16 @@ TextLabel_7.Text = "Weapon"
 TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_7.TextSize = 24.000
 
-InfinityAmmo.Name = "InfinityAmmo"
-InfinityAmmo.Parent = Tab7Page
-InfinityAmmo.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
-InfinityAmmo.BorderColor3 = Color3.fromRGB(53, 53, 53)
-InfinityAmmo.Position = UDim2.new(0.083557792, -50, 0.0989716873, -25)
-InfinityAmmo.Size = UDim2.new(0, 166, 0, 51)
-InfinityAmmo.Font = Enum.Font.RobotoMono
-InfinityAmmo.Text = "Infinity Ammo OFF"
-InfinityAmmo.TextColor3 = Color3.fromRGB(255, 255, 255)
-InfinityAmmo.TextSize = 19.000
-
-NoReload.Name = "NoReload"
-NoReload.Parent = Tab7Page
-NoReload.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
-NoReload.BorderColor3 = Color3.fromRGB(53, 53, 53)
-NoReload.Position = UDim2.new(0.083557725, -50, 0.25300011, -25)
-NoReload.Size = UDim2.new(0, 166, 0, 51)
-NoReload.Font = Enum.Font.RobotoMono
-NoReload.Text = "No Reload OFF"
-NoReload.TextColor3 = Color3.fromRGB(255, 255, 255)
-NoReload.TextSize = 19.000
+ReloadShoot.Name = "ReloadShoot"
+ReloadShoot.Parent = Tab7Page
+ReloadShoot.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+ReloadShoot.BorderColor3 = Color3.fromRGB(53, 53, 53)
+ReloadShoot.Position = UDim2.new(0.083557725, -50, 0.556317687, -25)
+ReloadShoot.Size = UDim2.new(0, 166, 0, 51)
+ReloadShoot.Font = Enum.Font.RobotoMono
+ReloadShoot.Text = "No Reload OFF"
+ReloadShoot.TextColor3 = Color3.fromRGB(255, 255, 255)
+ReloadShoot.TextSize = 19.000
 
 NoSpread.Name = "NoSpread"
 NoSpread.Parent = Tab7Page
@@ -538,16 +903,27 @@ NoSpread.Text = "No Spread OFF"
 NoSpread.TextColor3 = Color3.fromRGB(255, 255, 255)
 NoSpread.TextSize = 19.000
 
-ReloadShoot.Name = "ReloadShoot"
-ReloadShoot.Parent = Tab7Page
-ReloadShoot.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
-ReloadShoot.BorderColor3 = Color3.fromRGB(53, 53, 53)
-ReloadShoot.Position = UDim2.new(0.083557725, -50, 0.556317687, -25)
-ReloadShoot.Size = UDim2.new(0, 166, 0, 51)
-ReloadShoot.Font = Enum.Font.RobotoMono
-ReloadShoot.Text = "No Reload OFF"
-ReloadShoot.TextColor3 = Color3.fromRGB(255, 255, 255)
-ReloadShoot.TextSize = 19.000
+NoReload.Name = "NoReload"
+NoReload.Parent = Tab7Page
+NoReload.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+NoReload.BorderColor3 = Color3.fromRGB(53, 53, 53)
+NoReload.Position = UDim2.new(0.083557725, -50, 0.25300011, -25)
+NoReload.Size = UDim2.new(0, 166, 0, 51)
+NoReload.Font = Enum.Font.RobotoMono
+NoReload.Text = "No Reload OFF"
+NoReload.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoReload.TextSize = 19.000
+
+InfinityAmmo.Name = "InfinityAmmo"
+InfinityAmmo.Parent = Tab7Page
+InfinityAmmo.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+InfinityAmmo.BorderColor3 = Color3.fromRGB(53, 53, 53)
+InfinityAmmo.Position = UDim2.new(0.083557792, -50, 0.0989716873, -25)
+InfinityAmmo.Size = UDim2.new(0, 166, 0, 51)
+InfinityAmmo.Font = Enum.Font.RobotoMono
+InfinityAmmo.Text = "Infinity Ammo OFF"
+InfinityAmmo.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfinityAmmo.TextSize = 19.000
 
 logo.Name = "logo"
 logo.Parent = menu
@@ -558,35 +934,7 @@ logo.BorderSizePixel = 0
 logo.Position = UDim2.new(0.0281501338, 0, 0.0170940179, 0)
 logo.Rotation = 15.000
 logo.Size = UDim2.new(0, 80, 0, 80)
-logo.Image = "rbxassetid://120338646628677"
-
-NotificationLabel.Name = "NotificationLabel"
-NotificationLabel.Parent = ScreenGui
-NotificationLabel.Active = true
-NotificationLabel.BackgroundColor3 = Color3.fromRGB(36, 77, 41)
-NotificationLabel.BackgroundTransparency = 1.000
-NotificationLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-NotificationLabel.BorderSizePixel = 0
-NotificationLabel.Position = UDim2.new(0.79243046, 0, 0.255768955, 0)
-NotificationLabel.Size = UDim2.new(0, 304, 0, 44)
-NotificationLabel.Visible = false
-NotificationLabel.Font = Enum.Font.Code
-NotificationLabel.Text = "    Enabled function: NoClip"
-NotificationLabel.TextColor3 = Color3.fromRGB(33, 255, 17)
-NotificationLabel.TextSize = 15.000
-NotificationLabel.TextTransparency = 1.000
-NotificationLabel.TextWrapped = true
-
-CheckMark.Name = "CheckMark"
-CheckMark.Parent = NotificationLabel
-CheckMark.Active = true
-CheckMark.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CheckMark.BackgroundTransparency = 1.000
-CheckMark.BorderColor3 = Color3.fromRGB(0, 0, 0)
-CheckMark.BorderSizePixel = 0
-CheckMark.Position = UDim2.new(0.0218524225, 0, 0.0540549532, 0)
-CheckMark.Size = UDim2.new(0, 45, 0, 41)
-CheckMark.Image = "rbxassetid://85837052454915"
+logo.Image = "rbxassetid://107458031668839"
 
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -633,9 +981,57 @@ ActiveBackground.BorderSizePixel = 0
 ActiveBackground.Position = UDim2.new(-1.031407, 0, -0.827972114, 0)
 ActiveBackground.Size = UDim2.new(0, 3745, 0, 1623)
 
+FadeFrame.Name = "FadeFrame"
+FadeFrame.Parent = ScreenGui
+FadeFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FadeFrame.BackgroundTransparency = 1.000
+FadeFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FadeFrame.BorderSizePixel = 0
+FadeFrame.Position = UDim2.new(-0.952380955, 0, -0.639160633, 0)
+FadeFrame.Size = UDim2.new(0, 3766, 0, 1627)
+
+label1.Name = "label1"
+label1.Parent = ScreenGui
+label1.AnchorPoint = Vector2.new(0.5, 0)
+label1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+label1.BackgroundTransparency = 1.000
+label1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+label1.BorderSizePixel = 0
+label1.Position = UDim2.new(0.509297669, 0, 0.0636363626, 40)
+label1.Size = UDim2.new(0, 956, 0, 517)
+label1.Image = "rbxassetid://118717092007907"
+
+NotificationLabel.Name = "NotificationLabel"
+NotificationLabel.Parent = ScreenGui
+NotificationLabel.Active = true
+NotificationLabel.BackgroundColor3 = Color3.fromRGB(36, 77, 41)
+NotificationLabel.BackgroundTransparency = 1.000
+NotificationLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NotificationLabel.BorderSizePixel = 0
+NotificationLabel.Position = UDim2.new(0.79243046, 0, 0.255768955, 0)
+NotificationLabel.Size = UDim2.new(0, 304, 0, 44)
+NotificationLabel.Visible = false
+NotificationLabel.Font = Enum.Font.Code
+NotificationLabel.Text = "    Enabled function: NoClip"
+NotificationLabel.TextColor3 = Color3.fromRGB(33, 255, 17)
+NotificationLabel.TextSize = 15.000
+NotificationLabel.TextTransparency = 1.000
+NotificationLabel.TextWrapped = true
+
+CheckMark.Name = "CheckMark"
+CheckMark.Parent = NotificationLabel
+CheckMark.Active = true
+CheckMark.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CheckMark.BackgroundTransparency = 1.000
+CheckMark.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CheckMark.BorderSizePixel = 0
+CheckMark.Position = UDim2.new(0.0218524225, 0, 0.0540549532, 0)
+CheckMark.Size = UDim2.new(0, 45, 0, 41)
+CheckMark.Image = "rbxassetid://85837052454915"
+
 -- Scripts:
 
-local function KDMR_fake_script() -- HealthBar.HealthBar 
+local function SDVT_fake_script() -- HealthBar.HealthBar 
 	local script = Instance.new('LocalScript', HealthBar)
 
 	local button = script.Parent
@@ -668,17 +1064,29 @@ local function KDMR_fake_script() -- HealthBar.HealthBar
 		gui.Name = "HealthBarESP"
 		gui.Adornee = character.HumanoidRootPart
 		gui.Size = UDim2.new(2, 0, 5, 0)
-		gui.StudsOffset = Vector3.new(3, 0, 0)
+		gui.StudsOffset = Vector3.new(2.2, 0.5, 0)
 		gui.AlwaysOnTop = true
 		gui.LightInfluence = 0
 	
+	
 		local bg = Instance.new("Frame")
-		bg.Size = UDim2.new(0.2, 0, 1, 0)
-		bg.Position = UDim2.new(0.8, 0, 0, 0)
-		bg.BackgroundColor3 = Color3.new(0, 0, 0)
+		bg.Name = "Background"
+		bg.Size = UDim2.new(0.15, 0, 1, 0)
+		bg.Position = UDim2.new(0.85, 0, 0, 0)
+		bg.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 		bg.BorderSizePixel = 0
 		bg.Parent = gui
 	
+		-- Красивое скругление и тень для фона
+		local bgCorner = Instance.new("UICorner", bg)
+		bgCorner.CornerRadius = UDim.new(0, 4)
+	
+		local bgStroke = Instance.new("UIStroke", bg)
+		bgStroke.Color = Color3.new(0, 0, 0)
+		bgStroke.Thickness = 1
+		bgStroke.Transparency = 0.4
+	
+		-- Полоска HP
 		local hp = Instance.new("Frame")
 		hp.Name = "HealthBar"
 		hp.Size = UDim2.new(1, 0, 1, 0)
@@ -688,6 +1096,10 @@ local function KDMR_fake_script() -- HealthBar.HealthBar
 		hp.AnchorPoint = Vector2.new(0, 1)
 		hp.Parent = bg
 	
+		-- Скругление HP
+		local hpCorner = Instance.new("UICorner", hp)
+		hpCorner.CornerRadius = UDim.new(0, 4)
+	
 		gui.Parent = character
 	
 		-- Обновление полоски
@@ -696,9 +1108,14 @@ local function KDMR_fake_script() -- HealthBar.HealthBar
 				local percent = math.clamp(humanoid.Health / humanoid.MaxHealth, 0, 1)
 				hp.Size = UDim2.new(1, 0, percent, 0)
 				hp.Position = UDim2.new(0, 0, 1, 0)
-				hp.BackgroundColor3 = Color3.fromRGB(255 * (1 - percent), 255 * percent, 0)
-				task.wait(0.2)
+	
+				local r = math.clamp(255 * (1 - percent) * 2, 0, 255)
+				local g = math.clamp(255 * percent * 2, 0, 255)
+				hp.BackgroundColor3 = Color3.fromRGB(r, g, 0)
+	
+				task.wait(0.15)
 			end
+	
 			if gui and gui.Parent then
 				gui:Destroy()
 			end
@@ -720,7 +1137,6 @@ local function KDMR_fake_script() -- HealthBar.HealthBar
 		button.Text = isOn and "HealthBar ON" or "HealthBar OFF"
 	
 		if isOn then
-			-- Запускаем ESP
 			updateAllPlayers()
 	
 			connection = Players.PlayerAdded:Connect(function(player)
@@ -732,16 +1148,13 @@ local function KDMR_fake_script() -- HealthBar.HealthBar
 				end)
 			end)
 	
-			-- Повторное обновление каждые 2 секунды
 			runningTask = task.spawn(function()
 				while isOn do
 					updateAllPlayers()
 					task.wait(2)
 				end
 			end)
-	
 		else
-			-- Остановка
 			if connection then
 				connection:Disconnect()
 			end
@@ -750,8 +1163,8 @@ local function KDMR_fake_script() -- HealthBar.HealthBar
 	end)
 	
 end
-coroutine.wrap(KDMR_fake_script)()
-local function ERHACWD_fake_script() -- TracerToggle.LocalScript 
+coroutine.wrap(SDVT_fake_script)()
+local function BKBLKDA_fake_script() -- TracerToggle.LocalScript 
 	local script = Instance.new('LocalScript', TracerToggle)
 
 	-- LocalScript внутри TracerToggle
@@ -830,8 +1243,8 @@ local function ERHACWD_fake_script() -- TracerToggle.LocalScript
 	updateButton()
 	
 end
-coroutine.wrap(ERHACWD_fake_script)()
-local function MHSCC_fake_script() -- SkeletonButton.LocalScript 
+coroutine.wrap(BKBLKDA_fake_script)()
+local function HYIQJF_fake_script() -- SkeletonButton.LocalScript 
 	local script = Instance.new('LocalScript', SkeletonButton)
 
 	-- LocalScript внутри BoneESPButton
@@ -996,276 +1409,9 @@ local function MHSCC_fake_script() -- SkeletonButton.LocalScript
 	Button.Text = "Bone ESP OFF"
 	
 end
-coroutine.wrap(MHSCC_fake_script)()
-local function QHUB_fake_script() -- AdminESPButton.LocalScript 
-	local script = Instance.new('LocalScript', AdminESPButton)
-
-	local Players = game:GetService("Players")
-	local RunService = game:GetService("RunService")
-	
-	local player = Players.LocalPlayer
-	local camera = workspace.CurrentCamera
-	local button = script.Parent
-	local gui = player:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
-	
-	local notification = gui:WaitForChild("NotificationLabel")
-	local adminLabel = gui:WaitForChild("AdminLabel")
-	
-	-- 🔴 Укажи тут ИМЕНА админов с @
-	local adminNames = {
-		"@z_voltex",
-		"@Mod2",
-		"@DaHoodMod"
-	}
-	
-	-- Состояние
-	local adminESPEnabled = false
-	local activeBeams = {}
-	local foundAdmins = {}
-	local adminFoundNotified = false
-	
-	-- Уведомление с плавностью
-	local function showNotification(text)
-		notification.Text = text
-		notification.Visible = true
-		notification.TextTransparency = 1
-		notification.BackgroundTransparency = 1
-	
-		for i = 1, 10 do
-			notification.TextTransparency = 1 - (i * 0.1)
-			notification.BackgroundTransparency = 1 - (i * 0.08)
-			task.wait(0.02)
-		end
-	
-		task.delay(2.5, function()
-			for i = 1, 10 do
-				notification.TextTransparency = i * 0.1
-				notification.BackgroundTransparency = i * 0.08
-				task.wait(0.02)
-			end
-			notification.Visible = false
-		end)
-	end
-	
-	-- Проверка на админа
-	local function isAdmin(plr)
-		for _, name in ipairs(adminNames) do
-			if plr.Name == name or "@"..plr.Name == name then
-				return true
-			end
-		end
-		return false
-	end
-	
-	-- Создание Beam и Highlight
-	local function createTracer(adminChar)
-		local hrp = adminChar:FindFirstChild("HumanoidRootPart")
-		if not hrp then return end
-	
-		local attachment0 = Instance.new("Attachment", camera)
-		local attachment1 = Instance.new("Attachment", hrp)
-	
-		local beam = Instance.new("Beam")
-		beam.Attachment0 = attachment0
-		beam.Attachment1 = attachment1
-		beam.FaceCamera = true
-		beam.Width0 = 0.1
-		beam.Width1 = 0.1
-		beam.Color = ColorSequence.new(Color3.fromRGB(255, 0, 0))
-		beam.Transparency = NumberSequence.new(0)
-		beam.Parent = camera
-	
-		local highlight = Instance.new("Highlight")
-		highlight.Adornee = adminChar
-		highlight.FillColor = Color3.fromRGB(255, 0, 0)
-		highlight.FillTransparency = 0.4
-		highlight.OutlineTransparency = 1
-		highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
-		highlight.Parent = adminChar
-	
-		table.insert(activeBeams, {beam = beam, a0 = attachment0, a1 = attachment1, highlight = highlight})
-	end
-	
-	-- Удалить все трассеры
-	local function clearAll()
-		for _, item in ipairs(activeBeams) do
-			if item.beam then item.beam:Destroy() end
-			if item.a0 then item.a0:Destroy() end
-			if item.a1 then item.a1:Destroy() end
-			if item.highlight then item.highlight:Destroy() end
-		end
-		activeBeams = {}
-	end
-	
-	-- Обновление текста
-	local function updateAdminLabel()
-		if #foundAdmins > 0 and adminESPEnabled then
-			adminLabel.Visible = true
-			adminLabel.Text = "Admins around you: " .. tostring(#foundAdmins)
-		else
-			adminLabel.Visible = false
-			adminLabel.Text = ""
-		end
-	end
-	
-	-- Поиск админов
-	RunService.RenderStepped:Connect(function()
-		if not adminESPEnabled then return end
-		foundAdmins = {}
-		clearAll()
-	
-		for _, plr in ipairs(Players:GetPlayers()) do
-			if plr ~= player and isAdmin(plr) then
-				local char = plr.Character
-				if char and char:FindFirstChild("HumanoidRootPart") then
-					local dist = (char.HumanoidRootPart.Position - player.Character.HumanoidRootPart.Position).Magnitude
-					if dist <= 150 then
-						table.insert(foundAdmins, plr)
-						createTracer(char)
-					end
-				end
-			end
-		end
-	
-		updateAdminLabel()
-	
-		-- Уведомление только при первом нахождении
-		if #foundAdmins > 0 then
-			if not adminFoundNotified then
-				adminFoundNotified = true
-				showNotification("    Admin has been found")
-			end
-		else
-			adminFoundNotified = false
-		end
-	end)
-	
-	-- Кнопка включения/отключения
-	button.MouseButton1Click:Connect(function()
-		adminESPEnabled = not adminESPEnabled
-		button.Text = adminESPEnabled and "Admin ESP ON" or "Admin ESP OFF"
-		if not adminESPEnabled then
-			clearAll()
-			foundAdmins = {}
-			updateAdminLabel()
-		end
-	end)
-	
-end
-coroutine.wrap(QHUB_fake_script)()
-local function LZIS_fake_script() -- ESPButton.Box 
-	local script = Instance.new('LocalScript', ESPButton)
-
-	local Players    = game:GetService("Players")
-	local RunService = game:GetService("RunService")
-	
-	local localPlayer = Players.LocalPlayer
-	local camera      = workspace.CurrentCamera
-	
-	local button = script.Parent
-	button.Active = true
-	button.AutoButtonColor = true
-	
-	local textLabel
-	if button:IsA("TextButton") then
-		textLabel = button
-	else
-		textLabel = button:FindFirstChildWhichIsA("TextLabel") or button
-	end
-	
-	-- Настройки бокса
-	local BOX_WIDTH  = 40
-	local BOX_HEIGHT = 60
-	
-	local espEnabled = false
-	local espBoxes   = {}
-	local connRender
-	
-	-- Создание бокса
-	local function createBox(plr)
-		if espBoxes[plr] then return end
-	
-		local box = Drawing.new("Square")
-		box.Visible = true
-		box.Filled = false
-		box.Transparency = 1
-		box.Thickness = 2
-		box.Color = Color3.new(1, 0, 0) -- красный
-	
-		espBoxes[plr] = box
-	end
-	
-	-- Удаление бокса
-	local function removeBox(plr)
-		local box = espBoxes[plr]
-		if box then
-			box:Remove()
-			espBoxes[plr] = nil
-		end
-	end
-	
-	-- Очистка всех боксов
-	local function clearAllBoxes()
-		for plr, box in pairs(espBoxes) do
-			box:Remove()
-		end
-		espBoxes = {}
-	end
-	
-	-- Обновление на каждый кадр
-	local function onRender()
-		for _, plr in ipairs(Players:GetPlayers()) do
-			if plr ~= localPlayer and plr.Character and plr.Character:FindFirstChild("HumanoidRootPart") then
-				local hrp = plr.Character.HumanoidRootPart
-				local screenPos, onScreen = camera:WorldToViewportPoint(hrp.Position)
-	
-				if onScreen and screenPos.Z > 0 then
-					createBox(plr)
-					local box = espBoxes[plr]
-	
-					box.Size = Vector2.new(BOX_WIDTH, BOX_HEIGHT)
-					box.Position = Vector2.new(screenPos.X - BOX_WIDTH / 2, screenPos.Y - BOX_HEIGHT / 2)
-					box.Visible = true
-				else
-					removeBox(plr)
-				end
-			else
-				removeBox(plr)
-			end
-		end
-	end
-	
-	-- Переключение ESP
-	local function toggleESP()
-		espEnabled = not espEnabled
-		textLabel.Text = espEnabled and "2D Box ON" or "2D Box OFF"
-	
-		if espEnabled then
-			connRender = RunService.RenderStepped:Connect(onRender)
-		else
-			if connRender then
-				connRender:Disconnect()
-				connRender = nil
-			end
-			clearAllBoxes()
-		end
-	end
-	
-	-- Привязка клика
-	button.MouseButton1Click:Connect(toggleESP)
-	
-	-- Очистка при выходе игрока
-	Players.PlayerRemoving:Connect(function(plr)
-		removeBox(plr)
-	end)
-	
-	-- Начальный текст
-	textLabel.Text = "2D Box OFF"
-	
-end
-coroutine.wrap(LZIS_fake_script)()
-local function FTVTXUD_fake_script() -- GlowButton.LocalScript 
-	local script = Instance.new('LocalScript', GlowButton)
+coroutine.wrap(HYIQJF_fake_script)()
+local function WKVHM_fake_script() -- gui2lua41.LocalScript 
+	local script = Instance.new('LocalScript', gui2lua41)
 
 	-- LocalScript, поместите внутрь вашей GUI‑кнопки GlowButton
 	
@@ -1280,7 +1426,7 @@ local function FTVTXUD_fake_script() -- GlowButton.LocalScript
 	local connection   = nil
 	
 	-- Устанавливаем начальный текст кнопки
-	button.Text = "Glow OFF"
+	button.Text = "Highlight   "
 	
 	-- Получаем фрейм "Color" и ColorPreview внутри него
 	local colorFrame = button:FindFirstChild("Color")
@@ -1348,7 +1494,19 @@ local function FTVTXUD_fake_script() -- GlowButton.LocalScript
 	-- Обработка нажатия кнопки
 	button.MouseButton1Click:Connect(function()
 		isOn = not isOn
-		button.Text = isOn and "Glow ON" or "Glow OFF"
+	
+		-- Закомментируем смену текста
+		-- button.Text = isOn and "Glow ON" or "Glow OFF"
+	
+		-- Меняем Image у дочернего ImageLabel с именем "OnOff"
+		local onOffImage = button:FindFirstChild("OnOff")
+		if onOffImage and onOffImage:IsA("ImageLabel") then
+			if isOn then
+				onOffImage.Image = "rbxassetid://71380542287579"
+			else
+				onOffImage.Image = "rbxassetid://118540150916240"
+			end
+		end
 	
 		if isOn then
 			updateAllPlayers()
@@ -1409,86 +1567,2080 @@ local function FTVTXUD_fake_script() -- GlowButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(FTVTXUD_fake_script)()
-local function IIXDBI_fake_script() -- ToggleAimbot.LocalScript 
-	local script = Instance.new('LocalScript', ToggleAimbot)
+coroutine.wrap(WKVHM_fake_script)()
+local function UQIDETJ_fake_script() -- NamesEsp.LocalScript 
+	local script = Instance.new('LocalScript', NamesEsp)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local LocalPlayer = Players.LocalPlayer
+	
+	local button = script.Parent
+	
+	local isOn = false
+	local nameTags = {}
+	
+	-- Создание BillboardGui с именем
+	local function createNameTag(character, playerName)
+		if not character or not character:FindFirstChild("Head") then return end
+		if nameTags[character] then return end
+	
+		local billboard = Instance.new("BillboardGui")
+		billboard.Name = "NameESP"
+		billboard.Adornee = character.Head
+		billboard.Size = UDim2.new(0, 80, 0, 16) -- небольшой, но читаемый размер
+		billboard.StudsOffset = Vector3.new(0, 2.5, 0)
+		billboard.AlwaysOnTop = true
+	
+		local textLabel = Instance.new("TextLabel")
+		textLabel.BackgroundTransparency = 1
+		textLabel.Size = UDim2.new(1, 0, 1, 0)
+		textLabel.Text = playerName
+		textLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+		textLabel.TextStrokeTransparency = 0.4
+		textLabel.TextStrokeColor3 = Color3.new(0, 0, 0)
+		textLabel.TextScaled = true
+		textLabel.Font = Enum.Font.GothamMedium
+		textLabel.Parent = billboard
+	
+		billboard.Parent = character.Head
+		nameTags[character] = billboard
+	end
+	
+	-- Удаление всех
+	local function removeAllNameTags()
+		for character, tag in pairs(nameTags) do
+			if tag then tag:Destroy() end
+		end
+		nameTags = {}
+	end
+	
+	-- Обновление
+	local function updateAllNameTags()
+		for _, player in pairs(Players:GetPlayers()) do
+			if player ~= LocalPlayer and player.Character and player.Character:FindFirstChild("Head") then
+				createNameTag(player.Character, player.Name)
+			end
+		end
+	end
+	
+	-- Нажатие на кнопку
+	button.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		button.Text = isOn and "Names ON" or "Names OFF"
+	
+		if isOn then
+			updateAllNameTags()
+	
+			-- Новые игроки
+			Players.PlayerAdded:Connect(function(player)
+				player.CharacterAdded:Connect(function(character)
+					task.wait(1)
+					if isOn then
+						createNameTag(character, player.Name)
+					end
+				end)
+			end)
+	
+			-- Уже подключённые
+			for _, player in pairs(Players:GetPlayers()) do
+				player.CharacterAdded:Connect(function(character)
+					task.wait(1)
+					if isOn then
+						createNameTag(character, player.Name)
+					end
+				end)
+			end
+		else
+			removeAllNameTags()
+		end
+	end)
+	
+end
+coroutine.wrap(UQIDETJ_fake_script)()
+local function LXVVHOT_fake_script() -- AdminESPButton.LocalScript 
+	local script = Instance.new('LocalScript', AdminESPButton)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local UserInputService = game:GetService("UserInputService")
+	local Camera = workspace.CurrentCamera
+	
+	local LocalPlayer = Players.LocalPlayer
+	local PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
+	
+	-- Кнопка для включения
+	local button = script.Parent
+	button.Text = "ESP OFF"
+	
+	-- Целевые имена
+	local targetNames = {
+		["321lozan321"] = true,
+		["acuncad4444"] = true,
+		["ali911658"] = true
+	}
+	
+	-- Переменные
+	local espEnabled = false
+	local dragging = false
+	local dragStart, startPos
+	local label
+	local drawings = {}
+	
+	-- === Создание TextLabel ===
+	local function createLabel()
+		if label then return end
+	
+		label = Instance.new("TextLabel")
+		label.Name = "ESPInfoLabel"
+		label.Size = UDim2.new(0, 200, 0, 40)
+		label.Position = UDim2.new(0, 100, 0, 100)
+		label.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		label.TextColor3 = Color3.new(1, 1, 1)
+		label.TextScaled = true
+		label.Font = Enum.Font.SourceSans
+		label.BackgroundTransparency = 0.3
+		label.Text = "Players around you: 0"
+		label.Parent = PlayerGui:FindFirstChildOfClass("ScreenGui") or PlayerGui:WaitForChild("ScreenGui")
+	
+		-- Перетаскивание
+		label.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 then
+				dragging = true
+				dragStart = input.Position
+				startPos = label.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragging = false
+					end
+				end)
+			end
+		end)
+	
+		UserInputService.InputChanged:Connect(function(input)
+			if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
+				local delta = input.Position - dragStart
+				label.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+			end
+		end)
+	end
+	
+	-- === Очистка ESP для игрока ===
+	local function clearPlayerESP(player)
+		if drawings[player] then
+			for _, v in pairs(drawings[player]) do
+				if typeof(v) == "Instance" then
+					v:Destroy()
+				elseif typeof(v) == "table" and v.Remove then
+					v:Remove()
+				end
+			end
+			drawings[player] = nil
+		end
+	end
+	
+	-- === Очистка всех ESP ===
+	local function clearESP()
+		for player in pairs(drawings) do
+			clearPlayerESP(player)
+		end
+	end
+	
+	-- === Обновление ESP ===
+	RunService.RenderStepped:Connect(function()
+		if not espEnabled then
+			clearESP()
+			if label then label.Visible = false end
+			return
+		end
+	
+		if label then
+			label.Visible = true
+		end
+	
+		local count = 0
+	
+		for _, player in ipairs(Players:GetPlayers()) do
+			if player ~= LocalPlayer and targetNames[player.Name] and player.Character then
+				local char = player.Character
+				local hrp = char:FindFirstChild("HumanoidRootPart")
+				local head = char:FindFirstChild("Head")
+	
+				if hrp and head then
+					clearPlayerESP(player)
+					local headPos, headVisible = Camera:WorldToViewportPoint(head.Position + Vector3.new(0, 0.3, 0))
+					local feetPos, feetVisible = Camera:WorldToViewportPoint(hrp.Position - Vector3.new(0, 2.5, 0))
+					local hrpScreen = Camera:WorldToViewportPoint(hrp.Position)
+	
+					count += 1
+					drawings[player] = {}
+	
+					-- Box
+					if headVisible and feetVisible then
+						local box = Drawing.new("Square")
+						box.Visible = true
+						box.Filled = false
+						box.Color = Color3.fromRGB(255, 0, 0)
+						box.Thickness = 2
+	
+						local height = math.abs(headPos.Y - feetPos.Y)
+						local width = height / 2
+						local centerX = headPos.X
+						local topY = math.min(headPos.Y, feetPos.Y)
+	
+						box.Size = Vector2.new(width, height)
+						box.Position = Vector2.new(centerX - width / 2, topY)
+	
+						table.insert(drawings[player], box)
+					end
+	
+					-- Tracer (всегда)
+					local line = Drawing.new("Line")
+					line.Color = Color3.fromRGB(255, 0, 0)
+					line.Thickness = 1
+					line.Transparency = 1
+					line.From = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y)
+					line.To = Vector2.new(hrpScreen.X, hrpScreen.Y)
+					line.Visible = true
+	
+					table.insert(drawings[player], line)
+	
+					-- Надпись ADMIN
+					local billboard = Instance.new("BillboardGui")
+					billboard.Name = "ESP_AdminTag"
+					billboard.Size = UDim2.new(0, 100, 0, 30)
+					billboard.StudsOffset = Vector3.new(0, 2.5, 0)
+					billboard.AlwaysOnTop = true
+					billboard.Adornee = head
+					billboard.Parent = PlayerGui
+	
+					local tag = Instance.new("TextLabel")
+					tag.BackgroundTransparency = 1
+					tag.Size = UDim2.new(1, 0, 1, 0)
+					tag.TextColor3 = Color3.new(1, 0, 0)
+					tag.TextScaled = true
+					tag.Font = Enum.Font.GothamBold
+					tag.Text = "ADMIN"
+					tag.Parent = billboard
+	
+					table.insert(drawings[player], billboard)
+				end
+			else
+				clearPlayerESP(player)
+			end
+		end
+	
+		if label then
+			label.Text = "Players around you: " .. tostring(count)
+		end
+	end)
+	
+	-- === Кнопка переключения ===
+	button.MouseButton1Click:Connect(function()
+		espEnabled = not espEnabled
+		button.Text = espEnabled and "ESP ON" or "ESP OFF"
+	
+		if espEnabled then
+			createLabel()
+			label.Visible = true
+		else
+			clearESP()
+			if label then label.Visible = false end
+		end
+	end)
+	
+	-- Очистка при выходе игрока
+	Players.PlayerRemoving:Connect(function(player)
+		clearPlayerESP(player)
+	end)
+	
+end
+coroutine.wrap(LXVVHOT_fake_script)()
+local function FZWYOC_fake_script() -- _2DBoxButton.Box 
+	local script = Instance.new('LocalScript', _2DBoxButton)
 
 	local Players = game:GetService("Players")
 	local RunService = game:GetService("RunService")
 	
-	local LocalPlayer = Players.LocalPlayer
-	local Camera = workspace.CurrentCamera
+	local localPlayer = Players.LocalPlayer
+	local camera = workspace.CurrentCamera
 	
-	local gui = LocalPlayer:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
-	local button = gui:WaitForChild("AimbotToggleButton") -- Название твоей кнопки в GUI
+	-- Путь к GUI кнопке
+	local gui = localPlayer:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
+	local espFrame = gui.menu.PagesFrame:WaitForChild("Tab1Page")
+	local toggleButton = espFrame:WaitForChild("2DBoxButton")
 	
-	local Aimbot = {
-		Enabled = false,
-		HitPart = "Head",
-		Prediction = 0.2,
-		AutoShoot = true,
+	-- Опции
+	local options = {
+		Outline = false,
+		Highlight = false,
 	}
 	
-	local Target = nil
+	-- Состояния
+	local espEnabled = false
+	local espBoxes = {}
+	local renderConn
 	
-	local function GetClosestTarget()
-		local Mouse = LocalPlayer:GetMouse()
-		local closestDistance = math.huge
-		local closestPlayer = nil
+	-- Создание основного бокса и свечения
+	local function createBox(player)
+		if espBoxes[player] then return end
+	
+		local box = Drawing.new("Square")
+		box.Visible = true
+		box.Filled = false
+		box.Transparency = 1
+		box.Thickness = options.Outline and 3 or 2
+		box.Color = options.Highlight and Color3.fromRGB(255, 255, 0) or Color3.fromRGB(255, 255, 255)
+	
+		local glow = Drawing.new("Square")
+		glow.Visible = false
+		glow.Filled = true
+		glow.ZIndex = 0
+		glow.Transparency = 0.7
+		glow.Thickness = 0
+		glow.Color = Color3.fromRGB(255, 255, 0)
+	
+		espBoxes[player] = {Box = box, Glow = glow}
+	end
+	
+	-- Удаление бокса
+	local function removeBox(player)
+		local data = espBoxes[player]
+		if data then
+			if data.Box then data.Box:Remove() end
+			if data.Glow then data.Glow:Remove() end
+			espBoxes[player] = nil
+		end
+	end
+	
+	-- Очистка всех боксов
+	local function clearAllBoxes()
+		for _, data in pairs(espBoxes) do
+			if data.Box then data.Box:Remove() end
+			if data.Glow then data.Glow:Remove() end
+		end
+		espBoxes = {}
+	end
+	
+	-- Отрисовка ESP
+	local function renderESP()
+		for _, player in ipairs(Players:GetPlayers()) do
+			if player ~= localPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+				local hrp = player.Character:FindFirstChild("HumanoidRootPart")
+				local head = player.Character:FindFirstChild("Head")
+	
+				if hrp and head then
+					local topPos, onScreen1 = camera:WorldToViewportPoint(head.Position + Vector3.new(0, 0.3, 0))
+					local bottomPos, onScreen2 = camera:WorldToViewportPoint(hrp.Position - Vector3.new(0, 2.5, 0))
+	
+					if onScreen1 and onScreen2 and topPos.Z > 0 and bottomPos.Z > 0 then
+						createBox(player)
+	
+						local data = espBoxes[player]
+						local box = data.Box
+						local glow = data.Glow
+	
+						local height = math.abs(topPos.Y - bottomPos.Y)
+						local width = height / 2
+						local x = topPos.X - width / 2
+						local y = topPos.Y
+	
+						box.Size = Vector2.new(width, height)
+						box.Position = Vector2.new(x, y)
+						box.Thickness = options.Outline and 3 or 2
+						box.Color = options.Highlight and Color3.fromRGB(255, 255, 0) or Color3.fromRGB(255, 255, 255)
+						box.Visible = true
+	
+						glow.Size = box.Size + Vector2.new(10, 10)
+						glow.Position = box.Position - Vector2.new(5, 5)
+						glow.Color = box.Color
+						glow.Transparency = 0.7
+						glow.Visible = options.Highlight
+					else
+						removeBox(player)
+					end
+				else
+					removeBox(player)
+				end
+			else
+				removeBox(player)
+			end
+		end
+	end
+	
+	-- Переключение ESP
+	local function toggleESP()
+		espEnabled = not espEnabled
+		toggleButton.Text = espEnabled and "2D Box ON" or "2D Box OFF"
+	
+		if espEnabled then
+			renderConn = RunService.RenderStepped:Connect(renderESP)
+		else
+			if renderConn then renderConn:Disconnect() end
+			clearAllBoxes()
+		end
+	end
+	
+	-- Обработка нажатия на GUI-кнопку
+	toggleButton.MouseButton1Click:Connect(toggleESP)
+	
+	-- Инициализация
+	toggleButton.Text = "2D Box OFF"
+	
+	-- Очистка при выходе игрока
+	Players.PlayerRemoving:Connect(removeBox)
+	
+end
+coroutine.wrap(FZWYOC_fake_script)()
+local function BIVW_fake_script() -- HeadDotButton.HeadESP 
+	local script = Instance.new('LocalScript', HeadDotButton)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	local localPlayer = Players.LocalPlayer
+	local camera = workspace.CurrentCamera
+	
+	-- Путь к GUI кнопке
+	local gui = localPlayer:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
+	local tab1 = gui.menu.PagesFrame:WaitForChild("Tab1Page")
+	local headDotButton = tab1:WaitForChild("HeadDotButton")
+	
+	local headDotEnabled = false
+	local headCircles = {}
+	local renderConn
+	
+	-- Создание круга
+	local function createCircle(player)
+		if headCircles[player] then return end
+	
+		local circle = Drawing.new("Circle")
+		circle.Visible = false
+		circle.Filled = false
+		circle.Color = Color3.fromRGB(255, 255, 255)
+		circle.Transparency = 1
+		circle.NumSides = 30
+		circle.ZIndex = 2
+	
+		headCircles[player] = circle
+	end
+	
+	-- Удаление круга
+	local function removeCircle(player)
+		local circle = headCircles[player]
+		if circle then
+			circle:Remove()
+			headCircles[player] = nil
+		end
+	end
+	
+	-- Очистка всех кругов
+	local function clearAllCircles()
+		for _, circle in pairs(headCircles) do
+			circle:Remove()
+		end
+		headCircles = {}
+	end
+	
+	-- Отрисовка кругов
+	local function renderHeadDots()
+		for _, player in ipairs(Players:GetPlayers()) do
+			if player ~= localPlayer and player.Character then
+				local head = player.Character:FindFirstChild("Head")
+				local hrp = player.Character:FindFirstChild("HumanoidRootPart")
+	
+				if head and hrp then
+					local topPos, onScreen1 = camera:WorldToViewportPoint(head.Position + Vector3.new(0, 0.3, 0))
+					local bottomPos, onScreen2 = camera:WorldToViewportPoint(hrp.Position - Vector3.new(0, 2.5, 0))
+	
+					if onScreen1 and onScreen2 and topPos.Z > 0 and bottomPos.Z > 0 then
+						createCircle(player)
+	
+						local height = math.abs(topPos.Y - bottomPos.Y)
+						local radius = height / 10 -- нормализованный масштаб круга
+	
+						local circle = headCircles[player]
+						circle.Position = Vector2.new(topPos.X, topPos.Y)
+						circle.Radius = radius
+						circle.Visible = true
+					else
+						removeCircle(player)
+					end
+				else
+					removeCircle(player)
+				end
+			else
+				removeCircle(player)
+			end
+		end
+	end
+	
+	-- Переключение круга
+	local function toggleHeadDot()
+		headDotEnabled = not headDotEnabled
+		headDotButton.Text = headDotEnabled and "Head Dot ON" or "Head Dot OFF"
+	
+		if headDotEnabled then
+			renderConn = RunService.RenderStepped:Connect(renderHeadDots)
+		else
+			if renderConn then renderConn:Disconnect() end
+			clearAllCircles()
+		end
+	end
+	
+	headDotButton.MouseButton1Click:Connect(toggleHeadDot)
+	headDotButton.Text = "Head Dot OFF"
+	Players.PlayerRemoving:Connect(removeCircle)
+	
+end
+coroutine.wrap(BIVW_fake_script)()
+local function VQIW_fake_script() -- DistanceButton.Distance 
+	local script = Instance.new('LocalScript', DistanceButton)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	local localPlayer = Players.LocalPlayer
+	local camera = workspace.CurrentCamera
+	
+	local gui = localPlayer:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
+	local tab1 = gui.menu.PagesFrame:WaitForChild("Tab1Page")
+	local distanceButton = tab1:WaitForChild("DistanceButton")
+	
+	local distanceEnabled = false
+	local distanceTexts = {}
+	local renderConn
+	
+	local function createDistanceText(player)
+		if distanceTexts[player] then return end
+	
+		local text = Drawing.new("Text")
+		text.Center = true
+		text.Outline = true
+		text.Color = Color3.new(1,1,1)
+		text.Size = 14
+		text.Text = ""
+	
+		distanceTexts[player] = text
+	end
+	
+	local function removeDistanceText(player)
+		local text = distanceTexts[player]
+		if text then
+			text:Remove()
+			distanceTexts[player] = nil
+		end
+	end
+	
+	local function clearAllDistanceTexts()
+		for player, _ in pairs(distanceTexts) do
+			removeDistanceText(player)
+		end
+	end
+	
+	local function renderDistanceDisplay()
+		for _, player in ipairs(Players:GetPlayers()) do
+			if player ~= localPlayer and player.Character and player.Character:FindFirstChild("Head") and player.Character:FindFirstChild("HumanoidRootPart") then
+				local head = player.Character.Head
+				local hrp = player.Character.HumanoidRootPart
+	
+				local screenPos, onScreen = camera:WorldToViewportPoint(head.Position + Vector3.new(0, 0.3, 0))
+	
+				if onScreen and screenPos.Z > 0 then
+					createDistanceText(player)
+	
+					local text = distanceTexts[player]
+					local distance = (hrp.Position - localPlayer.Character.HumanoidRootPart.Position).Magnitude
+					text.Text = ("%.1f m"):format(distance)
+					text.Position = Vector2.new(screenPos.X, screenPos.Y + 5)
+					text.Visible = true
+				else
+					removeDistanceText(player)
+				end
+			else
+				removeDistanceText(player)
+			end
+		end
+	end
+	
+	local function toggleDistance()
+		distanceEnabled = not distanceEnabled
+		distanceButton.Text = distanceEnabled and "DistanceESP ON" or "DistanceESP OFF"
+	
+		if distanceEnabled then
+			renderConn = RunService.RenderStepped:Connect(renderDistanceDisplay)
+		else
+			if renderConn then renderConn:Disconnect() end
+			clearAllDistanceTexts()
+		end
+	end
+	
+	distanceButton.MouseButton1Click:Connect(toggleDistance)
+	distanceButton.Text = "DistanceESP OFF"
+	
+	Players.PlayerRemoving:Connect(removeDistanceText)
+	
+end
+coroutine.wrap(VQIW_fake_script)()
+local function SDREO_fake_script() -- WeaponESPButton.WeaponESP 
+	local script = Instance.new('LocalScript', WeaponESPButton)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	local localPlayer = Players.LocalPlayer
+	local camera = workspace.CurrentCamera
+	
+	local gui = localPlayer:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
+	local tab1 = gui.menu.PagesFrame:WaitForChild("Tab1Page")
+	local weaponESPButton = tab1:WaitForChild("WeaponESPButton")
+	
+	local weaponESPEnabled = false
+	local weaponTexts = {}
+	local renderConn
+	
+	local function createWeaponText(player)
+		if weaponTexts[player] then return end
+	
+		local text = Drawing.new("Text")
+		text.Center = true
+		text.Outline = true
+		text.Color = Color3.new(1,1,1)
+		text.Size = 14
+		text.Text = ""
+	
+		weaponTexts[player] = text
+	end
+	
+	local function removeWeaponText(player)
+		local text = weaponTexts[player]
+		if text then
+			text:Remove()
+			weaponTexts[player] = nil
+		end
+	end
+	
+	local function clearAllWeaponTexts()
+		for player, _ in pairs(weaponTexts) do
+			removeWeaponText(player)
+		end
+	end
+	
+	local function getWeaponName(player)
+		local character = player.Character
+		if not character then return "" end
+		for _, item in pairs(character:GetChildren()) do
+			if item:IsA("Tool") then
+				return item.Name
+			end
+		end
+		return ""
+	end
+	
+	local function renderWeaponESP()
+		for _, player in ipairs(Players:GetPlayers()) do
+			if player ~= localPlayer and player.Character and player.Character:FindFirstChild("Head") then
+				local head = player.Character.Head
+	
+				local screenPos, onScreen = camera:WorldToViewportPoint(head.Position + Vector3.new(0, 0.3, 0))
+	
+				if onScreen and screenPos.Z > 0 then
+					createWeaponText(player)
+	
+					local text = weaponTexts[player]
+					local weaponName = getWeaponName(player)
+	
+					if weaponName ~= "" then
+						text.Text = weaponName
+						text.Position = Vector2.new(screenPos.X, screenPos.Y + 20)
+						text.Visible = true
+					else
+						text.Visible = false
+					end
+				else
+					removeWeaponText(player)
+				end
+			else
+				removeWeaponText(player)
+			end
+		end
+	end
+	
+	local function toggleWeaponESP()
+		weaponESPEnabled = not weaponESPEnabled
+		weaponESPButton.Text = weaponESPEnabled and "WeaponESP ON" or "WeaponESP OFF"
+	
+		if weaponESPEnabled then
+			renderConn = RunService.RenderStepped:Connect(renderWeaponESP)
+		else
+			if renderConn then renderConn:Disconnect() end
+			clearAllWeaponTexts()
+		end
+	end
+	
+	weaponESPButton.MouseButton1Click:Connect(toggleWeaponESP)
+	weaponESPButton.Text = "WeaponESP OFF"
+	
+	Players.PlayerRemoving:Connect(removeWeaponText)
+	
+end
+coroutine.wrap(SDREO_fake_script)()
+local function RHWQB_fake_script() -- RadarButton.Radar 
+	local script = Instance.new('LocalScript', RadarButton)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	local localPlayer = Players.LocalPlayer
+	local camera = workspace.CurrentCamera
+	
+	local gui = localPlayer:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
+	local tab1 = gui:WaitForChild("menu"):WaitForChild("PagesFrame"):WaitForChild("Tab1Page")
+	local radarButton = tab1:WaitForChild("RadarButton")
+	
+	local radarSize = 200
+	local radarRadiusStuds = 100
+	local margin = 20
+	
+	-- Радар (квадрат)
+	local radarBackground = Drawing.new("Square")
+	radarBackground.Filled = true
+	radarBackground.Transparency = 0.6
+	radarBackground.Color = Color3.fromRGB(30, 30, 30)
+	radarBackground.Visible = false
+	radarBackground.ZIndex = 1
+	
+	local radarOutline = Drawing.new("Square")
+	radarOutline.Filled = false
+	radarOutline.Thickness = 2
+	radarOutline.Color = Color3.fromRGB(0, 130, 255)
+	radarOutline.Visible = false
+	radarOutline.ZIndex = 2
+	
+	local crossColor = Color3.fromRGB(0, 130, 255)
+	local crossLength = 20
+	local crossThickness = 2
+	
+	local verticalLine = Drawing.new("Line")
+	verticalLine.Color = crossColor
+	verticalLine.Thickness = crossThickness
+	verticalLine.Visible = false
+	verticalLine.ZIndex = 3
+	
+	local horizontalLine = Drawing.new("Line")
+	horizontalLine.Color = crossColor
+	horizontalLine.Thickness = crossThickness
+	horizontalLine.Visible = false
+	horizontalLine.ZIndex = 3
+	
+	-- Текст сверху (без таблички)
+	local labelText = Drawing.new("Text")
+	labelText.Text = "Wexcore"
+	labelText.Color = crossColor
+	labelText.Size = 18
+	labelText.Center = true
+	labelText.Outline = true
+	labelText.Visible = false
+	labelText.ZIndex = 5
+	labelText.Font = 2 -- Arial
+	
+	local playerDots = {}
+	
+	local function getRadarPosition()
+		local size = camera.ViewportSize
+		return Vector2.new(size.X - radarSize - margin, size.Y - radarSize - margin)
+	end
+	
+	local function updateRadarPosition()
+		local pos = getRadarPosition()
+	
+		radarBackground.Position = pos
+		radarBackground.Size = Vector2.new(radarSize, radarSize)
+	
+		radarOutline.Position = pos
+		radarOutline.Size = Vector2.new(radarSize, radarSize)
+	
+		local center = pos + Vector2.new(radarSize/2, radarSize/2)
+	
+		verticalLine.From = Vector2.new(center.X, center.Y - crossLength/2)
+		verticalLine.To = Vector2.new(center.X, center.Y + crossLength/2)
+	
+		horizontalLine.From = Vector2.new(center.X - crossLength/2, center.Y)
+		horizontalLine.To = Vector2.new(center.X + crossLength/2, center.Y)
+	
+		-- Текст чуть выше радара (по вертикали центрируем)
+		labelText.Position = Vector2.new(pos.X + radarSize/2, pos.Y - 15) -- 15 пикселей выше радара
+	end
+	
+	updateRadarPosition()
+	
+	local function setRadarVisible(visible)
+		radarBackground.Visible = visible
+		radarOutline.Visible = visible
+		verticalLine.Visible = visible
+		horizontalLine.Visible = visible
+		labelText.Visible = visible
+		for _, dot in pairs(playerDots) do
+			dot.Visible = visible
+		end
+	end
+	
+	local function clearDots()
+		for _, dot in pairs(playerDots) do
+			dot:Remove()
+		end
+		playerDots = {}
+	end
+	
+	local radarEnabled = false
+	local renderConnection
+	
+	local function renderRadar()
+		local character = localPlayer.Character
+		local hrp = character and character:FindFirstChild("HumanoidRootPart")
+		if not hrp then
+			setRadarVisible(false)
+			return
+		end
+	
+		setRadarVisible(true)
+	
+		local pos = radarBackground.Position
+		local center = pos + Vector2.new(radarSize/2, radarSize/2)
 	
 		for _, player in pairs(Players:GetPlayers()) do
-			if player ~= LocalPlayer and player.Character and player.Character:FindFirstChild(Aimbot.HitPart) then
-				local head = player.Character[Aimbot.HitPart]
-				local screenPos, onScreen = Camera:WorldToScreenPoint(head.Position)
-				if onScreen then
-					local dist = (Vector2.new(Mouse.X, Mouse.Y) - Vector2.new(screenPos.X, screenPos.Y)).Magnitude
-					if dist < closestDistance then
-						closestDistance = dist
-						closestPlayer = player
+			if player ~= localPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+				local targetHRP = player.Character.HumanoidRootPart
+				local relativePos = targetHRP.Position - hrp.Position
+	
+				local x = relativePos.X
+				local z = relativePos.Z
+	
+				local dist = Vector2.new(x, z).Magnitude
+				local clampedDist = math.min(dist, radarRadiusStuds)
+				local scale = (clampedDist / radarRadiusStuds) * (radarSize / 2)
+	
+				local angle = math.atan2(z, x)
+	
+				local dotX = center.X + math.cos(angle) * scale
+				local dotY = center.Y + math.sin(angle) * scale
+	
+				if not playerDots[player] then
+					local dot = Drawing.new("Circle")
+					dot.Radius = 4
+					dot.Filled = true
+					dot.Visible = true
+					dot.ZIndex = 3
+					playerDots[player] = dot
+				end
+	
+				local dot = playerDots[player]
+	
+				local color = Color3.fromRGB(255, 0, 0)
+				if localPlayer.Team and player.Team and localPlayer.Team == player.Team then
+					color = Color3.fromRGB(0, 255, 0)
+				end
+	
+				dot.Position = Vector2.new(dotX, dotY)
+				dot.Color = color
+				dot.Visible = true
+			else
+				if playerDots[player] then
+					playerDots[player].Visible = false
+				end
+			end
+		end
+	end
+	
+	local function toggleRadar()
+		radarEnabled = not radarEnabled
+		radarButton.Text = radarEnabled and "Radar ON" or "Radar OFF"
+	
+		if radarEnabled then
+			renderConnection = RunService.RenderStepped:Connect(renderRadar)
+		else
+			if renderConnection then
+				renderConnection:Disconnect()
+				renderConnection = nil
+			end
+			setRadarVisible(false)
+			clearDots()
+		end
+	end
+	
+	radarButton.MouseButton1Click:Connect(toggleRadar)
+	radarButton.Text = "Radar OFF"
+	
+	camera:GetPropertyChangedSignal("ViewportSize"):Connect(updateRadarPosition)
+	
+	Players.PlayerRemoving:Connect(function(player)
+		if playerDots[player] then
+			playerDots[player]:Remove()
+			playerDots[player] = nil
+		end
+	end)
+	
+end
+coroutine.wrap(RHWQB_fake_script)()
+local function AEMOBEN_fake_script() -- _3DBoxButton.3DBox 
+	local script = Instance.new('LocalScript', _3DBoxButton)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	local localPlayer = Players.LocalPlayer
+	local camera = workspace.CurrentCamera
+	
+	-- Путь к GUI кнопке
+	local gui = localPlayer:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
+	local espFrame = gui.menu.PagesFrame:WaitForChild("Tab1Page")
+	local toggleButton = espFrame:WaitForChild("3DBoxButton") -- название кнопки, можешь переименовать на 3DBoxButton
+	
+	-- Настройки
+	local options = {
+		Outline = false,
+		Highlight = false,
+	}
+	
+	-- Состояния
+	local espEnabled = false
+	local espBoxes = {}
+	local renderConn
+	
+	-- Создание линий 3D бокса
+	local function createBox(player)
+		if espBoxes[player] then return end
+	
+		local lines = {}
+		for i = 1, 12 do
+			local line = Drawing.new("Line")
+			line.Visible = false
+			line.Thickness = 2
+			line.Color = Color3.fromRGB(255, 255, 255)
+			table.insert(lines, line)
+		end
+	
+		espBoxes[player] = lines
+	end
+	
+	-- Удаление бокса
+	local function removeBox(player)
+		local lines = espBoxes[player]
+		if lines then
+			for _, line in ipairs(lines) do
+				line:Remove()
+			end
+			espBoxes[player] = nil
+		end
+	end
+	
+	-- Очистка всех боксов
+	local function clearAllBoxes()
+		for _, lines in pairs(espBoxes) do
+			for _, line in ipairs(lines) do
+				line:Remove()
+			end
+		end
+		espBoxes = {}
+	end
+	
+	-- Отрисовка 3D бокса
+	local function renderESP()
+		for _, player in ipairs(Players:GetPlayers()) do
+			if player ~= localPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+				local hrp = player.Character:FindFirstChild("HumanoidRootPart")
+	
+				local height = 5
+				local width = 4
+				local depth = 2
+	
+				local x, y, z = hrp.CFrame:ToEulerAnglesYXZ()
+				local bottomY = hrp.Position.Y - (height / 2)
+				local baseCFrame = CFrame.new(hrp.Position.X, bottomY, hrp.Position.Z) * CFrame.Angles(x, y, z)
+	
+				local corners = {
+					(baseCFrame * CFrame.new(-width/2, 0, -depth/2)).Position,
+					(baseCFrame * CFrame.new(width/2, 0, -depth/2)).Position,
+					(baseCFrame * CFrame.new(width/2, 0, depth/2)).Position,
+					(baseCFrame * CFrame.new(-width/2, 0, depth/2)).Position,
+				}
+				for i = 1, 4 do
+					corners[i + 4] = corners[i] + Vector3.new(0, height, 0)
+				end
+	
+				local points2D = {}
+				local visible = true
+				for i = 1, 8 do
+					local screenPos, onScreen = camera:WorldToViewportPoint(corners[i])
+					points2D[i] = Vector2.new(screenPos.X, screenPos.Y)
+					if not onScreen or screenPos.Z < 0 then
+						visible = false
+					end
+				end
+	
+				if visible then
+					createBox(player)
+					local lines = espBoxes[player]
+					local edges = {
+						{1,2}, {2,3}, {3,4}, {4,1}, -- нижняя
+						{5,6}, {6,7}, {7,8}, {8,5}, -- верхняя
+						{1,5}, {2,6}, {3,7}, {4,8}  -- вертикали
+					}
+					for i, edge in ipairs(edges) do
+						lines[i].From = points2D[edge[1]]
+						lines[i].To = points2D[edge[2]]
+						lines[i].Thickness = options.Outline and 3 or 2
+						lines[i].Color = options.Highlight and Color3.fromRGB(255, 255, 0) or Color3.fromRGB(255, 255, 255)
+						lines[i].Visible = true
+					end
+				else
+					removeBox(player)
+				end
+			else
+				removeBox(player)
+			end
+		end
+	end
+	
+	-- Переключение ESP
+	local function toggleESP()
+		espEnabled = not espEnabled
+		toggleButton.Text = espEnabled and "3D Box ON" or "3D Box OFF"
+	
+		if espEnabled then
+			renderConn = RunService.RenderStepped:Connect(renderESP)
+		else
+			if renderConn then renderConn:Disconnect() end
+			clearAllBoxes()
+		end
+	end
+	
+	-- Подключение кнопки
+	toggleButton.MouseButton1Click:Connect(toggleESP)
+	
+	-- Инициализация
+	toggleButton.Text = "3D Box OFF"
+	Players.PlayerRemoving:Connect(removeBox)
+	
+end
+coroutine.wrap(AEMOBEN_fake_script)()
+local function QVLOPF_fake_script() -- HitboxButton.HitboxESP 
+	local script = Instance.new('LocalScript', HitboxButton)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	local localPlayer = Players.LocalPlayer
+	local camera = workspace.CurrentCamera
+	
+	local gui = localPlayer:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
+	local espFrame = gui.menu.PagesFrame:WaitForChild("Tab1Page")
+	local toggleButton = espFrame:WaitForChild("HitboxButton")
+	
+	local espEnabled = false
+	local hitboxes = {}
+	
+	local bodyParts = {
+		"Head",
+		"HumanoidRootPart",
+		"LeftHand",
+		"RightHand",
+		"LeftFoot",
+		"RightFoot",
+		"UpperTorso",
+		"LowerTorso"
+	}
+	
+	local function createHitbox(player)
+		if hitboxes[player] then return end
+		hitboxes[player] = {}
+	
+		for _, partName in ipairs(bodyParts) do
+			local box = Drawing.new("Square")
+			box.Visible = false
+			box.Filled = false
+			box.Color = Color3.fromRGB(0, 89, 255)
+			box.Thickness = 2
+			hitboxes[player][partName] = box
+		end
+	end
+	
+	local function removeHitbox(player)
+		if hitboxes[player] then
+			for _, box in pairs(hitboxes[player]) do
+				box:Remove()
+			end
+			hitboxes[player] = nil
+		end
+	end
+	
+	local function updateBox(box, part)
+		if not part then
+			box.Visible = false
+			return
+		end
+	
+		local cframe = part.CFrame
+		local size = part.Size
+	
+		local corners = {
+			cframe * Vector3.new(-size.X/2, -size.Y/2, -size.Z/2),
+			cframe * Vector3.new(-size.X/2, -size.Y/2, size.Z/2),
+			cframe * Vector3.new(-size.X/2, size.Y/2, -size.Z/2),
+			cframe * Vector3.new(-size.X/2, size.Y/2, size.Z/2),
+			cframe * Vector3.new(size.X/2, -size.Y/2, -size.Z/2),
+			cframe * Vector3.new(size.X/2, -size.Y/2, size.Z/2),
+			cframe * Vector3.new(size.X/2, size.Y/2, -size.Z/2),
+			cframe * Vector3.new(size.X/2, size.Y/2, size.Z/2),
+		}
+	
+		local minX, minY = math.huge, math.huge
+		local maxX, maxY = -math.huge, -math.huge
+	
+		local onScreen = false
+		for _, corner in ipairs(corners) do
+			local screenPos, visible = camera:WorldToViewportPoint(corner)
+			if visible and screenPos.Z > 0 then
+				onScreen = true
+			end
+			local pos2d = Vector2.new(screenPos.X, screenPos.Y)
+			if pos2d.X < minX then minX = pos2d.X end
+			if pos2d.Y < minY then minY = pos2d.Y end
+			if pos2d.X > maxX then maxX = pos2d.X end
+			if pos2d.Y > maxY then maxY = pos2d.Y end
+		end
+	
+		if not onScreen then
+			box.Visible = false
+			return
+		end
+	
+		box.Position = Vector2.new(minX, minY)
+		box.Size = Vector2.new(maxX - minX, maxY - minY)
+		box.Visible = true
+	end
+	
+	local renderConnection
+	
+	local function render()
+		for _, player in ipairs(Players:GetPlayers()) do
+			if player ~= localPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+				createHitbox(player)
+				for partName, box in pairs(hitboxes[player]) do
+					local part = player.Character:FindFirstChild(partName)
+					updateBox(box, part)
+				end
+			else
+				removeHitbox(player)
+			end
+		end
+	end
+	
+	local function toggle()
+		espEnabled = not espEnabled
+		toggleButton.Text = espEnabled and "Hitbox ESP ON" or "Hitbox ESP OFF"
+	
+		if espEnabled then
+			renderConnection = RunService.RenderStepped:Connect(render)
+		else
+			if renderConnection then
+				renderConnection:Disconnect()
+				renderConnection = nil
+			end
+			for player, _ in pairs(hitboxes) do
+				removeHitbox(player)
+			end
+		end
+	end
+	
+	toggleButton.MouseButton1Click:Connect(toggle)
+	toggleButton.Text = "Hitbox ESP OFF"
+	
+	Players.PlayerRemoving:Connect(removeHitbox)
+	
+end
+coroutine.wrap(QVLOPF_fake_script)()
+local function LEDTXJA_fake_script() -- AFKDetector.AFK 
+	local script = Instance.new('LocalScript', AFKDetector)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	local localPlayer = Players.LocalPlayer
+	
+	local gui = localPlayer:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
+	local espFrame = gui.menu.PagesFrame:WaitForChild("Tab1Page")
+	local toggleButton = espFrame:WaitForChild("AFKDetector")
+	
+	local afkEnabled = false
+	local afkData = {} -- данные для каждого игрока: lastPosition, timer, afk, highlightObject
+	
+	local AFK_TIME = 20 -- секунд без движения для AFK
+	
+	-- Создаем Highlight объект
+	local function createHighlight(player)
+		if afkData[player] and afkData[player].highlight then return end
+	
+		local highlight = Instance.new("Highlight")
+		highlight.Adornee = player.Character
+		highlight.FillColor = Color3.fromRGB(128, 128, 128)
+		highlight.FillTransparency = 0.5
+		highlight.OutlineColor = Color3.fromRGB(100, 100, 100)
+		highlight.OutlineTransparency = 0
+		highlight.Parent = player.Character
+	
+		afkData[player] = afkData[player] or {}
+		afkData[player].highlight = highlight
+	end
+	
+	-- Удаляем Highlight
+	local function removeHighlight(player)
+		if afkData[player] and afkData[player].highlight then
+			afkData[player].highlight:Destroy()
+			afkData[player].highlight = nil
+		end
+	end
+	
+	-- Создаем табличку AFK над головой с фиксированным размером текста
+	local function createAFKBillboard(player)
+		if afkData[player] and afkData[player].billboard then return end
+	
+		local billboard = Instance.new("BillboardGui")
+		billboard.Name = "AFKBillboard"
+		billboard.Adornee = player.Character:FindFirstChild("Head")
+		billboard.Size = UDim2.new(0, 100, 0, 50)
+		billboard.StudsOffset = Vector3.new(0, 2, 0)
+		billboard.AlwaysOnTop = true
+	
+		local textLabel = Instance.new("TextLabel", billboard)
+		textLabel.Size = UDim2.new(1,0,1,0)
+		textLabel.BackgroundTransparency = 1
+		textLabel.Text = "AFK"
+		textLabel.TextColor3 = Color3.new(0.8,0.8,0.8)
+		textLabel.TextStrokeColor3 = Color3.new(0,0,0)
+		textLabel.TextStrokeTransparency = 0
+		textLabel.Font = Enum.Font.SourceSansBold
+		textLabel.TextScaled = false -- отключаем авто масштабирование
+		textLabel.TextSize = 24      -- фиксированный размер текста
+	
+		billboard.Parent = player.Character
+	
+		afkData[player].billboard = billboard
+	end
+	
+	-- Удаляем табличку AFK
+	local function removeAFKBillboard(player)
+		if afkData[player] and afkData[player].billboard then
+			afkData[player].billboard:Destroy()
+			afkData[player].billboard = nil
+		end
+	end
+	
+	local function updateAFKStatus(player, dt)
+		if not player.Character or not player.Character:FindFirstChild("HumanoidRootPart") then return end
+	
+		afkData[player] = afkData[player] or {timer = 0, afk = false, lastPosition = nil}
+	
+		local hrp = player.Character.HumanoidRootPart
+		local currentPos = hrp.Position
+		local lastPos = afkData[player].lastPosition
+	
+		local moved = false
+		if lastPos then
+			local dist = (currentPos - lastPos).Magnitude
+			moved = dist > 0.1
+		end
+	
+		if moved then
+			afkData[player].timer = 0
+			if afkData[player].afk then
+				afkData[player].afk = false
+				-- Снимаем Highlight и табличку
+				removeHighlight(player)
+				removeAFKBillboard(player)
+			end
+		else
+			afkData[player].timer = afkData[player].timer + dt
+			if afkData[player].timer >= AFK_TIME and not afkData[player].afk then
+				afkData[player].afk = true
+				-- Создаем Highlight и табличку
+				createHighlight(player)
+				createAFKBillboard(player)
+			end
+		end
+	
+		afkData[player].lastPosition = currentPos
+	end
+	
+	local renderConnection
+	
+	local function toggle()
+		afkEnabled = not afkEnabled
+		toggleButton.Text = afkEnabled and "AFK Checker ON" or "AFK Checker OFF"
+	
+		if afkEnabled then
+			renderConnection = RunService.RenderStepped:Connect(function(dt)
+				for _, player in pairs(Players:GetPlayers()) do
+					if player ~= localPlayer then
+						updateAFKStatus(player, dt)
+					end
+				end
+			end)
+		else
+			if renderConnection then
+				renderConnection:Disconnect()
+				renderConnection = nil
+			end
+			for player, _ in pairs(afkData) do
+				removeHighlight(player)
+				removeAFKBillboard(player)
+			end
+			afkData = {}
+		end
+	end
+	
+	toggleButton.MouseButton1Click:Connect(toggle)
+	toggleButton.Text = "AFK Checker OFF"
+	
+	Players.PlayerRemoving:Connect(function(player)
+		removeHighlight(player)
+		removeAFKBillboard(player)
+		afkData[player] = nil
+	end)
+	
+end
+coroutine.wrap(LEDTXJA_fake_script)()
+local function ATCF_fake_script() -- ArmorBar.Armor Bar 
+	local script = Instance.new('LocalScript', ArmorBar)
+
+	local button = script.Parent
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	
+	local isOn = false
+	local runningTask = nil
+	local connection
+	
+	button.Text = "ArmorBar OFF"
+	
+	local function removeAllArmorBars()
+		for _, player in ipairs(Players:GetPlayers()) do
+			if player.Character and player.Character:FindFirstChild("ArmorBarESP") then
+				player.Character.ArmorBarESP:Destroy()
+			end
+		end
+	end
+	
+	local function createArmorBar(character)
+		if not character or not character:FindFirstChild("HumanoidRootPart") then return end
+		if character:FindFirstChild("ArmorBarESP") then return end
+	
+		local armorValue = character:FindFirstChild("Armor")
+		if not armorValue or not armorValue:IsA("NumberValue") then
+			local humanoid = character:FindFirstChild("Humanoid")
+			if humanoid then
+				armorValue = humanoid:FindFirstChild("Armor")
+			end
+		end
+	
+		if not armorValue or not armorValue:IsA("NumberValue") then
+			warn("Armor value not found in character: "..(character.Name or "unknown"))
+			return
+		end
+	
+		print("Found armor for "..character.Name..": "..armorValue.Value)
+	
+		local gui = Instance.new("BillboardGui")
+		gui.Name = "ArmorBarESP"
+		gui.Adornee = character.HumanoidRootPart
+		gui.Size = UDim2.new(2, 0, 5, 0)
+		gui.StudsOffset = Vector3.new(2.2, 0.5, 0)
+		gui.AlwaysOnTop = true
+		gui.LightInfluence = 0
+	
+		local bg = Instance.new("Frame")
+		bg.Name = "Background"
+		bg.Size = UDim2.new(0.15, 0, 1, 0)
+		bg.Position = UDim2.new(0.85, 0, 0, 0)
+		bg.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+		bg.BorderSizePixel = 0
+		bg.Parent = gui
+	
+		local bgCorner = Instance.new("UICorner", bg)
+		bgCorner.CornerRadius = UDim.new(0, 4)
+	
+		local bgStroke = Instance.new("UIStroke", bg)
+		bgStroke.Color = Color3.new(0, 0, 0)
+		bgStroke.Thickness = 1
+		bgStroke.Transparency = 0.4
+	
+		local armorBar = Instance.new("Frame")
+		armorBar.Name = "ArmorBar"
+		armorBar.Size = UDim2.new(1, 0, 1, 0)
+		armorBar.Position = UDim2.new(0, 0, 1, 0)
+		armorBar.BackgroundColor3 = Color3.fromRGB(0, 128, 255)
+		armorBar.BorderSizePixel = 0
+		armorBar.AnchorPoint = Vector2.new(0, 1)
+		armorBar.Parent = bg
+	
+		local armorCorner = Instance.new("UICorner", armorBar)
+		armorCorner.CornerRadius = UDim.new(0, 4)
+	
+		gui.Parent = character
+	
+		task.spawn(function()
+			while gui.Parent and armorValue and isOn do
+				local maxArmor = 100
+				local percent = math.clamp(armorValue.Value / maxArmor, 0, 1)
+				armorBar.Size = UDim2.new(1, 0, percent, 0)
+				armorBar.Position = UDim2.new(0, 0, 1 - percent, 0)
+	
+				task.wait(0.15)
+			end
+	
+			if gui and gui.Parent then
+				gui:Destroy()
+			end
+		end)
+	end
+	
+	local function updateAllPlayers()
+		for _, player in ipairs(Players:GetPlayers()) do
+			if player ~= LocalPlayer and player.Character then
+				createArmorBar(player.Character)
+			end
+		end
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		button.Text = isOn and "ArmorBar ON" or "ArmorBar OFF"
+	
+		if isOn then
+			updateAllPlayers()
+	
+			connection = Players.PlayerAdded:Connect(function(player)
+				player.CharacterAdded:Connect(function(char)
+					task.wait(1)
+					if isOn then
+						createArmorBar(char)
+					end
+				end)
+			end)
+	
+			runningTask = task.spawn(function()
+				while isOn do
+					updateAllPlayers()
+					task.wait(2)
+				end
+			end)
+		else
+			if connection then
+				connection:Disconnect()
+			end
+			removeAllArmorBars()
+		end
+	end)
+	
+end
+coroutine.wrap(ATCF_fake_script)()
+local function QAJVIUG_fake_script() -- Backtrail.Backtrail 
+	local script = Instance.new('LocalScript', Backtrail)
+
+	local button = script.Parent
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	local localPlayer = Players.LocalPlayer
+	
+	local isOn = false
+	button.Text = "Backtrail OFF"
+	
+	local backtrails = {}
+	
+	local function createBacktrail(character)
+		if not character or not character:FindFirstChild("HumanoidRootPart") then return end
+		if backtrails[character] then return end
+	
+		local hrp = character.HumanoidRootPart
+	
+		-- Создаем два Attachments для Trail
+		local attachment0 = Instance.new("Attachment")
+		attachment0.Name = "TrailAttachment0"
+		attachment0.Position = Vector3.new(0, 0, 0)
+		attachment0.Parent = hrp
+	
+		local attachment1 = Instance.new("Attachment")
+		attachment1.Name = "TrailAttachment1"
+		attachment1.Position = Vector3.new(0, 0, -1) -- чуть позади
+		attachment1.Parent = hrp
+	
+		-- Создаем Trail
+		local trail = Instance.new("Trail")
+		trail.Name = "Backtrail"
+		trail.Attachment0 = attachment0
+		trail.Attachment1 = attachment1
+		trail.Lifetime = 1
+		trail.Transparency = NumberSequence.new(0.5, 1)
+		trail.Color = ColorSequence.new(Color3.fromRGB(0, 132, 255))
+		trail.Parent = hrp
+	
+		backtrails[character] = {Trail = trail, Attach0 = attachment0, Attach1 = attachment1}
+	end
+	
+	local function removeBacktrail(character)
+		if backtrails[character] then
+			local data = backtrails[character]
+			if data.Trail then data.Trail:Destroy() end
+			if data.Attach0 then data.Attach0:Destroy() end
+			if data.Attach1 then data.Attach1:Destroy() end
+			backtrails[character] = nil
+		end
+	end
+	
+	local function updateBacktrails()
+		for _, player in pairs(Players:GetPlayers()) do
+			if player.Character then
+				if isOn then
+					createBacktrail(player.Character)
+				else
+					removeBacktrail(player.Character)
+				end
+			end
+		end
+	end
+	
+	-- При добавлении нового игрока и его персонажа
+	Players.PlayerAdded:Connect(function(player)
+		player.CharacterAdded:Connect(function(char)
+			task.wait(1)
+			if isOn then
+				createBacktrail(char)
+			end
+		end)
+	end)
+	
+	button.MouseButton1Click:Connect(function()
+		isOn = not isOn
+		button.Text = isOn and "Backtrail ON" or "Backtrail OFF"
+		updateBacktrails()
+	end)
+	
+	-- При выключении - удаляем все трейлы
+	Players.PlayerRemoving:Connect(function(player)
+		if player.Character then
+			removeBacktrail(player.Character)
+		end
+	end)
+	
+end
+coroutine.wrap(QAJVIUG_fake_script)()
+local function XFLI_fake_script() -- RadarArrowsButton.RadarArrows 
+	local script = Instance.new('LocalScript', RadarArrowsButton)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	local localPlayer = Players.LocalPlayer
+	local camera = workspace.CurrentCamera
+	
+	-- Путь к кнопке (обязательно проверь свой путь к кнопке в GUI)
+	local gui = localPlayer:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
+	local visualsFrame = gui:WaitForChild("menu"):WaitForChild("PagesFrame"):WaitForChild("Tab1Page")
+	local toggleButton = visualsFrame:WaitForChild("RadarArrowsButton")
+	
+	-- Настройки
+	local ARROW_SIZE = 25
+	local ARROW_COLOR = Color3.fromRGB(0, 170, 255)
+	local SCREEN_MARGIN = 50
+	
+	local enabled = false
+	local arrows = {}
+	local renderConn
+	
+	-- Создаём стрелку для игрока
+	local function createArrow(player)
+		if arrows[player] then return end
+	
+		local arrow = Drawing.new("Triangle")
+		arrow.Visible = false
+		arrow.Color = ARROW_COLOR
+		arrow.Thickness = 2
+		arrow.Filled = true
+		arrow.Transparency = 1
+	
+		arrows[player] = arrow
+	end
+	
+	-- Удаляем стрелку
+	local function removeArrow(player)
+		if arrows[player] then
+			arrows[player]:Remove()
+			arrows[player] = nil
+		end
+	end
+	
+	-- Обновляем стрелку
+	local function updateArrow(player, arrow)
+		local character = player.Character
+		if not character then 
+			arrow.Visible = false
+			return
+		end
+	
+		local hrp = character:FindFirstChild("HumanoidRootPart")
+		if not hrp then 
+			arrow.Visible = false
+			return
+		end
+	
+		local screenPos, onScreen = camera:WorldToViewportPoint(hrp.Position)
+		if onScreen then
+			arrow.Visible = false
+			return
+		end
+	
+		local centerX = camera.ViewportSize.X / 2
+		local centerY = camera.ViewportSize.Y / 2
+	
+		local dir = Vector2.new(screenPos.X - centerX, screenPos.Y - centerY)
+		if dir.Magnitude == 0 then dir = Vector2.new(0, -1) end
+		dir = dir.Unit
+	
+		local screenX = math.clamp(centerX + dir.X * (centerX - SCREEN_MARGIN), SCREEN_MARGIN, camera.ViewportSize.X - SCREEN_MARGIN)
+		local screenY = math.clamp(centerY + dir.Y * (centerY - SCREEN_MARGIN), SCREEN_MARGIN, camera.ViewportSize.Y - SCREEN_MARGIN)
+	
+		local tip = Vector2.new(screenX, screenY)
+		local left = tip + Vector2.new(-dir.Y, dir.X) * (ARROW_SIZE / 2)
+		local right = tip + Vector2.new(dir.Y, -dir.X) * (ARROW_SIZE / 2)
+	
+		arrow.PointA = tip
+		arrow.PointB = left
+		arrow.PointC = right
+	
+		arrow.Visible = true
+	end
+	
+	local function onRenderStep()
+		for _, player in pairs(Players:GetPlayers()) do
+			if player ~= localPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+				createArrow(player)
+				updateArrow(player, arrows[player])
+			else
+				removeArrow(player)
+			end
+		end
+	end
+	
+	local function toggle()
+		enabled = not enabled
+		toggleButton.Text = enabled and "Radar Arrows ON" or "Radar Arrows OFF"
+	
+		if enabled then
+			renderConn = RunService.RenderStepped:Connect(onRenderStep)
+		else
+			if renderConn then
+				renderConn:Disconnect()
+				renderConn = nil
+			end
+	
+			for player, arrow in pairs(arrows) do
+				arrow:Remove()
+			end
+			arrows = {}
+		end
+	end
+	
+	toggleButton.MouseButton1Click:Connect(toggle)
+	
+	toggleButton.Text = "Radar Arrows OFF"
+	
+end
+coroutine.wrap(XFLI_fake_script)()
+local function OSEMKMW_fake_script() -- AimbotButton.VectorAim 
+	local script = Instance.new('LocalScript', AimbotButton)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local UserInputService = game:GetService("UserInputService")
+	local TweenService = game:GetService("TweenService")
+	
+	local LocalPlayer = Players.LocalPlayer
+	local gui = LocalPlayer:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
+	local menu = gui:WaitForChild("menu")
+	local pagesFrame = menu:WaitForChild("PagesFrame")
+	local tab2Page = pagesFrame:WaitForChild("Tab2Page")
+	local aimbotFrame = tab2Page:WaitForChild("AimbotFrame")
+	
+	local colorBox = aimbotFrame:WaitForChild("ColorBox")
+	local applyColorButton = aimbotFrame:WaitForChild("ApplyColorButton")
+	applyColorButton.MouseButton1Click:Connect(function()
+		local text = colorBox.Text
+		local r, g, b = text:match("(%d+)%s*,%s*(%d+)%s*,%s*(%d+)")
+		if r and g and b then
+			r = tonumber(r)
+			g = tonumber(g)
+			b = tonumber(b)
+			if r and g and b and r >= 0 and r <= 255 and g >= 0 and g <= 255 and b >= 0 and b <= 255 then
+				fovCircle.Color = Color3.fromRGB(r, g, b)
+			else
+				print("Incorrect Color")
+			end
+		end
+	end)
+	
+	local aimbotButton = aimbotFrame:WaitForChild("AimbotButton")
+	local showFovButton = aimbotFrame:WaitForChild("ShowFov")
+	local lockOnLastButton = aimbotFrame:WaitForChild("LockOnLast")
+	local wallCheckButton = aimbotFrame:WaitForChild("WallCheck")
+	local smoothingBox = aimbotFrame:WaitForChild("SmoothingBox")
+	local applySmoothingButton = aimbotFrame:WaitForChild("ApplySmoothingButton")
+	local bindKeyButton = aimbotFrame:WaitForChild("BindKeyButton")
+	local holdToggleButton = aimbotFrame:WaitForChild("HoldToggleButton")
+	
+	local Camera = workspace.CurrentCamera
+	
+	-- Настройки
+	local AIM_KEY = Enum.KeyCode.T
+	local FOV_RADIUS = 150
+	local AIM_SENSITIVITY = 0.25
+	local MAX_DISTANCE = 1000
+	
+	-- Состояния
+	local aimbotEnabled = false
+	local aiming = false
+	local showFov = true
+	local lockOnLastEnabled = false
+	local lockedTarget = nil
+	local wallCheckEnabled = false
+	local aimMode = "Hold"
+	local waitingForBind = false
+	
+	-- FOV круг
+	local fovCircle = Drawing.new("Circle")
+	fovCircle.Transparency = 0.6
+	fovCircle.Thickness = 2
+	fovCircle.NumSides = 100
+	fovCircle.Filled = false
+	fovCircle.Radius = FOV_RADIUS
+	fovCircle.Color = Color3.fromRGB(0, 255, 255)
+	fovCircle.Visible = false
+	
+	-- Wallcheck
+	local function canSee(targetPos)
+		local origin = Camera.CFrame.Position
+		local direction = (targetPos - origin)
+		local raycastParams = RaycastParams.new()
+		raycastParams.FilterDescendantsInstances = {LocalPlayer.Character}
+		raycastParams.FilterType = Enum.RaycastFilterType.Blacklist
+		local result = workspace:Raycast(origin, direction, raycastParams)
+		if result then
+			return result.Instance:IsDescendantOf(targetPos.Parent)
+		else
+			return true
+		end
+	end
+	
+	-- Поиск цели
+	local function getClosestTarget()
+		local closest = nil
+		local shortestDist = math.huge
+		local screenCenter = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
+	
+		for _, player in ipairs(Players:GetPlayers()) do
+			if player ~= LocalPlayer and player.Character and player.Character:FindFirstChild("Head") then
+				local head = player.Character.Head
+				local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+				if humanoid and humanoid.Health > 0 then
+					local pos, visible = Camera:WorldToViewportPoint(head.Position)
+					if visible then
+						local screenPos = Vector2.new(pos.X, pos.Y)
+						local dist2D = (screenPos - screenCenter).Magnitude
+						local dist3D = (Camera.CFrame.Position - head.Position).Magnitude
+	
+						if dist2D <= FOV_RADIUS and dist3D <= MAX_DISTANCE then
+							if not wallCheckEnabled or canSee(head.Position) then
+								if dist2D < shortestDist then
+									shortestDist = dist2D
+									closest = head
+								end
+							end
+						end
 					end
 				end
 			end
 		end
 	
-		return closestPlayer
+		return closest
 	end
 	
-	button.Text = "Aimbot OFF"
+	local function isTargetInFOV(targetHead)
+		local screenCenter = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
+		local pos, visible = Camera:WorldToViewportPoint(targetHead.Position)
+		if visible then
+			local screenPos = Vector2.new(pos.X, pos.Y)
+			local dist2D = (screenPos - screenCenter).Magnitude
+			return dist2D <= FOV_RADIUS
+		end
+		return false
+	end
 	
-	button.MouseButton1Click:Connect(function()
-		Aimbot.Enabled = not Aimbot.Enabled
-		button.Text = Aimbot.Enabled and "Aimbot ON" or "Aimbot OFF"
-		if not Aimbot.Enabled then
-			Target = nil
+	local function getTarget()
+		if lockOnLastEnabled then
+			if lockedTarget and lockedTarget.Parent and lockedTarget.Parent:FindFirstChildOfClass("Humanoid") then
+				local humanoid = lockedTarget.Parent:FindFirstChildOfClass("Humanoid")
+				if humanoid and humanoid.Health > 0 and isTargetInFOV(lockedTarget) then
+					return lockedTarget
+				else
+					-- Если lockedTarget умер или вне ФОВ — просто сбрасываем, но не ищем новую цель
+					lockedTarget = nil
+					return nil
+				end
+			else
+				return nil
+			end
+		else
+			-- Обычный автопоиск целей
+			local target = getClosestTarget()
+			if target then
+				lockedTarget = target
+			else
+				lockedTarget = nil
+			end
+			return target
+		end
+	end
+	
+	local function aimAt(targetPos)
+		local camPos = Camera.CFrame.Position
+		local direction = (targetPos - camPos).Unit
+		local targetCF = CFrame.new(camPos, camPos + direction)
+		Camera.CFrame = Camera.CFrame:Lerp(targetCF, AIM_SENSITIVITY)
+	end
+	
+	-- Target Info GUI
+	local function createTargetInfo()
+		local screenGui = Instance.new("ScreenGui")
+		screenGui.Name = "TargetInfo"
+		screenGui.Parent = LocalPlayer:WaitForChild("PlayerGui")
+	
+		local frame = Instance.new("Frame")
+		frame.Size = UDim2.new(0, 220, 0, 70)
+		frame.Position = UDim2.new(0.5, -110, 1, -130)
+		frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+		frame.BorderSizePixel = 0
+		frame.BackgroundTransparency = 1
+		frame.Name = "InfoFrame"
+		frame.Parent = screenGui
+	
+		local rainbow = Instance.new("Frame")
+		rainbow.Size = UDim2.new(1, 0, 0, 4)
+		rainbow.Position = UDim2.new(0, 0, 0, 0)
+		rainbow.BorderSizePixel = 0
+		rainbow.Name = "RainbowBar"
+		rainbow.Parent = frame
+	
+		local name = Instance.new("TextLabel")
+		name.Size = UDim2.new(0.65, 0, 0.5, 0)
+		name.Position = UDim2.new(0.25, 0, 0, 5)
+		name.BackgroundTransparency = 1
+		name.TextColor3 = Color3.fromRGB(255, 255, 255)
+		name.TextScaled = true
+		name.Text = "Target"
+		name.Name = "TargetName"
+		name.Font = Enum.Font.Gotham
+		name.Parent = frame
+	
+		local hp = Instance.new("TextLabel")
+		hp.Size = UDim2.new(0.65, 0, 0.4, 0)
+		hp.Position = UDim2.new(0.25, 0, 0.55, 0)
+		hp.BackgroundTransparency = 1
+		hp.TextColor3 = Color3.fromRGB(200, 255, 200)
+		hp.TextScaled = true
+		hp.Text = "HP: 100"
+		hp.Name = "TargetHP"
+		hp.Font = Enum.Font.Gotham
+		hp.Parent = frame
+	
+		local avatar = Instance.new("ImageLabel")
+		avatar.Size = UDim2.new(0, 40, 0, 40)
+		avatar.Position = UDim2.new(0, 5, 0.5, -20)
+		avatar.BackgroundTransparency = 1
+		avatar.Name = "Avatar"
+		avatar.Image = ""
+		avatar.Parent = frame
+	
+		local function animateRainbow()
+			local hue = 0
+			while true do
+				hue = (hue + 0.01) % 1
+				rainbow.BackgroundColor3 = Color3.fromHSV(hue, 1, 1)
+				task.wait(0.05)
+			end
+		end
+	
+		task.spawn(animateRainbow)
+		return frame
+	end
+	
+	local infoFrame = createTargetInfo()
+	infoFrame.Visible = false
+	
+	local function updateTargetInfo(player)
+		if not player or not player:IsA("Player") then return end
+		local frame = infoFrame
+		local nameLabel = frame:FindFirstChild("TargetName")
+		local hpLabel = frame:FindFirstChild("TargetHP")
+		local avatarImage = frame:FindFirstChild("Avatar")
+	
+		if player.Character and player.Character:FindFirstChild("Humanoid") then
+			hpLabel.Text = "HP: " .. math.floor(player.Character.Humanoid.Health)
+		else
+			hpLabel.Text = "HP: 0"
+		end
+	
+		nameLabel.Text = player.Name
+		avatarImage.Image = "https://www.roblox.com/headshot-thumbnail/image?userId="..player.UserId.."&width=420&height=420&format=png"
+	
+		if not frame.Visible then
+			TweenService:Create(frame, TweenInfo.new(0.25), {BackgroundTransparency = 0}):Play()
+			frame.Visible = true
+		end
+	end
+	
+	local function hideTargetInfo()
+		if infoFrame.Visible then
+			TweenService:Create(infoFrame, TweenInfo.new(0.25), {BackgroundTransparency = 1}):Play()
+			task.delay(0.3, function()
+				infoFrame.Visible = false
+			end)
+		end
+	end
+	
+	-- Обработка
+	bindKeyButton.MouseButton1Click:Connect(function()
+		if waitingForBind then return end
+		waitingForBind = true
+		bindKeyButton.Text = "Press a key..."
+	end)
+	
+	UserInputService.InputBegan:Connect(function(input, gpe)
+		if gpe then return end
+		if waitingForBind then
+			if input.UserInputType == Enum.UserInputType.Keyboard then
+				AIM_KEY = input.KeyCode
+				waitingForBind = false
+				bindKeyButton.Text = "Bind: " .. AIM_KEY.Name
+			end
+		end
+	
+		if input.KeyCode == AIM_KEY then
+			if lockOnLastEnabled then
+				if aiming then
+					-- Выключаем аимбот и сбрасываем lockedTarget
+					aiming = false
+					lockedTarget = nil
+				else
+					-- Если lockedTarget валиден и в ФОВ — просто включаем aiming
+					if lockedTarget and lockedTarget.Parent and lockedTarget.Parent:FindFirstChildOfClass("Humanoid") then
+						local humanoid = lockedTarget.Parent:FindFirstChildOfClass("Humanoid")
+						if humanoid and humanoid.Health > 0 and isTargetInFOV(lockedTarget) then
+							aiming = true
+							return
+						end
+					end
+	
+					-- Ищем новую цель и ставим lockedTarget, если нашли
+					local target = getClosestTarget()
+					if target then
+						lockedTarget = target
+						aiming = true
+					else
+						lockedTarget = nil
+						aiming = false
+					end
+				end
+			else
+				-- Обычное поведение без lockOnLast
+				if aimMode == "Hold" then
+					aiming = true
+				else
+					aiming = not aiming
+				end
+			end
 		end
 	end)
 	
-	RunService.RenderStepped:Connect(function()
-		if not Aimbot.Enabled then return end
-	
-		if not Target then
-			Target = GetClosestTarget()
+	UserInputService.InputEnded:Connect(function(input)
+		if aimMode == "Hold" and input.KeyCode == AIM_KEY then
+			aiming = false
 		end
+	end)
 	
-		if Target and Target.Character and Target.Character:FindFirstChild(Aimbot.HitPart) then
-			local head = Target.Character[Aimbot.HitPart]
-			local predictedPos = head.Position + head.Velocity * Aimbot.Prediction
-			Camera.CFrame = CFrame.new(Camera.CFrame.Position, predictedPos)
+	aimbotButton.MouseButton1Click:Connect(function()
+		aimbotEnabled = not aimbotEnabled
+		aimbotButton.Text = aimbotEnabled and "Aimbot ON" or "Aimbot OFF"
+		fovCircle.Visible = aimbotEnabled and showFov
+		if not aimbotEnabled then
+			lockedTarget = nil
+			hideTargetInfo()
+			aiming = false
+		end
+	end)
 	
-			if Aimbot.AutoShoot then
-				-- Автострельба (только если нужно)
-				mouse1press()
-				task.wait(0.01)
-				mouse1release()
+	showFovButton.MouseButton1Click:Connect(function()
+		showFov = not showFov
+		fovCircle.Visible = aimbotEnabled and showFov
+	end)
+	
+	lockOnLastButton.MouseButton1Click:Connect(function()
+		lockOnLastEnabled = not lockOnLastEnabled
+		lockOnLastButton.Text = lockOnLastEnabled and "Lock On Last ON" or "Lock On Last OFF"
+		if not lockOnLastEnabled then lockedTarget = nil end
+	end)
+	
+	wallCheckButton.MouseButton1Click:Connect(function()
+		wallCheckEnabled = not wallCheckEnabled
+		wallCheckButton.Text = wallCheckEnabled and "WallCheck ON" or "WallCheck OFF"
+	end)
+	
+	applySmoothingButton.MouseButton1Click:Connect(function()
+		local num = tonumber(smoothingBox.Text)
+		if num and num >= 0 and num <= 1 then
+			AIM_SENSITIVITY = num
+		end
+	end)
+	
+	holdToggleButton.MouseButton1Click:Connect(function()
+		aimMode = (aimMode == "Hold") and "Toggle" or "Hold"
+		holdToggleButton.Text = "Mode: " .. aimMode
+	end)
+	
+	holdToggleButton.Text = "Mode: " .. aimMode
+	smoothingBox.Text = tostring(AIM_SENSITIVITY)
+	
+	RunService.RenderStepped:Connect(function(dt)
+		fovCircle.Position = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
+	
+		if aimbotEnabled and aiming then
+			local targetHead = getTarget()
+			if targetHead then
+				aimAt(targetHead.Position)
+				local player = Players:GetPlayerFromCharacter(targetHead.Parent)
+				if player then
+					updateTargetInfo(player)
+				end
+			else
+				hideTargetInfo()
 			end
 		else
-			Target = nil
+			hideTargetInfo()
 		end
 	end)
 	
 end
-coroutine.wrap(IIXDBI_fake_script)()
-local function YMCUSR_fake_script() -- FullbrightOFF.LocalScript 
+coroutine.wrap(OSEMKMW_fake_script)()
+local function BEXUZXB_fake_script() -- FullbrightOFF.LocalScript 
 	local script = Instance.new('LocalScript', FullbrightOFF)
 
 	local button = script.Parent
@@ -1538,8 +3690,8 @@ local function YMCUSR_fake_script() -- FullbrightOFF.LocalScript
 	end)
 	
 end
-coroutine.wrap(YMCUSR_fake_script)()
-local function KRZUSD_fake_script() -- RemoveShadowButton.LocalScript 
+coroutine.wrap(BEXUZXB_fake_script)()
+local function MBMG_fake_script() -- RemoveShadowButton.LocalScript 
 	local script = Instance.new('LocalScript', RemoveShadowButton)
 
 	local Lighting = game:GetService("Lighting")
@@ -1567,8 +3719,8 @@ local function KRZUSD_fake_script() -- RemoveShadowButton.LocalScript
 	updateButton()
 	
 end
-coroutine.wrap(KRZUSD_fake_script)()
-local function VWNI_fake_script() -- NoTextures.LocalScript 
+coroutine.wrap(MBMG_fake_script)()
+local function BYSHSV_fake_script() -- NoTextures.LocalScript 
 	local script = Instance.new('LocalScript', NoTextures)
 
 	local Players = game:GetService("Players")
@@ -1644,8 +3796,8 @@ local function VWNI_fake_script() -- NoTextures.LocalScript
 	-- Начальный текст
 	button.Text = "Textures: OFF"
 end
-coroutine.wrap(VWNI_fake_script)()
-local function WBJGNJL_fake_script() -- Hi.script 
+coroutine.wrap(BYSHSV_fake_script)()
+local function GAGM_fake_script() -- Hi.script 
 	local script = Instance.new('LocalScript', Hi)
 
 	local Players          = game:GetService("Players")
@@ -1658,95 +3810,86 @@ local function WBJGNJL_fake_script() -- Hi.script
 	local button       = script.Parent
 	local notification = gui:WaitForChild("NotificationLabel")
 	
-	-- Character refs
 	local character = player.Character or player.CharacterAdded:Wait()
 	local humanoid  = character:WaitForChild("Humanoid")
 	local hrp       = character:WaitForChild("HumanoidRootPart")
 	local camera    = workspace.CurrentCamera
 	
-	-- State
 	local flying     = false
 	local listening  = false
 	local bindKey    = Enum.KeyCode.C
 	local speedBase  = 100
-	local flyConn, noiseConn, noClipConn, platConn, landConn = nil, nil, nil, nil, nil
+	local flyConn, noiseConn, noClipConn, platConn, ownershipConn, smoothTeleportConn = nil, nil, nil, nil, nil, nil
 	local bg, bv
 	local savedOffset
 	
-	-- Movement flags
 	local keys = { W=false, A=false, S=false, D=false, Up=false, Down=false }
 	
-	-- Cleanup on respawn or disable
-	local function cleanup()
-		flying = false
-		if flyConn     then flyConn:Disconnect() end
-		if noiseConn   then noiseConn:Disconnect() end
-		if noClipConn  then noClipConn:Disconnect() end
-		if platConn    then platConn:Disconnect() end
-		if landConn    then landConn:Disconnect() end
+	local lastPos = hrp.Position
+	local positionResetTolerance = 5
 	
-		if bg then bg:Destroy() end
-		if bv then bv:Destroy() end
+	local originalRightC0, originalLeftC0
 	
-		humanoid:ChangeState(Enum.HumanoidStateType.Running)
-		humanoid.AutoRotate   = true
-		humanoid.CameraOffset = savedOffset or Vector3.zero
-		hrp.Anchored          = false
-		hrp.Velocity          = Vector3.zero
-		hrp.RotVelocity       = Vector3.zero
-	
-		button.Text = "Noclip OFF ["..bindKey.Name.."]"
+	local function findArmMotors()
+		local rightArmMotor = humanoid.Parent:FindFirstChild("RightUpperArm", true)
+		local leftArmMotor = humanoid.Parent:FindFirstChild("LeftUpperArm", true)
+		if not rightArmMotor or not rightArmMotor:IsA("Motor6D") then
+			rightArmMotor = humanoid.Parent:FindFirstChild("Right Shoulder", true)
+		end
+		if not leftArmMotor or not leftArmMotor:IsA("Motor6D") then
+			leftArmMotor = humanoid.Parent:FindFirstChild("Left Shoulder", true)
+		end
+		return rightArmMotor, leftArmMotor
 	end
 	
-	player.CharacterAdded:Connect(function(char)
-		cleanup()
-		character = char
-		humanoid  = char:WaitForChild("Humanoid")
-		hrp       = char:WaitForChild("HumanoidRootPart")
-		camera    = workspace.CurrentCamera
-	end)
+	local rightArmMotor, leftArmMotor = findArmMotors()
 	
-	-- Уведомления (с поддержкой CheckMark)
+	local function stopAllAnimations()
+		local animator = humanoid:FindFirstChildOfClass("Animator")
+		if animator then
+			for _, track in pairs(animator:GetPlayingAnimationTracks()) do
+				track:Stop()
+			end
+		end
+	end
+	
+	local function resetArmMotors()
+		if rightArmMotor and originalRightC0 then
+			rightArmMotor.C0 = originalRightC0
+		end
+		if leftArmMotor and originalLeftC0 then
+			leftArmMotor.C0 = originalLeftC0
+		end
+	end
+	
 	local function notify(text)
 		notification.Text = text
 		notification.Visible = true
 		notification.TextTransparency = 1
 		notification.BackgroundTransparency = 1
 	
-		-- Сброс прозрачности CheckMark
 		local check = notification:FindFirstChild("CheckMark")
-		if check then
-			check.ImageTransparency = 1
-		end
+		if check then check.ImageTransparency = 1 end
 	
-		-- Появление текста и фона
 		TweenService:Create(notification, TweenInfo.new(0.4), {
-			TextTransparency       = 0,
-			BackgroundTransparency = 0.2,
+			TextTransparency = 0,
+			BackgroundTransparency = 0.2
 		}):Play()
-	
-		-- Появление CheckMark
 		if check then
-			TweenService:Create(check, TweenInfo.new(0.4), {
-				ImageTransparency = 0,
-			}):Play()
+			TweenService:Create(check, TweenInfo.new(0.4), {ImageTransparency = 0}):Play()
 		end
 	
-		-- Авто‑скрытие через 2.5 секунды
 		task.delay(2.5, function()
 			TweenService:Create(notification, TweenInfo.new(0.5), {
-				TextTransparency       = 1,
-				BackgroundTransparency = 1,
+				TextTransparency = 1,
+				BackgroundTransparency = 1
 			}):Play()
 			if check then
-				TweenService:Create(check, TweenInfo.new(0.5), {
-					ImageTransparency = 1,
-				}):Play()
+				TweenService:Create(check, TweenInfo.new(0.5), {ImageTransparency = 1}):Play()
 			end
 		end)
 	end
 	
-	-- NoClip + PlatformStand fix
 	local function enableNoClip()
 		noClipConn = RunService.Heartbeat:Connect(function()
 			for _,part in ipairs(character:GetDescendants()) do
@@ -1760,12 +3903,44 @@ local function WBJGNJL_fake_script() -- Hi.script
 		end)
 	end
 	
-	-- Movement listeners
+	local function cleanup()
+		flying = false
+		if flyConn    then flyConn:Disconnect() end
+		if noiseConn  then noiseConn:Disconnect() end
+		if noClipConn then noClipConn:Disconnect() end
+		if platConn   then platConn:Disconnect() end
+		if ownershipConn then ownershipConn:Disconnect() end
+		if smoothTeleportConn then smoothTeleportConn:Disconnect() end
+		if bg then bg:Destroy() end
+		if bv then bv:Destroy() end
+	
+		humanoid:ChangeState(Enum.HumanoidStateType.Running)
+		humanoid.AutoRotate   = true
+		humanoid.CameraOffset = savedOffset or Vector3.zero
+		hrp.Anchored = false
+		hrp.Velocity = Vector3.new(0,0,0)
+		humanoid.UseJumpPower = true
+		humanoid.JumpPower = 50 -- или другое значение по умолчанию
+		humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping, true)
+	
+	
+		button.Text = "Noclip OFF ["..bindKey.Name.."]"
+	end
+	
+	player.CharacterAdded:Connect(function(char)
+		cleanup()
+		character = char
+		humanoid  = char:WaitForChild("Humanoid")
+		hrp       = char:WaitForChild("HumanoidRootPart")
+		camera    = workspace.CurrentCamera
+	
+		rightArmMotor, leftArmMotor = findArmMotors()
+	end)
+	
 	UserInputService.InputBegan:Connect(function(inp, gp)
 		if gp or inp.UserInputType ~= Enum.UserInputType.Keyboard then return end
 		local kc = inp.KeyCode
 	
-		-- Обработка режима ожидания выбора клавиши для бинда
 		if listening then
 			bindKey = kc
 			listening = false
@@ -1786,68 +3961,91 @@ local function WBJGNJL_fake_script() -- Hi.script
 				cleanup()
 				notify("    Disabled function: Noclip")
 			else
-				-- Toggle Flight
 				flying = true
 				notify("    Enabled function: Noclip")
 				button.Text = "Noclip ON ["..bindKey.Name.."]"
 	
-				-- save camera
 				savedOffset = humanoid.CameraOffset
 				humanoid.AutoRotate   = false
 				humanoid.CameraOffset = Vector3.zero
+				humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
 	
-				hrp.Anchored = true
 				enableNoClip()
 	
-				-- create movers
 				bg = Instance.new("BodyGyro", hrp)
 				bg.MaxTorque = Vector3.new(9e9,9e9,9e9)
 				bg.D = 1000
-				bv = Instance.new("BodyVelocity", hrp)
-				bv.MaxForce  = Vector3.new(9e9,9e9,9e9)
-				bv.Velocity  = Vector3.zero
 	
-				-- landing cycle
-				landConn = RunService.Heartbeat:Connect(function(dt)
-					if not flying then return end
-					if math.random() < dt * 1.5 then
-						hrp.Anchored = false
-						task.delay(0.07 + math.random()*0.05, function()
-							if flying then hrp.Anchored = true end
-						end)
+				bv = Instance.new("BodyVelocity", hrp)
+				bv.MaxForce = Vector3.new(9e9,9e9,9e9)
+				bv.Velocity = Vector3.new(0,0,0)
+	
+				hrp.Anchored = false
+	
+				humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown, false)
+				humanoid:SetStateEnabled(Enum.HumanoidStateType.Physics, false)
+				humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated, false)
+				humanoid:SetStateEnabled(Enum.HumanoidStateType.StrafingNoPhysics, false)
+	
+				-- Бесконечный прыжок + обход PlatformStand-киков
+				humanoid.UseJumpPower = true
+				humanoid.JumpPower = 0
+				humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping, true)
+				humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+	
+				-- Установка владельца сетевого объекта, чтобы избежать лагов и телепортов
+				pcall(function()
+					if hrp:GetNetworkOwner() ~= player then
+						hrp:SetNetworkOwner(player)
 					end
 				end)
 	
-				-- noise for anti‑detect
+				-- Плавающее состояние симулируется для обхода анти-флай скриптов
+				RunService.Stepped:Connect(function()
+					if flying then
+						humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+					end
+				end)
+	
+	
+				ownershipConn = RunService.Heartbeat:Connect(function()
+					local owner = hrp:GetNetworkOwner()
+					if owner ~= player then
+						hrp:SetNetworkOwner(player)
+					end
+				end)
+	
 				noiseConn = RunService.Heartbeat:Connect(function()
 					if bg and bv and flying then
-						bg.P         = 9e4 + math.random(-1e3,1e3)
-						bv.P         = 1250 + math.random(-50,50)
-						bv.MaxForce  = Vector3.new(9e9,9e9,9e9) * (1 + math.random(-0.02,0.02))
+						bg.P = 9e4 + math.random(-1e3,1e3)
+						bv.MaxForce = Vector3.new(9e9,9e9,9e9) * (1 + math.random(-0.02,0.02))
 					end
 				end)
 	
-				-- main flight loop
+				lastPos = hrp.Position
+	
 				flyConn = RunService.Heartbeat:Connect(function(dt)
 					if not flying then return end
 					local cf = camera.CFrame
-					local mv = Vector3.zero
-					if keys.W   then mv += cf.LookVector end
-					if keys.S   then mv -= cf.LookVector end
-					if keys.A   then mv -= cf.RightVector end
-					if keys.D   then mv += cf.RightVector end
-					if keys.Up  then mv += Vector3.new(0,1,0) end
-					if keys.Down then mv -= Vector3.new(0,1,0) end
+					local mv = Vector3.new(0, 0, 0)
 	
-					if mv.Magnitude > 0 then
-						humanoid:Move(mv.Unit, false)
-						local delta = mv.Unit * (speedBase + math.random(-5,5)) * dt
-						hrp.CFrame += delta
-						bv.Velocity = mv.Unit * (speedBase + math.random(-10,10))
-						bg.CFrame   = cf
-					else
+					if keys.W then mv = mv + cf.LookVector end
+					if keys.S then mv = mv - cf.LookVector end
+					if keys.A then mv = mv - cf.RightVector end
+					if keys.D then mv = mv + cf.RightVector end
+					if keys.Up then mv = mv + Vector3.new(0,1,0) end
+					if keys.Down then mv = mv - Vector3.new(0,1,0) end
+	
+					if mv.Magnitude == 0 then
 						bv.Velocity = Vector3.zero
+					else
+						local dir = mv.Unit
+						local speed = speedBase
+						bv.Velocity = dir * speed
 					end
+	
+					bg.CFrame = CFrame.new(hrp.Position, hrp.Position + cf.LookVector)
+					lastPos = hrp.Position
 				end)
 			end
 		end
@@ -1864,85 +4062,25 @@ local function WBJGNJL_fake_script() -- Hi.script
 		if kc == Enum.KeyCode.LeftShift then keys.Down = false end
 	end)
 	
-	-- GUI click to bind
 	button.MouseButton1Click:Connect(function()
 		if listening then return end
 		listening = true
 		button.Text = "Press any key..."
 		notify("Press any key to bind flight")
 	end)
-	-- Кэш для исходных C0 суставов рук
-	local originalRightC0, originalLeftC0
-	
-	local function findArmMotors()
-		local rightArmMotor = nil
-		local leftArmMotor = nil
-	
-		-- Попытка найти R15 моторы
-		rightArmMotor = humanoid.Parent:FindFirstChild("RightUpperArm", true)
-		leftArmMotor = humanoid.Parent:FindFirstChild("LeftUpperArm", true)
-	
-		-- Если не R15 — ищем R6 моторы
-		if not rightArmMotor or not rightArmMotor:IsA("Motor6D") then
-			rightArmMotor = humanoid.Parent:FindFirstChild("Right Shoulder", true)
-		end
-		if not leftArmMotor or not leftArmMotor:IsA("Motor6D") then
-			leftArmMotor = humanoid.Parent:FindFirstChild("Left Shoulder", true)
-		end
-	
-		return rightArmMotor, leftArmMotor
-	end
-	
-	local rightArmMotor, leftArmMotor = findArmMotors()
-	
-	local function raiseArms()
-		if rightArmMotor and leftArmMotor then
-			if not originalRightC0 then originalRightC0 = rightArmMotor.C0 end
-			if not originalLeftC0 then originalLeftC0 = leftArmMotor.C0 end
-	
-			-- Поворачиваем руки вверх примерно на 60 градусов (по X)
-			rightArmMotor.C0 = originalRightC0 * CFrame.Angles(-math.rad(60), 0, 0)
-			leftArmMotor.C0 = originalLeftC0 * CFrame.Angles(-math.rad(60), 0, 0)
-		end
-	end
-	
-	local function resetArms()
-		if rightArmMotor and originalRightC0 then
-			rightArmMotor.C0 = originalRightC0
-		end
-		if leftArmMotor and originalLeftC0 then
-			leftArmMotor.C0 = originalLeftC0
-		end
-	end
 	
 	RunService.Heartbeat:Connect(function()
 		if flying then
 			humanoid.AutoRotate = false
-	
-			local camLook = workspace.CurrentCamera.CFrame.LookVector
-			local backDir = -camLook.Unit
-			if backDir.Magnitude > 0 then
-				hrp.CFrame = CFrame.new(hrp.Position, hrp.Position + backDir)
-			end
-	
-			local animator = humanoid:FindFirstChildOfClass("Animator")
-			if animator then
-				for _, track in pairs(animator:GetPlayingAnimationTracks()) do
-					track:Stop()
-				end
-			end
-	
-			raiseArms()
+			stopAllAnimations()
+			resetArmMotors()
 		else
 			humanoid.AutoRotate = true
-			resetArms()
 		end
 	end)
-	
-	
 end
-coroutine.wrap(WBJGNJL_fake_script)()
-local function QDDT_fake_script() -- ClickwarpButton.script 
+coroutine.wrap(GAGM_fake_script)()
+local function BPDTZNT_fake_script() -- ClickwarpButton.script 
 	local script = Instance.new('LocalScript', ClickwarpButton)
 
 	local Players          = game:GetService("Players")
@@ -2039,7 +4177,48 @@ local function QDDT_fake_script() -- ClickwarpButton.script
 				local char = player.Character
 				local hrp = char and char:FindFirstChild("HumanoidRootPart")
 				if hrp then
+					local humanoid = player.Character:FindFirstChildWhichIsA("Humanoid")
+					if humanoid then
+						-- Отключение опасных состояний
+						for _, state in ipairs({
+							Enum.HumanoidStateType.FallingDown,
+							Enum.HumanoidStateType.Ragdoll,
+							Enum.HumanoidStateType.Physics,
+							Enum.HumanoidStateType.Seated,
+							Enum.HumanoidStateType.StrafingNoPhysics
+							}) do
+							pcall(function()
+								humanoid:SetStateEnabled(state, false)
+							end)
+						end
+	
+						-- Принудительная смена на безопасное состояние
+						pcall(function()
+							humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+						end)
+					end
+	
+					-- Установка владельца (не всегда работает в FE)
+					pcall(function()
+						if hrp:GetNetworkOwner() ~= player then
+							hrp:SetNetworkOwner(player)
+						end
+					end)
+	
+					-- Обнуление скорости (обход velocity check)
+					hrp.Velocity = Vector3.zero
+					hrp.RotVelocity = Vector3.zero
+	
+					-- Гладкий телепорт с ручным CFrame
+					hrp.Anchored = true
 					hrp.CFrame = CFrame.new(target.Position + Vector3.new(0, 3, 0))
+					task.wait(0.05)
+					hrp.Anchored = false
+	
+					-- Повторная принудительная симуляция "безопасного" состояния
+					pcall(function()
+						humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+					end)
 				end
 			end
 		end
@@ -2139,8 +4318,8 @@ local function QDDT_fake_script() -- ClickwarpButton.script
 		end
 	end)
 end
-coroutine.wrap(QDDT_fake_script)()
-local function DMTWR_fake_script() -- AntiAFKButton.LocalScript 
+coroutine.wrap(BPDTZNT_fake_script)()
+local function VQPRLJW_fake_script() -- AntiAFKButton.LocalScript 
 	local script = Instance.new('LocalScript', AntiAFKButton)
 
 	local Players = game:GetService("Players")
@@ -2305,8 +4484,8 @@ local function DMTWR_fake_script() -- AntiAFKButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(DMTWR_fake_script)()
-local function AKMQ_fake_script() -- NoFallDmg.NoFallDamage 
+coroutine.wrap(VQPRLJW_fake_script)()
+local function EULAGSO_fake_script() -- NoFallDmg.NoFallDamage 
 	local script = Instance.new('LocalScript', NoFallDmg)
 
 	local Players = game:GetService("Players")
@@ -2424,8 +4603,8 @@ local function AKMQ_fake_script() -- NoFallDmg.NoFallDamage
 	end)
 	
 end
-coroutine.wrap(AKMQ_fake_script)()
-local function VRGUI_fake_script() -- AntiAim.script 
+coroutine.wrap(EULAGSO_fake_script)()
+local function ZAKOQNE_fake_script() -- AntiAim.script 
 	local script = Instance.new('LocalScript', AntiAim)
 
 	local Players = game:GetService("Players")
@@ -2525,8 +4704,182 @@ local function VRGUI_fake_script() -- AntiAim.script
 	end)
 	
 end
-coroutine.wrap(VRGUI_fake_script)()
-local function OKKEA_fake_script() -- PlayerLauncher.playerlauncher 
+coroutine.wrap(ZAKOQNE_fake_script)()
+local function AZOFW_fake_script() -- ResetButton.reset 
+	local script = Instance.new('LocalScript', ResetButton)
+
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local button = script.Parent
+	
+	-- Функция суицида с мгновенным переходом в "dead" (как будто добили в Da Hood)
+	local function instantDeathDaHood()
+		local character = player.Character
+		if not character then return end
+	
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+		local hrp = character:FindFirstChild("HumanoidRootPart")
+	
+		-- Установка состояния "Knocked" и принудительное убийство
+		if humanoid and hrp then
+			-- Попытка установить нокдаун анимации, как у добитого
+			local Knocked = character:FindFirstChild("BodyEffects") and character.BodyEffects:FindFirstChild("K.O") 
+			if Knocked and Knocked:IsA("BoolValue") then
+				Knocked.Value = true
+			end
+	
+			-- Также включим "Break" и "Dead" если есть
+			local Dead = character:FindFirstChild("BodyEffects") and character.BodyEffects:FindFirstChild("Dead")
+			if Dead and Dead:IsA("BoolValue") then
+				Dead.Value = true
+			end
+	
+			local Break = character:FindFirstChild("BodyEffects") and character.BodyEffects:FindFirstChild("Break")
+			if Break and Break:IsA("BoolValue") then
+				Break.Value = true
+			end
+	
+			-- Принудительно обнуляем здоровье
+			humanoid.Health = 0
+		end
+	end
+	
+	-- Обработка нажатия кнопки
+	button.MouseButton1Click:Connect(function()
+		instantDeathDaHood()
+	end)
+	
+	-- Название кнопки
+	button.Text = "Suicide"
+	
+end
+coroutine.wrap(AZOFW_fake_script)()
+local function JZIYFT_fake_script() -- BunnyHop.Bunnyhop 
+	local script = Instance.new('LocalScript', BunnyHop)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local UserInputService = game:GetService("UserInputService")
+	local TweenService = game:GetService("TweenService")
+	
+	local player = Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	local root = character:WaitForChild("HumanoidRootPart")
+	
+	local button = script.Parent
+	local gui = player:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
+	local notification = gui:WaitForChild("NotificationLabel")
+	local checkImage = notification:FindFirstChild("CheckMark")
+	
+	-- Настройки BunnyHop
+	local jumpKey = Enum.KeyCode.Space
+	local jumpCooldown = 0.1
+	local speedBoost = 2
+	local maxAirSpeed = 100
+	local groundSpeed = 16
+	
+	local enabled = false
+	local jumping = false
+	local lastJump = 0
+	local currentSpeed = groundSpeed
+	
+	-- Уведомление
+	local function notify(text)
+		notification.Text = text
+		notification.TextTransparency = 1
+		notification.BackgroundTransparency = 1
+		if checkImage then checkImage.ImageTransparency = 1 end
+	
+		local tweenIn = TweenService:Create(notification, TweenInfo.new(0.3), {
+			TextTransparency = 0,
+			BackgroundTransparency = 0.2
+		})
+		local tweenInCheck = checkImage and TweenService:Create(checkImage, TweenInfo.new(0.3), {
+			ImageTransparency = 0
+		})
+	
+		tweenIn:Play()
+		if tweenInCheck then tweenInCheck:Play() end
+		tweenIn.Completed:Wait()
+	
+		task.delay(2.5, function()
+			local tweenOut = TweenService:Create(notification, TweenInfo.new(0.3), {
+				TextTransparency = 1,
+				BackgroundTransparency = 1
+			})
+			local tweenOutCheck = checkImage and TweenService:Create(checkImage, TweenInfo.new(0.3), {
+				ImageTransparency = 1
+			})
+			tweenOut:Play()
+			if tweenOutCheck then tweenOutCheck:Play() end
+			tweenOut.Completed:Wait()
+		end)
+	end
+	
+	-- Управление клавишей
+	UserInputService.InputBegan:Connect(function(input, gpe)
+		if input.KeyCode == jumpKey and not gpe then
+			jumping = true
+		end
+	end)
+	
+	UserInputService.InputEnded:Connect(function(input)
+		if input.KeyCode == jumpKey then
+			jumping = false
+		end
+	end)
+	
+	-- Главный цикл
+	RunService.RenderStepped:Connect(function()
+		if not enabled then return end
+	
+		local isInAir = humanoid.FloorMaterial == Enum.Material.Air
+	
+		if jumping and not isInAir then
+			local now = tick()
+			if now - lastJump >= jumpCooldown then
+				lastJump = now
+				humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+			end
+		end
+	
+		if isInAir then
+			-- Ускорение в воздухе
+			currentSpeed = math.min(currentSpeed + speedBoost, maxAirSpeed)
+			humanoid.WalkSpeed = currentSpeed
+		else
+			-- Наземная скорость
+			currentSpeed = groundSpeed
+			humanoid.WalkSpeed = currentSpeed
+		end
+	end)
+	
+	-- При смерти
+	humanoid.Died:Connect(function()
+		currentSpeed = groundSpeed
+		humanoid.WalkSpeed = groundSpeed
+	end)
+	
+	-- Кнопка GUI
+	button.MouseButton1Click:Connect(function()
+		enabled = not enabled
+	
+		if enabled then
+			humanoid.WalkSpeed = currentSpeed
+			button.Text = "BunnyHop ON"
+			notify("    Function Enabled: BunnyHop", true)
+		else
+			currentSpeed = groundSpeed
+			humanoid.WalkSpeed = groundSpeed
+			button.Text = "BunnyHop OFF"
+			notify("   Function Disabled: BunnyHop", true)
+		end
+	end)
+	
+end
+coroutine.wrap(JZIYFT_fake_script)()
+local function WYTLAXE_fake_script() -- PlayerLauncher.playerlauncher 
 	local script = Instance.new('LocalScript', PlayerLauncher)
 
 	local Players          = game:GetService("Players")
@@ -2701,79 +5054,42 @@ local function OKKEA_fake_script() -- PlayerLauncher.playerlauncher
 	end)
 	
 end
-coroutine.wrap(OKKEA_fake_script)()
-local function XBQYL_fake_script() -- ResetButton.reset 
-	local script = Instance.new('LocalScript', ResetButton)
+coroutine.wrap(WYTLAXE_fake_script)()
+local function GIEDRE_fake_script() -- FreezeButton.freezepos 
+	local script = Instance.new('LocalScript', FreezeButton)
 
-	local Players = game:GetService("Players")
+	local Players          = game:GetService("Players")
+	local RunService       = game:GetService("RunService")
+	local TweenService     = game:GetService("TweenService")
+	local UserInputService = game:GetService("UserInputService")
+	
 	local player = Players.LocalPlayer
-	local button = script.Parent
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid = character:WaitForChild("Humanoid")
+	local hrp = character:WaitForChild("HumanoidRootPart")
 	
-	-- Функция суицида с мгновенным переходом в "dead" (как будто добили в Da Hood)
-	local function instantDeathDaHood()
-		local character = player.Character
-		if not character then return end
+	local gui = player:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
+	local button = gui:WaitForChild("menu")
+		:WaitForChild("PagesFrame")
+		:WaitForChild("Tab5Page")
+		:WaitForChild("FreezeButton")
+	local notification = gui:WaitForChild("NotificationLabel")
 	
-		local humanoid = character:FindFirstChildOfClass("Humanoid")
-		local hrp = character:FindFirstChild("HumanoidRootPart")
+	button.Active = true
+	button.AutoButtonColor = true
 	
-		-- Установка состояния "Knocked" и принудительное убийство
-		if humanoid and hrp then
-			-- Попытка установить нокдаун анимации, как у добитого
-			local Knocked = character:FindFirstChild("BodyEffects") and character.BodyEffects:FindFirstChild("K.O") 
-			if Knocked and Knocked:IsA("BoolValue") then
-				Knocked.Value = true
-			end
+	local frozen = false
+	local freezeConnection
+	local animTracks = {}
 	
-			-- Также включим "Break" и "Dead" если есть
-			local Dead = character:FindFirstChild("BodyEffects") and character.BodyEffects:FindFirstChild("Dead")
-			if Dead and Dead:IsA("BoolValue") then
-				Dead.Value = true
-			end
-	
-			local Break = character:FindFirstChild("BodyEffects") and character.BodyEffects:FindFirstChild("Break")
-			if Break and Break:IsA("BoolValue") then
-				Break.Value = true
-			end
-	
-			-- Принудительно обнуляем здоровье
-			humanoid.Health = 0
-		end
-	end
-	
-	-- Обработка нажатия кнопки
-	button.MouseButton1Click:Connect(function()
-		instantDeathDaHood()
-	end)
-	
-	-- Название кнопки
-	button.Text = "Suicide"
-	
-end
-coroutine.wrap(XBQYL_fake_script)()
-local function XUWB_fake_script() -- InfinityAmmo.InfinityAmmo 
-	local script = Instance.new('LocalScript', InfinityAmmo)
-
-	local Players       = game:GetService("Players")
-	local TweenService  = game:GetService("TweenService")
-	
-	local player        = Players.LocalPlayer
-	local gui           = player:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
-	local button        = script.Parent
-	local notification  = gui:WaitForChild("NotificationLabel")
-	
-	local infiniteAmmoEnabled = false
-	
-	local DEFAULT_SIZE = UDim2.new(0, 264, 0, 44)
-	local NOTIFY_SIZE  = UDim2.new(0, 304, 0, 44)
+	local listening = false
+	local bindKey = nil
 	
 	local function notify(text)
 		notification.Text = text
 		notification.Visible = true
 		notification.TextTransparency = 1
 		notification.BackgroundTransparency = 1
-	
-		notification.Size = NOTIFY_SIZE
 	
 		local check = notification:FindFirstChild("CheckMark")
 		if check then
@@ -2796,75 +5112,167 @@ local function XUWB_fake_script() -- InfinityAmmo.InfinityAmmo
 				TextTransparency       = 1,
 				BackgroundTransparency = 1,
 			}):Play()
-	
 			if check then
 				TweenService:Create(check, TweenInfo.new(0.5), {
 					ImageTransparency = 1,
 				}):Play()
 			end
-	
-			task.delay(0.5, function()
-				notification.Size = DEFAULT_SIZE
-			end)
 		end)
 	end
 	
-	local function setInfiniteAmmo()
-		local character = player.Character
-		if not character then return end
+	local function freeze()
+		if frozen then return end
+		frozen = true
+		button.Text = "FreezePos ON ["..(bindKey and bindKey.Name or "").."]"
 	
-		local tool = character:FindFirstChildOfClass("Tool")
-		if not tool then return end
+		for _, track in pairs(humanoid:GetPlayingAnimationTracks()) do
+			track:Stop()
+			table.insert(animTracks, track)
+		end
 	
-		local ammoValue = tool:FindFirstChild("AmmoCount") -- замени на своё имя
-		if ammoValue and ammoValue:IsA("IntValue") then
-			ammoValue.Value = math.huge
+		local savedPos = hrp.Position
+	
+		freezeConnection = RunService.Stepped:Connect(function()
+			if hrp and hrp.Parent then
+				hrp.Velocity = Vector3.zero
+				hrp.RotVelocity = Vector3.zero
+				hrp.CFrame = CFrame.new(savedPos)
+				humanoid:ChangeState(Enum.HumanoidStateType.Physics)
+			end
+		end)
+	end
+	
+	local function unfreeze()
+		if not frozen then return end
+		frozen = false
+		button.Text = "FreezePos OFF ["..(bindKey and bindKey.Name or "").."]"
+	
+		for _, track in pairs(animTracks) do
+			if track and not track.IsPlaying then
+				track:Play()
+			end
+		end
+		animTracks = {}
+	
+		humanoid:ChangeState(Enum.HumanoidStateType.GettingUp)
+	
+		if freezeConnection then
+			freezeConnection:Disconnect()
+			freezeConnection = nil
 		end
 	end
 	
+	UserInputService.InputBegan:Connect(function(input, gameProcessed)
+		if gameProcessed or input.UserInputType ~= Enum.UserInputType.Keyboard then return end
+		local key = input.KeyCode
+	
+		if listening then
+			bindKey = key
+			listening = false
+			button.Text = "FreezePos OFF ["..bindKey.Name.."]"
+			notify("Freeze bound to "..bindKey.Name)
+			return
+		end
+	
+		if bindKey and key == bindKey then
+			if frozen then
+				unfreeze()
+			else
+				freeze()
+			end
+		end
+	end)
+	
 	button.MouseButton1Click:Connect(function()
-		infiniteAmmoEnabled = not infiniteAmmoEnabled
-	
-		if infiniteAmmoEnabled then
-			button.Text = "Infinity Ammo ON"
-			notify("     Enabled Function: Infinity Ammo")
-			setInfiniteAmmo()
-		else
-			button.Text = "Infinity Ammo OFF"
-			notify("     Disabled Function: Infinity Ammo")
-		end
+		-- При каждом нажатии на кнопку запускаем режим бинда, даже если он уже активен
+		listening = true
+		button.Text = "Press any key..."
+		notify("Press any key to bind")
 	end)
 	
-	game:GetService("RunService").RenderStepped:Connect(function()
-		if infiniteAmmoEnabled then
-			setInfiniteAmmo()
-		end
+	player.CharacterAdded:Connect(function(char)
+		frozen = false
+		listening = false
+		bindKey = nil
+		button.Text = "Click to Bind"
+		animTracks = {}
+		character = char
+		humanoid = char:WaitForChild("Humanoid")
+		hrp = char:WaitForChild("HumanoidRootPart")
 	end)
+	
+	button.Text = "FreezePos OFF"
 	
 end
-coroutine.wrap(XUWB_fake_script)()
-local function LKNBYK_fake_script() -- NoReload.NoReload 
-	local script = Instance.new('LocalScript', NoReload)
+coroutine.wrap(GIEDRE_fake_script)()
+local function RXYTGBQ_fake_script() -- CarFly.CarFly 
+	local script = Instance.new('LocalScript', CarFly)
 
-	local Players       = game:GetService("Players")
-	local TweenService  = game:GetService("TweenService")
-	local RunService    = game:GetService("RunService")
+	local Players          = game:GetService("Players")
+	local RunService       = game:GetService("RunService")
+	local TweenService     = game:GetService("TweenService")
+	local UserInputService = game:GetService("UserInputService")
 	
-	local player        = Players.LocalPlayer
-	local gui           = player:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
-	local button        = script.Parent
-	local notification  = gui:WaitForChild("NotificationLabel")
+	local player       = Players.LocalPlayer
+	local gui          = player:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
+	local button       = script.Parent
+	local notification = gui:WaitForChild("NotificationLabel")
 	
-	local noReloadEnabled = false
+	local character = player.Character or player.CharacterAdded:Wait()
+	local humanoid  = character:WaitForChild("Humanoid")
+	local hrp       = character:WaitForChild("HumanoidRootPart")
+	local camera    = workspace.CurrentCamera
 	
-	local DEFAULT_SIZE = UDim2.new(0, 264, 0, 44)
-	local NOTIFY_SIZE  = UDim2.new(0, 304, 0, 44)
+	local flying     = false
+	local listening  = false
+	local bindKey    = Enum.KeyCode.C
+	local speedBase  = 100
+	local flyConn, noiseConn, ownershipConn = nil, nil, nil
+	local bg, bv
+	local savedOffset
 	
-	-- Функция уведомлений
+	local keys = { W=false, A=false, S=false, D=false, Up=false, Down=false }
+	
+	local lastPos = hrp.Position
+	local positionResetTolerance = 5
+	
+	local originalRightC0, originalLeftC0
+	
+	local function findArmMotors()
+		local rightArmMotor = humanoid.Parent:FindFirstChild("RightUpperArm", true)
+		local leftArmMotor = humanoid.Parent:FindFirstChild("LeftUpperArm", true)
+		if not rightArmMotor or not rightArmMotor:IsA("Motor6D") then
+			rightArmMotor = humanoid.Parent:FindFirstChild("Right Shoulder", true)
+		end
+		if not leftArmMotor or not leftArmMotor:IsA("Motor6D") then
+			leftArmMotor = humanoid.Parent:FindFirstChild("Left Shoulder", true)
+		end
+		return rightArmMotor, leftArmMotor
+	end
+	
+	local rightArmMotor, leftArmMotor = findArmMotors()
+	
+	local function stopAllAnimations()
+		local animator = humanoid:FindFirstChildOfClass("Animator")
+		if animator then
+			for _, track in pairs(animator:GetPlayingAnimationTracks()) do
+				track:Stop()
+			end
+		end
+	end
+	
+	local function resetArmMotors()
+		if rightArmMotor and originalRightC0 then
+			rightArmMotor.C0 = originalRightC0
+		end
+		if leftArmMotor and originalLeftC0 then
+			leftArmMotor.C0 = originalLeftC0
+		end
+	end
+	
 	local function notify(text)
 		notification.Text = text
 		notification.Visible = true
-		notification.Size = NOTIFY_SIZE
 		notification.TextTransparency = 1
 		notification.BackgroundTransparency = 1
 	
@@ -2875,11 +5283,8 @@ local function LKNBYK_fake_script() -- NoReload.NoReload
 			TextTransparency = 0,
 			BackgroundTransparency = 0.2
 		}):Play()
-	
 		if check then
-			TweenService:Create(check, TweenInfo.new(0.4), {
-				ImageTransparency = 0,
-			}):Play()
+			TweenService:Create(check, TweenInfo.new(0.4), {ImageTransparency = 0}):Play()
 		end
 	
 		task.delay(2.5, function()
@@ -2887,58 +5292,443 @@ local function LKNBYK_fake_script() -- NoReload.NoReload
 				TextTransparency = 1,
 				BackgroundTransparency = 1
 			}):Play()
-	
 			if check then
-				TweenService:Create(check, TweenInfo.new(0.5), {
-					ImageTransparency = 1,
-				}):Play()
+				TweenService:Create(check, TweenInfo.new(0.5), {ImageTransparency = 1}):Play()
 			end
-	
-			task.delay(0.5, function()
-				notification.Size = DEFAULT_SIZE
-			end)
 		end)
 	end
 	
-	-- Удаление анимации перезарядки
-	local function disableReload()
-		local character = player.Character
-		if not character then return end
+	local function cleanup()
+		flying = false
+		if flyConn    then flyConn:Disconnect() end
+		if noiseConn  then noiseConn:Disconnect() end
+		if ownershipConn then ownershipConn:Disconnect() end
+		if bg then bg:Destroy() end
+		if bv then bv:Destroy() end
 	
-		local tool = character:FindFirstChildOfClass("Tool")
-		if not tool then return end
+		humanoid:ChangeState(Enum.HumanoidStateType.Running)
+		humanoid.AutoRotate   = true
+		humanoid.CameraOffset = savedOffset or Vector3.zero
+		hrp.Anchored = false
+		hrp.Velocity = Vector3.new(0,0,0)
+		humanoid.UseJumpPower = true
+		humanoid.JumpPower = 50 -- или другое значение по умолчанию
+		humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping, true)
 	
-		for _, anim in ipairs(tool:GetDescendants()) do
-			if anim:IsA("Animation") and anim.Name:lower():find("reload") then
-				anim:Destroy()
-			end
-		end
+		button.Text = "Vehicle Fly OFF ["..bindKey.Name.."]"
 	end
 	
-	-- Кнопка GUI
-	button.MouseButton1Click:Connect(function()
-		noReloadEnabled = not noReloadEnabled
+	player.CharacterAdded:Connect(function(char)
+		cleanup()
+		character = char
+		humanoid  = char:WaitForChild("Humanoid")
+		hrp       = char:WaitForChild("HumanoidRootPart")
+		camera    = workspace.CurrentCamera
 	
-		if noReloadEnabled then
-			button.Text = "No Reload ON"
-			notify("   Enabled Function: No Reload")
-			disableReload()
-		else
-			button.Text = "No Reload OFF"
-			notify("   Disabled Function: No Reload")
+		rightArmMotor, leftArmMotor = findArmMotors()
+	end)
+	
+	UserInputService.InputBegan:Connect(function(inp, gp)
+		if gp or inp.UserInputType ~= Enum.UserInputType.Keyboard then return end
+		local kc = inp.KeyCode
+	
+		if listening then
+			bindKey = kc
+			listening = false
+			button.Text = "Vehicle Fly OFF ["..bindKey.Name.."]"
+			notify("Flight bound to "..bindKey.Name)
+			return
+		end
+	
+		if kc == Enum.KeyCode.W then keys.W = true end
+		if kc == Enum.KeyCode.S then keys.S = true end
+		if kc == Enum.KeyCode.A then keys.A = true end
+		if kc == Enum.KeyCode.D then keys.D = true end
+		if kc == Enum.KeyCode.Space then keys.Up = true end
+		if kc == Enum.KeyCode.LeftShift then keys.Down = true end
+	
+		if kc == bindKey then
+			if flying then
+				cleanup()
+				notify("Disabled function: Vehicle Fly")
+			else
+				-- Начинаем Vehicle Fly
+				flying = true
+				notify("Enabled function: Vehicle Fly")
+				button.Text = "Vehicle Fly ON ["..bindKey.Name.."]"
+	
+				savedOffset = humanoid.CameraOffset
+				humanoid.AutoRotate   = false
+				humanoid.CameraOffset = Vector3.zero
+				humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+	
+				-- Находим сиденье игрока в машине
+				local vehicleSeat = nil
+				if character then
+					for _, seat in pairs(workspace:GetDescendants()) do
+						if seat:IsA("VehicleSeat") and seat.Occupant == humanoid then
+							vehicleSeat = seat
+							break
+						end
+					end
+				end
+	
+				if not vehicleSeat then
+					notify("Vehicle seat not found!")
+					wait(1)
+					cleanup()
+					return
+				end
+	
+				bg = Instance.new("BodyGyro", vehicleSeat)
+				bg.MaxTorque = Vector3.new(9e9,9e9,9e9)
+				bg.D = 1000
+				bg.P = 3000
+	
+				bv = Instance.new("BodyVelocity", vehicleSeat)
+				bv.MaxForce = Vector3.new(9e9,9e9,9e9)
+				bv.Velocity = Vector3.new(0,0,0)
+	
+				vehicleSeat.Anchored = false
+	
+				humanoid:SetStateEnabled(Enum.HumanoidStateType.FallingDown, false)
+				humanoid:SetStateEnabled(Enum.HumanoidStateType.Physics, false)
+				humanoid:SetStateEnabled(Enum.HumanoidStateType.Seated, false)
+				humanoid:SetStateEnabled(Enum.HumanoidStateType.StrafingNoPhysics, false)
+	
+				-- Настройки прыжка для обхода античита
+				humanoid.UseJumpPower = true
+				humanoid.JumpPower = 0
+				humanoid:SetStateEnabled(Enum.HumanoidStateType.Jumping, true)
+				humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+	
+				-- Установка владельца сети на транспорт
+				pcall(function()
+					if vehicleSeat:GetNetworkOwner() ~= player then
+						vehicleSeat:SetNetworkOwner(player)
+					end
+				end)
+	
+				ownershipConn = RunService.Heartbeat:Connect(function()
+					local owner = vehicleSeat:GetNetworkOwner()
+					if owner ~= player then
+						vehicleSeat:SetNetworkOwner(player)
+					end
+				end)
+	
+				noiseConn = RunService.Heartbeat:Connect(function()
+					if bg and bv and flying then
+						bg.P = 9e4 + math.random(-1e3,1e3)
+						bv.MaxForce = Vector3.new(9e9,9e9,9e9) * (1 + math.random(-0.02,0.02))
+					end
+				end)
+	
+				lastPos = hrp.Position
+	
+				flyConn = RunService.Heartbeat:Connect(function(dt)
+					if not flying then return end
+					local cf = camera.CFrame
+					local mv = Vector3.new(0, 0, 0)
+	
+					if keys.W then mv = mv + cf.LookVector end
+					if keys.S then mv = mv - cf.LookVector end
+					if keys.A then mv = mv - cf.RightVector end
+					if keys.D then mv = mv + cf.RightVector end
+					if keys.Up then mv = mv + Vector3.new(0,1,0) end
+					if keys.Down then mv = mv - Vector3.new(0,1,0) end
+	
+					if mv.Magnitude == 0 then
+						bv.Velocity = Vector3.new(0,0,0)
+					else
+						local dir = mv.Unit
+						bv.Velocity = dir * speedBase
+					end
+	
+					bg.CFrame = CFrame.new(vehicleSeat.Position, vehicleSeat.Position + cf.LookVector)
+					lastPos = vehicleSeat.Position
+				end)
+			end
 		end
 	end)
 	
-	-- Повторно удаляем анимации при каждом кадре (если функция включена)
-	RunService.RenderStepped:Connect(function()
-		if noReloadEnabled then
-			disableReload()
+	UserInputService.InputEnded:Connect(function(inp, gp)
+		if gp or inp.UserInputType ~= Enum.UserInputType.Keyboard then return end
+		local kc = inp.KeyCode
+		if kc == Enum.KeyCode.W then keys.W = false end
+		if kc == Enum.KeyCode.S then keys.S = false end
+		if kc == Enum.KeyCode.A then keys.A = false end
+		if kc == Enum.KeyCode.D then keys.D = false end
+		if kc == Enum.KeyCode.Space then keys.Up = false end
+		if kc == Enum.KeyCode.LeftShift then keys.Down = false end
+	end)
+	
+	button.MouseButton1Click:Connect(function()
+		if listening then return end
+		listening = true
+		button.Text = "Press any key..."
+		notify("Press any key to bind flight")
+	end)
+	
+	RunService.Heartbeat:Connect(function()
+		if flying then
+			humanoid.AutoRotate = false
+			stopAllAnimations()
+			resetArmMotors()
+		else
+			humanoid.AutoRotate = true
 		end
 	end)
 	
 end
-coroutine.wrap(LKNBYK_fake_script)()
-local function ZMHHE_fake_script() -- NoSpread.NoSpread 
+coroutine.wrap(RXYTGBQ_fake_script)()
+local function JCXSKA_fake_script() -- NoSpeedLimit.Speedlimit 
+	local script = Instance.new('LocalScript', NoSpeedLimit)
+
+	local RunService = game:GetService("RunService")
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local gui = player:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
+	local button = gui:WaitForChild("menu"):WaitForChild("PagesFrame"):WaitForChild("Tab6Page"):WaitForChild("No SpeedLimit")
+	
+	local active = false
+	local velocityForce
+	local loopConn
+	local speed = 50
+	
+	button.Text = "No SpeedLimit OFF"
+	
+	local function findVehicleSeat()
+		for _, v in pairs(workspace:GetDescendants()) do
+			if v:IsA("VehicleSeat") and v.Occupant == character:FindFirstChild("Humanoid") then
+				return v
+			end
+		end
+		return nil
+	end
+	
+	local function enableInfiniteSpeed()
+		local seat = findVehicleSeat()
+		if not seat then
+			warn("Vehicle seat not found.")
+			return
+		end
+	
+		if not velocityForce then
+			velocityForce = Instance.new("BodyVelocity")
+			velocityForce.MaxForce = Vector3.new(1e9, 1e9, 1e9)
+			velocityForce.Velocity = Vector3.zero
+			velocityForce.Parent = seat
+		end
+	
+		loopConn = RunService.Heartbeat:Connect(function()
+			speed += 2 -- Ускоряемся всё быстрее
+			local dir = seat.CFrame.LookVector
+			velocityForce.Velocity = dir * speed
+		end)
+	end
+	
+	local function disableInfiniteSpeed()
+		if velocityForce then
+			velocityForce:Destroy()
+			velocityForce = nil
+		end
+		if loopConn then
+			loopConn:Disconnect()
+			loopConn = nil
+		end
+		speed = 50
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		active = not active
+		if active then
+			enableInfiniteSpeed()
+			button.Text = "No SpeedLimit ON"
+		else
+			disableInfiniteSpeed()
+			button.Text = "No SpeedLimit OFF"
+		end
+	end)
+	
+end
+coroutine.wrap(JCXSKA_fake_script)()
+local function IACN_fake_script() -- InstantSpeed.InstantSpeed 
+	local script = Instance.new('LocalScript', InstantSpeed)
+
+	local RunService = game:GetService("RunService")
+	local Players = game:GetService("Players")
+	local TweenService = game:GetService("TweenService")
+	
+	local player = Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local gui = player:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
+	local button = gui.menu.PagesFrame.Tab6Page:WaitForChild("InstantSpeed")
+	local notification = gui:WaitForChild("NotificationLabel")
+	
+	_G.InfiniteSpeedActive = _G.InfiniteSpeedActive or false
+	local instantSpeedActive = false
+	
+	button.Text = "Instant Speed OFF"
+	
+	local function notify(text)
+		notification.Text = text
+		notification.Visible = true
+		notification.TextTransparency = 1
+		notification.BackgroundTransparency = 1
+	
+		local check = notification:FindFirstChild("CheckMark")
+		if check then check.ImageTransparency = 1 end
+	
+		TweenService:Create(notification, TweenInfo.new(0.3), {
+			TextTransparency = 0,
+			BackgroundTransparency = 0.2
+		}):Play()
+		if check then
+			TweenService:Create(check, TweenInfo.new(0.3), {ImageTransparency = 0}):Play()
+		end
+	
+		task.delay(2.5, function()
+			TweenService:Create(notification, TweenInfo.new(0.4), {
+				TextTransparency = 1,
+				BackgroundTransparency = 1
+			}):Play()
+			if check then
+				TweenService:Create(check, TweenInfo.new(0.4), {ImageTransparency = 1}):Play()
+			end
+		end)
+	end
+	local function notif2(text)
+		notification.Text = text
+		notification.Visible = true
+		notification.TextTransparency = 1
+		notification.BackgroundTransparency = 1
+	
+		local check = notification:FindFirstChild("CheckMark")
+		if check then check.ImageTransparency = 1 end -- сразу скрыт
+	
+		TweenService:Create(notification, TweenInfo.new(0.3), {
+			TextTransparency = 0,
+			BackgroundTransparency = 0.2
+		}):Play()
+	
+		-- Удаляем анимации CheckMark полностью
+		task.delay(2.5, function()
+			TweenService:Create(notification, TweenInfo.new(0.4), {
+				TextTransparency = 1,
+				BackgroundTransparency = 1
+			}):Play()
+		end)
+	end
+	
+	
+	local function findVehicleSeat()
+		for _, v in ipairs(workspace:GetDescendants()) do
+			if v:IsA("VehicleSeat") and v.Occupant == character:FindFirstChild("Humanoid") then
+				return v
+			end
+		end
+		return nil
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		if _G.InfiniteSpeedActive then
+			notif2("Disable Infinite Speed first!")
+			return
+		end
+	
+		instantSpeedActive = not instantSpeedActive
+		button.Text = instantSpeedActive and "Instant Speed ON" or "Instant Speed OFF"
+	
+		if instantSpeedActive then
+			local seat = findVehicleSeat()
+			if not seat then
+				notif2("You are not sitting in a vehicle!")
+				return
+			end
+	
+			local force = Instance.new("BodyVelocity")
+			force.MaxForce = Vector3.new(1e9, 1e9, 1e9)
+			force.Velocity = seat.CFrame.LookVector * 1000
+			force.Parent = seat
+	
+			notify("Instant speed applied!")
+	
+			task.delay(1, function()
+				if force then force:Destroy() end
+			end)
+		end
+	end)
+	
+end
+coroutine.wrap(IACN_fake_script)()
+local function LULX_fake_script() -- ReloadShoot.ReloadShoot 
+	local script = Instance.new('LocalScript', ReloadShoot)
+
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local button = script.Parent  -- Привязано к GUI кнопке
+	local replicatedStorage = game:GetService("ReplicatedStorage")
+	
+	-- Состояние
+	local shootWhileReloading = false
+	
+	-- Обновление текста кнопки
+	local function updateButtonText()
+		button.Text = shootWhileReloading and "ShootReload ON" or "ShootReload OFF"
+	end
+	
+	-- Уведомление
+	local function notify(text)
+		local gui = player:WaitForChild("PlayerGui"):FindFirstChild("ScreenGui")
+		if gui then
+			local label = gui:FindFirstChild("NotificationLabel")
+			if label then
+				label.Text = text
+				label.Visible = true
+				label.Size = UDim2.new(0, 304, 0, 44)
+				label.TextTransparency = 0
+				label.BackgroundTransparency = 0.2
+	
+				task.delay(2.5, function()
+					label:TweenSize(UDim2.new(0, 264, 0, 44), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.3, true)
+					label.TextTransparency = 1
+					label.BackgroundTransparency = 1
+				end)
+			end
+		end
+	end
+	
+	-- Перехват перезарядки
+	local function hookReload()
+		if not player.Character then return end
+		local tools = player.Character:GetChildren()
+		for _, tool in ipairs(tools) do
+			if tool:IsA("Tool") and tool:FindFirstChild("Reloading") then
+				local reloadValue = tool:FindFirstChild("Reloading")
+				reloadValue:GetPropertyChangedSignal("Value"):Connect(function()
+					if shootWhileReloading and reloadValue.Value == true then
+						reloadValue.Value = false
+					end
+				end)
+			end
+		end
+	end
+	
+	-- Подключаем
+	button.MouseButton1Click:Connect(function()
+		shootWhileReloading = not shootWhileReloading
+		updateButtonText()
+		notify((shootWhileReloading and "    Enabled" or "    Disabled") .. " Function: Shoot While Reloading")
+		hookReload()
+	end)
+	
+	updateButtonText()
+	
+end
+coroutine.wrap(LULX_fake_script)()
+local function JJYORDV_fake_script() -- NoSpread.NoSpread 
 	local script = Instance.new('LocalScript', NoSpread)
 
 	local Players       = game:GetService("Players")
@@ -3034,73 +5824,195 @@ local function ZMHHE_fake_script() -- NoSpread.NoSpread
 	end)
 	
 end
-coroutine.wrap(ZMHHE_fake_script)()
-local function AIIRIFX_fake_script() -- ReloadShoot.ReloadShoot 
-	local script = Instance.new('LocalScript', ReloadShoot)
+coroutine.wrap(JJYORDV_fake_script)()
+local function YBJMM_fake_script() -- NoReload.NoReload 
+	local script = Instance.new('LocalScript', NoReload)
 
-	local Players = game:GetService("Players")
-	local player = Players.LocalPlayer
-	local button = script.Parent  -- Привязано к GUI кнопке
-	local replicatedStorage = game:GetService("ReplicatedStorage")
+	local Players       = game:GetService("Players")
+	local TweenService  = game:GetService("TweenService")
+	local RunService    = game:GetService("RunService")
 	
-	-- Состояние
-	local shootWhileReloading = false
+	local player        = Players.LocalPlayer
+	local gui           = player:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
+	local button        = script.Parent
+	local notification  = gui:WaitForChild("NotificationLabel")
 	
-	-- Обновление текста кнопки
-	local function updateButtonText()
-		button.Text = shootWhileReloading and "ShootReload ON" or "ShootReload OFF"
-	end
+	local noReloadEnabled = false
 	
-	-- Уведомление
+	local DEFAULT_SIZE = UDim2.new(0, 264, 0, 44)
+	local NOTIFY_SIZE  = UDim2.new(0, 304, 0, 44)
+	
+	-- Функция уведомлений
 	local function notify(text)
-		local gui = player:WaitForChild("PlayerGui"):FindFirstChild("ScreenGui")
-		if gui then
-			local label = gui:FindFirstChild("NotificationLabel")
-			if label then
-				label.Text = text
-				label.Visible = true
-				label.Size = UDim2.new(0, 304, 0, 44)
-				label.TextTransparency = 0
-				label.BackgroundTransparency = 0.2
+		notification.Text = text
+		notification.Visible = true
+		notification.Size = NOTIFY_SIZE
+		notification.TextTransparency = 1
+		notification.BackgroundTransparency = 1
 	
-				task.delay(2.5, function()
-					label:TweenSize(UDim2.new(0, 264, 0, 44), Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.3, true)
-					label.TextTransparency = 1
-					label.BackgroundTransparency = 1
-				end)
+		local check = notification:FindFirstChild("CheckMark")
+		if check then check.ImageTransparency = 1 end
+	
+		TweenService:Create(notification, TweenInfo.new(0.4), {
+			TextTransparency = 0,
+			BackgroundTransparency = 0.2
+		}):Play()
+	
+		if check then
+			TweenService:Create(check, TweenInfo.new(0.4), {
+				ImageTransparency = 0,
+			}):Play()
+		end
+	
+		task.delay(2.5, function()
+			TweenService:Create(notification, TweenInfo.new(0.5), {
+				TextTransparency = 1,
+				BackgroundTransparency = 1
+			}):Play()
+	
+			if check then
+				TweenService:Create(check, TweenInfo.new(0.5), {
+					ImageTransparency = 1,
+				}):Play()
+			end
+	
+			task.delay(0.5, function()
+				notification.Size = DEFAULT_SIZE
+			end)
+		end)
+	end
+	
+	-- Удаление анимации перезарядки
+	local function disableReload()
+		local character = player.Character
+		if not character then return end
+	
+		local tool = character:FindFirstChildOfClass("Tool")
+		if not tool then return end
+	
+		for _, anim in ipairs(tool:GetDescendants()) do
+			if anim:IsA("Animation") and anim.Name:lower():find("reload") then
+				anim:Destroy()
 			end
 		end
 	end
 	
-	-- Перехват перезарядки
-	local function hookReload()
-		if not player.Character then return end
-		local tools = player.Character:GetChildren()
-		for _, tool in ipairs(tools) do
-			if tool:IsA("Tool") and tool:FindFirstChild("Reloading") then
-				local reloadValue = tool:FindFirstChild("Reloading")
-				reloadValue:GetPropertyChangedSignal("Value"):Connect(function()
-					if shootWhileReloading and reloadValue.Value == true then
-						reloadValue.Value = false
-					end
-				end)
-			end
-		end
-	end
-	
-	-- Подключаем
+	-- Кнопка GUI
 	button.MouseButton1Click:Connect(function()
-		shootWhileReloading = not shootWhileReloading
-		updateButtonText()
-		notify((shootWhileReloading and "    Enabled" or "    Disabled") .. " Function: Shoot While Reloading")
-		hookReload()
+		noReloadEnabled = not noReloadEnabled
+	
+		if noReloadEnabled then
+			button.Text = "No Reload ON"
+			notify("   Enabled Function: No Reload")
+			disableReload()
+		else
+			button.Text = "No Reload OFF"
+			notify("   Disabled Function: No Reload")
+		end
 	end)
 	
-	updateButtonText()
+	-- Повторно удаляем анимации при каждом кадре (если функция включена)
+	RunService.RenderStepped:Connect(function()
+		if noReloadEnabled then
+			disableReload()
+		end
+	end)
 	
 end
-coroutine.wrap(AIIRIFX_fake_script)()
-local function TQNJT_fake_script() -- ScreenGui.Tabs 
+coroutine.wrap(YBJMM_fake_script)()
+local function YOPY_fake_script() -- InfinityAmmo.InfinityAmmo 
+	local script = Instance.new('LocalScript', InfinityAmmo)
+
+	local Players       = game:GetService("Players")
+	local TweenService  = game:GetService("TweenService")
+	
+	local player        = Players.LocalPlayer
+	local gui           = player:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
+	local button        = script.Parent
+	local notification  = gui:WaitForChild("NotificationLabel")
+	
+	local infiniteAmmoEnabled = false
+	
+	local DEFAULT_SIZE = UDim2.new(0, 264, 0, 44)
+	local NOTIFY_SIZE  = UDim2.new(0, 304, 0, 44)
+	
+	local function notify(text)
+		notification.Text = text
+		notification.Visible = true
+		notification.TextTransparency = 1
+		notification.BackgroundTransparency = 1
+	
+		notification.Size = NOTIFY_SIZE
+	
+		local check = notification:FindFirstChild("CheckMark")
+		if check then
+			check.ImageTransparency = 1
+		end
+	
+		TweenService:Create(notification, TweenInfo.new(0.4), {
+			TextTransparency       = 0,
+			BackgroundTransparency = 0.2,
+		}):Play()
+	
+		if check then
+			TweenService:Create(check, TweenInfo.new(0.4), {
+				ImageTransparency = 0,
+			}):Play()
+		end
+	
+		task.delay(2.5, function()
+			TweenService:Create(notification, TweenInfo.new(0.5), {
+				TextTransparency       = 1,
+				BackgroundTransparency = 1,
+			}):Play()
+	
+			if check then
+				TweenService:Create(check, TweenInfo.new(0.5), {
+					ImageTransparency = 1,
+				}):Play()
+			end
+	
+			task.delay(0.5, function()
+				notification.Size = DEFAULT_SIZE
+			end)
+		end)
+	end
+	
+	local function setInfiniteAmmo()
+		local character = player.Character
+		if not character then return end
+	
+		local tool = character:FindFirstChildOfClass("Tool")
+		if not tool then return end
+	
+		local ammoValue = tool:FindFirstChild("AmmoCount") -- замени на своё имя
+		if ammoValue and ammoValue:IsA("IntValue") then
+			ammoValue.Value = math.huge
+		end
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		infiniteAmmoEnabled = not infiniteAmmoEnabled
+	
+		if infiniteAmmoEnabled then
+			button.Text = "Infinity Ammo ON"
+			notify("     Enabled Function: Infinity Ammo")
+			setInfiniteAmmo()
+		else
+			button.Text = "Infinity Ammo OFF"
+			notify("     Disabled Function: Infinity Ammo")
+		end
+	end)
+	
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if infiniteAmmoEnabled then
+			setInfiniteAmmo()
+		end
+	end)
+	
+end
+coroutine.wrap(YOPY_fake_script)()
+local function YEAIL_fake_script() -- ScreenGui.Tabs 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
@@ -3368,102 +6280,188 @@ local function TQNJT_fake_script() -- ScreenGui.Tabs
 	showPage("Tab1Page", currentButton)
 	
 end
-coroutine.wrap(TQNJT_fake_script)()
-local function FCYN_fake_script() -- ScreenGui.LocalScript 
-	local script = Instance.new('LocalScript', ScreenGui)
-
-	local screenGui = script.Parent
-	local notifFrame = screenGui:WaitForChild("NotificationFrame")
-	local notifLabel = notifFrame:WaitForChild("NotificationLabel")
-	
-	local function showNotification(text)
-		notifLabel.Text = text
-		notifLabel.Visible = true
-		notifLabel.TextTransparency = 1
-		notifLabel.BackgroundTransparency = 1
-	
-		for i = 1, 10 do
-			notifLabel.TextTransparency = 1 - i * 0.1
-			notifLabel.BackgroundTransparency = 1 - i * 0.05
-			task.wait(0.03)
-		end
-	
-		task.wait(3)
-	
-		for i = 1, 10 do
-			notifLabel.TextTransparency = i * 0.1
-			notifLabel.BackgroundTransparency = i * 0.05
-			task.wait(0.03)
-		end
-	
-		notifLabel.Visible = false
-	end
-	
-	-- Проверка: уведомление по нажатию клавиши "G"
-	game:GetService("UserInputService").InputBegan:Connect(function(input, gpe)
-		if gpe then return end
-		if input.KeyCode == Enum.KeyCode.G then
-			showNotification("Тестовое уведомление!")
-		end
-	end)
-	
-end
-coroutine.wrap(FCYN_fake_script)()
-local function WCPSKD_fake_script() -- ScreenGui.Inject 
+coroutine.wrap(YEAIL_fake_script)()
+local function QCWBDDW_fake_script() -- ScreenGui.Inject 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
 	
-	local screenGui = script.Parent
-	local notificationLabel = screenGui:WaitForChild("NotificationLabel")
-	local checkMark = notificationLabel:WaitForChild("CheckMark")
+	local gui = script.Parent
+	local fadeFrame = gui:WaitForChild("FadeFrame")
+	local label1 = gui:WaitForChild("label1")
 	
-	notificationLabel.Size = UDim2.new(0, 264, 0, 44)
+	label1.AnchorPoint = Vector2.new(0.5, 0.5)
 	
-	local function fadeIn()
-		notificationLabel.Visible = true
-		notificationLabel.BackgroundTransparency = 1
-		notificationLabel.TextTransparency = 1
-		checkMark.ImageTransparency = 1
+	local startPos1 = UDim2.new(0.5, 0, 0.5, 40)
+	local upPos1 = UDim2.new(0.5, 0, 0.374, 40)
 	
-		local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	fadeFrame.Visible = true
+	fadeFrame.BackgroundTransparency = 1
 	
-		local bgTween = TweenService:Create(notificationLabel, tweenInfo, {BackgroundTransparency = 0})
-		local textTween = TweenService:Create(notificationLabel, tweenInfo, {TextTransparency = 0})
-		local checkMarkTween = TweenService:Create(checkMark, tweenInfo, {ImageTransparency = 0})
+	label1.Visible = true
+	label1.Position = startPos1
 	
-		bgTween:Play()
-		textTween:Play()
-		checkMarkTween:Play()
-	
-		bgTween.Completed:Wait()
+	if label1:IsA("TextLabel") or label1:IsA("TextButton") then
+		label1.TextTransparency = 1
+	elseif label1:IsA("ImageLabel") or label1:IsA("ImageButton") then
+		label1.ImageTransparency = 1
 	end
 	
-	local function fadeOut()
-		local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-	
-		local bgTween = TweenService:Create(notificationLabel, tweenInfo, {BackgroundTransparency = 1})
-		local textTween = TweenService:Create(notificationLabel, tweenInfo, {TextTransparency = 1})
-		local checkMarkTween = TweenService:Create(checkMark, tweenInfo, {ImageTransparency = 1})
-	
-		bgTween:Play()
-		textTween:Play()
-		checkMarkTween:Play()
-	
-		bgTween.Completed:Wait()
-		notificationLabel.Visible = false
+	local function tweenObject(object, props, duration)
+		local tween = TweenService:Create(
+			object,
+			TweenInfo.new(duration, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+			props
+		)
+		tween:Play()
+		return tween
 	end
 	
-	-- Функция показа уведомления с нужным текстом
-	local function showSuccessNotification()
-		notificationLabel.Text = "   Successful Inject, Happy Cheating!"
-		fadeIn()
-		wait(3)
-		fadeOut()
+	local function waitTween(tween, timeout)
+		timeout = timeout or 5
+		local done = false
+		tween.Completed:Connect(function() done = true end)
+		tween:Play()
+	
+		local elapsed = 0
+		while not done and elapsed < timeout do
+			task.wait(0.05)
+			elapsed += 0.05
+		end
 	end
 	
-	-- Вызов функции после успешной инъекции скрипта:
-	showSuccessNotification()
+	local function runAnimation()
+		print("▶️ Анимация началась")
+	
+		local fadeIn = tweenObject(fadeFrame, {BackgroundTransparency = 0.5}, 0.5)
+		waitTween(fadeIn, 2)
+	
+		task.wait(0.5)
+	
+		local moveUp = tweenObject(label1, {Position = upPos1}, 0.8)
+		local appear1
+		if label1:IsA("TextLabel") or label1:IsA("TextButton") then
+			appear1 = tweenObject(label1, {TextTransparency = 0}, 0.8)
+		elseif label1:IsA("ImageLabel") or label1:IsA("ImageButton") then
+			appear1 = tweenObject(label1, {ImageTransparency = 0}, 0.8)
+		end
+		waitTween(moveUp, 2)
+		if appear1 then waitTween(appear1, 2) end
+	
+		task.wait(1)
+	
+		local downPos = UDim2.new(upPos1.X.Scale, upPos1.X.Offset, upPos1.Y.Scale + 0.05, upPos1.Y.Offset + 10)
+		local moveDown = tweenObject(label1, {Position = downPos}, 0.8)
+		local disappear
+		if label1:IsA("TextLabel") or label1:IsA("TextButton") then
+			disappear = tweenObject(label1, {TextTransparency = 1}, 0.8)
+		elseif label1:IsA("ImageLabel") or label1:IsA("ImageButton") then
+			disappear = tweenObject(label1, {ImageTransparency = 1}, 0.8)
+		end
+	
+		local fadeOut = tweenObject(fadeFrame, {BackgroundTransparency = 1}, 0.8)
+	
+		waitTween(moveDown, 2)
+		if disappear then waitTween(disappear, 2) end
+		waitTween(fadeOut, 2)
+	
+		label1.Visible = false
+		fadeFrame.Visible = false
+	
+		print("✅ Анимация завершена")
+	end
+	
+	task.spawn(runAnimation)
 	
 end
-coroutine.wrap(WCPSKD_fake_script)()
+coroutine.wrap(QCWBDDW_fake_script)()
+local function VZIE_fake_script() -- ScreenGui.Draggable 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local player = game:GetService("Players").LocalPlayer
+	local gui = player:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
+	local menu = gui:WaitForChild("menu")
+	
+	menu.Active = true
+	menu.Draggable = true
+	
+end
+coroutine.wrap(VZIE_fake_script)()
+local function FUGW_fake_script() -- ScreenGui.LocalScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	local player = Players.LocalPlayer
+	
+	-- GUI
+	local gui = Instance.new("ScreenGui", player:WaitForChild("PlayerGui"))
+	gui.Name = "WatermarkUI"
+	gui.ResetOnSpawn = false
+	
+	-- Watermark Frame
+	local wm = Instance.new("Frame")
+	wm.Name = "Watermark"
+	wm.Size = UDim2.new(0, 320, 0, 28) -- увеличенная ширина
+	wm.Position = UDim2.new(0, 20, 0, 20)
+	wm.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+	wm.BackgroundTransparency = 0.2
+	wm.BorderSizePixel = 0
+	wm.Active = true
+	wm.Draggable = true
+	wm.Parent = gui
+	
+	-- TopBar (цветная полоска сверху)
+	local topBar = Instance.new("Frame")
+	topBar.Size = UDim2.new(1, 0, 0, 2)
+	topBar.Position = UDim2.new(0, 0, 0, 0)
+	topBar.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+	topBar.BorderSizePixel = 0
+	topBar.Parent = wm
+	
+	-- Текст
+	local text = Instance.new("TextLabel")
+	text.Name = "WatermarkText"
+	text.Size = UDim2.new(1, 0, 1, -2)
+	text.Position = UDim2.new(0, 0, 0, 2)
+	text.BackgroundTransparency = 1
+	text.TextWrapped = true
+	text.Text = "dsc.gg/wexcore | 00:00:00 | FPS: 0"
+	text.Font = Enum.Font.Code
+	text.TextSize = 14
+	text.TextColor3 = Color3.fromRGB(240, 240, 240)
+	text.TextStrokeTransparency = 0.8
+	text.TextXAlignment = Enum.TextXAlignment.Center
+	text.Parent = wm
+	
+	-- FPS + Time обновление
+	local lastUpdate = 0
+	local frames = 0
+	local fps = 0
+	
+	RunService.RenderStepped:Connect(function(dt)
+		frames = frames + 1
+		local now = tick()
+	
+		if now - lastUpdate >= 1 then
+			fps = frames
+			frames = 0
+			lastUpdate = now
+	
+			local timeStr = os.date("%H:%M:%S")
+			text.Text = "dsc.gg/wexcore | "..timeStr.." | FPS: "..fps
+		end
+	end)
+	
+	-- Плавный перелив цвета для topBar (голубой <-> синий)
+	local hue = 0
+	RunService.Heartbeat:Connect(function()
+		-- Пульсация цвета между оттенками голубого и синего
+		local minH, maxH = 0.55, 0.66
+		local interpH = minH + (maxH - minH) * (0.5 + 0.5 * math.sin(tick()*2))
+		topBar.BackgroundColor3 = Color3.fromHSV(interpH, 1, 1)
+	end)
+	
+end
+coroutine.wrap(FUGW_fake_script)()
