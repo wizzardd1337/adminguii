@@ -1542,7 +1542,7 @@ local function ITDA_fake_script() -- ScreenGui.Driver
 	-- Дальше под realMenu пиши всю логику твоего интерфейса
 	
 end
-coroutine.wrap(ITDA_fake_script)()
+
 local function AHGDXH_fake_script() -- ScreenGui.Tabs 
 	local script = Instance.new('LocalScript', ScreenGui)
 
