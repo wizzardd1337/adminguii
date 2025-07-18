@@ -116,39 +116,33 @@ local ColorBox = Instance.new("TextBox")
 local BindKeyButton = Instance.new("TextButton")
 local ApplySmoothingButton = Instance.new("TextButton")
 local ApplyColorButton = Instance.new("TextButton")
-local Silentaim = Instance.new("TextLabel")
-local Switcher_4 = Instance.new("TextButton")
-local Switch_4 = Instance.new("Frame")
-local UICorner_35 = Instance.new("UICorner")
-local UICorner_36 = Instance.new("UICorner")
-local UICorner_37 = Instance.new("UICorner")
 local Tab3Page = Instance.new("Frame")
 local FullbrightOFF = Instance.new("TextButton")
 local RemoveShadowButton = Instance.new("TextButton")
 local NoTextures = Instance.new("TextButton")
 local TextLabel_14 = Instance.new("TextLabel")
 local Clickwarp = Instance.new("TextLabel")
-local Switcher_5 = Instance.new("TextButton")
-local Switch_5 = Instance.new("Frame")
+local Switcher_4 = Instance.new("TextButton")
+local Switch_4 = Instance.new("Frame")
 local Binder = Instance.new("TextButton")
 local Hi = Instance.new("TextLabel")
 local Binder_2 = Instance.new("TextButton")
+local UICorner_35 = Instance.new("UICorner")
+local UICorner_36 = Instance.new("UICorner")
+local Switcher_5 = Instance.new("TextButton")
+local Switch_5 = Instance.new("Frame")
+local UICorner_37 = Instance.new("UICorner")
 local UICorner_38 = Instance.new("UICorner")
-local UICorner_39 = Instance.new("UICorner")
-local Switcher_6 = Instance.new("TextButton")
-local Switch_6 = Instance.new("Frame")
-local UICorner_40 = Instance.new("UICorner")
-local UICorner_41 = Instance.new("UICorner")
 local Unsafe = Instance.new("ImageLabel")
 local Tab4Page = Instance.new("Frame")
 local TextLabel_15 = Instance.new("TextLabel")
 local AntiAFKButton = Instance.new("TextButton")
-local UICorner_42 = Instance.new("UICorner")
+local UICorner_39 = Instance.new("UICorner")
 local Tab5Page = Instance.new("Frame")
 local TextLabel_16 = Instance.new("TextLabel")
 local Speed = Instance.new("TextLabel")
-local Switcher_7 = Instance.new("TextButton")
-local Switch_7 = Instance.new("Frame")
+local Switcher_6 = Instance.new("TextButton")
+local Switch_6 = Instance.new("Frame")
 local Binder_3 = Instance.new("TextButton")
 local Frame_5 = Instance.new("Frame")
 local Slider = Instance.new("Frame")
@@ -157,8 +151,8 @@ local ValueLabel = Instance.new("TextLabel")
 local Bar = Instance.new("Frame")
 local Label = Instance.new("TextLabel")
 local GodMode = Instance.new("TextLabel")
-local Switcher_8 = Instance.new("TextButton")
-local Switch_8 = Instance.new("Frame")
+local Switcher_7 = Instance.new("TextButton")
+local Switch_7 = Instance.new("Frame")
 local Tab6Page = Instance.new("Frame")
 local TextLabel_17 = Instance.new("TextLabel")
 local Tab7Page = Instance.new("Frame")
@@ -168,14 +162,14 @@ local NoSpread = Instance.new("TextButton")
 local NoReload = Instance.new("TextButton")
 local InfinityAmmo = Instance.new("TextButton")
 local NoReloadLabel = Instance.new("TextLabel")
+local Switcher_8 = Instance.new("TextButton")
+local Switch_8 = Instance.new("Frame")
+local KnifeRangeExtended = Instance.new("TextLabel")
 local Switcher_9 = Instance.new("TextButton")
 local Switch_9 = Instance.new("Frame")
-local KnifeRangeExtended = Instance.new("TextLabel")
+local DamageMultiplier = Instance.new("TextLabel")
 local Switcher_10 = Instance.new("TextButton")
 local Switch_10 = Instance.new("Frame")
-local DamageMultiplier = Instance.new("TextLabel")
-local Switcher_11 = Instance.new("TextButton")
-local Switch_11 = Instance.new("Frame")
 
 --Properties:
 
@@ -1089,47 +1083,6 @@ ApplyColorButton.Text = "Apply FOV Color"
 ApplyColorButton.TextColor3 = Color3.fromRGB(252, 252, 252)
 ApplyColorButton.TextSize = 13.000
 
-Silentaim.Name = "Silentaim"
-Silentaim.Parent = Tab2Page
-Silentaim.BackgroundColor3 = Color3.fromRGB(11, 11, 15)
-Silentaim.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Silentaim.BorderSizePixel = 0
-Silentaim.Position = UDim2.new(0.442129433, 0, 0.054502368, 0)
-Silentaim.Size = UDim2.new(0, 208, 0, 49)
-Silentaim.Font = Enum.Font.SourceSans
-Silentaim.Text = "     Silent Aimbot"
-Silentaim.TextColor3 = Color3.fromRGB(255, 255, 255)
-Silentaim.TextSize = 17.000
-Silentaim.TextXAlignment = Enum.TextXAlignment.Left
-
-Switcher_4.Name = "Switcher"
-Switcher_4.Parent = Silentaim
-Switcher_4.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
-Switcher_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Switcher_4.BorderSizePixel = 0
-Switcher_4.Position = UDim2.new(0.700888991, 0, 0.312188894, 0)
-Switcher_4.Size = UDim2.new(0, 40, 0, 21)
-Switcher_4.Font = Enum.Font.SourceSans
-Switcher_4.Text = ""
-Switcher_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-Switcher_4.TextSize = 14.000
-
-Switch_4.Name = "Switch"
-Switch_4.Parent = Switcher_4
-Switch_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Switch_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Switch_4.BorderSizePixel = 0
-Switch_4.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
-Switch_4.Size = UDim2.new(0, 15, 0, 14)
-
-UICorner_35.CornerRadius = UDim.new(0.400000006, 0)
-UICorner_35.Parent = Switch_4
-
-UICorner_36.CornerRadius = UDim.new(0.400000006, 0)
-UICorner_36.Parent = Switcher_4
-
-UICorner_37.Parent = Silentaim
-
 Tab3Page.Name = "Tab3Page"
 Tab3Page.Parent = PagesFrame
 Tab3Page.BackgroundColor3 = Color3.fromRGB(8, 8, 11)
@@ -1198,25 +1151,25 @@ Clickwarp.TextColor3 = Color3.fromRGB(255, 255, 255)
 Clickwarp.TextSize = 17.000
 Clickwarp.TextXAlignment = Enum.TextXAlignment.Left
 
-Switcher_5.Name = "Switcher"
-Switcher_5.Parent = Clickwarp
-Switcher_5.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
-Switcher_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Switcher_5.BorderSizePixel = 0
-Switcher_5.Position = UDim2.new(0.734542727, 0, 0.271372676, 0)
-Switcher_5.Size = UDim2.new(0, 46, 0, 25)
-Switcher_5.Font = Enum.Font.SourceSans
-Switcher_5.Text = ""
-Switcher_5.TextColor3 = Color3.fromRGB(0, 0, 0)
-Switcher_5.TextSize = 14.000
+Switcher_4.Name = "Switcher"
+Switcher_4.Parent = Clickwarp
+Switcher_4.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Switcher_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Switcher_4.BorderSizePixel = 0
+Switcher_4.Position = UDim2.new(0.734542727, 0, 0.271372676, 0)
+Switcher_4.Size = UDim2.new(0, 46, 0, 25)
+Switcher_4.Font = Enum.Font.SourceSans
+Switcher_4.Text = ""
+Switcher_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Switcher_4.TextSize = 14.000
 
-Switch_5.Name = "Switch"
-Switch_5.Parent = Switcher_5
-Switch_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Switch_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Switch_5.BorderSizePixel = 0
-Switch_5.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
-Switch_5.Size = UDim2.new(0, 15, 0, 16)
+Switch_4.Name = "Switch"
+Switch_4.Parent = Switcher_4
+Switch_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Switch_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Switch_4.BorderSizePixel = 0
+Switch_4.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
+Switch_4.Size = UDim2.new(0, 15, 0, 16)
 
 Binder.Name = "Binder"
 Binder.Parent = Clickwarp
@@ -1257,35 +1210,35 @@ Binder_2.Text = "BIND"
 Binder_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Binder_2.TextSize = 12.000
 
-UICorner_38.Parent = Binder_2
+UICorner_35.Parent = Binder_2
 
-UICorner_39.Parent = Hi
+UICorner_36.Parent = Hi
 
-Switcher_6.Name = "Switcher"
-Switcher_6.Parent = Hi
-Switcher_6.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
-Switcher_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Switcher_6.BorderSizePixel = 0
-Switcher_6.Position = UDim2.new(0.742714047, 0, 0.292580992, 0)
-Switcher_6.Size = UDim2.new(0, 40, 0, 23)
-Switcher_6.Font = Enum.Font.SourceSans
-Switcher_6.Text = ""
-Switcher_6.TextColor3 = Color3.fromRGB(0, 0, 0)
-Switcher_6.TextSize = 14.000
+Switcher_5.Name = "Switcher"
+Switcher_5.Parent = Hi
+Switcher_5.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Switcher_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Switcher_5.BorderSizePixel = 0
+Switcher_5.Position = UDim2.new(0.742714047, 0, 0.292580992, 0)
+Switcher_5.Size = UDim2.new(0, 40, 0, 23)
+Switcher_5.Font = Enum.Font.SourceSans
+Switcher_5.Text = ""
+Switcher_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Switcher_5.TextSize = 14.000
 
-Switch_6.Name = "Switch"
-Switch_6.Parent = Switcher_6
-Switch_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Switch_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Switch_6.BorderSizePixel = 0
-Switch_6.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
-Switch_6.Size = UDim2.new(0, 15, 0, 14)
+Switch_5.Name = "Switch"
+Switch_5.Parent = Switcher_5
+Switch_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Switch_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Switch_5.BorderSizePixel = 0
+Switch_5.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
+Switch_5.Size = UDim2.new(0, 15, 0, 14)
 
-UICorner_40.CornerRadius = UDim.new(0.400000006, 0)
-UICorner_40.Parent = Switch_6
+UICorner_37.CornerRadius = UDim.new(0.400000006, 0)
+UICorner_37.Parent = Switch_5
 
-UICorner_41.CornerRadius = UDim.new(0.400000006, 0)
-UICorner_41.Parent = Switcher_6
+UICorner_38.CornerRadius = UDim.new(0.400000006, 0)
+UICorner_38.Parent = Switcher_5
 
 Unsafe.Name = "Unsafe"
 Unsafe.Parent = Hi
@@ -1331,7 +1284,7 @@ AntiAFKButton.Text = "AntiAFK"
 AntiAFKButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 AntiAFKButton.TextSize = 15.000
 
-UICorner_42.Parent = AntiAFKButton
+UICorner_39.Parent = AntiAFKButton
 
 Tab5Page.Name = "Tab5Page"
 Tab5Page.Parent = PagesFrame
@@ -1367,25 +1320,25 @@ Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
 Speed.TextSize = 17.000
 Speed.TextXAlignment = Enum.TextXAlignment.Left
 
-Switcher_7.Name = "Switcher"
-Switcher_7.Parent = Speed
-Switcher_7.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
-Switcher_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Switcher_7.BorderSizePixel = 0
-Switcher_7.Position = UDim2.new(0.734542727, 0, 0.271372676, 0)
-Switcher_7.Size = UDim2.new(0, 46, 0, 25)
-Switcher_7.Font = Enum.Font.SourceSans
-Switcher_7.Text = ""
-Switcher_7.TextColor3 = Color3.fromRGB(0, 0, 0)
-Switcher_7.TextSize = 14.000
+Switcher_6.Name = "Switcher"
+Switcher_6.Parent = Speed
+Switcher_6.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Switcher_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Switcher_6.BorderSizePixel = 0
+Switcher_6.Position = UDim2.new(0.734542727, 0, 0.271372676, 0)
+Switcher_6.Size = UDim2.new(0, 46, 0, 25)
+Switcher_6.Font = Enum.Font.SourceSans
+Switcher_6.Text = ""
+Switcher_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+Switcher_6.TextSize = 14.000
 
-Switch_7.Name = "Switch"
-Switch_7.Parent = Switcher_7
-Switch_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Switch_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Switch_7.BorderSizePixel = 0
-Switch_7.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
-Switch_7.Size = UDim2.new(0, 15, 0, 16)
+Switch_6.Name = "Switch"
+Switch_6.Parent = Switcher_6
+Switch_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Switch_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Switch_6.BorderSizePixel = 0
+Switch_6.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
+Switch_6.Size = UDim2.new(0, 15, 0, 16)
 
 Binder_3.Name = "Binder"
 Binder_3.Parent = Speed
@@ -1469,25 +1422,25 @@ GodMode.TextColor3 = Color3.fromRGB(255, 255, 255)
 GodMode.TextSize = 17.000
 GodMode.TextXAlignment = Enum.TextXAlignment.Left
 
-Switcher_8.Name = "Switcher"
-Switcher_8.Parent = GodMode
-Switcher_8.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
-Switcher_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Switcher_8.BorderSizePixel = 0
-Switcher_8.Position = UDim2.new(0.734542727, 0, 0.271372676, 0)
-Switcher_8.Size = UDim2.new(0, 46, 0, 25)
-Switcher_8.Font = Enum.Font.SourceSans
-Switcher_8.Text = ""
-Switcher_8.TextColor3 = Color3.fromRGB(0, 0, 0)
-Switcher_8.TextSize = 14.000
+Switcher_7.Name = "Switcher"
+Switcher_7.Parent = GodMode
+Switcher_7.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Switcher_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Switcher_7.BorderSizePixel = 0
+Switcher_7.Position = UDim2.new(0.734542727, 0, 0.271372676, 0)
+Switcher_7.Size = UDim2.new(0, 46, 0, 25)
+Switcher_7.Font = Enum.Font.SourceSans
+Switcher_7.Text = ""
+Switcher_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+Switcher_7.TextSize = 14.000
 
-Switch_8.Name = "Switch"
-Switch_8.Parent = Switcher_8
-Switch_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Switch_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Switch_8.BorderSizePixel = 0
-Switch_8.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
-Switch_8.Size = UDim2.new(0, 15, 0, 16)
+Switch_7.Name = "Switch"
+Switch_7.Parent = Switcher_7
+Switch_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Switch_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Switch_7.BorderSizePixel = 0
+Switch_7.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
+Switch_7.Size = UDim2.new(0, 15, 0, 16)
 
 Tab6Page.Name = "Tab6Page"
 Tab6Page.Parent = PagesFrame
@@ -1588,8 +1541,41 @@ NoReloadLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 NoReloadLabel.TextSize = 17.000
 NoReloadLabel.TextXAlignment = Enum.TextXAlignment.Left
 
+Switcher_8.Name = "Switcher"
+Switcher_8.Parent = NoReloadLabel
+Switcher_8.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Switcher_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Switcher_8.BorderSizePixel = 0
+Switcher_8.Position = UDim2.new(0.734542727, 0, 0.271372676, 0)
+Switcher_8.Size = UDim2.new(0, 46, 0, 25)
+Switcher_8.Font = Enum.Font.SourceSans
+Switcher_8.Text = ""
+Switcher_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+Switcher_8.TextSize = 14.000
+
+Switch_8.Name = "Switch"
+Switch_8.Parent = Switcher_8
+Switch_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Switch_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Switch_8.BorderSizePixel = 0
+Switch_8.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
+Switch_8.Size = UDim2.new(0, 15, 0, 16)
+
+KnifeRangeExtended.Name = "KnifeRangeExtended"
+KnifeRangeExtended.Parent = Tab7Page
+KnifeRangeExtended.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+KnifeRangeExtended.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KnifeRangeExtended.BorderSizePixel = 0
+KnifeRangeExtended.Position = UDim2.new(-0.0177160241, 0, 0.791469216, 0)
+KnifeRangeExtended.Size = UDim2.new(0, 263, 0, 51)
+KnifeRangeExtended.Font = Enum.Font.SourceSans
+KnifeRangeExtended.Text = "      KNIFE RANGE EX.."
+KnifeRangeExtended.TextColor3 = Color3.fromRGB(255, 255, 255)
+KnifeRangeExtended.TextSize = 17.000
+KnifeRangeExtended.TextXAlignment = Enum.TextXAlignment.Left
+
 Switcher_9.Name = "Switcher"
-Switcher_9.Parent = NoReloadLabel
+Switcher_9.Parent = KnifeRangeExtended
 Switcher_9.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
 Switcher_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Switcher_9.BorderSizePixel = 0
@@ -1608,21 +1594,21 @@ Switch_9.BorderSizePixel = 0
 Switch_9.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
 Switch_9.Size = UDim2.new(0, 15, 0, 16)
 
-KnifeRangeExtended.Name = "KnifeRangeExtended"
-KnifeRangeExtended.Parent = Tab7Page
-KnifeRangeExtended.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
-KnifeRangeExtended.BorderColor3 = Color3.fromRGB(0, 0, 0)
-KnifeRangeExtended.BorderSizePixel = 0
-KnifeRangeExtended.Position = UDim2.new(-0.0177160241, 0, 0.791469216, 0)
-KnifeRangeExtended.Size = UDim2.new(0, 263, 0, 51)
-KnifeRangeExtended.Font = Enum.Font.SourceSans
-KnifeRangeExtended.Text = "      KNIFE RANGE EX.."
-KnifeRangeExtended.TextColor3 = Color3.fromRGB(255, 255, 255)
-KnifeRangeExtended.TextSize = 17.000
-KnifeRangeExtended.TextXAlignment = Enum.TextXAlignment.Left
+DamageMultiplier.Name = "DamageMultiplier"
+DamageMultiplier.Parent = Tab7Page
+DamageMultiplier.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+DamageMultiplier.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DamageMultiplier.BorderSizePixel = 0
+DamageMultiplier.Position = UDim2.new(-0.0177160241, 0, 0.940758288, 0)
+DamageMultiplier.Size = UDim2.new(0, 263, 0, 51)
+DamageMultiplier.Font = Enum.Font.SourceSans
+DamageMultiplier.Text = "      DAMAGE MULTIPLIER"
+DamageMultiplier.TextColor3 = Color3.fromRGB(255, 255, 255)
+DamageMultiplier.TextSize = 17.000
+DamageMultiplier.TextXAlignment = Enum.TextXAlignment.Left
 
 Switcher_10.Name = "Switcher"
-Switcher_10.Parent = KnifeRangeExtended
+Switcher_10.Parent = DamageMultiplier
 Switcher_10.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
 Switcher_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Switcher_10.BorderSizePixel = 0
@@ -1641,42 +1627,9 @@ Switch_10.BorderSizePixel = 0
 Switch_10.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
 Switch_10.Size = UDim2.new(0, 15, 0, 16)
 
-DamageMultiplier.Name = "DamageMultiplier"
-DamageMultiplier.Parent = Tab7Page
-DamageMultiplier.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
-DamageMultiplier.BorderColor3 = Color3.fromRGB(0, 0, 0)
-DamageMultiplier.BorderSizePixel = 0
-DamageMultiplier.Position = UDim2.new(-0.0177160241, 0, 0.940758288, 0)
-DamageMultiplier.Size = UDim2.new(0, 263, 0, 51)
-DamageMultiplier.Font = Enum.Font.SourceSans
-DamageMultiplier.Text = "      DAMAGE MULTIPLIER"
-DamageMultiplier.TextColor3 = Color3.fromRGB(255, 255, 255)
-DamageMultiplier.TextSize = 17.000
-DamageMultiplier.TextXAlignment = Enum.TextXAlignment.Left
-
-Switcher_11.Name = "Switcher"
-Switcher_11.Parent = DamageMultiplier
-Switcher_11.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
-Switcher_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Switcher_11.BorderSizePixel = 0
-Switcher_11.Position = UDim2.new(0.734542727, 0, 0.271372676, 0)
-Switcher_11.Size = UDim2.new(0, 46, 0, 25)
-Switcher_11.Font = Enum.Font.SourceSans
-Switcher_11.Text = ""
-Switcher_11.TextColor3 = Color3.fromRGB(0, 0, 0)
-Switcher_11.TextSize = 14.000
-
-Switch_11.Name = "Switch"
-Switch_11.Parent = Switcher_11
-Switch_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Switch_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Switch_11.BorderSizePixel = 0
-Switch_11.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
-Switch_11.Size = UDim2.new(0, 15, 0, 16)
-
 -- Scripts:
 
-local function NMRUAFX_fake_script() -- ScreenGui.Tabs 
+local function BUYEM_fake_script() -- ScreenGui.Tabs 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
@@ -1993,8 +1946,8 @@ local function NMRUAFX_fake_script() -- ScreenGui.Tabs
 	showPage("Tab1Page", currentButton)
 	
 end
-coroutine.wrap(NMRUAFX_fake_script)()
-local function QTAZNY_fake_script() -- Switcher.2DBox 
+coroutine.wrap(BUYEM_fake_script)()
+local function LKJJ_fake_script() -- Switcher.2DBox 
 	local script = Instance.new('LocalScript', Switcher)
 
 	local TweenService = game:GetService("TweenService")
@@ -2267,8 +2220,8 @@ local function QTAZNY_fake_script() -- Switcher.2DBox
 	
 	Players.PlayerRemoving:Connect(removeBox)
 end
-coroutine.wrap(QTAZNY_fake_script)()
-local function VJAJMBZ_fake_script() -- Switcher_2.Glow 
+coroutine.wrap(LKJJ_fake_script)()
+local function WDDAMA_fake_script() -- Switcher_2.Glow 
 	local script = Instance.new('LocalScript', Switcher_2)
 
 	-- Highlight ESP с продвинутыми фильтрами и полным управлением
@@ -2488,8 +2441,8 @@ local function VJAJMBZ_fake_script() -- Switcher_2.Glow
 	end)
 	
 end
-coroutine.wrap(VJAJMBZ_fake_script)()
-local function RTJP_fake_script() -- Glow.LocalScript 
+coroutine.wrap(WDDAMA_fake_script)()
+local function BRVN_fake_script() -- Glow.LocalScript 
 	local script = Instance.new('LocalScript', Glow)
 
 	local label = script.Parent -- или путь к твоему TextLabel
@@ -2497,8 +2450,8 @@ local function RTJP_fake_script() -- Glow.LocalScript
 	
 	
 end
-coroutine.wrap(RTJP_fake_script)()
-local function OHTNEAM_fake_script() -- Switcher_3.Names 
+coroutine.wrap(BRVN_fake_script)()
+local function KAAK_fake_script() -- Switcher_3.Names 
 	local script = Instance.new('LocalScript', Switcher_3)
 
 	local Players = game:GetService("Players")
@@ -2771,8 +2724,8 @@ local function OHTNEAM_fake_script() -- Switcher_3.Names
 	topButton.BackgroundColor3 = BUTTON_OFF_COLOR2
 	
 end
-coroutine.wrap(OHTNEAM_fake_script)()
-local function DBPL_fake_script() -- PositionButton.LocalScript 
+coroutine.wrap(KAAK_fake_script)()
+local function ULGFTG_fake_script() -- PositionButton.LocalScript 
 	local script = Instance.new('LocalScript', PositionButton)
 
 	local button = script.Parent  -- твоя кнопка
@@ -2789,8 +2742,8 @@ local function DBPL_fake_script() -- PositionButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(DBPL_fake_script)()
-local function MXBFOP_fake_script() -- AimbotButton.VectorAim 
+coroutine.wrap(ULGFTG_fake_script)()
+local function OFBHE_fake_script() -- AimbotButton.VectorAim 
 	local script = Instance.new('LocalScript', AimbotButton)
 
 	local Players = game:GetService("Players")
@@ -3138,116 +3091,8 @@ local function MXBFOP_fake_script() -- AimbotButton.VectorAim
 	end)
 	
 end
-coroutine.wrap(MXBFOP_fake_script)()
-local function QDAAHVK_fake_script() -- Switcher_4.Silentaim 
-	local script = Instance.new('LocalScript', Switcher_4)
-
-	-- === SILENT AIMBOT + SWITCHER (ваш пример) ===
-	local switcher = aimbotFrame:WaitForChild("Switcher") -- TextButton
-	local switch = switcher:WaitForChild("Switch")         -- Frame
-	local notification = gui:WaitForChild("NotificationLabel")
-	
-	-- Цвета и позиции (как в вашем примере)
-	local ON_COLOR = Color3.fromRGB(255, 255, 255)
-	local OFF_COLOR = Color3.fromRGB(74, 74, 74)
-	local SWITCH_ON_COLOR = Color3.fromRGB(0, 71, 202)
-	local SWITCH_OFF_COLOR = Color3.fromRGB(255, 255, 255)
-	local LABEL_ON_COLOR = Color3.fromRGB(0, 71, 202)
-	local LABEL_OFF_COLOR = Color3.fromRGB(11, 11, 15)
-	
-	local ON_POS = UDim2.new(0.522, 0, 0.179, 0)
-	local OFF_POS = UDim2.new(0.131, 0, 0.179, 0)
-	
-	local silentAimEnabled = false
-	local silentConn
-	
-	-- Tween helper (как в вашем примере)
-	local function tween(obj, props, time)
-		local info = TweenInfo.new(time, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-		TweenService:Create(obj, info, props):Play()
-	end
-	
-	-- Notification (как в вашем примере)
-	local function notify(text)
-		notification.Text = text
-		notification.Visible = true
-		notification.TextTransparency = 1
-		notification.BackgroundTransparency = 1
-		local check = notification:FindFirstChild("CheckMark")
-		if check then check.ImageTransparency = 1 end
-	
-		tween(notification, {TextTransparency = 0, BackgroundTransparency = 0.2}, 0.3)
-		if check then tween(check, {ImageTransparency = 0}, 0.3) end
-		task.delay(2.5, function()
-			tween(notification, {TextTransparency = 1, BackgroundTransparency = 1}, 0.4)
-			if check then tween(check, {ImageTransparency = 1}, 0.4) end
-		end)
-	end
-	
-	-- Получение цели (silent)
-	local function getSilentTarget()
-		local closest = nil
-		local shortest = math.huge
-		local center = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
-	
-		for _, player in ipairs(Players:GetPlayers()) do
-			if player ~= LocalPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
-				local hrp = player.Character.HumanoidRootPart
-				local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
-				if humanoid and humanoid.Health > 0 then
-					local pos, visible = Camera:WorldToViewportPoint(hrp.Position)
-					if visible then
-						local dist = (Vector2.new(pos.X, pos.Y) - center).Magnitude
-						local dist3D = (Camera.CFrame.Position - hrp.Position).Magnitude
-						if dist <= FOV_RADIUS and dist3D <= MAX_DISTANCE then
-							if not wallCheckEnabled or canSee(hrp.Position) then
-								if dist < shortest then
-									shortest = dist
-									closest = hrp
-								end
-							end
-						end
-					end
-				end
-			end
-		end
-		return closest
-	end
-	
-	-- Silent aim hook (не вращает камеру)
-	local function onHeartbeat()
-		local target = getSilentTarget()
-		if target then
-			-- Перенаправляем выстрел в позицию цели
-			local predicted = target.Position + (target.Velocity * (getPing() / 1000))
-			Camera.CFrame = CFrame.new(Camera.CFrame.Position, predicted)
-		end
-	end
-	
-	-- Toggle функция (как в вашем примере)
-	local function toggleSilentAim()
-		silentAimEnabled = not silentAimEnabled
-	
-		if silentAimEnabled then
-			tween(switcher, {BackgroundColor3 = ON_COLOR}, 0.3)
-			tween(switch, {Position = ON_POS, BackgroundColor3 = SWITCH_ON_COLOR}, 0.3)
-			tween(aimbotFrame, {BackgroundColor3 = LABEL_ON_COLOR}, 0.3)
-			notify("Silent Aim ON")
-			silentConn = RunService.Heartbeat:Connect(onHeartbeat)
-		else
-			tween(switcher, {BackgroundColor3 = OFF_COLOR}, 0.3)
-			tween(switch, {Position = OFF_POS, BackgroundColor3 = SWITCH_OFF_COLOR}, 0.3)
-			tween(aimbotFrame, {BackgroundColor3 = LABEL_OFF_COLOR}, 0.3)
-			notify("Silent Aim OFF")
-			if silentConn then silentConn:Disconnect() end
-		end
-	end
-	
-	-- Подключение к кнопке
-	switcher.MouseButton1Click:Connect(toggleSilentAim)
-end
-coroutine.wrap(QDAAHVK_fake_script)()
-local function UVXV_fake_script() -- FullbrightOFF.LocalScript 
+coroutine.wrap(OFBHE_fake_script)()
+local function HZRMFM_fake_script() -- FullbrightOFF.LocalScript 
 	local script = Instance.new('LocalScript', FullbrightOFF)
 
 	local button = script.Parent
@@ -3297,8 +3142,8 @@ local function UVXV_fake_script() -- FullbrightOFF.LocalScript
 	end)
 	
 end
-coroutine.wrap(UVXV_fake_script)()
-local function OTNEF_fake_script() -- RemoveShadowButton.LocalScript 
+coroutine.wrap(HZRMFM_fake_script)()
+local function TMWW_fake_script() -- RemoveShadowButton.LocalScript 
 	local script = Instance.new('LocalScript', RemoveShadowButton)
 
 	local Lighting = game:GetService("Lighting")
@@ -3326,8 +3171,8 @@ local function OTNEF_fake_script() -- RemoveShadowButton.LocalScript
 	updateButton()
 	
 end
-coroutine.wrap(OTNEF_fake_script)()
-local function AFYZV_fake_script() -- NoTextures.LocalScript 
+coroutine.wrap(TMWW_fake_script)()
+local function IPIZVR_fake_script() -- NoTextures.LocalScript 
 	local script = Instance.new('LocalScript', NoTextures)
 
 	local Players = game:GetService("Players")
@@ -3403,9 +3248,9 @@ local function AFYZV_fake_script() -- NoTextures.LocalScript
 	-- Начальный текст
 	button.Text = "Textures: OFF"
 end
-coroutine.wrap(AFYZV_fake_script)()
-local function FSGW_fake_script() -- Switcher_5.Clickwarp 
-	local script = Instance.new('LocalScript', Switcher_5)
+coroutine.wrap(IPIZVR_fake_script)()
+local function RLHIL_fake_script() -- Switcher_4.Clickwarp 
+	local script = Instance.new('LocalScript', Switcher_4)
 
 	local Players          = game:GetService("Players")
 	local UserInputService = game:GetService("UserInputService")
@@ -3584,8 +3429,8 @@ local function FSGW_fake_script() -- Switcher_5.Clickwarp
 	binder.Text = bindKey.Name:upper()
 	
 end
-coroutine.wrap(FSGW_fake_script)()
-local function OMCDFC_fake_script() -- Binder.Clickwarp Binder 
+coroutine.wrap(RLHIL_fake_script)()
+local function XWCGWC_fake_script() -- Binder.Clickwarp Binder 
 	local script = Instance.new('LocalScript', Binder)
 
 	-- В LocalScript Switcher (например, включение Clickwarp)
@@ -3623,8 +3468,8 @@ local function OMCDFC_fake_script() -- Binder.Clickwarp Binder
 	end
 	
 end
-coroutine.wrap(OMCDFC_fake_script)()
-local function UEPJ_fake_script() -- Binder.bindertrans 
+coroutine.wrap(XWCGWC_fake_script)()
+local function MCRO_fake_script() -- Binder.bindertrans 
 	local script = Instance.new('LocalScript', Binder)
 
 	local button = script.Parent -- Это должен быть сам TextButton "Binder"
@@ -3633,8 +3478,8 @@ local function UEPJ_fake_script() -- Binder.bindertrans
 	button.BackgroundTransparency = 0.7
 	
 end
-coroutine.wrap(UEPJ_fake_script)()
-local function JXRAV_fake_script() -- Binder_2.NoClip binder 
+coroutine.wrap(MCRO_fake_script)()
+local function MAGGCMG_fake_script() -- Binder_2.NoClip binder 
 	local script = Instance.new('LocalScript', Binder_2)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -3685,8 +3530,8 @@ local function JXRAV_fake_script() -- Binder_2.NoClip binder
 	end
 	
 end
-coroutine.wrap(JXRAV_fake_script)()
-local function HFMT_fake_script() -- Binder_2.bindertrans 
+coroutine.wrap(MAGGCMG_fake_script)()
+local function SDFRDEH_fake_script() -- Binder_2.bindertrans 
 	local script = Instance.new('LocalScript', Binder_2)
 
 	local button = script.Parent -- Это должен быть сам TextButton "Binder"
@@ -3695,9 +3540,9 @@ local function HFMT_fake_script() -- Binder_2.bindertrans
 	button.BackgroundTransparency = 0.7
 	
 end
-coroutine.wrap(HFMT_fake_script)()
-local function QHBQYH_fake_script() -- Switcher_6.script 
-	local script = Instance.new('LocalScript', Switcher_6)
+coroutine.wrap(SDFRDEH_fake_script)()
+local function ZYYYW_fake_script() -- Switcher_5.script 
+	local script = Instance.new('LocalScript', Switcher_5)
 
 	local TweenService     = game:GetService("TweenService")
 	local Players          = game:GetService("Players")
@@ -3879,8 +3724,8 @@ local function QHBQYH_fake_script() -- Switcher_6.script
 		hrp = char:WaitForChild("HumanoidRootPart")
 	end)
 end
-coroutine.wrap(QHBQYH_fake_script)()
-local function BOTGYTD_fake_script() -- AntiAFKButton.LocalScript 
+coroutine.wrap(ZYYYW_fake_script)()
+local function TCZWQZ_fake_script() -- AntiAFKButton.LocalScript 
 	local script = Instance.new('LocalScript', AntiAFKButton)
 
 	local Players = game:GetService("Players")
@@ -4045,8 +3890,8 @@ local function BOTGYTD_fake_script() -- AntiAFKButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(BOTGYTD_fake_script)()
-local function WUVVTXL_fake_script() -- Binder_3.bindertrans 
+coroutine.wrap(TCZWQZ_fake_script)()
+local function UVYNSVR_fake_script() -- Binder_3.bindertrans 
 	local script = Instance.new('LocalScript', Binder_3)
 
 	local button = script.Parent -- Это должен быть сам TextButton "Binder"
@@ -4055,8 +3900,8 @@ local function WUVVTXL_fake_script() -- Binder_3.bindertrans
 	button.BackgroundTransparency = 0.7
 	
 end
-coroutine.wrap(WUVVTXL_fake_script)()
-local function ZEIGQGA_fake_script() -- Binder_3.LocalScript 
+coroutine.wrap(UVYNSVR_fake_script)()
+local function XPYPI_fake_script() -- Binder_3.LocalScript 
 	local script = Instance.new('LocalScript', Binder_3)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -4092,8 +3937,8 @@ local function ZEIGQGA_fake_script() -- Binder_3.LocalScript
 	end
 	
 end
-coroutine.wrap(ZEIGQGA_fake_script)()
-local function DRESDOE_fake_script() -- Slider.LocalScript 
+coroutine.wrap(XPYPI_fake_script)()
+local function VNLFS_fake_script() -- Slider.LocalScript 
 	local script = Instance.new('LocalScript', Slider)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -4170,9 +4015,9 @@ local function DRESDOE_fake_script() -- Slider.LocalScript
 		end)
 	end
 end
-coroutine.wrap(DRESDOE_fake_script)()
-local function TDRYJJ_fake_script() -- Switcher_8.GM 
-	local script = Instance.new('LocalScript', Switcher_8)
+coroutine.wrap(VNLFS_fake_script)()
+local function NGWCQOB_fake_script() -- Switcher_7.GM 
+	local script = Instance.new('LocalScript', Switcher_7)
 
 	local TweenService = game:GetService("TweenService")
 	local Players = game:GetService("Players")
@@ -4267,8 +4112,8 @@ local function TDRYJJ_fake_script() -- Switcher_8.GM
 	switcher.MouseButton1Click:Connect(toggleGodMode)
 	
 end
-coroutine.wrap(TDRYJJ_fake_script)()
-local function DFDJ_fake_script() -- ReloadShoot.ReloadShoot 
+coroutine.wrap(NGWCQOB_fake_script)()
+local function HXVNQK_fake_script() -- ReloadShoot.ReloadShoot 
 	local script = Instance.new('LocalScript', ReloadShoot)
 
 	local Players = game:GetService("Players")
@@ -4332,8 +4177,8 @@ local function DFDJ_fake_script() -- ReloadShoot.ReloadShoot
 	updateButtonText()
 	
 end
-coroutine.wrap(DFDJ_fake_script)()
-local function EOMOC_fake_script() -- NoSpread.NoSpread 
+coroutine.wrap(HXVNQK_fake_script)()
+local function NJMEU_fake_script() -- NoSpread.NoSpread 
 	local script = Instance.new('LocalScript', NoSpread)
 
 	local Players       = game:GetService("Players")
@@ -4429,8 +4274,8 @@ local function EOMOC_fake_script() -- NoSpread.NoSpread
 	end)
 	
 end
-coroutine.wrap(EOMOC_fake_script)()
-local function YEWDT_fake_script() -- NoReload.NoReload 
+coroutine.wrap(NJMEU_fake_script)()
+local function RIKAK_fake_script() -- NoReload.NoReload 
 	local script = Instance.new('LocalScript', NoReload)
 
 	local Players       = game:GetService("Players")
@@ -4524,8 +4369,8 @@ local function YEWDT_fake_script() -- NoReload.NoReload
 	end)
 	
 end
-coroutine.wrap(YEWDT_fake_script)()
-local function ITRBIGK_fake_script() -- InfinityAmmo.InfinityAmmo 
+coroutine.wrap(RIKAK_fake_script)()
+local function JDKNCGX_fake_script() -- InfinityAmmo.InfinityAmmo 
 	local script = Instance.new('LocalScript', InfinityAmmo)
 
 	local Players       = game:GetService("Players")
@@ -4616,8 +4461,8 @@ local function ITRBIGK_fake_script() -- InfinityAmmo.InfinityAmmo
 	end)
 	
 end
-coroutine.wrap(ITRBIGK_fake_script)()
-local function MITRPSX_fake_script() -- NoReloadLabel.NoReload 
+coroutine.wrap(JDKNCGX_fake_script)()
+local function RLMVP_fake_script() -- NoReloadLabel.NoReload 
 	local script = Instance.new('LocalScript', NoReloadLabel)
 
 	local TweenService = game:GetService("TweenService")
@@ -4735,9 +4580,9 @@ local function MITRPSX_fake_script() -- NoReloadLabel.NoReload
 	end)
 	
 end
-coroutine.wrap(MITRPSX_fake_script)()
-local function RHEN_fake_script() -- Switcher_10.KnifeRange 
-	local script = Instance.new('LocalScript', Switcher_10)
+coroutine.wrap(RLMVP_fake_script)()
+local function PJVQMK_fake_script() -- Switcher_9.KnifeRange 
+	local script = Instance.new('LocalScript', Switcher_9)
 
 	local TweenService = game:GetService("TweenService")
 	local Players = game:GetService("Players")
@@ -4831,9 +4676,9 @@ local function RHEN_fake_script() -- Switcher_10.KnifeRange
 	updateSwitcherUI(isEnabled)
 	
 end
-coroutine.wrap(RHEN_fake_script)()
-local function LWDOEK_fake_script() -- Switcher_11.DAmageMLTP 
-	local script = Instance.new('LocalScript', Switcher_11)
+coroutine.wrap(PJVQMK_fake_script)()
+local function GYOBIMP_fake_script() -- Switcher_10.DAmageMLTP 
+	local script = Instance.new('LocalScript', Switcher_10)
 
 	local TweenService = game:GetService("TweenService")
 	local Players = game:GetService("Players")
@@ -4930,4 +4775,4 @@ local function LWDOEK_fake_script() -- Switcher_11.DAmageMLTP
 	updateSwitcherUI(isEnabled)
 	
 end
-coroutine.wrap(LWDOEK_fake_script)()
+coroutine.wrap(GYOBIMP_fake_script)()
