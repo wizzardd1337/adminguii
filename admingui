@@ -6,76 +6,98 @@
 local ScreenGui = Instance.new("ScreenGui")
 local NotificationLabel = Instance.new("TextLabel")
 local CheckMark = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
 local Frame = Instance.new("Frame")
 local menu = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local TabsFrame = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
+local TabsFrame = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
 local Tab1Button = Instance.new("ImageButton")
+local Line = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
 local Tab5Button = Instance.new("ImageButton")
+local Line_2 = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
 local Tab3Button = Instance.new("ImageButton")
+local Line_3 = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
 local Tab2Button = Instance.new("ImageButton")
+local Line_4 = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
 local Tab7Button = Instance.new("ImageButton")
+local Line_5 = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
 local Tab6Button = Instance.new("ImageButton")
+local Line_6 = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
 local logo = Instance.new("ImageLabel")
 local PagesFrame = Instance.new("Frame")
-local UICorner_3 = Instance.new("UICorner")
+local UICorner_10 = Instance.new("UICorner")
 local Tab1Page = Instance.new("Frame")
 local VisualsLabel = Instance.new("TextLabel")
-local AdminESPButton = Instance.new("TextButton")
 local Box = Instance.new("TextLabel")
 local Switcher = Instance.new("TextButton")
 local Switch = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local UICorner_12 = Instance.new("UICorner")
 local Frame_2 = Instance.new("Frame")
 local OutlineButton = Instance.new("ImageButton")
 local TextLabel = Instance.new("TextLabel")
-local UICorner_4 = Instance.new("UICorner")
+local UICorner_13 = Instance.new("UICorner")
 local RainbowButton = Instance.new("ImageButton")
 local TextLabel_2 = Instance.new("TextLabel")
-local UICorner_5 = Instance.new("UICorner")
+local UICorner_14 = Instance.new("UICorner")
+local UICorner_15 = Instance.new("UICorner")
 local Glow = Instance.new("TextLabel")
 local Switcher_2 = Instance.new("TextButton")
 local Switch_2 = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local UICorner_17 = Instance.new("UICorner")
+local UICorner_18 = Instance.new("UICorner")
 local Frame_3 = Instance.new("Frame")
 local VisibleOnlyButton = Instance.new("ImageButton")
-local UICorner_6 = Instance.new("UICorner")
+local UICorner_19 = Instance.new("UICorner")
 local TextLabel_3 = Instance.new("TextLabel")
 local RainbowGlowButton = Instance.new("ImageButton")
-local UICorner_7 = Instance.new("UICorner")
+local UICorner_20 = Instance.new("UICorner")
 local TextLabel_4 = Instance.new("TextLabel")
 local ShowDeadOnlyButton = Instance.new("ImageButton")
-local UICorner_8 = Instance.new("UICorner")
+local UICorner_21 = Instance.new("UICorner")
 local TextLabel_5 = Instance.new("TextLabel")
 local SelfGlowButton = Instance.new("ImageButton")
-local UICorner_9 = Instance.new("UICorner")
+local UICorner_22 = Instance.new("UICorner")
 local TextLabel_6 = Instance.new("TextLabel")
 local ShowAliveOnlyButton = Instance.new("ImageButton")
-local UICorner_10 = Instance.new("UICorner")
+local UICorner_23 = Instance.new("UICorner")
 local TextLabel_7 = Instance.new("TextLabel")
 local ShowTargetOnlyButton = Instance.new("ImageButton")
-local UICorner_11 = Instance.new("UICorner")
+local UICorner_24 = Instance.new("UICorner")
 local TextLabel_8 = Instance.new("TextLabel")
 local FillGlowButton = Instance.new("ImageButton")
-local UICorner_12 = Instance.new("UICorner")
+local UICorner_25 = Instance.new("UICorner")
 local TextLabel_9 = Instance.new("TextLabel")
 local Names = Instance.new("TextLabel")
 local Switcher_3 = Instance.new("TextButton")
 local Switch_3 = Instance.new("Frame")
+local UICorner_26 = Instance.new("UICorner")
+local UICorner_27 = Instance.new("UICorner")
 local Frame_4 = Instance.new("Frame")
 local NickNameButton = Instance.new("ImageButton")
 local TextLabel_10 = Instance.new("TextLabel")
-local UICorner_13 = Instance.new("UICorner")
+local UICorner_28 = Instance.new("UICorner")
 local UserNameButton = Instance.new("ImageButton")
 local TextLabel_11 = Instance.new("TextLabel")
-local UICorner_14 = Instance.new("UICorner")
+local UICorner_29 = Instance.new("UICorner")
 local PositionButton = Instance.new("TextButton")
 local TextLabel_12 = Instance.new("TextLabel")
+local UICorner_30 = Instance.new("UICorner")
+local UICorner_31 = Instance.new("UICorner")
 local PickPos = Instance.new("Frame")
 local Top = Instance.new("TextButton")
-local UICorner_15 = Instance.new("UICorner")
+local UICorner_32 = Instance.new("UICorner")
 local Bottom = Instance.new("TextButton")
-local UICorner_16 = Instance.new("UICorner")
-local UICorner_17 = Instance.new("UICorner")
+local UICorner_33 = Instance.new("UICorner")
+local UICorner_34 = Instance.new("UICorner")
 local Tab2Page = Instance.new("Frame")
 local TextLabel_13 = Instance.new("TextLabel")
 local AimbotFrame = Instance.new("Frame")
@@ -86,36 +108,47 @@ local LockOnLast = Instance.new("ImageButton")
 local LockOnlastLabel = Instance.new("TextLabel")
 local WallCheck = Instance.new("ImageButton")
 local WallcheckLabel = Instance.new("TextLabel")
-local SmoothingBox = Instance.new("TextBox")
-local ApplySmoothingButton = Instance.new("TextButton")
-local BindKeyButton = Instance.new("TextButton")
 local SmoothingLabel = Instance.new("TextLabel")
+local ColorFovLabel = Instance.new("TextLabel")
+local SmoothingBox = Instance.new("TextBox")
 local HoldToggleButton = Instance.new("TextButton")
 local ColorBox = Instance.new("TextBox")
+local BindKeyButton = Instance.new("TextButton")
+local ApplySmoothingButton = Instance.new("TextButton")
 local ApplyColorButton = Instance.new("TextButton")
-local ColorFovLabel = Instance.new("TextLabel")
+local Silentaim = Instance.new("TextLabel")
+local Switcher_4 = Instance.new("TextButton")
+local Switch_4 = Instance.new("Frame")
+local UICorner_35 = Instance.new("UICorner")
+local UICorner_36 = Instance.new("UICorner")
+local UICorner_37 = Instance.new("UICorner")
 local Tab3Page = Instance.new("Frame")
 local FullbrightOFF = Instance.new("TextButton")
 local RemoveShadowButton = Instance.new("TextButton")
 local NoTextures = Instance.new("TextButton")
 local TextLabel_14 = Instance.new("TextLabel")
 local Clickwarp = Instance.new("TextLabel")
-local Switcher_4 = Instance.new("TextButton")
-local Switch_4 = Instance.new("Frame")
-local Binder = Instance.new("TextButton")
-local Hi = Instance.new("TextLabel")
 local Switcher_5 = Instance.new("TextButton")
 local Switch_5 = Instance.new("Frame")
+local Binder = Instance.new("TextButton")
+local Hi = Instance.new("TextLabel")
 local Binder_2 = Instance.new("TextButton")
+local UICorner_38 = Instance.new("UICorner")
+local UICorner_39 = Instance.new("UICorner")
+local Switcher_6 = Instance.new("TextButton")
+local Switch_6 = Instance.new("Frame")
+local UICorner_40 = Instance.new("UICorner")
+local UICorner_41 = Instance.new("UICorner")
+local Unsafe = Instance.new("ImageLabel")
 local Tab4Page = Instance.new("Frame")
 local TextLabel_15 = Instance.new("TextLabel")
 local AntiAFKButton = Instance.new("TextButton")
-local UICorner_18 = Instance.new("UICorner")
+local UICorner_42 = Instance.new("UICorner")
 local Tab5Page = Instance.new("Frame")
 local TextLabel_16 = Instance.new("TextLabel")
 local Speed = Instance.new("TextLabel")
-local Switcher_6 = Instance.new("TextButton")
-local Switch_6 = Instance.new("Frame")
+local Switcher_7 = Instance.new("TextButton")
+local Switch_7 = Instance.new("Frame")
 local Binder_3 = Instance.new("TextButton")
 local Frame_5 = Instance.new("Frame")
 local Slider = Instance.new("Frame")
@@ -124,8 +157,8 @@ local ValueLabel = Instance.new("TextLabel")
 local Bar = Instance.new("Frame")
 local Label = Instance.new("TextLabel")
 local GodMode = Instance.new("TextLabel")
-local Switcher_7 = Instance.new("TextButton")
-local Switch_7 = Instance.new("Frame")
+local Switcher_8 = Instance.new("TextButton")
+local Switch_8 = Instance.new("Frame")
 local Tab6Page = Instance.new("Frame")
 local TextLabel_17 = Instance.new("TextLabel")
 local Tab7Page = Instance.new("Frame")
@@ -135,14 +168,14 @@ local NoSpread = Instance.new("TextButton")
 local NoReload = Instance.new("TextButton")
 local InfinityAmmo = Instance.new("TextButton")
 local NoReloadLabel = Instance.new("TextLabel")
-local Switcher_8 = Instance.new("TextButton")
-local Switch_8 = Instance.new("Frame")
-local KnifeRangeExtended = Instance.new("TextLabel")
 local Switcher_9 = Instance.new("TextButton")
 local Switch_9 = Instance.new("Frame")
-local DamageMultiplier = Instance.new("TextLabel")
+local KnifeRangeExtended = Instance.new("TextLabel")
 local Switcher_10 = Instance.new("TextButton")
 local Switch_10 = Instance.new("Frame")
+local DamageMultiplier = Instance.new("TextLabel")
+local Switcher_11 = Instance.new("TextButton")
+local Switch_11 = Instance.new("Frame")
 
 --Properties:
 
@@ -155,8 +188,7 @@ NotificationLabel.Parent = ScreenGui
 NotificationLabel.Active = true
 NotificationLabel.BackgroundColor3 = Color3.fromRGB(36, 77, 41)
 NotificationLabel.BackgroundTransparency = 1.000
-NotificationLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-NotificationLabel.BorderSizePixel = 0
+NotificationLabel.BorderColor3 = Color3.fromRGB(50, 108, 57)
 NotificationLabel.Position = UDim2.new(0.811807096, 0, 0.255768955, 0)
 NotificationLabel.Size = UDim2.new(0, 281, 0, 44)
 NotificationLabel.Visible = false
@@ -178,6 +210,8 @@ CheckMark.Position = UDim2.new(0.0218524225, 0, 0.0540549532, 0)
 CheckMark.Size = UDim2.new(0, 45, 0, 41)
 CheckMark.Image = "rbxassetid://85837052454915"
 
+UICorner.Parent = NotificationLabel
+
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BackgroundTransparency = 1.000
@@ -188,105 +222,171 @@ Frame.Size = UDim2.new(0, 1109, 0, 761)
 
 menu.Name = "menu"
 menu.Parent = ScreenGui
-menu.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+menu.BackgroundColor3 = Color3.fromRGB(8, 8, 11)
 menu.BorderColor3 = Color3.fromRGB(0, 0, 0)
 menu.BorderSizePixel = 0
-menu.Position = UDim2.new(0.255665302, 0, 0.0897975713, 0)
-menu.Size = UDim2.new(0, 746, 0, 585)
+menu.Position = UDim2.new(0.28052935, 0, 0.0897975713, 0)
+menu.Size = UDim2.new(0, 679, 0, 585)
 menu.ZIndex = 2
 
-UICorner.Parent = menu
+UICorner_2.Parent = menu
 
 TabsFrame.Name = "TabsFrame"
 TabsFrame.Parent = menu
 TabsFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-TabsFrame.BackgroundTransparency = 1.000
+TabsFrame.BackgroundTransparency = 0.300
 TabsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TabsFrame.BorderSizePixel = 0
-TabsFrame.Position = UDim2.new(0, 0, 0.125258803, 0)
-TabsFrame.Size = UDim2.new(0, 123, 0, 422)
+TabsFrame.Position = UDim2.new(-0.171267077, 0, 0, 0)
+TabsFrame.Size = UDim2.new(0, 123, 0, 584)
 
-UICorner_2.Parent = TabsFrame
+UICorner_3.Parent = TabsFrame
 
 Tab1Button.Name = "Tab1Button"
 Tab1Button.Parent = TabsFrame
 Tab1Button.BackgroundColor3 = Color3.fromRGB(0, 89, 255)
 Tab1Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tab1Button.BorderSizePixel = 0
-Tab1Button.Position = UDim2.new(0.252032518, 0, 0.0710899755, 0)
+Tab1Button.Position = UDim2.new(0.252032518, 0, 0.163555726, 0)
 Tab1Button.Size = UDim2.new(0, 53, 0, 54)
 Tab1Button.Image = "rbxassetid://121234038341734"
+
+Line.Name = "Line"
+Line.Parent = Tab1Button
+Line.BackgroundColor3 = Color3.fromRGB(55, 128, 255)
+Line.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(-0.264150947, 0, 0.203703418, 0)
+Line.Size = UDim2.new(0, 5, 0, 32)
+
+UICorner_4.CornerRadius = UDim.new(1, 0)
+UICorner_4.Parent = Line
 
 Tab5Button.Name = "Tab5Button"
 Tab5Button.Parent = TabsFrame
 Tab5Button.BackgroundColor3 = Color3.fromRGB(0, 89, 255)
 Tab5Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tab5Button.BorderSizePixel = 0
-Tab5Button.Position = UDim2.new(0.252032518, 0, 0.701227844, 0)
+Tab5Button.Position = UDim2.new(0.252032518, 0, 0.646433294, 0)
 Tab5Button.Size = UDim2.new(0, 53, 0, 54)
 Tab5Button.Image = "rbxassetid://128101223038569"
+
+Line_2.Name = "Line"
+Line_2.Parent = Tab5Button
+Line_2.BackgroundColor3 = Color3.fromRGB(55, 128, 255)
+Line_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line_2.BorderSizePixel = 0
+Line_2.Position = UDim2.new(-0.264150947, 0, 0.203703418, 0)
+Line_2.Size = UDim2.new(0, 5, 0, 32)
+
+UICorner_5.CornerRadius = UDim.new(1, 0)
+UICorner_5.Parent = Line_2
 
 Tab3Button.Name = "Tab3Button"
 Tab3Button.Parent = TabsFrame
 Tab3Button.BackgroundColor3 = Color3.fromRGB(0, 89, 255)
 Tab3Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tab3Button.BorderSizePixel = 0
-Tab3Button.Position = UDim2.new(0.252032518, 0, 0.540478408, 0)
+Tab3Button.Position = UDim2.new(0.252032518, 0, 0.520664334, 0)
 Tab3Button.Size = UDim2.new(0, 53, 0, 54)
 Tab3Button.Image = "rbxassetid://90030673702247"
+
+Line_3.Name = "Line"
+Line_3.Parent = Tab3Button
+Line_3.BackgroundColor3 = Color3.fromRGB(55, 128, 255)
+Line_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line_3.BorderSizePixel = 0
+Line_3.Position = UDim2.new(-0.264150947, 0, 0.203703418, 0)
+Line_3.Size = UDim2.new(0, 5, 0, 32)
+
+UICorner_6.CornerRadius = UDim.new(1, 0)
+UICorner_6.Parent = Line_3
 
 Tab2Button.Name = "Tab2Button"
 Tab2Button.Parent = TabsFrame
 Tab2Button.BackgroundColor3 = Color3.fromRGB(0, 89, 255)
 Tab2Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tab2Button.BorderSizePixel = 0
-Tab2Button.Position = UDim2.new(0.252032518, 0, 0.231839433, 0)
+Tab2Button.Position = UDim2.new(0.252032518, 0, 0.278561532, 0)
 Tab2Button.Size = UDim2.new(0, 53, 0, 54)
 Tab2Button.Image = "rbxassetid://122574553542109"
+
+Line_4.Name = "Line"
+Line_4.Parent = Tab2Button
+Line_4.BackgroundColor3 = Color3.fromRGB(55, 128, 255)
+Line_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line_4.BorderSizePixel = 0
+Line_4.Position = UDim2.new(-0.264150947, 0, 0.203703418, 0)
+Line_4.Size = UDim2.new(0, 5, 0, 32)
+
+UICorner_7.CornerRadius = UDim.new(1, 0)
+UICorner_7.Parent = Line_4
 
 Tab7Button.Name = "Tab7Button"
 Tab7Button.Parent = TabsFrame
 Tab7Button.BackgroundColor3 = Color3.fromRGB(0, 89, 255)
 Tab7Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tab7Button.BorderSizePixel = 0
-Tab7Button.Position = UDim2.new(0.252032518, 0, 0.857690692, 0)
+Tab7Button.Position = UDim2.new(0.252032518, 0, 0.766937315, 0)
 Tab7Button.Size = UDim2.new(0, 53, 0, 54)
 Tab7Button.Image = "rbxassetid://85020596341898"
+
+Line_5.Name = "Line"
+Line_5.Parent = Tab7Button
+Line_5.BackgroundColor3 = Color3.fromRGB(55, 128, 255)
+Line_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line_5.BorderSizePixel = 0
+Line_5.Position = UDim2.new(-0.264150947, 0, 0.203703418, 0)
+Line_5.Size = UDim2.new(0, 5, 0, 32)
+
+UICorner_8.CornerRadius = UDim.new(1, 0)
+UICorner_8.Parent = Line_5
 
 Tab6Button.Name = "Tab6Button"
 Tab6Button.Parent = TabsFrame
 Tab6Button.BackgroundColor3 = Color3.fromRGB(0, 89, 255)
 Tab6Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tab6Button.BorderSizePixel = 0
-Tab6Button.Position = UDim2.new(0.252032518, 0, 0.38401562, 0)
+Tab6Button.Position = UDim2.new(0.252032518, 0, 0.405052751, 0)
 Tab6Button.Size = UDim2.new(0, 53, 0, 54)
 Tab6Button.Image = "rbxassetid://79580257595150"
 
+Line_6.Name = "Line"
+Line_6.Parent = Tab6Button
+Line_6.BackgroundColor3 = Color3.fromRGB(55, 128, 255)
+Line_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line_6.BorderSizePixel = 0
+Line_6.Position = UDim2.new(-0.264150947, 0, 0.203703418, 0)
+Line_6.Size = UDim2.new(0, 5, 0, 32)
+
+UICorner_9.CornerRadius = UDim.new(1, 0)
+UICorner_9.Parent = Line_6
+
 logo.Name = "logo"
-logo.Parent = menu
+logo.Parent = TabsFrame
 logo.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 logo.BackgroundTransparency = 1.000
 logo.BorderColor3 = Color3.fromRGB(0, 0, 0)
 logo.BorderSizePixel = 0
-logo.Position = UDim2.new(0.0281501338, 0, 0.0170940179, 0)
+logo.Position = UDim2.new(0.155884534, 0, 0.00682297815, 0)
 logo.Rotation = 15.000
-logo.Size = UDim2.new(0, 80, 0, 80)
+logo.Size = UDim2.new(0, 75, 0, 75)
 logo.Image = "rbxassetid://107458031668839"
 
 PagesFrame.Name = "PagesFrame"
 PagesFrame.Parent = menu
-PagesFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PagesFrame.BackgroundColor3 = Color3.fromRGB(8, 8, 11)
 PagesFrame.BackgroundTransparency = 1.000
 PagesFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 PagesFrame.BorderSizePixel = 0
-PagesFrame.Position = UDim2.new(0.174468055, 0, 0.125258833, 0)
-PagesFrame.Size = UDim2.new(0, 509, 0, 421)
+PagesFrame.Position = UDim2.new(0.0463385396, 0, 0.108164728, 0)
+PagesFrame.Size = UDim2.new(0, 556, 0, 459)
 
-UICorner_3.Parent = PagesFrame
+UICorner_10.Parent = PagesFrame
 
 Tab1Page.Name = "Tab1Page"
 Tab1Page.Parent = PagesFrame
-Tab1Page.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Tab1Page.BackgroundColor3 = Color3.fromRGB(8, 8, 11)
 Tab1Page.BackgroundTransparency = 1.000
 Tab1Page.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tab1Page.BorderSizePixel = 0
@@ -296,37 +396,26 @@ Tab1Page.Visible = false
 
 VisualsLabel.Name = "VisualsLabel"
 VisualsLabel.Parent = Tab1Page
-VisualsLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+VisualsLabel.BackgroundColor3 = Color3.fromRGB(8, 8, 11)
 VisualsLabel.BackgroundTransparency = 1.000
 VisualsLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 VisualsLabel.BorderSizePixel = 0
-VisualsLabel.Position = UDim2.new(0.257606477, 0, -0.116113745, 0)
+VisualsLabel.Position = UDim2.new(0.379999995, 0, -0.108999997, 0)
 VisualsLabel.Size = UDim2.new(0, 200, 0, 50)
 VisualsLabel.Font = Enum.Font.Michroma
 VisualsLabel.Text = "Visuals"
 VisualsLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 VisualsLabel.TextSize = 24.000
 
-AdminESPButton.Name = "AdminESPButton"
-AdminESPButton.Parent = Tab1Page
-AdminESPButton.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
-AdminESPButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
-AdminESPButton.Position = UDim2.new(1.24992502, 0, 0.768602431, 0)
-AdminESPButton.Size = UDim2.new(0, 166, 0, 51)
-AdminESPButton.Font = Enum.Font.RobotoMono
-AdminESPButton.Text = "Admin Check"
-AdminESPButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-AdminESPButton.TextSize = 19.000
-
 Box.Name = "Box"
 Box.Parent = Tab1Page
-Box.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+Box.BackgroundColor3 = Color3.fromRGB(11, 11, 15)
 Box.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Box.BorderSizePixel = 0
 Box.Position = UDim2.new(-0.0609380938, 0, 0.068720378, 0)
 Box.Size = UDim2.new(0, 208, 0, 49)
 Box.Font = Enum.Font.SourceSans
-Box.Text = "     BOX"
+Box.Text = "     Enable Box"
 Box.TextColor3 = Color3.fromRGB(255, 255, 255)
 Box.TextSize = 17.000
 Box.TextXAlignment = Enum.TextXAlignment.Left
@@ -336,8 +425,8 @@ Switcher.Parent = Box
 Switcher.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
 Switcher.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Switcher.BorderSizePixel = 0
-Switcher.Position = UDim2.new(0.69127363, 0, 0.250964403, 0)
-Switcher.Size = UDim2.new(0, 46, 0, 25)
+Switcher.Position = UDim2.new(0.700888991, 0, 0.312188894, 0)
+Switcher.Size = UDim2.new(0, 40, 0, 21)
 Switcher.Font = Enum.Font.SourceSans
 Switcher.Text = ""
 Switcher.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -349,10 +438,16 @@ Switch.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Switch.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Switch.BorderSizePixel = 0
 Switch.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
-Switch.Size = UDim2.new(0, 15, 0, 16)
+Switch.Size = UDim2.new(0, 15, 0, 14)
+
+UICorner_11.CornerRadius = UDim.new(0.400000006, 0)
+UICorner_11.Parent = Switch
+
+UICorner_12.CornerRadius = UDim.new(0.400000006, 0)
+UICorner_12.Parent = Switcher
 
 Frame_2.Parent = Box
-Frame_2.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+Frame_2.BackgroundColor3 = Color3.fromRGB(9, 9, 11)
 Frame_2.BackgroundTransparency = 1.000
 Frame_2.BorderColor3 = Color3.fromRGB(20, 20, 20)
 Frame_2.BorderSizePixel = 0
@@ -372,22 +467,23 @@ TextLabel.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(1, 0, -0.704471588, 0)
-TextLabel.Size = UDim2.new(0, 72, 0, 49)
-TextLabel.Font = Enum.Font.RobotoMono
+TextLabel.Position = UDim2.new(1.52631581, 0, -0.304473877, 0)
+TextLabel.Size = UDim2.new(0, 80, 0, 34)
+TextLabel.Font = Enum.Font.SourceSans
 TextLabel.Text = "Outline"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 14.000
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_4.CornerRadius = UDim.new(5, 0)
-UICorner_4.Parent = OutlineButton
+UICorner_13.CornerRadius = UDim.new(5, 0)
+UICorner_13.Parent = OutlineButton
 
 RainbowButton.Name = "RainbowButton"
 RainbowButton.Parent = Frame_2
 RainbowButton.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
 RainbowButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 RainbowButton.BorderSizePixel = 0
-RainbowButton.Position = UDim2.new(0.100961536, 0, 0.569483936, 0)
+RainbowButton.Position = UDim2.new(0.100961536, 0, 0.559179425, 0)
 RainbowButton.Size = UDim2.new(0, 19, 0, 20)
 
 TextLabel_2.Parent = RainbowButton
@@ -395,25 +491,28 @@ TextLabel_2.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
 TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(1.73684216, 0, -0.850000024, 0)
-TextLabel_2.Size = UDim2.new(0, 72, 0, 50)
-TextLabel_2.Font = Enum.Font.RobotoMono
+TextLabel_2.Position = UDim2.new(1.52631581, 0, -0.304473877, 0)
+TextLabel_2.Size = UDim2.new(0, 80, 0, 34)
+TextLabel_2.Font = Enum.Font.SourceSans
 TextLabel_2.Text = "Rainbow Box"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextSize = 14.000
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_5.CornerRadius = UDim.new(5, 0)
-UICorner_5.Parent = RainbowButton
+UICorner_14.CornerRadius = UDim.new(5, 0)
+UICorner_14.Parent = RainbowButton
+
+UICorner_15.Parent = Box
 
 Glow.Name = "Glow"
 Glow.Parent = Tab1Page
-Glow.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+Glow.BackgroundColor3 = Color3.fromRGB(11, 11, 15)
 Glow.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Glow.BorderSizePixel = 0
-Glow.Position = UDim2.new(-0.0609648377, 0, 0.417061597, 0)
-Glow.Size = UDim2.new(0, 208, 0, 51)
+Glow.Position = UDim2.new(-0.0609380938, 0, 0.436018944, 0)
+Glow.Size = UDim2.new(0, 208, 0, 49)
 Glow.Font = Enum.Font.SourceSans
-Glow.Text = "     GLOW"
+Glow.Text = "    Enable Glow"
 Glow.TextColor3 = Color3.fromRGB(255, 255, 255)
 Glow.TextSize = 17.000
 Glow.TextXAlignment = Enum.TextXAlignment.Left
@@ -423,8 +522,8 @@ Switcher_2.Parent = Glow
 Switcher_2.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
 Switcher_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Switcher_2.BorderSizePixel = 0
-Switcher_2.Position = UDim2.new(0.734542727, 0, 0.271372676, 0)
-Switcher_2.Size = UDim2.new(0, 46, 0, 25)
+Switcher_2.Position = UDim2.new(0.700888991, 0, 0.312188894, 0)
+Switcher_2.Size = UDim2.new(0, 40, 0, 21)
 Switcher_2.Font = Enum.Font.SourceSans
 Switcher_2.Text = ""
 Switcher_2.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -436,7 +535,15 @@ Switch_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Switch_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Switch_2.BorderSizePixel = 0
 Switch_2.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
-Switch_2.Size = UDim2.new(0, 15, 0, 16)
+Switch_2.Size = UDim2.new(0, 15, 0, 14)
+
+UICorner_16.CornerRadius = UDim.new(0.400000006, 0)
+UICorner_16.Parent = Switch_2
+
+UICorner_17.CornerRadius = UDim.new(0.400000006, 0)
+UICorner_17.Parent = Switcher_2
+
+UICorner_18.Parent = Glow
 
 Frame_3.Parent = Glow
 Frame_3.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
@@ -455,17 +562,17 @@ VisibleOnlyButton.Position = UDim2.new(0.100961536, 0, 0.0567467026, 0)
 VisibleOnlyButton.Size = UDim2.new(0, 19, 0, 20)
 VisibleOnlyButton.AutoButtonColor = false
 
-UICorner_6.CornerRadius = UDim.new(5, 0)
-UICorner_6.Parent = VisibleOnlyButton
+UICorner_19.CornerRadius = UDim.new(5, 0)
+UICorner_19.Parent = VisibleOnlyButton
 
 TextLabel_3.Parent = VisibleOnlyButton
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
 TextLabel_3.BackgroundTransparency = 1.000
 TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_3.BorderSizePixel = 0
-TextLabel_3.Position = UDim2.new(1.73684216, 0, -0.150820926, 0)
-TextLabel_3.Size = UDim2.new(0, 110, 0, 25)
-TextLabel_3.Font = Enum.Font.RobotoMono
+TextLabel_3.Position = UDim2.new(1.73684216, 0, -0.354473889, 0)
+TextLabel_3.Size = UDim2.new(0, 80, 0, 34)
+TextLabel_3.Font = Enum.Font.SourceSans
 TextLabel_3.Text = "Visible Only"
 TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.TextSize = 14.000
@@ -480,17 +587,17 @@ RainbowGlowButton.Position = UDim2.new(0.100961536, 0, 0.597283483, 0)
 RainbowGlowButton.Size = UDim2.new(0, 19, 0, 20)
 RainbowGlowButton.AutoButtonColor = false
 
-UICorner_7.CornerRadius = UDim.new(5, 0)
-UICorner_7.Parent = RainbowGlowButton
+UICorner_20.CornerRadius = UDim.new(5, 0)
+UICorner_20.Parent = RainbowGlowButton
 
 TextLabel_4.Parent = RainbowGlowButton
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
 TextLabel_4.BackgroundTransparency = 1.000
 TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_4.BorderSizePixel = 0
-TextLabel_4.Position = UDim2.new(1.73684216, 0, -0.150820926, 0)
-TextLabel_4.Size = UDim2.new(0, 110, 0, 25)
-TextLabel_4.Font = Enum.Font.RobotoMono
+TextLabel_4.Position = UDim2.new(1.73684216, 0, -0.354473889, 0)
+TextLabel_4.Size = UDim2.new(0, 80, 0, 34)
+TextLabel_4.Font = Enum.Font.SourceSans
 TextLabel_4.Text = "Rainbow Glow"
 TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.TextSize = 14.000
@@ -505,17 +612,17 @@ ShowDeadOnlyButton.Position = UDim2.new(0.100999981, 0, 0.183100402, 0)
 ShowDeadOnlyButton.Size = UDim2.new(0, 19, 0, 20)
 ShowDeadOnlyButton.AutoButtonColor = false
 
-UICorner_8.CornerRadius = UDim.new(5, 0)
-UICorner_8.Parent = ShowDeadOnlyButton
+UICorner_21.CornerRadius = UDim.new(5, 0)
+UICorner_21.Parent = ShowDeadOnlyButton
 
 TextLabel_5.Parent = ShowDeadOnlyButton
 TextLabel_5.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
 TextLabel_5.BackgroundTransparency = 1.000
 TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_5.BorderSizePixel = 0
-TextLabel_5.Position = UDim2.new(1.73684216, 0, -0.150820926, 0)
-TextLabel_5.Size = UDim2.new(0, 110, 0, 25)
-TextLabel_5.Font = Enum.Font.RobotoMono
+TextLabel_5.Position = UDim2.new(1.73684216, 0, -0.354473889, 0)
+TextLabel_5.Size = UDim2.new(0, 80, 0, 34)
+TextLabel_5.Font = Enum.Font.SourceSans
 TextLabel_5.Text = "Dead Only"
 TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.TextSize = 14.000
@@ -530,17 +637,17 @@ SelfGlowButton.Position = UDim2.new(0.100961536, 0, 0.31762296, 0)
 SelfGlowButton.Size = UDim2.new(0, 19, 0, 20)
 SelfGlowButton.AutoButtonColor = false
 
-UICorner_9.CornerRadius = UDim.new(5, 0)
-UICorner_9.Parent = SelfGlowButton
+UICorner_22.CornerRadius = UDim.new(5, 0)
+UICorner_22.Parent = SelfGlowButton
 
 TextLabel_6.Parent = SelfGlowButton
 TextLabel_6.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
 TextLabel_6.BackgroundTransparency = 1.000
 TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_6.BorderSizePixel = 0
-TextLabel_6.Position = UDim2.new(1.73684216, 0, -0.150820926, 0)
-TextLabel_6.Size = UDim2.new(0, 110, 0, 25)
-TextLabel_6.Font = Enum.Font.RobotoMono
+TextLabel_6.Position = UDim2.new(1.73684216, 0, -0.354473889, 0)
+TextLabel_6.Size = UDim2.new(0, 80, 0, 34)
+TextLabel_6.Font = Enum.Font.SourceSans
 TextLabel_6.Text = "Self Glow"
 TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.TextSize = 14.000
@@ -555,18 +662,18 @@ ShowAliveOnlyButton.Position = UDim2.new(0.100961536, 0, 0.738928139, 0)
 ShowAliveOnlyButton.Size = UDim2.new(0, 19, 0, 20)
 ShowAliveOnlyButton.AutoButtonColor = false
 
-UICorner_10.CornerRadius = UDim.new(5, 0)
-UICorner_10.Parent = ShowAliveOnlyButton
+UICorner_23.CornerRadius = UDim.new(5, 0)
+UICorner_23.Parent = ShowAliveOnlyButton
 
 TextLabel_7.Parent = ShowAliveOnlyButton
 TextLabel_7.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
 TextLabel_7.BackgroundTransparency = 1.000
 TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_7.BorderSizePixel = 0
-TextLabel_7.Position = UDim2.new(1.73684216, 0, -0.150820926, 0)
-TextLabel_7.Size = UDim2.new(0, 110, 0, 25)
-TextLabel_7.Font = Enum.Font.RobotoMono
-TextLabel_7.Text = "Alive Only"
+TextLabel_7.Position = UDim2.new(1.73684216, 0, -0.354473889, 0)
+TextLabel_7.Size = UDim2.new(0, 80, 0, 34)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "Only Alive"
 TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_7.TextSize = 14.000
 TextLabel_7.TextXAlignment = Enum.TextXAlignment.Left
@@ -580,17 +687,17 @@ ShowTargetOnlyButton.Position = UDim2.new(0.100961536, 0, 0.461543322, 0)
 ShowTargetOnlyButton.Size = UDim2.new(0, 19, 0, 20)
 ShowTargetOnlyButton.AutoButtonColor = false
 
-UICorner_11.CornerRadius = UDim.new(5, 0)
-UICorner_11.Parent = ShowTargetOnlyButton
+UICorner_24.CornerRadius = UDim.new(5, 0)
+UICorner_24.Parent = ShowTargetOnlyButton
 
 TextLabel_8.Parent = ShowTargetOnlyButton
 TextLabel_8.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
 TextLabel_8.BackgroundTransparency = 1.000
 TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_8.BorderSizePixel = 0
-TextLabel_8.Position = UDim2.new(1.73684216, 0, -0.150820926, 0)
-TextLabel_8.Size = UDim2.new(0, 110, 0, 25)
-TextLabel_8.Font = Enum.Font.RobotoMono
+TextLabel_8.Position = UDim2.new(1.73684216, 0, -0.354473889, 0)
+TextLabel_8.Size = UDim2.new(0, 80, 0, 34)
+TextLabel_8.Font = Enum.Font.SourceSans
 TextLabel_8.Text = "Target Only"
 TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_8.TextSize = 14.000
@@ -605,31 +712,31 @@ FillGlowButton.Position = UDim2.new(0.100961536, 0, 0.867656887, 0)
 FillGlowButton.Size = UDim2.new(0, 19, 0, 20)
 FillGlowButton.AutoButtonColor = false
 
-UICorner_12.CornerRadius = UDim.new(5, 0)
-UICorner_12.Parent = FillGlowButton
+UICorner_25.CornerRadius = UDim.new(5, 0)
+UICorner_25.Parent = FillGlowButton
 
 TextLabel_9.Parent = FillGlowButton
 TextLabel_9.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
 TextLabel_9.BackgroundTransparency = 1.000
 TextLabel_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_9.BorderSizePixel = 0
-TextLabel_9.Position = UDim2.new(1.73684216, 0, -0.150820926, 0)
-TextLabel_9.Size = UDim2.new(0, 110, 0, 25)
-TextLabel_9.Font = Enum.Font.RobotoMono
-TextLabel_9.Text = "Fill Glow"
+TextLabel_9.Position = UDim2.new(1.73684216, 0, -0.354473889, 0)
+TextLabel_9.Size = UDim2.new(0, 80, 0, 34)
+TextLabel_9.Font = Enum.Font.SourceSans
+TextLabel_9.Text = "Fill Gow"
 TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_9.TextSize = 14.000
 TextLabel_9.TextXAlignment = Enum.TextXAlignment.Left
 
 Names.Name = "Names"
 Names.Parent = Tab1Page
-Names.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+Names.BackgroundColor3 = Color3.fromRGB(11, 11, 15)
 Names.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Names.BorderSizePixel = 0
-Names.Position = UDim2.new(0.523326576, 0, 0.0663507134, 0)
-Names.Size = UDim2.new(0, 208, 0, 51)
+Names.Position = UDim2.new(0.596262693, 0, 0.0805687234, 0)
+Names.Size = UDim2.new(0, 208, 0, 49)
 Names.Font = Enum.Font.SourceSans
-Names.Text = "      NAMES"
+Names.Text = "     Enable Names"
 Names.TextColor3 = Color3.fromRGB(255, 255, 255)
 Names.TextSize = 17.000
 Names.TextXAlignment = Enum.TextXAlignment.Left
@@ -639,8 +746,8 @@ Switcher_3.Parent = Names
 Switcher_3.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
 Switcher_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Switcher_3.BorderSizePixel = 0
-Switcher_3.Position = UDim2.new(0.734542727, 0, 0.271372676, 0)
-Switcher_3.Size = UDim2.new(0, 46, 0, 25)
+Switcher_3.Position = UDim2.new(0.700888991, 0, 0.312188894, 0)
+Switcher_3.Size = UDim2.new(0, 40, 0, 21)
 Switcher_3.Font = Enum.Font.SourceSans
 Switcher_3.Text = ""
 Switcher_3.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -652,22 +759,28 @@ Switch_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Switch_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Switch_3.BorderSizePixel = 0
 Switch_3.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
-Switch_3.Size = UDim2.new(0, 15, 0, 16)
+Switch_3.Size = UDim2.new(0, 15, 0, 14)
+
+UICorner_26.CornerRadius = UDim.new(0.400000006, 0)
+UICorner_26.Parent = Switch_3
+
+UICorner_27.CornerRadius = UDim.new(0.400000006, 0)
+UICorner_27.Parent = Switcher_3
 
 Frame_4.Parent = Names
-Frame_4.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+Frame_4.BackgroundColor3 = Color3.fromRGB(9, 9, 11)
 Frame_4.BackgroundTransparency = 1.000
 Frame_4.BorderColor3 = Color3.fromRGB(20, 20, 20)
 Frame_4.BorderSizePixel = 0
-Frame_4.Position = UDim2.new(0, 0, 1, 0)
-Frame_4.Size = UDim2.new(0, 208, 0, 169)
+Frame_4.Position = UDim2.new(0, 0, 1.00000119, 0)
+Frame_4.Size = UDim2.new(0, 208, 0, 114)
 
 NickNameButton.Name = "NickNameButton"
 NickNameButton.Parent = Frame_4
 NickNameButton.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
 NickNameButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 NickNameButton.BorderSizePixel = 0
-NickNameButton.Position = UDim2.new(0.100961536, 0, 0.0750732422, 0)
+NickNameButton.Position = UDim2.new(0.100961536, 0, 0.128742948, 0)
 NickNameButton.Size = UDim2.new(0, 19, 0, 20)
 
 TextLabel_10.Parent = NickNameButton
@@ -675,22 +788,23 @@ TextLabel_10.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
 TextLabel_10.BackgroundTransparency = 1.000
 TextLabel_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_10.BorderSizePixel = 0
-TextLabel_10.Position = UDim2.new(1.36842108, 0, -0.634368896, 0)
-TextLabel_10.Size = UDim2.new(0, 72, 0, 46)
-TextLabel_10.Font = Enum.Font.RobotoMono
-TextLabel_10.Text = "Nickname"
+TextLabel_10.Position = UDim2.new(1.52631581, 0, -0.304473877, 0)
+TextLabel_10.Size = UDim2.new(0, 80, 0, 34)
+TextLabel_10.Font = Enum.Font.SourceSans
+TextLabel_10.Text = "Show Nickname"
 TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_10.TextSize = 14.000
+TextLabel_10.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_13.CornerRadius = UDim.new(5, 0)
-UICorner_13.Parent = NickNameButton
+UICorner_28.CornerRadius = UDim.new(5, 0)
+UICorner_28.Parent = NickNameButton
 
 UserNameButton.Name = "UserNameButton"
 UserNameButton.Parent = Frame_4
 UserNameButton.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
 UserNameButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 UserNameButton.BorderSizePixel = 0
-UserNameButton.Position = UDim2.new(0.100961536, 0, 0.281704336, 0)
+UserNameButton.Position = UDim2.new(0.100961536, 0, 0.427600533, 0)
 UserNameButton.Size = UDim2.new(0, 19, 0, 20)
 
 TextLabel_11.Parent = UserNameButton
@@ -698,21 +812,22 @@ TextLabel_11.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
 TextLabel_11.BackgroundTransparency = 1.000
 TextLabel_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_11.BorderSizePixel = 0
-TextLabel_11.Position = UDim2.new(1.36842108, 0, -0.850000024, 0)
-TextLabel_11.Size = UDim2.new(0, 72, 0, 50)
-TextLabel_11.Font = Enum.Font.RobotoMono
-TextLabel_11.Text = "Username"
+TextLabel_11.Position = UDim2.new(1.52631581, 0, -0.304473877, 0)
+TextLabel_11.Size = UDim2.new(0, 80, 0, 34)
+TextLabel_11.Font = Enum.Font.SourceSans
+TextLabel_11.Text = "Show Username"
 TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_11.TextSize = 14.000
+TextLabel_11.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_14.CornerRadius = UDim.new(5, 0)
-UICorner_14.Parent = UserNameButton
+UICorner_29.CornerRadius = UDim.new(5, 0)
+UICorner_29.Parent = UserNameButton
 
 PositionButton.Name = "PositionButton"
 PositionButton.Parent = Frame_4
-PositionButton.BackgroundColor3 = Color3.fromRGB(9, 9, 9)
+PositionButton.BackgroundColor3 = Color3.fromRGB(11, 11, 15)
 PositionButton.BorderColor3 = Color3.fromRGB(70, 70, 70)
-PositionButton.Position = UDim2.new(0, 0, 0.686596394, 0)
+PositionButton.Position = UDim2.new(0.014423077, 0, 0.721683979, 0)
 PositionButton.Size = UDim2.new(0, 31, 0, 50)
 PositionButton.Font = Enum.Font.SourceSans
 PositionButton.Text = "↓"
@@ -726,10 +841,14 @@ TextLabel_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_12.BorderSizePixel = 0
 TextLabel_12.Position = UDim2.new(1.50672174, 0, -0.0299999993, 0)
 TextLabel_12.Size = UDim2.new(0, 83, 0, 50)
-TextLabel_12.Font = Enum.Font.RobotoMono
-TextLabel_12.Text = "Pick Position"
+TextLabel_12.Font = Enum.Font.SourceSans
+TextLabel_12.Text = "Name position"
 TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_12.TextSize = 14.000
+TextLabel_12.TextSize = 15.000
+
+UICorner_30.Parent = PositionButton
+
+UICorner_31.Parent = Names
 
 PickPos.Name = "PickPos"
 PickPos.Parent = Names
@@ -752,7 +871,7 @@ Top.Text = "TOP"
 Top.TextColor3 = Color3.fromRGB(255, 255, 255)
 Top.TextSize = 14.000
 
-UICorner_15.Parent = Top
+UICorner_32.Parent = Top
 
 Bottom.Name = "Bottom"
 Bottom.Parent = PickPos
@@ -766,26 +885,25 @@ Bottom.Text = "Bottom"
 Bottom.TextColor3 = Color3.fromRGB(255, 255, 255)
 Bottom.TextSize = 14.000
 
-UICorner_16.Parent = Bottom
+UICorner_33.Parent = Bottom
 
-UICorner_17.Parent = PickPos
+UICorner_34.Parent = PickPos
 
 Tab2Page.Name = "Tab2Page"
 Tab2Page.Parent = PagesFrame
-Tab2Page.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Tab2Page.BackgroundColor3 = Color3.fromRGB(8, 8, 11)
 Tab2Page.BackgroundTransparency = 1.000
 Tab2Page.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tab2Page.BorderSizePixel = 0
 Tab2Page.Position = UDim2.new(0.0384408757, 0, 0, 0)
 Tab2Page.Size = UDim2.new(0, 489, 0, 422)
-Tab2Page.Visible = false
 
 TextLabel_13.Parent = Tab2Page
-TextLabel_13.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(8, 8, 11)
 TextLabel_13.BackgroundTransparency = 1.000
 TextLabel_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_13.BorderSizePixel = 0
-TextLabel_13.Position = UDim2.new(0.25147146, 0, -0.116113745, 0)
+TextLabel_13.Position = UDim2.new(0.380305827, 0, -0.109004736, 0)
 TextLabel_13.Size = UDim2.new(0, 200, 0, 50)
 TextLabel_13.Font = Enum.Font.Michroma
 TextLabel_13.Text = "Combat"
@@ -877,40 +995,6 @@ WallcheckLabel.Text = "Wallcheck"
 WallcheckLabel.TextColor3 = Color3.fromRGB(248, 248, 248)
 WallcheckLabel.TextSize = 14.000
 
-SmoothingBox.Name = "SmoothingBox"
-SmoothingBox.Parent = AimbotFrame
-SmoothingBox.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
-SmoothingBox.BorderColor3 = Color3.fromRGB(94, 94, 94)
-SmoothingBox.Position = UDim2.new(0.643216074, 0, 0.487356335, 0)
-SmoothingBox.Size = UDim2.new(0, 62, 0, 50)
-SmoothingBox.Font = Enum.Font.SourceSans
-SmoothingBox.Text = ""
-SmoothingBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-SmoothingBox.TextSize = 14.000
-
-ApplySmoothingButton.Name = "ApplySmoothingButton"
-ApplySmoothingButton.Parent = AimbotFrame
-ApplySmoothingButton.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
-ApplySmoothingButton.BackgroundTransparency = 1.000
-ApplySmoothingButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
-ApplySmoothingButton.Position = UDim2.new(0.48241207, 0, 0.618390799, 0)
-ApplySmoothingButton.Size = UDim2.new(0, 94, 0, 28)
-ApplySmoothingButton.Font = Enum.Font.SourceSans
-ApplySmoothingButton.Text = "Apply Smoothing"
-ApplySmoothingButton.TextColor3 = Color3.fromRGB(252, 252, 252)
-ApplySmoothingButton.TextSize = 13.000
-
-BindKeyButton.Name = "BindKeyButton"
-BindKeyButton.Parent = AimbotFrame
-BindKeyButton.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
-BindKeyButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
-BindKeyButton.Position = UDim2.new(0.268929183, -50, 0.952091634, -25)
-BindKeyButton.Size = UDim2.new(0, 89, 0, 42)
-BindKeyButton.Font = Enum.Font.RobotoMono
-BindKeyButton.Text = "Bind Aimbot"
-BindKeyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-BindKeyButton.TextSize = 13.000
-
 SmoothingLabel.Name = "SmoothingLabel"
 SmoothingLabel.Parent = AimbotFrame
 SmoothingLabel.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
@@ -923,6 +1007,30 @@ SmoothingLabel.Font = Enum.Font.RobotoMono
 SmoothingLabel.Text = "Smoothing"
 SmoothingLabel.TextColor3 = Color3.fromRGB(248, 248, 248)
 SmoothingLabel.TextSize = 14.000
+
+ColorFovLabel.Name = "ColorFovLabel"
+ColorFovLabel.Parent = AimbotFrame
+ColorFovLabel.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+ColorFovLabel.BackgroundTransparency = 1.000
+ColorFovLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ColorFovLabel.BorderSizePixel = 0
+ColorFovLabel.Position = UDim2.new(0.0603015088, 0, 0.731034458, 0)
+ColorFovLabel.Size = UDim2.new(0, 78, 0, 50)
+ColorFovLabel.Font = Enum.Font.RobotoMono
+ColorFovLabel.Text = "FOV Color"
+ColorFovLabel.TextColor3 = Color3.fromRGB(248, 248, 248)
+ColorFovLabel.TextSize = 14.000
+
+SmoothingBox.Name = "SmoothingBox"
+SmoothingBox.Parent = AimbotFrame
+SmoothingBox.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+SmoothingBox.BorderColor3 = Color3.fromRGB(94, 94, 94)
+SmoothingBox.Position = UDim2.new(0.643216074, 0, 0.487356335, 0)
+SmoothingBox.Size = UDim2.new(0, 62, 0, 50)
+SmoothingBox.Font = Enum.Font.SourceSans
+SmoothingBox.Text = ""
+SmoothingBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+SmoothingBox.TextSize = 14.000
 
 HoldToggleButton.Name = "HoldToggleButton"
 HoldToggleButton.Parent = AimbotFrame
@@ -946,6 +1054,29 @@ ColorBox.Text = ""
 ColorBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 ColorBox.TextSize = 14.000
 
+BindKeyButton.Name = "BindKeyButton"
+BindKeyButton.Parent = AimbotFrame
+BindKeyButton.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+BindKeyButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
+BindKeyButton.Position = UDim2.new(0.268929183, -50, 0.952091634, -25)
+BindKeyButton.Size = UDim2.new(0, 89, 0, 42)
+BindKeyButton.Font = Enum.Font.RobotoMono
+BindKeyButton.Text = "Bind Aimbot"
+BindKeyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+BindKeyButton.TextSize = 13.000
+
+ApplySmoothingButton.Name = "ApplySmoothingButton"
+ApplySmoothingButton.Parent = AimbotFrame
+ApplySmoothingButton.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+ApplySmoothingButton.BackgroundTransparency = 1.000
+ApplySmoothingButton.BorderColor3 = Color3.fromRGB(53, 53, 53)
+ApplySmoothingButton.Position = UDim2.new(0.48241207, 0, 0.618390799, 0)
+ApplySmoothingButton.Size = UDim2.new(0, 94, 0, 28)
+ApplySmoothingButton.Font = Enum.Font.SourceSans
+ApplySmoothingButton.Text = "Apply Smoothing"
+ApplySmoothingButton.TextColor3 = Color3.fromRGB(252, 252, 252)
+ApplySmoothingButton.TextSize = 13.000
+
 ApplyColorButton.Name = "ApplyColorButton"
 ApplyColorButton.Parent = AimbotFrame
 ApplyColorButton.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
@@ -958,22 +1089,50 @@ ApplyColorButton.Text = "Apply FOV Color"
 ApplyColorButton.TextColor3 = Color3.fromRGB(252, 252, 252)
 ApplyColorButton.TextSize = 13.000
 
-ColorFovLabel.Name = "ColorFovLabel"
-ColorFovLabel.Parent = AimbotFrame
-ColorFovLabel.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
-ColorFovLabel.BackgroundTransparency = 1.000
-ColorFovLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ColorFovLabel.BorderSizePixel = 0
-ColorFovLabel.Position = UDim2.new(0.0603015088, 0, 0.731034458, 0)
-ColorFovLabel.Size = UDim2.new(0, 78, 0, 50)
-ColorFovLabel.Font = Enum.Font.RobotoMono
-ColorFovLabel.Text = "FOV Color"
-ColorFovLabel.TextColor3 = Color3.fromRGB(248, 248, 248)
-ColorFovLabel.TextSize = 14.000
+Silentaim.Name = "Silentaim"
+Silentaim.Parent = Tab2Page
+Silentaim.BackgroundColor3 = Color3.fromRGB(11, 11, 15)
+Silentaim.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Silentaim.BorderSizePixel = 0
+Silentaim.Position = UDim2.new(0.442129433, 0, 0.054502368, 0)
+Silentaim.Size = UDim2.new(0, 208, 0, 49)
+Silentaim.Font = Enum.Font.SourceSans
+Silentaim.Text = "     Silent Aimbot"
+Silentaim.TextColor3 = Color3.fromRGB(255, 255, 255)
+Silentaim.TextSize = 17.000
+Silentaim.TextXAlignment = Enum.TextXAlignment.Left
+
+Switcher_4.Name = "Switcher"
+Switcher_4.Parent = Silentaim
+Switcher_4.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Switcher_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Switcher_4.BorderSizePixel = 0
+Switcher_4.Position = UDim2.new(0.700888991, 0, 0.312188894, 0)
+Switcher_4.Size = UDim2.new(0, 40, 0, 21)
+Switcher_4.Font = Enum.Font.SourceSans
+Switcher_4.Text = ""
+Switcher_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Switcher_4.TextSize = 14.000
+
+Switch_4.Name = "Switch"
+Switch_4.Parent = Switcher_4
+Switch_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Switch_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Switch_4.BorderSizePixel = 0
+Switch_4.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
+Switch_4.Size = UDim2.new(0, 15, 0, 14)
+
+UICorner_35.CornerRadius = UDim.new(0.400000006, 0)
+UICorner_35.Parent = Switch_4
+
+UICorner_36.CornerRadius = UDim.new(0.400000006, 0)
+UICorner_36.Parent = Switcher_4
+
+UICorner_37.Parent = Silentaim
 
 Tab3Page.Name = "Tab3Page"
 Tab3Page.Parent = PagesFrame
-Tab3Page.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Tab3Page.BackgroundColor3 = Color3.fromRGB(8, 8, 11)
 Tab3Page.BackgroundTransparency = 1.000
 Tab3Page.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tab3Page.BorderSizePixel = 0
@@ -1015,11 +1174,11 @@ NoTextures.TextColor3 = Color3.fromRGB(255, 255, 255)
 NoTextures.TextSize = 19.000
 
 TextLabel_14.Parent = Tab3Page
-TextLabel_14.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(8, 8, 11)
 TextLabel_14.BackgroundTransparency = 1.000
 TextLabel_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_14.BorderSizePixel = 0
-TextLabel_14.Position = UDim2.new(0.257606477, 0, -0.120853081, 0)
+TextLabel_14.Position = UDim2.new(0.379999995, 0, -0.108999997, 0)
 TextLabel_14.Size = UDim2.new(0, 200, 0, 50)
 TextLabel_14.Font = Enum.Font.Michroma
 TextLabel_14.Text = "World"
@@ -1039,54 +1198,8 @@ Clickwarp.TextColor3 = Color3.fromRGB(255, 255, 255)
 Clickwarp.TextSize = 17.000
 Clickwarp.TextXAlignment = Enum.TextXAlignment.Left
 
-Switcher_4.Name = "Switcher"
-Switcher_4.Parent = Clickwarp
-Switcher_4.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
-Switcher_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Switcher_4.BorderSizePixel = 0
-Switcher_4.Position = UDim2.new(0.734542727, 0, 0.271372676, 0)
-Switcher_4.Size = UDim2.new(0, 46, 0, 25)
-Switcher_4.Font = Enum.Font.SourceSans
-Switcher_4.Text = ""
-Switcher_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-Switcher_4.TextSize = 14.000
-
-Switch_4.Name = "Switch"
-Switch_4.Parent = Switcher_4
-Switch_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Switch_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Switch_4.BorderSizePixel = 0
-Switch_4.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
-Switch_4.Size = UDim2.new(0, 15, 0, 16)
-
-Binder.Name = "Binder"
-Binder.Parent = Clickwarp
-Binder.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
-Binder.BackgroundTransparency = 0.500
-Binder.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Binder.BorderSizePixel = 0
-Binder.Position = UDim2.new(0.525417328, 0, 0.271372467, 0)
-Binder.Size = UDim2.new(0, 46, 0, 25)
-Binder.Font = Enum.Font.Arial
-Binder.Text = "BIND"
-Binder.TextColor3 = Color3.fromRGB(255, 255, 255)
-Binder.TextSize = 12.000
-
-Hi.Name = "Hi"
-Hi.Parent = Tab3Page
-Hi.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
-Hi.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Hi.BorderSizePixel = 0
-Hi.Position = UDim2.new(-0.0609380938, 0, 0.0805687234, 0)
-Hi.Size = UDim2.new(0, 263, 0, 51)
-Hi.Font = Enum.Font.SourceSans
-Hi.Text = "      NOCLIP"
-Hi.TextColor3 = Color3.fromRGB(255, 255, 255)
-Hi.TextSize = 17.000
-Hi.TextXAlignment = Enum.TextXAlignment.Left
-
 Switcher_5.Name = "Switcher"
-Switcher_5.Parent = Hi
+Switcher_5.Parent = Clickwarp
 Switcher_5.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
 Switcher_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Switcher_5.BorderSizePixel = 0
@@ -1105,6 +1218,32 @@ Switch_5.BorderSizePixel = 0
 Switch_5.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
 Switch_5.Size = UDim2.new(0, 15, 0, 16)
 
+Binder.Name = "Binder"
+Binder.Parent = Clickwarp
+Binder.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Binder.BackgroundTransparency = 0.500
+Binder.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Binder.BorderSizePixel = 0
+Binder.Position = UDim2.new(0.525417328, 0, 0.271372467, 0)
+Binder.Size = UDim2.new(0, 46, 0, 25)
+Binder.Font = Enum.Font.Arial
+Binder.Text = "BIND"
+Binder.TextColor3 = Color3.fromRGB(255, 255, 255)
+Binder.TextSize = 12.000
+
+Hi.Name = "Hi"
+Hi.Parent = Tab3Page
+Hi.BackgroundColor3 = Color3.fromRGB(11, 11, 15)
+Hi.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Hi.BorderSizePixel = 0
+Hi.Position = UDim2.new(-0.0609380938, 0, 0.0805687234, 0)
+Hi.Size = UDim2.new(0, 263, 0, 51)
+Hi.Font = Enum.Font.SourceSans
+Hi.Text = "      Enable Noclip"
+Hi.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hi.TextSize = 17.000
+Hi.TextXAlignment = Enum.TextXAlignment.Left
+
 Binder_2.Name = "Binder"
 Binder_2.Parent = Hi
 Binder_2.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
@@ -1118,9 +1257,49 @@ Binder_2.Text = "BIND"
 Binder_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Binder_2.TextSize = 12.000
 
+UICorner_38.Parent = Binder_2
+
+UICorner_39.Parent = Hi
+
+Switcher_6.Name = "Switcher"
+Switcher_6.Parent = Hi
+Switcher_6.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Switcher_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Switcher_6.BorderSizePixel = 0
+Switcher_6.Position = UDim2.new(0.742714047, 0, 0.292580992, 0)
+Switcher_6.Size = UDim2.new(0, 40, 0, 23)
+Switcher_6.Font = Enum.Font.SourceSans
+Switcher_6.Text = ""
+Switcher_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+Switcher_6.TextSize = 14.000
+
+Switch_6.Name = "Switch"
+Switch_6.Parent = Switcher_6
+Switch_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Switch_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Switch_6.BorderSizePixel = 0
+Switch_6.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
+Switch_6.Size = UDim2.new(0, 15, 0, 14)
+
+UICorner_40.CornerRadius = UDim.new(0.400000006, 0)
+UICorner_40.Parent = Switch_6
+
+UICorner_41.CornerRadius = UDim.new(0.400000006, 0)
+UICorner_41.Parent = Switcher_6
+
+Unsafe.Name = "Unsafe"
+Unsafe.Parent = Hi
+Unsafe.BackgroundColor3 = Color3.fromRGB(7, 7, 10)
+Unsafe.BackgroundTransparency = 1.000
+Unsafe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Unsafe.BorderSizePixel = 0
+Unsafe.Position = UDim2.new(1, 0, 0.196078435, 0)
+Unsafe.Size = UDim2.new(0, 30, 0, 30)
+Unsafe.Image = "rbxassetid://84095490067910"
+
 Tab4Page.Name = "Tab4Page"
 Tab4Page.Parent = PagesFrame
-Tab4Page.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Tab4Page.BackgroundColor3 = Color3.fromRGB(8, 8, 11)
 Tab4Page.BackgroundTransparency = 1.000
 Tab4Page.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tab4Page.BorderSizePixel = 0
@@ -1132,7 +1311,7 @@ TextLabel_15.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_15.BackgroundTransparency = 1.000
 TextLabel_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_15.BorderSizePixel = 0
-TextLabel_15.Position = UDim2.new(0.279217482, 0, -0.116113745, 0)
+TextLabel_15.Position = UDim2.new(0.379999995, 0, -0.108999997, 0)
 TextLabel_15.Size = UDim2.new(0, 200, 0, 50)
 TextLabel_15.Font = Enum.Font.Michroma
 TextLabel_15.Text = "Mics"
@@ -1152,22 +1331,23 @@ AntiAFKButton.Text = "AntiAFK"
 AntiAFKButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 AntiAFKButton.TextSize = 15.000
 
-UICorner_18.Parent = AntiAFKButton
+UICorner_42.Parent = AntiAFKButton
 
 Tab5Page.Name = "Tab5Page"
 Tab5Page.Parent = PagesFrame
-Tab5Page.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Tab5Page.BackgroundColor3 = Color3.fromRGB(8, 8, 11)
 Tab5Page.BackgroundTransparency = 1.000
 Tab5Page.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tab5Page.BorderSizePixel = 0
 Tab5Page.Size = UDim2.new(0, 509, 0, 422)
+Tab5Page.Visible = false
 
 TextLabel_16.Parent = Tab5Page
-TextLabel_16.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(8, 8, 11)
 TextLabel_16.BackgroundTransparency = 1.000
 TextLabel_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_16.BorderSizePixel = 0
-TextLabel_16.Position = UDim2.new(0.279217482, 0, -0.116113745, 0)
+TextLabel_16.Position = UDim2.new(0.379999995, 0, -0.108999997, 0)
 TextLabel_16.Size = UDim2.new(0, 200, 0, 50)
 TextLabel_16.Font = Enum.Font.Michroma
 TextLabel_16.Text = "Character"
@@ -1187,25 +1367,25 @@ Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
 Speed.TextSize = 17.000
 Speed.TextXAlignment = Enum.TextXAlignment.Left
 
-Switcher_6.Name = "Switcher"
-Switcher_6.Parent = Speed
-Switcher_6.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
-Switcher_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Switcher_6.BorderSizePixel = 0
-Switcher_6.Position = UDim2.new(0.734542727, 0, 0.271372676, 0)
-Switcher_6.Size = UDim2.new(0, 46, 0, 25)
-Switcher_6.Font = Enum.Font.SourceSans
-Switcher_6.Text = ""
-Switcher_6.TextColor3 = Color3.fromRGB(0, 0, 0)
-Switcher_6.TextSize = 14.000
+Switcher_7.Name = "Switcher"
+Switcher_7.Parent = Speed
+Switcher_7.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Switcher_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Switcher_7.BorderSizePixel = 0
+Switcher_7.Position = UDim2.new(0.734542727, 0, 0.271372676, 0)
+Switcher_7.Size = UDim2.new(0, 46, 0, 25)
+Switcher_7.Font = Enum.Font.SourceSans
+Switcher_7.Text = ""
+Switcher_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+Switcher_7.TextSize = 14.000
 
-Switch_6.Name = "Switch"
-Switch_6.Parent = Switcher_6
-Switch_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Switch_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Switch_6.BorderSizePixel = 0
-Switch_6.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
-Switch_6.Size = UDim2.new(0, 15, 0, 16)
+Switch_7.Name = "Switch"
+Switch_7.Parent = Switcher_7
+Switch_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Switch_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Switch_7.BorderSizePixel = 0
+Switch_7.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
+Switch_7.Size = UDim2.new(0, 15, 0, 16)
 
 Binder_3.Name = "Binder"
 Binder_3.Parent = Speed
@@ -1289,29 +1469,29 @@ GodMode.TextColor3 = Color3.fromRGB(255, 255, 255)
 GodMode.TextSize = 17.000
 GodMode.TextXAlignment = Enum.TextXAlignment.Left
 
-Switcher_7.Name = "Switcher"
-Switcher_7.Parent = GodMode
-Switcher_7.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
-Switcher_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Switcher_7.BorderSizePixel = 0
-Switcher_7.Position = UDim2.new(0.734542727, 0, 0.271372676, 0)
-Switcher_7.Size = UDim2.new(0, 46, 0, 25)
-Switcher_7.Font = Enum.Font.SourceSans
-Switcher_7.Text = ""
-Switcher_7.TextColor3 = Color3.fromRGB(0, 0, 0)
-Switcher_7.TextSize = 14.000
+Switcher_8.Name = "Switcher"
+Switcher_8.Parent = GodMode
+Switcher_8.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Switcher_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Switcher_8.BorderSizePixel = 0
+Switcher_8.Position = UDim2.new(0.734542727, 0, 0.271372676, 0)
+Switcher_8.Size = UDim2.new(0, 46, 0, 25)
+Switcher_8.Font = Enum.Font.SourceSans
+Switcher_8.Text = ""
+Switcher_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+Switcher_8.TextSize = 14.000
 
-Switch_7.Name = "Switch"
-Switch_7.Parent = Switcher_7
-Switch_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Switch_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Switch_7.BorderSizePixel = 0
-Switch_7.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
-Switch_7.Size = UDim2.new(0, 15, 0, 16)
+Switch_8.Name = "Switch"
+Switch_8.Parent = Switcher_8
+Switch_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Switch_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Switch_8.BorderSizePixel = 0
+Switch_8.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
+Switch_8.Size = UDim2.new(0, 15, 0, 16)
 
 Tab6Page.Name = "Tab6Page"
 Tab6Page.Parent = PagesFrame
-Tab6Page.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Tab6Page.BackgroundColor3 = Color3.fromRGB(8, 8, 11)
 Tab6Page.BackgroundTransparency = 1.000
 Tab6Page.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tab6Page.BorderSizePixel = 0
@@ -1319,11 +1499,11 @@ Tab6Page.Size = UDim2.new(0, 509, 0, 422)
 Tab6Page.Visible = false
 
 TextLabel_17.Parent = Tab6Page
-TextLabel_17.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(8, 8, 11)
 TextLabel_17.BackgroundTransparency = 1.000
 TextLabel_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_17.BorderSizePixel = 0
-TextLabel_17.Position = UDim2.new(0.279217482, 0, -0.116113745, 0)
+TextLabel_17.Position = UDim2.new(0.379999995, 0, -0.108999997, 0)
 TextLabel_17.Size = UDim2.new(0, 200, 0, 50)
 TextLabel_17.Font = Enum.Font.Michroma
 TextLabel_17.Text = "Vehicle"
@@ -1332,7 +1512,7 @@ TextLabel_17.TextSize = 24.000
 
 Tab7Page.Name = "Tab7Page"
 Tab7Page.Parent = PagesFrame
-Tab7Page.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Tab7Page.BackgroundColor3 = Color3.fromRGB(8, 8, 11)
 Tab7Page.BackgroundTransparency = 1.000
 Tab7Page.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Tab7Page.BorderSizePixel = 0
@@ -1340,11 +1520,11 @@ Tab7Page.Size = UDim2.new(0, 509, 0, 422)
 Tab7Page.Visible = false
 
 TextLabel_18.Parent = Tab7Page
-TextLabel_18.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(8, 8, 11)
 TextLabel_18.BackgroundTransparency = 1.000
 TextLabel_18.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_18.BorderSizePixel = 0
-TextLabel_18.Position = UDim2.new(0.279217482, 0, -0.116113745, 0)
+TextLabel_18.Position = UDim2.new(0.379999995, 0, -0.108999997, 0)
 TextLabel_18.Size = UDim2.new(0, 200, 0, 50)
 TextLabel_18.Font = Enum.Font.Michroma
 TextLabel_18.Text = "Weapon"
@@ -1408,41 +1588,8 @@ NoReloadLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 NoReloadLabel.TextSize = 17.000
 NoReloadLabel.TextXAlignment = Enum.TextXAlignment.Left
 
-Switcher_8.Name = "Switcher"
-Switcher_8.Parent = NoReloadLabel
-Switcher_8.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
-Switcher_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Switcher_8.BorderSizePixel = 0
-Switcher_8.Position = UDim2.new(0.734542727, 0, 0.271372676, 0)
-Switcher_8.Size = UDim2.new(0, 46, 0, 25)
-Switcher_8.Font = Enum.Font.SourceSans
-Switcher_8.Text = ""
-Switcher_8.TextColor3 = Color3.fromRGB(0, 0, 0)
-Switcher_8.TextSize = 14.000
-
-Switch_8.Name = "Switch"
-Switch_8.Parent = Switcher_8
-Switch_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Switch_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Switch_8.BorderSizePixel = 0
-Switch_8.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
-Switch_8.Size = UDim2.new(0, 15, 0, 16)
-
-KnifeRangeExtended.Name = "KnifeRangeExtended"
-KnifeRangeExtended.Parent = Tab7Page
-KnifeRangeExtended.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
-KnifeRangeExtended.BorderColor3 = Color3.fromRGB(0, 0, 0)
-KnifeRangeExtended.BorderSizePixel = 0
-KnifeRangeExtended.Position = UDim2.new(-0.0177160241, 0, 0.791469216, 0)
-KnifeRangeExtended.Size = UDim2.new(0, 263, 0, 51)
-KnifeRangeExtended.Font = Enum.Font.SourceSans
-KnifeRangeExtended.Text = "      KNIFE RANGE EX.."
-KnifeRangeExtended.TextColor3 = Color3.fromRGB(255, 255, 255)
-KnifeRangeExtended.TextSize = 17.000
-KnifeRangeExtended.TextXAlignment = Enum.TextXAlignment.Left
-
 Switcher_9.Name = "Switcher"
-Switcher_9.Parent = KnifeRangeExtended
+Switcher_9.Parent = NoReloadLabel
 Switcher_9.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
 Switcher_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Switcher_9.BorderSizePixel = 0
@@ -1461,21 +1608,21 @@ Switch_9.BorderSizePixel = 0
 Switch_9.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
 Switch_9.Size = UDim2.new(0, 15, 0, 16)
 
-DamageMultiplier.Name = "DamageMultiplier"
-DamageMultiplier.Parent = Tab7Page
-DamageMultiplier.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
-DamageMultiplier.BorderColor3 = Color3.fromRGB(0, 0, 0)
-DamageMultiplier.BorderSizePixel = 0
-DamageMultiplier.Position = UDim2.new(-0.0177160241, 0, 0.940758288, 0)
-DamageMultiplier.Size = UDim2.new(0, 263, 0, 51)
-DamageMultiplier.Font = Enum.Font.SourceSans
-DamageMultiplier.Text = "      DAMAGE MULTIPLIER"
-DamageMultiplier.TextColor3 = Color3.fromRGB(255, 255, 255)
-DamageMultiplier.TextSize = 17.000
-DamageMultiplier.TextXAlignment = Enum.TextXAlignment.Left
+KnifeRangeExtended.Name = "KnifeRangeExtended"
+KnifeRangeExtended.Parent = Tab7Page
+KnifeRangeExtended.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+KnifeRangeExtended.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KnifeRangeExtended.BorderSizePixel = 0
+KnifeRangeExtended.Position = UDim2.new(-0.0177160241, 0, 0.791469216, 0)
+KnifeRangeExtended.Size = UDim2.new(0, 263, 0, 51)
+KnifeRangeExtended.Font = Enum.Font.SourceSans
+KnifeRangeExtended.Text = "      KNIFE RANGE EX.."
+KnifeRangeExtended.TextColor3 = Color3.fromRGB(255, 255, 255)
+KnifeRangeExtended.TextSize = 17.000
+KnifeRangeExtended.TextXAlignment = Enum.TextXAlignment.Left
 
 Switcher_10.Name = "Switcher"
-Switcher_10.Parent = DamageMultiplier
+Switcher_10.Parent = KnifeRangeExtended
 Switcher_10.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
 Switcher_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Switcher_10.BorderSizePixel = 0
@@ -1494,56 +1641,42 @@ Switch_10.BorderSizePixel = 0
 Switch_10.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
 Switch_10.Size = UDim2.new(0, 15, 0, 16)
 
+DamageMultiplier.Name = "DamageMultiplier"
+DamageMultiplier.Parent = Tab7Page
+DamageMultiplier.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+DamageMultiplier.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DamageMultiplier.BorderSizePixel = 0
+DamageMultiplier.Position = UDim2.new(-0.0177160241, 0, 0.940758288, 0)
+DamageMultiplier.Size = UDim2.new(0, 263, 0, 51)
+DamageMultiplier.Font = Enum.Font.SourceSans
+DamageMultiplier.Text = "      DAMAGE MULTIPLIER"
+DamageMultiplier.TextColor3 = Color3.fromRGB(255, 255, 255)
+DamageMultiplier.TextSize = 17.000
+DamageMultiplier.TextXAlignment = Enum.TextXAlignment.Left
+
+Switcher_11.Name = "Switcher"
+Switcher_11.Parent = DamageMultiplier
+Switcher_11.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Switcher_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Switcher_11.BorderSizePixel = 0
+Switcher_11.Position = UDim2.new(0.734542727, 0, 0.271372676, 0)
+Switcher_11.Size = UDim2.new(0, 46, 0, 25)
+Switcher_11.Font = Enum.Font.SourceSans
+Switcher_11.Text = ""
+Switcher_11.TextColor3 = Color3.fromRGB(0, 0, 0)
+Switcher_11.TextSize = 14.000
+
+Switch_11.Name = "Switch"
+Switch_11.Parent = Switcher_11
+Switch_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Switch_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Switch_11.BorderSizePixel = 0
+Switch_11.Position = UDim2.new(0.130999997, 0, 0.200000003, 0)
+Switch_11.Size = UDim2.new(0, 15, 0, 16)
+
 -- Scripts:
 
-local function ITDA_fake_script() -- ScreenGui.Driver 
-	local script = Instance.new('LocalScript', ScreenGui)
-
-	-- Перехватываем вызовы WaitForChild чтобы "подменять" menu на другой объект
-	
-	local Players = game:GetService("Players")
-	local player = Players.LocalPlayer
-	local playerGui = player:WaitForChild("PlayerGui")
-	
-	-- Создаём реальный GUI с другим именем
-	local realMenuName = "RealMenu_Secret" -- любое нестандартное имя
-	local realMenu = Instance.new("Frame")
-	realMenu.Name = realMenuName
-	realMenu.Size = UDim2.new(1,0,1,0)
-	realMenu.BackgroundTransparency = 1
-	realMenu.Parent = playerGui
-	
-	-- Создаём "фейковый" menu, чтобы игра его "видела"
-	local fakeMenu = Instance.new("Frame")
-	fakeMenu.Name = "menu"
-	fakeMenu.Size = UDim2.new(1,0,1,0)
-	fakeMenu.BackgroundTransparency = 1
-	fakeMenu.Parent = playerGui
-	
-	-- Патчим WaitForChild у playerGui
-	local mt = getrawmetatable(playerGui)
-	setreadonly(mt, false)
-	
-	local oldWaitForChild = mt.__index.WaitForChild or playerGui.WaitForChild
-	
-	mt.__index.WaitForChild = function(self, childName, ...)
-		if childName == "menu" then
-			-- Возвращаем fakeMenu вместо реального
-			return fakeMenu
-		end
-		return oldWaitForChild(self, childName, ...)
-	end
-	
-	setreadonly(mt, true)
-	
-	-- Теперь скрипты, делающие playerGui:WaitForChild("menu"), получат fakeMenu
-	-- Но твой функциональный GUI - realMenu
-	
-	-- Дальше под realMenu пиши всю логику твоего интерфейса
-	
-end
-
-local function AHGDXH_fake_script() -- ScreenGui.Tabs 
+local function NMRUAFX_fake_script() -- ScreenGui.Tabs 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local TweenService = game:GetService("TweenService")
@@ -1575,7 +1708,7 @@ local function AHGDXH_fake_script() -- ScreenGui.Tabs
 	backgroundDim.Parent = playerGui
 	
 	local tweenInfoOpen = TweenInfo.new(0.35, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-	local tweenInfo = TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	local tweenInfo = TweenInfo.new(0.35, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
 	
 	local originalMenuPosition = menu.Position
 	local hiddenMenuPosition = originalMenuPosition + UDim2.new(0, 0, 0.05, 0)
@@ -1611,11 +1744,52 @@ local function AHGDXH_fake_script() -- ScreenGui.Tabs
 	local currentButton = nil
 	local isAnimating = false
 	
+	-- Сохраняем оригинальные позиции всех Line при запуске
+	local lineOriginalPositions = {}
+	
+	for _, button in ipairs(tabsFrame:GetChildren()) do
+		if button:IsA("ImageButton") then
+			local line = button:FindFirstChild("Line")
+			if line and line:IsA("Frame") then
+				lineOriginalPositions[line] = line.Position
+			end
+		end
+	end
+	
 	local function tweenButtonTransparency(button, bgTransparency, imgTransparency, duration)
 		TweenService:Create(button, TweenInfo.new(duration), {BackgroundTransparency = bgTransparency}):Play()
 		for _, child in ipairs(button:GetChildren()) do
 			if child:IsA("ImageLabel") or child:IsA("ImageButton") then
 				TweenService:Create(child, TweenInfo.new(duration), {ImageTransparency = imgTransparency}):Play()
+			end
+		end
+	end
+	
+	local function animateLineSwitch(newButton)
+		for _, button in ipairs(tabsFrame:GetChildren()) do
+			if button:IsA("ImageButton") then
+				local line = button:FindFirstChild("Line")
+				if line and line:IsA("Frame") then
+					local originalPos = lineOriginalPositions[line] or line.Position
+	
+					if button == newButton then
+						TweenService:Create(line, tweenInfo, {
+							BackgroundTransparency = 0,
+							Position = originalPos
+						}):Play()
+					else
+						TweenService:Create(line, tweenInfo, {
+							BackgroundTransparency = 1,
+							Position = originalPos + UDim2.new(0, 0, 0, 4)
+						}):Play()
+	
+						task.delay(tweenInfo.Time, function()
+							if line then
+								line.Position = originalPos
+							end
+						end)
+					end
+				end
 			end
 		end
 	end
@@ -1630,6 +1804,7 @@ local function AHGDXH_fake_script() -- ScreenGui.Tabs
 				end
 			end
 		end
+		animateLineSwitch(buttonToHighlight)
 	end
 	
 	local function tweenTabsFrameTransparency(targetBgTransparency, targetImgTransparency, duration)
@@ -1757,7 +1932,6 @@ local function AHGDXH_fake_script() -- ScreenGui.Tabs
 		TweenService:Create(pagesFrame, tweenInfo, {BackgroundTransparency = 1}):Play()
 		TweenService:Create(backgroundDim, tweenInfo, {BackgroundTransparency = 1}):Play()
 		TweenService:Create(blur, tweenInfo, {Size = 0}):Play()
-	
 		TweenService:Create(menu, tweenInfo, {BackgroundTransparency = 1}):Play()
 	
 		task.delay(tweenInfo.Time, function()
@@ -1780,12 +1954,22 @@ local function AHGDXH_fake_script() -- ScreenGui.Tabs
 						end
 					end
 					currentButton = button
+	
+					local line = button:FindFirstChild("Line")
+					if line and line:IsA("Frame") then
+						line.BackgroundTransparency = 0
+					end
 				else
 					button.BackgroundTransparency = 1
 					for _, child in ipairs(button:GetChildren()) do
 						if child:IsA("ImageLabel") or child:IsA("ImageButton") then
 							child.ImageTransparency = 1
 						end
+					end
+	
+					local line = button:FindFirstChild("Line")
+					if line and line:IsA("Frame") then
+						line.BackgroundTransparency = 1
 					end
 				end
 				button.MouseButton1Click:Connect(function()
@@ -1809,206 +1993,8 @@ local function AHGDXH_fake_script() -- ScreenGui.Tabs
 	showPage("Tab1Page", currentButton)
 	
 end
-coroutine.wrap(AHGDXH_fake_script)()
-local function HAMT_fake_script() -- AdminESPButton.LocalScript 
-	local script = Instance.new('LocalScript', AdminESPButton)
-
-	local Players = game:GetService("Players")
-	local RunService = game:GetService("RunService")
-	local UserInputService = game:GetService("UserInputService")
-	local Camera = workspace.CurrentCamera
-	
-	local LocalPlayer = Players.LocalPlayer
-	local PlayerGui = LocalPlayer:WaitForChild("PlayerGui")
-	
-	-- Кнопка для включения
-	local button = script.Parent
-	button.Text = "ESP OFF"
-	
-	-- Целевые имена
-	local targetNames = {
-		["321lozan321"] = true,
-		["acuncad4444"] = true,
-		["ali911658"] = true
-	}
-	
-	-- Переменные
-	local espEnabled = false
-	local dragging = false
-	local dragStart, startPos
-	local label
-	local drawings = {}
-	
-	-- === Создание TextLabel ===
-	local function createLabel()
-		if label then return end
-	
-		label = Instance.new("TextLabel")
-		label.Name = "ESPInfoLabel"
-		label.Size = UDim2.new(0, 200, 0, 40)
-		label.Position = UDim2.new(0, 100, 0, 100)
-		label.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-		label.TextColor3 = Color3.new(1, 1, 1)
-		label.TextScaled = true
-		label.Font = Enum.Font.SourceSans
-		label.BackgroundTransparency = 0.3
-		label.Text = "Players around you: 0"
-		label.Parent = PlayerGui:FindFirstChildOfClass("ScreenGui") or PlayerGui:WaitForChild("ScreenGui")
-	
-		-- Перетаскивание
-		label.InputBegan:Connect(function(input)
-			if input.UserInputType == Enum.UserInputType.MouseButton1 then
-				dragging = true
-				dragStart = input.Position
-				startPos = label.Position
-				input.Changed:Connect(function()
-					if input.UserInputState == Enum.UserInputState.End then
-						dragging = false
-					end
-				end)
-			end
-		end)
-	
-		UserInputService.InputChanged:Connect(function(input)
-			if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
-				local delta = input.Position - dragStart
-				label.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-			end
-		end)
-	end
-	
-	-- === Очистка ESP для игрока ===
-	local function clearPlayerESP(player)
-		if drawings[player] then
-			for _, v in pairs(drawings[player]) do
-				if typeof(v) == "Instance" then
-					v:Destroy()
-				elseif typeof(v) == "table" and v.Remove then
-					v:Remove()
-				end
-			end
-			drawings[player] = nil
-		end
-	end
-	
-	-- === Очистка всех ESP ===
-	local function clearESP()
-		for player in pairs(drawings) do
-			clearPlayerESP(player)
-		end
-	end
-	
-	-- === Обновление ESP ===
-	RunService.RenderStepped:Connect(function()
-		if not espEnabled then
-			clearESP()
-			if label then label.Visible = false end
-			return
-		end
-	
-		if label then
-			label.Visible = true
-		end
-	
-		local count = 0
-	
-		for _, player in ipairs(Players:GetPlayers()) do
-			if player ~= LocalPlayer and targetNames[player.Name] and player.Character then
-				local char = player.Character
-				local hrp = char:FindFirstChild("HumanoidRootPart")
-				local head = char:FindFirstChild("Head")
-	
-				if hrp and head then
-					clearPlayerESP(player)
-					local headPos, headVisible = Camera:WorldToViewportPoint(head.Position + Vector3.new(0, 0.3, 0))
-					local feetPos, feetVisible = Camera:WorldToViewportPoint(hrp.Position - Vector3.new(0, 2.5, 0))
-					local hrpScreen = Camera:WorldToViewportPoint(hrp.Position)
-	
-					count += 1
-					drawings[player] = {}
-	
-					-- Box
-					if headVisible and feetVisible then
-						local box = Drawing.new("Square")
-						box.Visible = true
-						box.Filled = false
-						box.Color = Color3.fromRGB(255, 0, 0)
-						box.Thickness = 2
-	
-						local height = math.abs(headPos.Y - feetPos.Y)
-						local width = height / 2
-						local centerX = headPos.X
-						local topY = math.min(headPos.Y, feetPos.Y)
-	
-						box.Size = Vector2.new(width, height)
-						box.Position = Vector2.new(centerX - width / 2, topY)
-	
-						table.insert(drawings[player], box)
-					end
-	
-					-- Tracer (всегда)
-					local line = Drawing.new("Line")
-					line.Color = Color3.fromRGB(255, 0, 0)
-					line.Thickness = 1
-					line.Transparency = 1
-					line.From = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y)
-					line.To = Vector2.new(hrpScreen.X, hrpScreen.Y)
-					line.Visible = true
-	
-					table.insert(drawings[player], line)
-	
-					-- Надпись ADMIN
-					local billboard = Instance.new("BillboardGui")
-					billboard.Name = "ESP_AdminTag"
-					billboard.Size = UDim2.new(0, 100, 0, 30)
-					billboard.StudsOffset = Vector3.new(0, 2.5, 0)
-					billboard.AlwaysOnTop = true
-					billboard.Adornee = head
-					billboard.Parent = PlayerGui
-	
-					local tag = Instance.new("TextLabel")
-					tag.BackgroundTransparency = 1
-					tag.Size = UDim2.new(1, 0, 1, 0)
-					tag.TextColor3 = Color3.new(1, 0, 0)
-					tag.TextScaled = true
-					tag.Font = Enum.Font.GothamBold
-					tag.Text = "ADMIN"
-					tag.Parent = billboard
-	
-					table.insert(drawings[player], billboard)
-				end
-			else
-				clearPlayerESP(player)
-			end
-		end
-	
-		if label then
-			label.Text = "Players around you: " .. tostring(count)
-		end
-	end)
-	
-	-- === Кнопка переключения ===
-	button.MouseButton1Click:Connect(function()
-		espEnabled = not espEnabled
-		button.Text = espEnabled and "ESP ON" or "ESP OFF"
-	
-		if espEnabled then
-			createLabel()
-			label.Visible = true
-		else
-			clearESP()
-			if label then label.Visible = false end
-		end
-	end)
-	
-	-- Очистка при выходе игрока
-	Players.PlayerRemoving:Connect(function(player)
-		clearPlayerESP(player)
-	end)
-	
-end
-coroutine.wrap(HAMT_fake_script)()
-local function BQURS_fake_script() -- Switcher.2DBox 
+coroutine.wrap(NMRUAFX_fake_script)()
+local function QTAZNY_fake_script() -- Switcher.2DBox 
 	local script = Instance.new('LocalScript', Switcher)
 
 	local TweenService = game:GetService("TweenService")
@@ -2036,7 +2022,7 @@ local function BQURS_fake_script() -- Switcher.2DBox
 	local SWITCH_ON_COLOR = Color3.fromRGB(0, 71, 202)
 	local SWITCH_OFF_COLOR = Color3.fromRGB(255, 255, 255)
 	local LABEL_ON_COLOR = Color3.fromRGB(0, 71, 202)
-	local LABEL_OFF_COLOR = Color3.fromRGB(12, 12, 12)
+	local LABEL_OFF_COLOR = Color3.fromRGB(11, 11, 15)
 	local BUTTON_ON_COLOR = Color3.fromRGB(0, 71, 202)
 	local BUTTON_OFF_COLOR = Color3.fromRGB(57, 57, 57)
 	
@@ -2063,7 +2049,7 @@ local function BQURS_fake_script() -- Switcher.2DBox
 	local function createBorder()
 		local function newLine()
 			local l = Drawing.new("Line")
-			l.Thickness = 1 -- тонкая линия для бордера
+			l.Thickness = 1
 			l.Color = Color3.new(0, 0, 0)
 			l.Transparency = 1
 			l.Visible = true
@@ -2078,9 +2064,8 @@ local function BQURS_fake_script() -- Switcher.2DBox
 		}
 	end
 	
-	-- Обновление позиции бордера с учётом смещения 0.5 пикселя
+	-- Обновление позиции бордера
 	local function updateBorder(border, x, y, width, height)
-		-- Округляем до целых и добавляем 0.5 для ровных линий на пиксельной сетке
 		x = math.floor(x) + 0.5
 		y = math.floor(y) + 0.5
 		width = math.floor(width)
@@ -2114,7 +2099,7 @@ local function BQURS_fake_script() -- Switcher.2DBox
 	
 		local box = Drawing.new("Square")
 		box.Visible = true
-		box.Filled = false -- заполнение отключено, чтобы не было заливки!
+		box.Filled = false
 		box.Transparency = 1
 		box.Thickness = 2
 		box.Color = Color3.fromRGB(255, 255, 255)
@@ -2188,7 +2173,7 @@ local function BQURS_fake_script() -- Switcher.2DBox
 						local x = topPos.X - width / 2
 						local y = topPos.Y
 	
-						-- Округляем позицию и размер для стабильности
+						-- Округляем для стабильности
 						x = math.floor(x)
 						y = math.floor(y)
 						width = math.floor(width)
@@ -2246,7 +2231,7 @@ local function BQURS_fake_script() -- Switcher.2DBox
 		end
 	end)
 	
-	-- Кнопка Outline с плавным фоном
+	-- Кнопка Outline
 	outlineButton.MouseButton1Click:Connect(function()
 		outlineEnabled = not outlineEnabled
 		tween(outlineButton, {
@@ -2254,7 +2239,7 @@ local function BQURS_fake_script() -- Switcher.2DBox
 		}, 0.25)
 	end)
 	
-	-- Кнопка Rainbow с плавным фоном
+	-- Кнопка Rainbow
 	rainbowButton.MouseButton1Click:Connect(function()
 		rainbowEnabled = not rainbowEnabled
 		tween(rainbowButton, {
@@ -2281,354 +2266,230 @@ local function BQURS_fake_script() -- Switcher.2DBox
 	end)
 	
 	Players.PlayerRemoving:Connect(removeBox)
-	
 end
-coroutine.wrap(BQURS_fake_script)()
-local function PYGHD_fake_script() -- Switcher_2.Glow 
+coroutine.wrap(QTAZNY_fake_script)()
+local function VJAJMBZ_fake_script() -- Switcher_2.Glow 
 	local script = Instance.new('LocalScript', Switcher_2)
 
-	local Players = game:GetService("Players")
-	local TweenService = game:GetService("TweenService")
-	local RunService = game:GetService("RunService")
+	-- Highlight ESP с продвинутыми фильтрами и полным управлением
 	
+	local TweenService = game:GetService("TweenService")
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
 	local LocalPlayer = Players.LocalPlayer
 	
-	local button = script.Parent                         -- HighlightButton (TextButton)
-	local switch = button:WaitForChild("Switch")         -- Switch (Frame)
-	local label = button.Parent                          -- Label (TextLabel)
+	local switcher = script.Parent
+	local switch = switcher:WaitForChild("Switch")
+	local label = switcher.Parent
+	local frame = label:WaitForChild("Frame")
 	
-	-- Кнопки лежат в том же label, добавим их
-	local frame = label:WaitForChild("Frame") -- Frame с кнопками
+	local fillButton = frame:WaitForChild("FillGlowButton")
+	local rainbowButton = frame:WaitForChild("RainbowGlowButton")
+	local selfButton = frame:WaitForChild("SelfGlowButton")
+	local aliveButton = frame:WaitForChild("ShowAliveOnlyButton")
+	local deadButton = frame:WaitForChild("ShowDeadOnlyButton")
+	local targetButton = frame:WaitForChild("ShowTargetOnlyButton")
+	local visibleButton = frame:WaitForChild("VisibleOnlyButton")
 	
-	local visibleOnlyButton = frame:WaitForChild("VisibleOnlyButton")
-	local rainbowGlowButton = frame:WaitForChild("RainbowGlowButton")
-	local selfGlowButton = frame:WaitForChild("SelfGlowButton")
-	local showDeadOnlyButton = frame:WaitForChild("ShowDeadOnlyButton")
-	local showAliveOnlyButton = frame:WaitForChild("ShowAliveOnlyButton")
-	local showTargetOnlyButton = frame:WaitForChild("ShowTargetOnlyButton")
-	local fillGlowButton = frame:WaitForChild("FillGlowButton") -- Новая кнопка Fill Glow
+	local highlightEnabled = false
+	local highlights = {}
+	local rainbowConn
 	
-	-- Цвета и позиции
+	local fillEnabled = false
+	local rainbowEnabled = false
+	local selfEnabled = false
+	local showAliveOnly = false
+	local showDeadOnly = false
+	local showTargetOnly = false
+	local visibleOnly = false
+	
 	local ON_COLOR = Color3.fromRGB(255, 255, 255)
 	local OFF_COLOR = Color3.fromRGB(74, 74, 74)
 	local SWITCH_ON_COLOR = Color3.fromRGB(0, 71, 202)
 	local SWITCH_OFF_COLOR = Color3.fromRGB(255, 255, 255)
 	local LABEL_ON_COLOR = Color3.fromRGB(0, 71, 202)
-	local LABEL_OFF_COLOR = Color3.fromRGB(12, 12, 12)
+	local LABEL_OFF_COLOR = Color3.fromRGB(11, 11, 15)
 	local BUTTON_ON_COLOR = Color3.fromRGB(0, 71, 202)
 	local BUTTON_OFF_COLOR = Color3.fromRGB(57, 57, 57)
 	
 	local ON_POS = UDim2.new(0.522, 0, 0.179, 0)
 	local OFF_POS = UDim2.new(0.131, 0, 0.179, 0)
 	
-	-- Цвета для frame и TextLabel внутри ImageButton по switch
-	local FRAME_ON_BG = Color3.fromRGB(0, 6, 13)
-	local FRAME_OFF_BG = Color3.fromRGB(9, 9, 9)
-	
-	local TEXTLABEL_ON_BG = Color3.fromRGB(0, 6, 13)
-	local TEXTLABEL_OFF_BG = Color3.fromRGB(9, 9, 9)
-	
-	-- Tween helper
 	local function tween(obj, props, time)
 		local info = TweenInfo.new(time or 0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-		local t = TweenService:Create(obj, info, props)
-		t:Play()
+		TweenService:Create(obj, info, props):Play()
 	end
 	
-	-- Состояния
-	local isOn = false
-	local highlights = {} -- [player.Character] = Highlight instance
-	local connections = {}
-	
-	-- Настройки кнопок
-	local settings = {
-		VisibleOnly = false,
-		RainbowGlow = false,
-		SelfGlow = false,
-		ShowDeadOnly = false,
-		ShowAliveOnly = false,
-		ShowTargetOnly = false,
-		FillGlow = false, -- Добавлена новая настройка
-	}
-	
-	local targetPlayer = nil
-	local targetGlowTimeout = 10
-	local targetGlowTimers = {}
-	
-	-- Функция для обновления цвета радуги
 	local function getRainbowColor()
 		local t = tick() * 2
 		return Color3.fromHSV((t % 5) / 5, 1, 1)
 	end
 	
-	-- Создание Highlight
-	local function createHighlight(character)
-		if not character or highlights[character] then return end
-	
-		local highlight = Instance.new("Highlight")
-		highlight.Name = "PlayerHighlight"
-		highlight.FillColor = Color3.new(1, 1, 1)
-		highlight.OutlineColor = Color3.new(1, 1, 1)
-		highlight.FillTransparency = 0.7
-		highlight.OutlineTransparency = 0
-		highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
-		highlight.Parent = character
-	
-		highlights[character] = highlight
+	local function isVisible(part)
+		if not part then return false end
+		local cam = workspace.CurrentCamera
+		local origin = cam.CFrame.Position
+		local direction = (part.Position - origin).Unit * 500
+		local params = RaycastParams.new()
+		params.FilterDescendantsInstances = {LocalPlayer.Character}
+		params.FilterType = Enum.RaycastFilterType.Blacklist
+		local result = workspace:Raycast(origin, direction, params)
+		return result and result.Instance:IsDescendantOf(part.Parent)
 	end
 	
-	-- Удаление Highlight
-	local function removeHighlight(character)
-		if highlights[character] then
-			highlights[character]:Destroy()
-			highlights[character] = nil
-		end
-	end
+	local function shouldHighlight(player)
+		if not player.Character then return false end
+		if player == LocalPlayer and not selfEnabled then return false end
+		if showTargetOnly then return false end -- для будущего
 	
-	local function clearAllHighlights()
-		for char, h in pairs(highlights) do
-			if h then h:Destroy() end
-		end
-		highlights = {}
-	end
-	
-	-- Проверка, жив ли игрок
-	local function isAlive(player)
-		local char = player.Character
-		if not char then return false end
-		local humanoid = char:FindFirstChildOfClass("Humanoid")
+		local humanoid = player.Character:FindFirstChildWhichIsA("Humanoid")
 		if not humanoid then return false end
-		return humanoid.Health > 0
+		if showAliveOnly and humanoid.Health <= 0 then return false end
+		if showDeadOnly and humanoid.Health > 0 then return false end
+		if visibleOnly then
+			local head = player.Character:FindFirstChild("Head")
+			if not isVisible(head) then return false end
+		end
+		return true
 	end
 	
-	-- Проверка видимости игрока (Raycast)
-	local function isVisible(player)
+	local function updateHighlightVisual(h)
+		h.FillTransparency = fillEnabled and 0 or 1
+		if not rainbowEnabled then
+			h.FillColor = Color3.fromRGB(255,255,255)
+			h.OutlineColor = Color3.fromRGB(255,255,255)
+		end
+	end
+	
+	local function applyHighlight(player)
 		local char = player.Character
-		if not char then return false end
-		local hrp = char:FindFirstChild("HumanoidRootPart")
-		if not hrp then return false end
+		if not char then return end
+		if highlights[player] then return end
 	
-		local camera = workspace.CurrentCamera
-		local origin = camera.CFrame.Position
-		local direction = (hrp.Position - origin)
+		local h = Instance.new("Highlight")
+		h.Name = "HighlightESP"
+		h.FillTransparency = fillEnabled and 0 or 1
+		h.OutlineTransparency = 0
+		h.FillColor = Color3.fromRGB(255, 255, 255)
+		h.OutlineColor = Color3.fromRGB(255, 255, 255)
+		h.Adornee = char
+		h.Parent = char
 	
-		local raycastParams = RaycastParams.new()
-		raycastParams.FilterDescendantsInstances = {LocalPlayer.Character}
-		raycastParams.FilterType = Enum.RaycastFilterType.Blacklist
-	
-		local result = workspace:Raycast(origin, direction, raycastParams)
-		if not result then return true end
-		if result.Instance:IsDescendantOf(char) then return true end
-		return false
+		highlights[player] = h
 	end
 	
-	-- Обновление подсветки (Glow) для всех игроков по настройкам
-	local function updateAllHighlights()
-		for _, player in pairs(Players:GetPlayers()) do
-			local char = player.Character
-			if not char then
-				removeHighlight(char)
-				continue
-			end
+	local function removeHighlight(player)
+		if highlights[player] then
+			highlights[player]:Destroy()
+			highlights[player] = nil
+		end
+	end
 	
-			-- Self Glow
-			if player == LocalPlayer and not settings.SelfGlow then
-				removeHighlight(char)
-				continue
-			end
-	
-			-- Alive / Dead фильтры
-			local alive = isAlive(player)
-			if settings.ShowAliveOnly and not alive then
-				removeHighlight(char)
-				continue
-			end
-			if settings.ShowDeadOnly and alive then
-				removeHighlight(char)
-				continue
-			end
-	
-			-- Видимость
-			if settings.VisibleOnly and not isVisible(player) then
-				removeHighlight(char)
-				continue
-			end
-	
-			-- Show Target Only
-			if settings.ShowTargetOnly then
-				if player ~= targetPlayer then
-					removeHighlight(char)
-					continue
+	local function updateHighlights()
+		for _, player in ipairs(Players:GetPlayers()) do
+			if shouldHighlight(player) then
+				if not highlights[player] then
+					applyHighlight(player)
 				end
-			end
-	
-			-- Создаём или обновляем Highlight
-			if not highlights[char] then
-				createHighlight(char)
-			end
-			local highlight = highlights[char]
-	
-			if settings.RainbowGlow then
-				highlight.FillColor = getRainbowColor()
-				highlight.OutlineColor = getRainbowColor()
+				updateHighlightVisual(highlights[player])
 			else
-				highlight.FillColor = Color3.fromRGB(255, 255, 255)
-				highlight.OutlineColor = Color3.fromRGB(255, 255, 255)
-			end
-	
-			-- Управление Fill Transparency по FillGlow
-			if settings.FillGlow then
-				highlight.FillTransparency = 0
-			else
-				highlight.FillTransparency = 0.7
+				removeHighlight(player)
 			end
 		end
 	end
 	
-	-- Обновление таймеров подсветки цели
-	local function updateTargetGlow(dt)
-		if not settings.ShowTargetOnly or not targetPlayer then return end
+	switcher.MouseButton1Click:Connect(function()
+		highlightEnabled = not highlightEnabled
 	
-		targetGlowTimers[targetPlayer] = (targetGlowTimers[targetPlayer] or targetGlowTimeout) - dt
-		if targetGlowTimers[targetPlayer] <= 0 then
-			targetPlayer = nil
-			updateAllHighlights()
-		end
-	end
+		tween(switcher, {BackgroundColor3 = highlightEnabled and ON_COLOR or OFF_COLOR}, 0.3)
+		tween(switch, {Position = highlightEnabled and ON_POS or OFF_POS, BackgroundColor3 = highlightEnabled and SWITCH_ON_COLOR or SWITCH_OFF_COLOR}, 0.3)
+		tween(label, {BackgroundColor3 = highlightEnabled and LABEL_ON_COLOR or LABEL_OFF_COLOR}, 0.3)
 	
-	-- Функция для установки цели для подсветки (вызывай при попадании/стрельбе)
-	local function setTarget(player)
-		if not player or not player.Character then return end
-		targetPlayer = player
-		targetGlowTimers[player] = targetGlowTimeout
-		updateAllHighlights()
-	end
-	
-	-- Обновление цвета радуги постоянно
-	local rainbowUpdateConn
-	
-	-- Главный RenderStepped для обновлений
-	local renderConn
-	
-	-- Включение подсветки
-	local function enableGlow()
-		renderConn = RunService.RenderStepped:Connect(function(dt)
-			updateAllHighlights()
-			updateTargetGlow(dt)
-		end)
-	
-		if settings.RainbowGlow then
-			if not rainbowUpdateConn then
-				rainbowUpdateConn = RunService.RenderStepped:Connect(function()
+		if highlightEnabled then
+			RunService:BindToRenderStep("HighlightESP", Enum.RenderPriority.Last.Value, updateHighlights)
+			if rainbowEnabled and not rainbowConn then
+				rainbowConn = RunService.RenderStepped:Connect(function()
 					for _, h in pairs(highlights) do
-						if h and settings.RainbowGlow then
-							h.FillColor = getRainbowColor()
-							h.OutlineColor = getRainbowColor()
-						end
+						local color = getRainbowColor()
+						h.FillColor = color
+						h.OutlineColor = color
 					end
 				end)
 			end
-		end
-	end
-	
-	-- Выключение подсветки
-	local function disableGlow()
-		if renderConn then
-			renderConn:Disconnect()
-			renderConn = nil
-		end
-		if rainbowUpdateConn then
-			rainbowUpdateConn:Disconnect()
-			rainbowUpdateConn = nil
-		end
-		clearAllHighlights()
-		targetPlayer = nil
-		targetGlowTimers = {}
-	end
-	
-	-- Функция для плавного изменения цвета фона всех TextLabel внутри ImageButton в frame
-	local function updateTextLabelsBg(color)
-		for _, descendant in ipairs(frame:GetDescendants()) do
-			if descendant:IsA("ImageButton") then
-				for _, child in ipairs(descendant:GetChildren()) do
-					if child:IsA("TextLabel") then
-						tween(child, {BackgroundColor3 = color}, 0.3)
-					end
-				end
-			end
-		end
-	end
-	
-	-- Функция для обновления цвета фона frame и TextLabel по состоянию switch
-	local function updateFrameAndTextLabelsColors(isOn)
-		if isOn then
-			tween(frame, {BackgroundColor3 = FRAME_ON_BG}, 0.3)
-			updateTextLabelsBg(TEXTLABEL_ON_BG)
 		else
-			tween(frame, {BackgroundColor3 = FRAME_OFF_BG}, 0.3)
-			updateTextLabelsBg(TEXTLABEL_OFF_BG)
-		end
-	end
-	
-	-- Обработка кнопки включения подсветки
-	button.MouseButton1Click:Connect(function()
-		isOn = not isOn
-	
-		-- Обычные твины кнопки, свича и лейбла
-		tween(button, {BackgroundColor3 = isOn and ON_COLOR or OFF_COLOR}, 0.3)
-		tween(switch, {Position = isOn and ON_POS or OFF_POS, BackgroundColor3 = isOn and SWITCH_ON_COLOR or SWITCH_OFF_COLOR}, 0.3)
-		tween(label, {BackgroundColor3 = isOn and LABEL_ON_COLOR or LABEL_OFF_COLOR}, 0.3)
-	
-		-- Обновляем фон frame и текстов
-		updateFrameAndTextLabelsColors(isOn)
-	
-		if isOn then
-			enableGlow()
-		else
-			disableGlow()
+			RunService:UnbindFromRenderStep("HighlightESP")
+			if rainbowConn then rainbowConn:Disconnect() rainbowConn = nil end
+			for _, h in pairs(highlights) do h:Destroy() end
+			highlights = {}
 		end
 	end)
 	
-	-- Функция для переключения кнопок с плавным цветом
-	local function setupToggleButton(btn, settingName)
-		btn.BackgroundColor3 = BUTTON_OFF_COLOR
-		btn.MouseButton1Click:Connect(function()
-			settings[settingName] = not settings[settingName]
-			tween(btn, {BackgroundColor3 = settings[settingName] and BUTTON_ON_COLOR or BUTTON_OFF_COLOR}, 0.25)
-	
-			updateAllHighlights()
-	
-			-- При отключении ShowTargetOnly — сбросить цель
-			if settingName == "ShowTargetOnly" and not settings.ShowTargetOnly then
-				targetPlayer = nil
-				targetGlowTimers = {}
-			end
+	local function toggle(button, toggleVar, onToggle)
+		button.MouseButton1Click:Connect(function()
+			_G[toggleVar] = not _G[toggleVar]
+			tween(button, {
+				BackgroundColor3 = _G[toggleVar] and BUTTON_ON_COLOR or BUTTON_OFF_COLOR
+			}, 0.25)
+			if onToggle then onToggle(_G[toggleVar]) end
+			if highlightEnabled then updateHighlights() end
 		end)
+		_G[toggleVar] = false
+		button.BackgroundColor3 = BUTTON_OFF_COLOR
 	end
 	
-	-- Настраиваем кнопки
-	setupToggleButton(visibleOnlyButton, "VisibleOnly")
-	setupToggleButton(rainbowGlowButton, "RainbowGlow")
-	setupToggleButton(selfGlowButton, "SelfGlow")
-	setupToggleButton(showDeadOnlyButton, "ShowDeadOnly")
-	setupToggleButton(showAliveOnlyButton, "ShowAliveOnly")
-	setupToggleButton(showTargetOnlyButton, "ShowTargetOnly")
-	setupToggleButton(fillGlowButton, "FillGlow") -- Подключаем новую кнопку
+	toggle(fillButton, "fillEnabled", function(state)
+		fillEnabled = state
+	end)
 	
-	-- Очищаем подсветки при выходе игрока
-	Players.PlayerRemoving:Connect(function(player)
-		if player.Character then
-			removeHighlight(player.Character)
-		end
-		if player == targetPlayer then
-			targetPlayer = nil
-			targetGlowTimers = {}
+	toggle(selfButton, "selfEnabled", function(state)
+		selfEnabled = state
+	end)
+	
+	toggle(aliveButton, "showAliveOnly", function(state)
+		showAliveOnly = state
+	end)
+	
+	toggle(deadButton, "showDeadOnly", function(state)
+		showDeadOnly = state
+	end)
+	
+	toggle(targetButton, "showTargetOnly", function(state)
+		showTargetOnly = state
+	end)
+	
+	toggle(visibleButton, "visibleOnly", function(state)
+		visibleOnly = state
+	end)
+	
+	rainbowButton.MouseButton1Click:Connect(function()
+		rainbowEnabled = not rainbowEnabled
+		tween(rainbowButton, {
+			BackgroundColor3 = rainbowEnabled and BUTTON_ON_COLOR or BUTTON_OFF_COLOR
+		}, 0.25)
+	
+		if highlightEnabled then
+			if rainbowEnabled and not rainbowConn then
+				rainbowConn = RunService.RenderStepped:Connect(function()
+					for _, h in pairs(highlights) do
+						local color = getRainbowColor()
+						h.FillColor = color
+						h.OutlineColor = color
+					end
+				end)
+			elseif not rainbowEnabled and rainbowConn then
+				rainbowConn:Disconnect()
+				rainbowConn = nil
+				for _, h in pairs(highlights) do
+					h.FillColor = Color3.fromRGB(255,255,255)
+					h.OutlineColor = Color3.fromRGB(255,255,255)
+				end
+			end
 		end
 	end)
 	
 end
-coroutine.wrap(PYGHD_fake_script)()
-local function HYMKGZI_fake_script() -- Glow.LocalScript 
+coroutine.wrap(VJAJMBZ_fake_script)()
+local function RTJP_fake_script() -- Glow.LocalScript 
 	local script = Instance.new('LocalScript', Glow)
 
 	local label = script.Parent -- или путь к твоему TextLabel
@@ -2636,8 +2497,8 @@ local function HYMKGZI_fake_script() -- Glow.LocalScript
 	
 	
 end
-coroutine.wrap(HYMKGZI_fake_script)()
-local function ITOUIJX_fake_script() -- Switcher_3.Names 
+coroutine.wrap(RTJP_fake_script)()
+local function OHTNEAM_fake_script() -- Switcher_3.Names 
 	local script = Instance.new('LocalScript', Switcher_3)
 
 	local Players = game:GetService("Players")
@@ -2645,58 +2506,41 @@ local function ITOUIJX_fake_script() -- Switcher_3.Names
 	
 	local LocalPlayer = Players.LocalPlayer
 	
-	local button = script.Parent                                -- NameESPButton (TextButton)
-	local switch = button:WaitForChild("Switch")                -- Switch (Frame)
-	local label = button.Parent                                 -- NameLabel (TextLabel)
+	local button = script.Parent
+	local switch = button:WaitForChild("Switch")
+	local label = button.Parent
 	
-	local frame = label:WaitForChild("Frame")                   -- Frame с кнопками NickName, UserName, Position
+	local frame = label:WaitForChild("Frame")
 	local nickNameButton = frame:WaitForChild("NickNameButton")
 	local userNameButton = frame:WaitForChild("UserNameButton")
 	local positionButton = frame:WaitForChild("PositionButton")
 	
-	local pickPos = label:WaitForChild("PickPos")               -- Frame с выбором позиции ника
+	local pickPos = label:WaitForChild("PickPos")
 	local bottomButton = pickPos:WaitForChild("Bottom")
 	local topButton = pickPos:WaitForChild("Top")
 	
-	-- Цвета и позиции
 	local ON_COLOR = Color3.fromRGB(255, 255, 255)
 	local OFF_COLOR = Color3.fromRGB(74, 74, 74)
 	local SWITCH_ON_COLOR = Color3.fromRGB(0, 71, 202)
 	local SWITCH_OFF_COLOR = Color3.fromRGB(255, 255, 255)
 	local LABEL_ON_COLOR = Color3.fromRGB(0, 71, 202)
-	local LABEL_OFF_COLOR = Color3.fromRGB(12, 12, 12)
+	local LABEL_OFF_COLOR = Color3.fromRGB(11, 11, 15)
 	local BUTTON_ON_COLOR = Color3.fromRGB(0, 71, 202)
 	local BUTTON_OFF_COLOR = Color3.fromRGB(57, 57, 57)
-	local BUTTON_OFF_COLOR2 = Color3.fromRGB(0, 0, 0)
+	local BUTTON_OFF_COLOR2 = Color3.fromRGB(57, 57, 57)
 	
 	local ON_POS = UDim2.new(0.522, 0, 0.179, 0)
 	local OFF_POS = UDim2.new(0.131, 0, 0.179, 0)
 	
-	-- Tween helper
 	local function tween(obj, props, time)
 		local info = TweenInfo.new(time or 0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
 		local t = TweenService:Create(obj, info, props)
 		t:Play()
 	end
 	
+	-- Удалена смена цвета TextLabel внутри ImageButton'ов
 	local function updateTextLabelsBg(color)
-		for _, descendant in ipairs(frame:GetDescendants()) do
-			if descendant:IsA("ImageButton") or descendant:IsA("TextButton") then
-				for _, child in ipairs(descendant:GetChildren()) do
-					if child:IsA("TextLabel") then
-						tween(child, {BackgroundColor3 = color}, 0.3)
-						local innerFrame = child:FindFirstChildOfClass("Frame")
-						if innerFrame then
-							tween(innerFrame, {BackgroundColor3 = color}, 0.3)
-						end
-					end
-				end
-			end
-		end
-	end
-	
-	local function updateFrameBg(color)
-		tween(frame, {BackgroundColor3 = color}, 0.3)
+		-- ничего не делаем, чтобы убрать изменение цвета
 	end
 	
 	local isOn = false
@@ -2748,10 +2592,8 @@ local function ITOUIJX_fake_script() -- Switcher_3.Names
 			end
 			textLabel.Text = showNickAsUsername and ("@" .. player.Name) or player.DisplayName
 			if nickPosition == "Bottom" then
-				-- Ниже ног: смещение по Y отрицательное
 				billboard.StudsOffset = Vector3.new(0, -1.5, 0)
 			else
-				-- Выше головы
 				billboard.StudsOffset = Vector3.new(0, 3.5, 0)
 			end
 		end
@@ -2807,7 +2649,6 @@ local function ITOUIJX_fake_script() -- Switcher_3.Names
 		tween(label, {BackgroundColor3 = isOn and LABEL_ON_COLOR or LABEL_OFF_COLOR}, 0.3)
 	
 		updateTextLabelsBg(isOn and Color3.fromRGB(0, 6, 13) or Color3.fromRGB(9, 9, 9))
-		updateFrameBg(isOn and Color3.fromRGB(0, 6, 13) or Color3.fromRGB(9, 9, 9))
 	
 		if isOn then
 			updateAllNameTags()
@@ -2913,7 +2754,7 @@ local function ITOUIJX_fake_script() -- Switcher_3.Names
 		bottomButton.BackgroundColor3 = BUTTON_ON_COLOR
 		topButton.BackgroundColor3 = BUTTON_OFF_COLOR2
 		for _, tag in pairs(nameTags) do
-			tag.StudsOffset = Vector3.new(0, -1.5, 0)  -- Ниже ног
+			tag.StudsOffset = Vector3.new(0, -1.5, 0)
 		end
 	end)
 	
@@ -2922,7 +2763,7 @@ local function ITOUIJX_fake_script() -- Switcher_3.Names
 		topButton.BackgroundColor3 = BUTTON_ON_COLOR
 		bottomButton.BackgroundColor3 = BUTTON_OFF_COLOR2
 		for _, tag in pairs(nameTags) do
-			tag.StudsOffset = Vector3.new(0, 3.5, 0) -- Выше головы
+			tag.StudsOffset = Vector3.new(0, 3.5, 0)
 		end
 	end)
 	
@@ -2930,8 +2771,8 @@ local function ITOUIJX_fake_script() -- Switcher_3.Names
 	topButton.BackgroundColor3 = BUTTON_OFF_COLOR2
 	
 end
-coroutine.wrap(ITOUIJX_fake_script)()
-local function SQCJUCI_fake_script() -- PositionButton.LocalScript 
+coroutine.wrap(OHTNEAM_fake_script)()
+local function DBPL_fake_script() -- PositionButton.LocalScript 
 	local script = Instance.new('LocalScript', PositionButton)
 
 	local button = script.Parent  -- твоя кнопка
@@ -2948,8 +2789,8 @@ local function SQCJUCI_fake_script() -- PositionButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(SQCJUCI_fake_script)()
-local function QDVAQ_fake_script() -- AimbotButton.VectorAim 
+coroutine.wrap(DBPL_fake_script)()
+local function MXBFOP_fake_script() -- AimbotButton.VectorAim 
 	local script = Instance.new('LocalScript', AimbotButton)
 
 	local Players = game:GetService("Players")
@@ -2966,21 +2807,6 @@ local function QDVAQ_fake_script() -- AimbotButton.VectorAim
 	
 	local colorBox = aimbotFrame:WaitForChild("ColorBox")
 	local applyColorButton = aimbotFrame:WaitForChild("ApplyColorButton")
-	applyColorButton.MouseButton1Click:Connect(function()
-		local text = colorBox.Text
-		local r, g, b = text:match("(%d+)%s*,%s*(%d+)%s*,%s*(%d+)")
-		if r and g and b then
-			r = tonumber(r)
-			g = tonumber(g)
-			b = tonumber(b)
-			if r and g and b and r >= 0 and r <= 255 and g >= 0 and g <= 255 and b >= 0 and b <= 255 then
-				fovCircle.Color = Color3.fromRGB(r, g, b)
-			else
-				print("Incorrect Color")
-			end
-		end
-	end)
-	
 	local aimbotButton = aimbotFrame:WaitForChild("AimbotButton")
 	local showFovButton = aimbotFrame:WaitForChild("ShowFov")
 	local lockOnLastButton = aimbotFrame:WaitForChild("LockOnLast")
@@ -2997,6 +2823,7 @@ local function QDVAQ_fake_script() -- AimbotButton.VectorAim
 	local FOV_RADIUS = 150
 	local AIM_SENSITIVITY = 0.25
 	local MAX_DISTANCE = 1000
+	local predictionTime = 0.125
 	
 	-- Состояния
 	local aimbotEnabled = false
@@ -3015,46 +2842,42 @@ local function QDVAQ_fake_script() -- AimbotButton.VectorAim
 	fovCircle.NumSides = 100
 	fovCircle.Filled = false
 	fovCircle.Radius = FOV_RADIUS
-	fovCircle.Color = Color3.fromRGB(0, 255, 255)
+	fovCircle.Color = Color3.fromRGB(255, 255, 255)
 	fovCircle.Visible = false
 	
-	-- Wallcheck
-	local function canSee(targetPos)
+	-- WallCheck
+	local function canSee(targetPart)
+		if not targetPart then return false end
 		local origin = Camera.CFrame.Position
-		local direction = (targetPos - origin)
+		local direction = (targetPart.Position - origin)
 		local raycastParams = RaycastParams.new()
-		raycastParams.FilterDescendantsInstances = {LocalPlayer.Character}
 		raycastParams.FilterType = Enum.RaycastFilterType.Blacklist
+		raycastParams.FilterDescendantsInstances = {LocalPlayer.Character}
 		local result = workspace:Raycast(origin, direction, raycastParams)
-		if result then
-			return result.Instance:IsDescendantOf(targetPos.Parent)
-		else
-			return true
-		end
+		return not result or result.Instance:IsDescendantOf(targetPart.Parent)
 	end
 	
 	-- Поиск цели
 	local function getClosestTarget()
-		local closest = nil
-		local shortestDist = math.huge
+		local closest, shortestDist = nil, math.huge
 		local screenCenter = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
 	
 		for _, player in ipairs(Players:GetPlayers()) do
-			if player ~= LocalPlayer and player.Character and player.Character:FindFirstChild("Head") then
-				local head = player.Character.Head
+			if player ~= LocalPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+				local root = player.Character.HumanoidRootPart
 				local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
 				if humanoid and humanoid.Health > 0 then
-					local pos, visible = Camera:WorldToViewportPoint(head.Position)
+					local predicted = root.Position + root.Velocity * predictionTime
+					local pos, visible = Camera:WorldToViewportPoint(predicted)
 					if visible then
 						local screenPos = Vector2.new(pos.X, pos.Y)
 						local dist2D = (screenPos - screenCenter).Magnitude
-						local dist3D = (Camera.CFrame.Position - head.Position).Magnitude
-	
+						local dist3D = (Camera.CFrame.Position - predicted).Magnitude
 						if dist2D <= FOV_RADIUS and dist3D <= MAX_DISTANCE then
-							if not wallCheckEnabled or canSee(head.Position) then
+							if not wallCheckEnabled or canSee(root) then
 								if dist2D < shortestDist then
 									shortestDist = dist2D
-									closest = head
+									closest = root
 								end
 							end
 						end
@@ -3066,33 +2889,35 @@ local function QDVAQ_fake_script() -- AimbotButton.VectorAim
 		return closest
 	end
 	
-	local function isTargetInFOV(targetHead)
-		local screenCenter = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
-		local pos, visible = Camera:WorldToViewportPoint(targetHead.Position)
+	local function isTargetInFOV(part)
+		local center = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
+		local pos, visible = Camera:WorldToViewportPoint(part.Position)
 		if visible then
-			local screenPos = Vector2.new(pos.X, pos.Y)
-			local dist2D = (screenPos - screenCenter).Magnitude
-			return dist2D <= FOV_RADIUS
+			return (Vector2.new(pos.X, pos.Y) - center).Magnitude <= FOV_RADIUS
 		end
 		return false
 	end
 	
 	local function getTarget()
 		if lockOnLastEnabled then
+			-- Проверка на то, что lockedTarget всё ещё валидная
 			if lockedTarget and lockedTarget.Parent and lockedTarget.Parent:FindFirstChildOfClass("Humanoid") then
 				local humanoid = lockedTarget.Parent:FindFirstChildOfClass("Humanoid")
 				if humanoid and humanoid.Health > 0 and isTargetInFOV(lockedTarget) then
-					return lockedTarget
-				else
-					-- Если lockedTarget умер или вне ФОВ — просто сбрасываем, но не ищем новую цель
-					lockedTarget = nil
-					return nil
+					return lockedTarget -- Возвращаем ту же цель, если она ещё в FOV
 				end
+			end
+	
+			-- Ищем новую цель, если lockedTarget невалиден или вне FOV
+			local newTarget = getClosestTarget()
+			if newTarget then
+				lockedTarget = newTarget
+				return lockedTarget
 			else
+				lockedTarget = nil
 				return nil
 			end
 		else
-			-- Обычный автопоиск целей
 			local target = getClosestTarget()
 			if target then
 				lockedTarget = target
@@ -3103,36 +2928,34 @@ local function QDVAQ_fake_script() -- AimbotButton.VectorAim
 		end
 	end
 	
-	local function aimAt(targetPos)
+	
+	local function aimAt(pos)
 		local camPos = Camera.CFrame.Position
-		local direction = (targetPos - camPos).Unit
-		local targetCF = CFrame.new(camPos, camPos + direction)
+		local dir = (pos - camPos).Unit
+		local targetCF = CFrame.new(camPos, camPos + dir)
 		Camera.CFrame = Camera.CFrame:Lerp(targetCF, AIM_SENSITIVITY)
 	end
 	
 	-- Target Info GUI
 	local function createTargetInfo()
-		local screenGui = Instance.new("ScreenGui")
+		local screenGui = Instance.new("ScreenGui", LocalPlayer:WaitForChild("PlayerGui"))
 		screenGui.Name = "TargetInfo"
-		screenGui.Parent = LocalPlayer:WaitForChild("PlayerGui")
 	
-		local frame = Instance.new("Frame")
+		local frame = Instance.new("Frame", screenGui)
 		frame.Size = UDim2.new(0, 220, 0, 70)
 		frame.Position = UDim2.new(0.5, -110, 1, -130)
 		frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 		frame.BorderSizePixel = 0
 		frame.BackgroundTransparency = 1
 		frame.Name = "InfoFrame"
-		frame.Parent = screenGui
 	
-		local rainbow = Instance.new("Frame")
+		local rainbow = Instance.new("Frame", frame)
 		rainbow.Size = UDim2.new(1, 0, 0, 4)
 		rainbow.Position = UDim2.new(0, 0, 0, 0)
 		rainbow.BorderSizePixel = 0
 		rainbow.Name = "RainbowBar"
-		rainbow.Parent = frame
 	
-		local name = Instance.new("TextLabel")
+		local name = Instance.new("TextLabel", frame)
 		name.Size = UDim2.new(0.65, 0, 0.5, 0)
 		name.Position = UDim2.new(0.25, 0, 0, 5)
 		name.BackgroundTransparency = 1
@@ -3141,9 +2964,8 @@ local function QDVAQ_fake_script() -- AimbotButton.VectorAim
 		name.Text = "Target"
 		name.Name = "TargetName"
 		name.Font = Enum.Font.Gotham
-		name.Parent = frame
 	
-		local hp = Instance.new("TextLabel")
+		local hp = Instance.new("TextLabel", frame)
 		hp.Size = UDim2.new(0.65, 0, 0.4, 0)
 		hp.Position = UDim2.new(0.25, 0, 0.55, 0)
 		hp.BackgroundTransparency = 1
@@ -3152,26 +2974,22 @@ local function QDVAQ_fake_script() -- AimbotButton.VectorAim
 		hp.Text = "HP: 100"
 		hp.Name = "TargetHP"
 		hp.Font = Enum.Font.Gotham
-		hp.Parent = frame
 	
-		local avatar = Instance.new("ImageLabel")
+		local avatar = Instance.new("ImageLabel", frame)
 		avatar.Size = UDim2.new(0, 40, 0, 40)
 		avatar.Position = UDim2.new(0, 5, 0.5, -20)
 		avatar.BackgroundTransparency = 1
 		avatar.Name = "Avatar"
-		avatar.Image = ""
-		avatar.Parent = frame
 	
-		local function animateRainbow()
+		task.spawn(function()
 			local hue = 0
 			while true do
 				hue = (hue + 0.01) % 1
 				rainbow.BackgroundColor3 = Color3.fromHSV(hue, 1, 1)
 				task.wait(0.05)
 			end
-		end
+		end)
 	
-		task.spawn(animateRainbow)
 		return frame
 	end
 	
@@ -3209,51 +3027,28 @@ local function QDVAQ_fake_script() -- AimbotButton.VectorAim
 		end
 	end
 	
-	-- Обработка
+	-- GUI события
 	bindKeyButton.MouseButton1Click:Connect(function()
-		if waitingForBind then return end
-		waitingForBind = true
-		bindKeyButton.Text = "Press a key..."
+		if not waitingForBind then
+			waitingForBind = true
+			bindKeyButton.Text = "Press a key..."
+		end
 	end)
 	
 	UserInputService.InputBegan:Connect(function(input, gpe)
 		if gpe then return end
-		if waitingForBind then
-			if input.UserInputType == Enum.UserInputType.Keyboard then
-				AIM_KEY = input.KeyCode
-				waitingForBind = false
-				bindKeyButton.Text = "Bind: " .. AIM_KEY.Name
-			end
+	
+		if waitingForBind and input.UserInputType == Enum.UserInputType.Keyboard then
+			AIM_KEY = input.KeyCode
+			bindKeyButton.Text = "Bind: " .. AIM_KEY.Name
+			waitingForBind = false
 		end
 	
 		if input.KeyCode == AIM_KEY then
 			if lockOnLastEnabled then
-				if aiming then
-					-- Выключаем аимбот и сбрасываем lockedTarget
-					aiming = false
-					lockedTarget = nil
-				else
-					-- Если lockedTarget валиден и в ФОВ — просто включаем aiming
-					if lockedTarget and lockedTarget.Parent and lockedTarget.Parent:FindFirstChildOfClass("Humanoid") then
-						local humanoid = lockedTarget.Parent:FindFirstChildOfClass("Humanoid")
-						if humanoid and humanoid.Health > 0 and isTargetInFOV(lockedTarget) then
-							aiming = true
-							return
-						end
-					end
-	
-					-- Ищем новую цель и ставим lockedTarget, если нашли
-					local target = getClosestTarget()
-					if target then
-						lockedTarget = target
-						aiming = true
-					else
-						lockedTarget = nil
-						aiming = false
-					end
-				end
+				aiming = not aiming
+				if not aiming then lockedTarget = nil end
 			else
-				-- Обычное поведение без lockOnLast
 				if aimMode == "Hold" then
 					aiming = true
 				else
@@ -3274,9 +3069,9 @@ local function QDVAQ_fake_script() -- AimbotButton.VectorAim
 		aimbotButton.Text = aimbotEnabled and "Aimbot ON" or "Aimbot OFF"
 		fovCircle.Visible = aimbotEnabled and showFov
 		if not aimbotEnabled then
+			aiming = false
 			lockedTarget = nil
 			hideTargetInfo()
-			aiming = false
 		end
 	end)
 	
@@ -3296,32 +3091,44 @@ local function QDVAQ_fake_script() -- AimbotButton.VectorAim
 		wallCheckButton.Text = wallCheckEnabled and "WallCheck ON" or "WallCheck OFF"
 	end)
 	
+	applyColorButton.MouseButton1Click:Connect(function()
+		local text = colorBox.Text
+		local r, g, b = text:match("(%d+)%s*,%s*(%d+)%s*,%s*(%d+)")
+		if r and g and b then
+			r, g, b = tonumber(r), tonumber(g), tonumber(b)
+			if r and g and b and r <= 255 and g <= 255 and b <= 255 then
+				fovCircle.Color = Color3.fromRGB(r, g, b)
+			end
+		end
+	end)
+	
 	applySmoothingButton.MouseButton1Click:Connect(function()
-		local num = tonumber(smoothingBox.Text)
-		if num and num >= 0 and num <= 1 then
-			AIM_SENSITIVITY = num
+		local val = tonumber(smoothingBox.Text)
+		if val and val >= 0 and val <= 1 then
+			AIM_SENSITIVITY = val
 		end
 	end)
 	
 	holdToggleButton.MouseButton1Click:Connect(function()
-		aimMode = (aimMode == "Hold") and "Toggle" or "Hold"
+		aimMode = aimMode == "Hold" and "Toggle" or "Hold"
 		holdToggleButton.Text = "Mode: " .. aimMode
 	end)
 	
 	holdToggleButton.Text = "Mode: " .. aimMode
 	smoothingBox.Text = tostring(AIM_SENSITIVITY)
 	
-	RunService.RenderStepped:Connect(function(dt)
-		fovCircle.Position = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
+	RunService.RenderStepped:Connect(function()
+		local mousePos = UserInputService:GetMouseLocation()
+		fovCircle.Position = Vector2.new(mousePos.X, mousePos.Y)
 	
 		if aimbotEnabled and aiming then
-			local targetHead = getTarget()
-			if targetHead then
-				aimAt(targetHead.Position)
-				local player = Players:GetPlayerFromCharacter(targetHead.Parent)
-				if player then
-					updateTargetInfo(player)
-				end
+			local target = getTarget()
+			if target then
+				local predicted = target.Position + target.Velocity * predictionTime
+				aimAt(predicted)
+	
+				local player = Players:GetPlayerFromCharacter(target.Parent)
+				if player then updateTargetInfo(player) end
 			else
 				hideTargetInfo()
 			end
@@ -3331,8 +3138,116 @@ local function QDVAQ_fake_script() -- AimbotButton.VectorAim
 	end)
 	
 end
-coroutine.wrap(QDVAQ_fake_script)()
-local function OZWB_fake_script() -- FullbrightOFF.LocalScript 
+coroutine.wrap(MXBFOP_fake_script)()
+local function QDAAHVK_fake_script() -- Switcher_4.Silentaim 
+	local script = Instance.new('LocalScript', Switcher_4)
+
+	-- === SILENT AIMBOT + SWITCHER (ваш пример) ===
+	local switcher = aimbotFrame:WaitForChild("Switcher") -- TextButton
+	local switch = switcher:WaitForChild("Switch")         -- Frame
+	local notification = gui:WaitForChild("NotificationLabel")
+	
+	-- Цвета и позиции (как в вашем примере)
+	local ON_COLOR = Color3.fromRGB(255, 255, 255)
+	local OFF_COLOR = Color3.fromRGB(74, 74, 74)
+	local SWITCH_ON_COLOR = Color3.fromRGB(0, 71, 202)
+	local SWITCH_OFF_COLOR = Color3.fromRGB(255, 255, 255)
+	local LABEL_ON_COLOR = Color3.fromRGB(0, 71, 202)
+	local LABEL_OFF_COLOR = Color3.fromRGB(11, 11, 15)
+	
+	local ON_POS = UDim2.new(0.522, 0, 0.179, 0)
+	local OFF_POS = UDim2.new(0.131, 0, 0.179, 0)
+	
+	local silentAimEnabled = false
+	local silentConn
+	
+	-- Tween helper (как в вашем примере)
+	local function tween(obj, props, time)
+		local info = TweenInfo.new(time, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+		TweenService:Create(obj, info, props):Play()
+	end
+	
+	-- Notification (как в вашем примере)
+	local function notify(text)
+		notification.Text = text
+		notification.Visible = true
+		notification.TextTransparency = 1
+		notification.BackgroundTransparency = 1
+		local check = notification:FindFirstChild("CheckMark")
+		if check then check.ImageTransparency = 1 end
+	
+		tween(notification, {TextTransparency = 0, BackgroundTransparency = 0.2}, 0.3)
+		if check then tween(check, {ImageTransparency = 0}, 0.3) end
+		task.delay(2.5, function()
+			tween(notification, {TextTransparency = 1, BackgroundTransparency = 1}, 0.4)
+			if check then tween(check, {ImageTransparency = 1}, 0.4) end
+		end)
+	end
+	
+	-- Получение цели (silent)
+	local function getSilentTarget()
+		local closest = nil
+		local shortest = math.huge
+		local center = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
+	
+		for _, player in ipairs(Players:GetPlayers()) do
+			if player ~= LocalPlayer and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+				local hrp = player.Character.HumanoidRootPart
+				local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+				if humanoid and humanoid.Health > 0 then
+					local pos, visible = Camera:WorldToViewportPoint(hrp.Position)
+					if visible then
+						local dist = (Vector2.new(pos.X, pos.Y) - center).Magnitude
+						local dist3D = (Camera.CFrame.Position - hrp.Position).Magnitude
+						if dist <= FOV_RADIUS and dist3D <= MAX_DISTANCE then
+							if not wallCheckEnabled or canSee(hrp.Position) then
+								if dist < shortest then
+									shortest = dist
+									closest = hrp
+								end
+							end
+						end
+					end
+				end
+			end
+		end
+		return closest
+	end
+	
+	-- Silent aim hook (не вращает камеру)
+	local function onHeartbeat()
+		local target = getSilentTarget()
+		if target then
+			-- Перенаправляем выстрел в позицию цели
+			local predicted = target.Position + (target.Velocity * (getPing() / 1000))
+			Camera.CFrame = CFrame.new(Camera.CFrame.Position, predicted)
+		end
+	end
+	
+	-- Toggle функция (как в вашем примере)
+	local function toggleSilentAim()
+		silentAimEnabled = not silentAimEnabled
+	
+		if silentAimEnabled then
+			tween(switcher, {BackgroundColor3 = ON_COLOR}, 0.3)
+			tween(switch, {Position = ON_POS, BackgroundColor3 = SWITCH_ON_COLOR}, 0.3)
+			tween(aimbotFrame, {BackgroundColor3 = LABEL_ON_COLOR}, 0.3)
+			notify("Silent Aim ON")
+			silentConn = RunService.Heartbeat:Connect(onHeartbeat)
+		else
+			tween(switcher, {BackgroundColor3 = OFF_COLOR}, 0.3)
+			tween(switch, {Position = OFF_POS, BackgroundColor3 = SWITCH_OFF_COLOR}, 0.3)
+			tween(aimbotFrame, {BackgroundColor3 = LABEL_OFF_COLOR}, 0.3)
+			notify("Silent Aim OFF")
+			if silentConn then silentConn:Disconnect() end
+		end
+	end
+	
+	-- Подключение к кнопке
+	switcher.MouseButton1Click:Connect(toggleSilentAim)
+end
+coroutine.wrap(QDAAHVK_fake_script)()
+local function UVXV_fake_script() -- FullbrightOFF.LocalScript 
 	local script = Instance.new('LocalScript', FullbrightOFF)
 
 	local button = script.Parent
@@ -3382,8 +3297,8 @@ local function OZWB_fake_script() -- FullbrightOFF.LocalScript
 	end)
 	
 end
-coroutine.wrap(OZWB_fake_script)()
-local function YLPH_fake_script() -- RemoveShadowButton.LocalScript 
+coroutine.wrap(UVXV_fake_script)()
+local function OTNEF_fake_script() -- RemoveShadowButton.LocalScript 
 	local script = Instance.new('LocalScript', RemoveShadowButton)
 
 	local Lighting = game:GetService("Lighting")
@@ -3411,8 +3326,8 @@ local function YLPH_fake_script() -- RemoveShadowButton.LocalScript
 	updateButton()
 	
 end
-coroutine.wrap(YLPH_fake_script)()
-local function JXDAOQC_fake_script() -- NoTextures.LocalScript 
+coroutine.wrap(OTNEF_fake_script)()
+local function AFYZV_fake_script() -- NoTextures.LocalScript 
 	local script = Instance.new('LocalScript', NoTextures)
 
 	local Players = game:GetService("Players")
@@ -3488,9 +3403,9 @@ local function JXDAOQC_fake_script() -- NoTextures.LocalScript
 	-- Начальный текст
 	button.Text = "Textures: OFF"
 end
-coroutine.wrap(JXDAOQC_fake_script)()
-local function OURZVO_fake_script() -- Switcher_4.Clickwarp 
-	local script = Instance.new('LocalScript', Switcher_4)
+coroutine.wrap(AFYZV_fake_script)()
+local function FSGW_fake_script() -- Switcher_5.Clickwarp 
+	local script = Instance.new('LocalScript', Switcher_5)
 
 	local Players          = game:GetService("Players")
 	local UserInputService = game:GetService("UserInputService")
@@ -3669,16 +3584,65 @@ local function OURZVO_fake_script() -- Switcher_4.Clickwarp
 	binder.Text = bindKey.Name:upper()
 	
 end
-coroutine.wrap(OURZVO_fake_script)()
-local function XMJN_fake_script() -- Binder.Clickwarp Binder 
+coroutine.wrap(FSGW_fake_script)()
+local function OMCDFC_fake_script() -- Binder.Clickwarp Binder 
 	local script = Instance.new('LocalScript', Binder)
+
+	-- В LocalScript Switcher (например, включение Clickwarp)
+	local switcher = script.Parent
+	local switch = switcher:WaitForChild("Switch")
+	local label = switcher.Parent
+	
+	local clickwarpBindKey = Enum.KeyCode.C -- дефолт
+	
+	-- Получаем актуальный биндер
+	local function updateBind()
+	    if _G.GetClickwarpBindKey then
+	        clickwarpBindKey = _G.GetClickwarpBindKey()
+	    end
+	end
+	
+	-- Запуск бинда, например, при нажатии клавиши
+	local UserInputService = game:GetService("UserInputService")
+	UserInputService.InputBegan:Connect(function(input, gameProcessed)
+	    if gameProcessed then return end
+	    updateBind()
+	    if input.KeyCode == clickwarpBindKey then
+	        -- Включаем или запускаем Clickwarp
+	    end
+	end)
+	
+	-- Для синхронизации
+	_G.SetClickwarpBindKey = function(key)
+	    clickwarpBindKey = key
+	    -- Можно добавить обновление UI Switcher, если нужно
+	end
+	
+	_G.StartClickwarpBindListening = function()
+	    -- если нужна логика для начала прослушки, например, отключить переключатель на время
+	end
+	
+end
+coroutine.wrap(OMCDFC_fake_script)()
+local function UEPJ_fake_script() -- Binder.bindertrans 
+	local script = Instance.new('LocalScript', Binder)
+
+	local button = script.Parent -- Это должен быть сам TextButton "Binder"
+	
+	-- Установка прозрачности сразу при инжекте
+	button.BackgroundTransparency = 0.7
+	
+end
+coroutine.wrap(UEPJ_fake_script)()
+local function JXRAV_fake_script() -- Binder_2.NoClip binder 
+	local script = Instance.new('LocalScript', Binder_2)
 
 	local UserInputService = game:GetService("UserInputService")
 	
 	local button = script.Parent -- TextButton "Binder"
 	
 	-- Устанавливаем прозрачность фона только у кнопки Binder
-	button.BackgroundTransparency = 0.5
+	button.BackgroundTransparency = 0.7
 	
 	local listening = false
 	local bindKey = Enum.KeyCode.C
@@ -3702,46 +3666,28 @@ local function XMJN_fake_script() -- Binder.Clickwarp Binder
 		button.BackgroundTransparency = 0.5
 	end
 	
-	-- Показываем выбранную клавишу (только имя)
-	button.Text = bindKey.Name:upper()
-	
-	-- Начинаем слушать ввод клавиши при клике
-	button.MouseButton1Click:Connect(function()
-		if listening then return end
-		listening = true
-		button.Text = "..."
-	
-		-- Запускаем прослушивание бинда в Switcher
-		if _G.StartClickwarpBindListening then
-			_G.StartClickwarpBindListening()
-		end
-	end)
-	
-	-- Обработка ввода клавиши
-	UserInputService.InputBegan:Connect(function(input, gp)
-		if gp then return end
+	-- Отслеживание ввода клавиши
+	UserInputService.InputBegan:Connect(function(input, gameProcessed)
 		if not listening then return end
-		if input.UserInputType ~= Enum.UserInputType.Keyboard then return end
-	
-		bindKey = input.KeyCode
-		listening = false
-		button.Text = bindKey.Name:upper()
-	
-		-- Обновляем bindKey у Switcher через глобальную функцию (если есть)
-		if _G.SetClickwarpBindKey then
-			_G.SetClickwarpBindKey(bindKey)
+		if input.UserInputType == Enum.UserInputType.Keyboard then
+			finishListening(input.KeyCode)
 		end
 	end)
 	
-	-- Функция для получения текущего бинда (если нужно)
-	_G.GetClickwarpBindKey = function()
+	-- Обработка клика по кнопке
+	button.MouseButton1Click:Connect(function()
+		startListening()
+	end)
+	
+	-- Функция для получения bindKey снаружи, если нужно
+	_G.GetBindKey = function()
 		return bindKey
 	end
 	
 end
-coroutine.wrap(XMJN_fake_script)()
-local function SAEAMKY_fake_script() -- Binder.bindertrans 
-	local script = Instance.new('LocalScript', Binder)
+coroutine.wrap(JXRAV_fake_script)()
+local function HFMT_fake_script() -- Binder_2.bindertrans 
+	local script = Instance.new('LocalScript', Binder_2)
 
 	local button = script.Parent -- Это должен быть сам TextButton "Binder"
 	
@@ -3749,9 +3695,9 @@ local function SAEAMKY_fake_script() -- Binder.bindertrans
 	button.BackgroundTransparency = 0.7
 	
 end
-coroutine.wrap(SAEAMKY_fake_script)()
-local function POAYAPP_fake_script() -- Switcher_5.script 
-	local script = Instance.new('LocalScript', Switcher_5)
+coroutine.wrap(HFMT_fake_script)()
+local function QHBQYH_fake_script() -- Switcher_6.script 
+	local script = Instance.new('LocalScript', Switcher_6)
 
 	local TweenService     = game:GetService("TweenService")
 	local Players          = game:GetService("Players")
@@ -3778,7 +3724,7 @@ local function POAYAPP_fake_script() -- Switcher_5.script
 	local SWITCH_ON_COLOR = Color3.fromRGB(0, 71, 202)
 	local SWITCH_OFF_COLOR = Color3.fromRGB(255, 255, 255)
 	local LABEL_ON_COLOR = Color3.fromRGB(0, 71, 202)
-	local LABEL_OFF_COLOR = Color3.fromRGB(12, 12, 12)
+	local LABEL_OFF_COLOR = Color3.fromRGB(11, 11, 15)
 	
 	local ON_POS = UDim2.new(0.522, 0, 0.179, 0)
 	local OFF_POS = UDim2.new(0.131, 0, 0.179, 0)
@@ -3933,70 +3879,8 @@ local function POAYAPP_fake_script() -- Switcher_5.script
 		hrp = char:WaitForChild("HumanoidRootPart")
 	end)
 end
-coroutine.wrap(POAYAPP_fake_script)()
-local function RXEB_fake_script() -- Binder_2.NoClip binder 
-	local script = Instance.new('LocalScript', Binder_2)
-
-	local UserInputService = game:GetService("UserInputService")
-	
-	local button = script.Parent -- TextButton "Binder"
-	
-	-- Устанавливаем прозрачность фона только у кнопки Binder
-	button.BackgroundTransparency = 0.7
-	
-	local listening = false
-	local bindKey = Enum.KeyCode.C
-	
-	-- Устанавливаем начальный текст
-	button.Text = bindKey.Name:upper()
-	
-	-- Начинаем прослушку
-	local function startListening()
-		listening = true
-		button.Text = "..."
-	end
-	
-	-- Завершаем прослушку
-	local function finishListening(newKey)
-		bindKey = newKey
-		listening = false
-		button.Text = bindKey.Name:upper()
-	
-		-- Поддерживаем прозрачность фона кнопки
-		button.BackgroundTransparency = 0.5
-	end
-	
-	-- Отслеживание ввода клавиши
-	UserInputService.InputBegan:Connect(function(input, gameProcessed)
-		if not listening then return end
-		if input.UserInputType == Enum.UserInputType.Keyboard then
-			finishListening(input.KeyCode)
-		end
-	end)
-	
-	-- Обработка клика по кнопке
-	button.MouseButton1Click:Connect(function()
-		startListening()
-	end)
-	
-	-- Функция для получения bindKey снаружи, если нужно
-	_G.GetBindKey = function()
-		return bindKey
-	end
-	
-end
-coroutine.wrap(RXEB_fake_script)()
-local function RGCLMIW_fake_script() -- Binder_2.bindertrans 
-	local script = Instance.new('LocalScript', Binder_2)
-
-	local button = script.Parent -- Это должен быть сам TextButton "Binder"
-	
-	-- Установка прозрачности сразу при инжекте
-	button.BackgroundTransparency = 0.7
-	
-end
-coroutine.wrap(RGCLMIW_fake_script)()
-local function USTVBTC_fake_script() -- AntiAFKButton.LocalScript 
+coroutine.wrap(QHBQYH_fake_script)()
+local function BOTGYTD_fake_script() -- AntiAFKButton.LocalScript 
 	local script = Instance.new('LocalScript', AntiAFKButton)
 
 	local Players = game:GetService("Players")
@@ -4161,170 +4045,8 @@ local function USTVBTC_fake_script() -- AntiAFKButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(USTVBTC_fake_script)()
-local function TNDEM_fake_script() -- Switcher_6.Speed 
-	local script = Instance.new('LocalScript', Switcher_6)
-
-	local TweenService     = game:GetService("TweenService")
-	local Players          = game:GetService("Players")
-	local UserInputService = game:GetService("UserInputService")
-	
-	local player = Players.LocalPlayer
-	local gui = player:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
-	local tab5page = gui.menu.PagesFrame.Tab5Page
-	local mainLabel = tab5page:WaitForChild("Speed")  -- Тут лежат Switcher и Binder
-	
-	local switcher = mainLabel:WaitForChild("Switcher")   -- TextButton
-	local switch = switcher:WaitForChild("Switch")        -- Frame внутри Switcher для анимации ползунка
-	local binder = mainLabel:WaitForChild("Binder")       -- TextButton
-	
-	local notification = gui:WaitForChild("NotificationLabel")
-	
-	local character = player.Character or player.CharacterAdded:Wait()
-	local humanoid = character:WaitForChild("Humanoid")
-	
-	-- Цвета и позиции для анимации Switcher.Switch
-	local ON_COLOR = Color3.fromRGB(255, 255, 255)
-	local OFF_COLOR = Color3.fromRGB(74, 74, 74)
-	local SWITCH_ON_COLOR = Color3.fromRGB(0, 71, 202)
-	local SWITCH_OFF_COLOR = Color3.fromRGB(255, 255, 255)
-	local LABEL_ON_COLOR = Color3.fromRGB(0, 71, 202)
-	local LABEL_OFF_COLOR = Color3.fromRGB(12, 12, 12)
-	
-	local ON_POS = UDim2.new(0.522, 0, 0.179, 0)
-	local OFF_POS = UDim2.new(0.131, 0, 0.179, 0)
-	
-	local function tween(obj, props, time)
-		local info = TweenInfo.new(time, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-		TweenService:Create(obj, info, props):Play()
-	end
-	
-	local isSpeedEnabled = false
-	local listening = false
-	local bindKey = Enum.KeyCode.C
-	
-	local minSpeed = 16
-	local maxSpeed = 100
-	local currentSpeed = minSpeed
-	
-	-- Инициализация стилей
-	switch.Position = OFF_POS
-	switch.BackgroundColor3 = SWITCH_OFF_COLOR
-	switcher.BackgroundColor3 = OFF_COLOR
-	mainLabel.BackgroundColor3 = LABEL_OFF_COLOR
-	
-	local function notify(text)
-		notification.Text = text
-		notification.Visible = true
-		notification.TextTransparency = 1
-		notification.BackgroundTransparency = 1
-	
-		local check = notification:FindFirstChild("CheckMark")
-		if check then check.ImageTransparency = 1 end
-	
-		tween(notification, {TextTransparency = 0, BackgroundTransparency = 0.2}, 0.4)
-		if check then tween(check, {ImageTransparency = 0}, 0.4) end
-	
-		task.delay(2.5, function()
-			tween(notification, {TextTransparency = 1, BackgroundTransparency = 1}, 0.5)
-			if check then tween(check, {ImageTransparency = 1}, 0.5) end
-		end)
-	end
-	
-	local function toggleSpeed()
-		isSpeedEnabled = not isSpeedEnabled
-	
-		if isSpeedEnabled then
-			notify("    Enabled Function: SpeedHack")
-			tween(switcher, {BackgroundColor3 = ON_COLOR}, 0.3)
-			tween(switch, {Position = ON_POS, BackgroundColor3 = SWITCH_ON_COLOR}, 0.3)
-			tween(mainLabel, {BackgroundColor3 = LABEL_ON_COLOR}, 0.3)
-	
-			humanoid.WalkSpeed = currentSpeed  -- применяем текущую скорость
-		else
-			notify("    Disabled Function: SpeedHack")
-			tween(switcher, {BackgroundColor3 = OFF_COLOR}, 0.3)
-			tween(switch, {Position = OFF_POS, BackgroundColor3 = SWITCH_OFF_COLOR}, 0.3)
-			tween(mainLabel, {BackgroundColor3 = LABEL_OFF_COLOR}, 0.3)
-	
-			humanoid.WalkSpeed = 16 -- Стандартная скорость
-		end
-	end
-	
-	-- Глобальная функция для установки включения скорости из слайдера
-	_G.SetSpeedEnabled = function(enabled)
-		isSpeedEnabled = enabled
-		if isSpeedEnabled then
-			humanoid.WalkSpeed = currentSpeed
-		else
-			humanoid.WalkSpeed = 16
-		end
-		-- Обновляем анимацию переключателя
-		if enabled then
-			tween(switcher, {BackgroundColor3 = ON_COLOR}, 0.3)
-			tween(switch, {Position = ON_POS, BackgroundColor3 = SWITCH_ON_COLOR}, 0.3)
-			tween(mainLabel, {BackgroundColor3 = LABEL_ON_COLOR}, 0.3)
-		else
-			tween(switcher, {BackgroundColor3 = OFF_COLOR}, 0.3)
-			tween(switch, {Position = OFF_POS, BackgroundColor3 = SWITCH_OFF_COLOR}, 0.3)
-			tween(mainLabel, {BackgroundColor3 = LABEL_OFF_COLOR}, 0.3)
-		end
-	end
-	
-	switcher.MouseButton1Click:Connect(toggleSpeed)
-	
-	binder.BackgroundTransparency = 0.7
-	binder.Text = bindKey.Name:upper()
-	
-	local function startListening()
-		listening = true
-		binder.Text = "..."
-	end
-	
-	local function finishListening(newKey)
-		bindKey = newKey
-		listening = false
-		binder.Text = bindKey.Name:upper()
-		binder.BackgroundTransparency = 0.5
-	end
-	
-	binder.MouseButton1Click:Connect(function()
-		if listening then return end
-		startListening()
-	end)
-	
-	UserInputService.InputBegan:Connect(function(input, gameProcessed)
-		if gameProcessed then return end
-	
-		if listening and input.UserInputType == Enum.UserInputType.Keyboard then
-			finishListening(input.KeyCode)
-			return
-		end
-	
-		if input.KeyCode == bindKey then
-			toggleSpeed()
-		end
-	end)
-	
-	player.CharacterAdded:Connect(function(char)
-		character = char
-		humanoid = char:WaitForChild("Humanoid")
-		if isSpeedEnabled then
-			humanoid.WalkSpeed = currentSpeed
-		end
-	end)
-	
-	-- Функция для обновления текущей скорости из слайдера
-	_G.SetCurrentSpeed = function(speed)
-		currentSpeed = math.clamp(speed, minSpeed, maxSpeed)
-		if isSpeedEnabled and humanoid and humanoid.Parent then
-			humanoid.WalkSpeed = currentSpeed
-		end
-	end
-	
-end
-coroutine.wrap(TNDEM_fake_script)()
-local function FHSNSFV_fake_script() -- Binder_3.bindertrans 
+coroutine.wrap(BOTGYTD_fake_script)()
+local function WUVVTXL_fake_script() -- Binder_3.bindertrans 
 	local script = Instance.new('LocalScript', Binder_3)
 
 	local button = script.Parent -- Это должен быть сам TextButton "Binder"
@@ -4333,8 +4055,8 @@ local function FHSNSFV_fake_script() -- Binder_3.bindertrans
 	button.BackgroundTransparency = 0.7
 	
 end
-coroutine.wrap(FHSNSFV_fake_script)()
-local function JAMZGV_fake_script() -- Binder_3.LocalScript 
+coroutine.wrap(WUVVTXL_fake_script)()
+local function ZEIGQGA_fake_script() -- Binder_3.LocalScript 
 	local script = Instance.new('LocalScript', Binder_3)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -4370,8 +4092,8 @@ local function JAMZGV_fake_script() -- Binder_3.LocalScript
 	end
 	
 end
-coroutine.wrap(JAMZGV_fake_script)()
-local function RNSEP_fake_script() -- Slider.LocalScript 
+coroutine.wrap(ZEIGQGA_fake_script)()
+local function DRESDOE_fake_script() -- Slider.LocalScript 
 	local script = Instance.new('LocalScript', Slider)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -4448,9 +4170,9 @@ local function RNSEP_fake_script() -- Slider.LocalScript
 		end)
 	end
 end
-coroutine.wrap(RNSEP_fake_script)()
-local function HDPHM_fake_script() -- Switcher_7.GM 
-	local script = Instance.new('LocalScript', Switcher_7)
+coroutine.wrap(DRESDOE_fake_script)()
+local function TDRYJJ_fake_script() -- Switcher_8.GM 
+	local script = Instance.new('LocalScript', Switcher_8)
 
 	local TweenService = game:GetService("TweenService")
 	local Players = game:GetService("Players")
@@ -4545,8 +4267,8 @@ local function HDPHM_fake_script() -- Switcher_7.GM
 	switcher.MouseButton1Click:Connect(toggleGodMode)
 	
 end
-coroutine.wrap(HDPHM_fake_script)()
-local function DPJJ_fake_script() -- ReloadShoot.ReloadShoot 
+coroutine.wrap(TDRYJJ_fake_script)()
+local function DFDJ_fake_script() -- ReloadShoot.ReloadShoot 
 	local script = Instance.new('LocalScript', ReloadShoot)
 
 	local Players = game:GetService("Players")
@@ -4610,8 +4332,8 @@ local function DPJJ_fake_script() -- ReloadShoot.ReloadShoot
 	updateButtonText()
 	
 end
-coroutine.wrap(DPJJ_fake_script)()
-local function WBSJLZ_fake_script() -- NoSpread.NoSpread 
+coroutine.wrap(DFDJ_fake_script)()
+local function EOMOC_fake_script() -- NoSpread.NoSpread 
 	local script = Instance.new('LocalScript', NoSpread)
 
 	local Players       = game:GetService("Players")
@@ -4707,8 +4429,8 @@ local function WBSJLZ_fake_script() -- NoSpread.NoSpread
 	end)
 	
 end
-coroutine.wrap(WBSJLZ_fake_script)()
-local function SKJT_fake_script() -- NoReload.NoReload 
+coroutine.wrap(EOMOC_fake_script)()
+local function YEWDT_fake_script() -- NoReload.NoReload 
 	local script = Instance.new('LocalScript', NoReload)
 
 	local Players       = game:GetService("Players")
@@ -4802,8 +4524,8 @@ local function SKJT_fake_script() -- NoReload.NoReload
 	end)
 	
 end
-coroutine.wrap(SKJT_fake_script)()
-local function HTYRST_fake_script() -- InfinityAmmo.InfinityAmmo 
+coroutine.wrap(YEWDT_fake_script)()
+local function ITRBIGK_fake_script() -- InfinityAmmo.InfinityAmmo 
 	local script = Instance.new('LocalScript', InfinityAmmo)
 
 	local Players       = game:GetService("Players")
@@ -4894,24 +4616,20 @@ local function HTYRST_fake_script() -- InfinityAmmo.InfinityAmmo
 	end)
 	
 end
-coroutine.wrap(HTYRST_fake_script)()
-local function SFQHCOH_fake_script() -- Switcher_8.NoReload 
-	local script = Instance.new('LocalScript', Switcher_8)
+coroutine.wrap(ITRBIGK_fake_script)()
+local function MITRPSX_fake_script() -- NoReloadLabel.NoReload 
+	local script = Instance.new('LocalScript', NoReloadLabel)
 
 	local TweenService = game:GetService("TweenService")
+	local RunService = game:GetService("RunService")
 	local Players = game:GetService("Players")
-	local UserInputService = game:GetService("UserInputService")
+	local LocalPlayer = Players.LocalPlayer
 	
-	local player = Players.LocalPlayer
-	local gui = player:WaitForChild("PlayerGui"):WaitForChild("ScreenGui")
-	local pagesFrame = gui.menu.PagesFrame
-	local tabCombat = pagesFrame:WaitForChild("Tab7Page") -- Вкладка Combat (создай в GUI)
-	local noReloadLabel = tabCombat:WaitForChild("NoReloadLabel") -- Label для названия функции
-	local switcher = noReloadLabel:WaitForChild("Switcher") -- TextButton Switcher
-	local switch = switcher:WaitForChild("Switch") -- Frame внутри Switcher
-	local label = noReloadLabel -- Для изменения цвета фона
+	local noReloadLabel = script.Parent -- это TextLabel "NoReload"
+	local switcher = noReloadLabel:WaitForChild("Switcher") -- это TextButton
+	local switch = switcher:WaitForChild("Switch")
 	
-	-- Цвета и позиции, как у тебя
+	-- Цвета и позиции для анимации Switcher
 	local ON_COLOR = Color3.fromRGB(255, 255, 255)
 	local OFF_COLOR = Color3.fromRGB(74, 74, 74)
 	local SWITCH_ON_COLOR = Color3.fromRGB(0, 71, 202)
@@ -4922,130 +4640,104 @@ local function SFQHCOH_fake_script() -- Switcher_8.NoReload
 	local ON_POS = UDim2.new(0.522, 0, 0.179, 0)
 	local OFF_POS = UDim2.new(0.131, 0, 0.179, 0)
 	
-	local noReloadEnabled = false
-	
-	-- Для поиска RemoteEvents
-	local function findRemoteEvents()
-		local containers = {game:GetService("ReplicatedStorage"), workspace, player}
-		local events = {}
-	
-		for _, container in pairs(containers) do
-			for _, obj in pairs(container:GetDescendants()) do
-				if obj:IsA("RemoteEvent") then
-					table.insert(events, obj)
-				end
-			end
-		end
-		return events
-	end
-	
-	local remoteEvents = findRemoteEvents()
-	print("NoReload: Found "..#remoteEvents.." RemoteEvents")
-	
-	local shootKeywords = {"shoot", "fire", "attack", "weapon", "bullet", "gun"}
-	local reloadKeywords = {"reload", "magazine", "clip", "ammo"}
-	
-	local lastFiredRemote = nil
-	local fireServerHooks = {}
-	
-	-- Перехват FireServer у всех RemoteEvents
-	local function hookRemoteEvents()
-		for _, remote in pairs(remoteEvents) do
-			if fireServerHooks[remote] then continue end -- Уже захукано
-			local oldFireServer = remote.FireServer
-			fireServerHooks[remote] = oldFireServer
-	
-			remote.FireServer = function(self, ...)
-				local args = {...}
-				local isShoot = false
-				local isReload = false
-	
-				for _, arg in pairs(args) do
-					if type(arg) == "string" then
-						local argLower = arg:lower()
-						for _, keyword in pairs(shootKeywords) do
-							if string.find(argLower, keyword) then
-								isShoot = true
-								break
-							end
-						end
-						for _, keyword in pairs(reloadKeywords) do
-							if string.find(argLower, keyword) then
-								isReload = true
-								break
-							end
-						end
-					end
-				end
-	
-				if isShoot then
-					lastFiredRemote = self
-					--print("[NoReload] Shoot RemoteEvent:", self.Name)
-				end
-	
-				if isReload and noReloadEnabled then
-					-- Блокируем вызов перезарядки
-					--print("[NoReload] Reload blocked:", self.Name)
-					return
-				end
-	
-				return oldFireServer(self, ...)
-			end
-		end
-	end
-	
-	local function unhookRemoteEvents()
-		for remote, oldFunc in pairs(fireServerHooks) do
-			if remote and remote.Parent then
-				remote.FireServer = oldFunc
-			end
-		end
-		fireServerHooks = {}
-	end
+	local enabled = false
 	
 	local function tween(obj, props, time)
-		local info = TweenInfo.new(time, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
-		TweenService:Create(obj, info, props):Play()
+		local info = TweenInfo.new(time or 0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+		local tw = TweenService:Create(obj, info, props)
+		tw:Play()
 	end
 	
-	local function toggleNoReload()
-		noReloadEnabled = not noReloadEnabled
+	-- Основная логика NoReload (твой код для отмены перезарядки и поиска RemoteEvent)
+	local foundRemotes = {}
+	local reloadRemote = nil
+	local reloadArgs = nil
+	local newReloadDetected = false
 	
-		if noReloadEnabled then
-			hookRemoteEvents()
-			tween(switcher, {BackgroundColor3 = ON_COLOR}, 0.3)
-			tween(switch, {Position = ON_POS, BackgroundColor3 = SWITCH_ON_COLOR}, 0.3)
-			tween(label, {BackgroundColor3 = LABEL_ON_COLOR}, 0.3)
-			print("No Reload Enabled")
-		else
-			unhookRemoteEvents()
-			tween(switcher, {BackgroundColor3 = OFF_COLOR}, 0.3)
-			tween(switch, {Position = OFF_POS, BackgroundColor3 = SWITCH_OFF_COLOR}, 0.3)
-			tween(label, {BackgroundColor3 = LABEL_OFF_COLOR}, 0.3)
-			print("No Reload Disabled")
+	local function recursiveScan(parent)
+		for _, child in ipairs(parent:GetChildren()) do
+			if child:IsA("RemoteEvent") then
+				table.insert(foundRemotes, child)
+			elseif #child:GetChildren() > 0 then
+				recursiveScan(child)
+			end
 		end
 	end
 	
-	switcher.MouseButton1Click:Connect(toggleNoReload)
+	local function safeFireServer(remote, ...)
+		local args = {...}
+		task.spawn(function()
+			task.wait(math.random(5, 15)/100)
+			if remote and remote.Parent then
+				pcall(function()
+					remote:FireServer(unpack(args))
+				end)
+			end
+		end)
+	end
 	
-	-- Инициализация цветов по умолчанию (выкл)
-	tween(switcher, {BackgroundColor3 = OFF_COLOR}, 0)
-	tween(switch, {Position = OFF_POS, BackgroundColor3 = SWITCH_OFF_COLOR}, 0)
-	tween(label, {BackgroundColor3 = LABEL_OFF_COLOR}, 0)
+	local mt = getrawmetatable(game)
+	local oldNamecall = mt.__namecall
+	
+	setreadonly(mt, false)
+	mt.__namecall = newcclosure(function(self, ...)
+		local method = getnamecallmethod()
+		local args = {...}
+		if method == "FireServer" and typeof(self) == "Instance" and self:IsA("RemoteEvent") then
+			local nameLower = self.Name:lower()
+			if (string.find(nameLower, "reload") or (args[1] and tostring(args[1]):lower():find("reload"))) and not newReloadDetected then
+				reloadRemote = self
+				reloadArgs = args
+				newReloadDetected = true
+				print("[NoReload] Обнаружен RemoteEvent перезарядки:", self:GetFullName())
+			end
+		end
+		return oldNamecall(self, ...)
+	end)
+	setreadonly(mt, true)
+	
+	local function cancelReload()
+		if reloadRemote and reloadArgs then
+			safeFireServer(reloadRemote, unpack(reloadArgs))
+		end
+	end
+	
+	switcher.MouseButton1Click:Connect(function()
+		enabled = not enabled
+	
+		if enabled then
+			foundRemotes = {}
+			recursiveScan(game)
+			recursiveScan(game:GetService("ReplicatedStorage"))
+			recursiveScan(workspace)
+			recursiveScan(LocalPlayer.PlayerGui)
+			recursiveScan(LocalPlayer.Backpack)
+	
+			print("[NoReload] Включен, найдено RemoteEvent: "..#foundRemotes)
+			for i, r in ipairs(foundRemotes) do
+				print(string.format("[%d] %s", i, r:GetFullName()))
+			end
+	
+			tween(switcher, {BackgroundColor3 = ON_COLOR}, 0.3)
+			tween(switch, {Position = ON_POS, BackgroundColor3 = SWITCH_ON_COLOR}, 0.3)
+			tween(noReloadLabel, {TextColor3 = LABEL_ON_COLOR}, 0.3)
+		else
+			tween(switcher, {BackgroundColor3 = OFF_COLOR}, 0.3)
+			tween(switch, {Position = OFF_POS, BackgroundColor3 = SWITCH_OFF_COLOR}, 0.3)
+			tween(noReloadLabel, {TextColor3 = LABEL_OFF_COLOR}, 0.3)
+		end
+	end)
+	
+	RunService.Heartbeat:Connect(function()
+		if enabled and reloadRemote then
+			cancelReload()
+		end
+	end)
 	
 end
-coroutine.wrap(SFQHCOH_fake_script)()
-local function BZXH_fake_script() -- NoReloadLabel.LocalScript 
-	local script = Instance.new('LocalScript', NoReloadLabel)
-
-	local label = script.Parent -- или путь к твоему TextLabel
-	label.Font = Enum.Font.SourceSans
-	
-	
-end
-coroutine.wrap(BZXH_fake_script)()
-local function AABF_fake_script() -- Switcher_9.KnifeRange 
-	local script = Instance.new('LocalScript', Switcher_9)
+coroutine.wrap(MITRPSX_fake_script)()
+local function RHEN_fake_script() -- Switcher_10.KnifeRange 
+	local script = Instance.new('LocalScript', Switcher_10)
 
 	local TweenService = game:GetService("TweenService")
 	local Players = game:GetService("Players")
@@ -5139,9 +4831,9 @@ local function AABF_fake_script() -- Switcher_9.KnifeRange
 	updateSwitcherUI(isEnabled)
 	
 end
-coroutine.wrap(AABF_fake_script)()
-local function LPXOAB_fake_script() -- Switcher_10.DAmageMLTP 
-	local script = Instance.new('LocalScript', Switcher_10)
+coroutine.wrap(RHEN_fake_script)()
+local function LWDOEK_fake_script() -- Switcher_11.DAmageMLTP 
+	local script = Instance.new('LocalScript', Switcher_11)
 
 	local TweenService = game:GetService("TweenService")
 	local Players = game:GetService("Players")
@@ -5238,4 +4930,4 @@ local function LPXOAB_fake_script() -- Switcher_10.DAmageMLTP
 	updateSwitcherUI(isEnabled)
 	
 end
-coroutine.wrap(LPXOAB_fake_script)()
+coroutine.wrap(LWDOEK_fake_script)()
